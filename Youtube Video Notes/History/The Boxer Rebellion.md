@@ -1,4 +1,3 @@
-![](https://www.youtube.com/watch?v=bkU3kae4mFw)
 
 **Prelude**
 By the late 1890s, the Qing Dynasty—the last imperial dynasty of China—had suffered from civil war (Taiping Rebellion) and military defeats by Western powers (e.g. First and Second Opium Wars), Russia, and Japan (First Sino-Japanese War), being forced to cede territories to them. Ceded territories include Port Arthur (Russia), Hong Kong (Great Britain), Qingdao/Tsingtao (Germany), and Macau (Portugal).
@@ -15,3 +14,8 @@ The biggest secret society formed in the Shandong province, with a strong focus 
 The Empress Dowager Cixi's government took an ambiguous approach to the Boxer situation. While publicly condemning them and ordering Imperial troops to defend the legations, she prevented the military from fully suppressing the rebels.
 
 As the violence escalated and more Christians were killed, the **Eight-Nation Alliance** was formed, a loose coalition including Germany, Britain, Japan, Russia, France, Austria-Hungary, Italy, and the US, with the shared goal of suppressing the rebellion and protecting their citizens and property in China. As a fleet of warships amassed off the port of Dagu, naval officers from each respective nation cooperated in a collective effort to defeat the rebels, marking one of the first instances of coalition warfare in the 20th century. Since they were so far from their respective governments, the naval council often acted independently.
+
+**The Seymour Expedition**
+
+
+![](https://www.youtube.com/watch?v=bkU3kae4mFw)

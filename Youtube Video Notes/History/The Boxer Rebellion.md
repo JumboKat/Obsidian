@@ -16,9 +16,18 @@ The Empress Dowager Cixi's government took an ambiguous approach to the Boxer si
 As the violence escalated and more Christians were killed, the **Eight-Nation Alliance** was formed, a loose coalition including Germany, Britain, Japan, Russia, France, Austria-Hungary, Italy, and the US, with the shared goal of suppressing the rebellion and protecting their citizens and property in China. As a fleet of warships amassed off the port of Dagu, naval officers from each respective nation cooperated in a collective effort to defeat the rebels, marking one of the first instances of coalition warfare in the 20th century. Since they were so far from their respective governments, the naval council often acted independently.
 
 **The Seymour Expedition**
-Royal Navy Officer Edward Seymour lead a coalition force to relieve the ligations in Beijing in June 1900. On the way to the city, their train convoy was harassed by local boxers, who ripped up sections of the track, and ambushed the foreigners when they came out to perform repairs. The boxers, armed only with bamboo spears, **jingals**, and knives, were severely beaten back by the coalition forces, but were able to destroy the track behind them.
+Royal Navy Officer Edward Seymour lead a coalition force to relieve the ligations in Beijing in June 1900. On the way to the city, their train convoy was harassed by local boxers, who ripped up sections of the track, and ambushed the foreigners when they came out to perform repairs. The boxers, armed only with bamboo spears, **gingals**, and knives, were severely beaten back by the coalition forces, but were able to force Seymour's retreat to Tianjin at the Battle of Langfang. Seymour's incursion, along with the capture of Imperial forts at Dagu by the alliance, provoke the Qing government into declaring war on the foreign coalition.
 
+The Qing government's stance was weak; being ethnically Manchu, they lacked the full support of the Han majority, and many provincial leaders did not join the war effort. Only 70,000 of the 300,000 troops under Imperial command were available to defend Beijing. 
 
+**Siege of the Foreign Legations**
+Before the Qing's war edict, Cixi demanded the foreigners to leave Beijing under escort of the Imperial army, however the foreigners refused in fear, with the killings of many foreign diplomats by the Chinese occurring during this time. 
+
+From June to August of 1900, Imperial and Boxer forces besieged the legations in Beijing, trapping the foreigners and Christian converts within. While the Imperial army was able to tighten their encirclement, they were hesitant on making a direct attack to overwhelm the foreign garrison, lacking confidence that they possessed the strength to win the war overall.
+
+During the siege at Beijing, the alliance moved to relieve Seymour's besieged forces at Tianjin. At the Battle of Tianjin in July, the allies took the city and began looting it, leading to the death of many civilians and leaving the city in ruins. 
+
+Emperor Guangxu tried to convince Emperor Meiji of Japan to switch sides, stating that Japan and China are in the same boat in opposing the encroaching the Western powers, but he declines. Many of the Qing court also tried to convince Dowager Empress Cixi to push for peace, but were executed.
 
 ![](https://www.youtube.com/watch?v=bkU3kae4mFw)
 

@@ -16,6 +16,7 @@ The Empress Dowager Cixi's government took an ambiguous approach to the Boxer si
 As the violence escalated and more Christians were killed, the **Eight-Nation Alliance** was formed, a loose coalition including Germany, Britain, Japan, Russia, France, Austria-Hungary, Italy, and the US, with the shared goal of suppressing the rebellion and protecting their citizens and property in China. As a fleet of warships amassed off the port of Dagu, naval officers from each respective nation cooperated in a collective effort to defeat the rebels, marking one of the first instances of coalition warfare in the 20th century. Since they were so far from their respective governments, the naval council often acted independently.
 
 **The Seymour Expedition**
+Royal Navy Officer Edward Seymour lead a coalition force to relieve the ligations in Beijing in June 1900. On the way to the city, their train convoy was harassed by local boxers, who ripped up sections of the track, and ambushed the foreigners when they came out to perform repairs. The boxers, armed only with bamboo spears, **jingals**, and knives, were severely beaten back by the coalition forces, but were able to destroy the track behind them.
 
 
 

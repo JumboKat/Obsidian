@@ -41,7 +41,7 @@ On their arrival at Beijing on August 12th, members of the coalition rushed in t
 Chinese Boxers had also risen up against the Russian presence in Manchuria, attacking railways, stations, and killing Russians. In July, the Chinese bombarded the Russian border town of Blagoveshchensk. The Russian response was severe; Russian Cossacks and civilians began massacring Chinese civilians. Russian troops then began an invasion of Manchuria, looting towns and committing atrocities against Chinese civilians. By October, they had captured the regional capital of Mukden.
 
 ### The Boxer Protocol
-Following months of brutal occupation, Dowager Empress Cixi finally concedes on September 7th, 1901 and agrees to the following terms of the Boxer Protocol, forcing China to:
+Following months of brutal occupation, Dowager Empress Cixi finally conceded on September 7th, 1901 and agreed to the following terms of the Boxer Protocol, which forced China to:
 - pay 450 million silver dollars over 39 years
 - hand over control of strategic points to Alliance forces
 - create a ministry of foreign affairs
@@ -54,6 +54,7 @@ Following months of brutal occupation, Dowager Empress Cixi finally concedes on 
 - apologize for the killing of foreign diplomats and build memorials for them
 - prohibit Chinese from living in the legation quarters
 
+---
 ### Aftermath
 The Boxer Protocol was yet another in a series of humiliations for China. The Qing court's prestige and power were greatly weakened by the war.
 
@@ -61,7 +62,7 @@ The Boxer movement largely faded shortly after, most likely due to Boxers return
 
 While the Alliance had made many mistakes and suffered losses, they were ultimately able to work together to defeat China, though this cooperation would not last.
 
-The Russians had gone against the terms of the Boxer Protocol and remained in Manchuria with talks of a formal annexation. This continued presence lead to resentment among the Chinese as well as the Japanese, their local rival. These tensions would eventually lead to the [[The Russo-Japanese War (1904-1905)]]
+The Russians had gone against the terms of the Boxer Protocol and remained in Manchuria with talks of a formal annexation. This continued presence lead to resentment among the Chinese as well as the Japanese, their local rival. These tensions would eventually lead to the [[The Russo-Japanese War (1904-1905)]].
 
 ### References
 

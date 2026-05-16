@@ -1,4 +1,4 @@
-### Origin
+### History of the Escalator
 ![[Pasted image 20260513100533.png|226]]![[Pasted image 20260513100608.png|427]]
 The idea of the escalator started out as an 1859 patent called "Revolving Stairs," but it wasn't until the "Inclined Elevator" in 1896 when the first actual escalator was in operation.
 ### Use of Escalators

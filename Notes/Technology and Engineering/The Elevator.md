@@ -32,7 +32,7 @@ Hydraulic elevators are usually only found in shorter buildings, as its maximum 
 ### Traction Elevators
 Traction elevators are used in very tall buildings; they can service buildings with over 100 floors in some cases.
 #### Design
-![[Pasted image 20260515111459.png|334]]![[Pasted image 20260515111555.png|339]]
+![[Pasted image 20260515111459.png|387]]![[Pasted image 20260515111555.png|288]]
 The machine room is located at the very top and houses an electric motor. The motor pulls the cables by turning a special pulley called a **sheave**. One end of the cable connects to the cab, whilst the other to the **counterweight**. The counterweight massively reduces the strain on the motor. The motor simply tips the balance to move the cab up or down, with the counterweight moving opposite the cab. Without it, there would be a massive amount of tension on one side of the motor, requiring much more energy and strength to lift the cab. When the cab is at half capacity, both it and the counterweight weigh an equal amount, and achieving an ideal balance. However, the weight can change frequently. 
 
 Within the machine room also lies the control box, which serves as the brain of the elevator and controls the cab's up-and-down movement. Some traction elevators do not have a dedicated machine room; instead, the components are fitted at the top of the elevator shaft. These are called **machine room less (MRL) elevators**.

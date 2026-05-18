@@ -10,6 +10,7 @@ There are four buttons to toggle between three different speeds, and on/off func
 ![[Pasted image 20260516013841.png]]
 The buttons are connected to three colour-coded wires. Whichever button is pressed sends a signal through its respective wire up the fan and into the motor, which spins the fan at the specific speed.
 ### The Oscillation
+#### The 4-bar Mechanism
 To allow for cooling in a wider area, the fan can oscillate within an arc when the pin is pressed. To avoid using an additional motor for the oscillation, the rotation of the fan driven by the motor is converted into a side-to-side motion. The idea is based on the **4-bar mechanism**.
 
 ![[Pasted image 20260516014331.png]]

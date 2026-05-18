@@ -6,7 +6,7 @@ Magnets have two poles; opposites attract, while like repel. A **permanent magne
 ![[Pasted image 20260518104049.png|612]]
 If a magnet that is allowed to spin on an axis is placed near another magnet, it will rotate until the opposite poles are closest to each other. If we constantly switch the polarity of the second magnet, the first magnet will continuously rotate.
 
-![[Pasted image 20260518104415.png|340]]![[Pasted image 20260518105805.png|277]]
+![[Pasted image 20260518104415.png|379]]![[Pasted image 20260518105805.png|310]]
 This metal bolt is magnetic, but not a magnet. It contains several magnetic domains that point in many different directions. If a wire is wrapped around a bolt and connected to a live circuit, the current passing through orients all of the magnetic domains in its direction, effectively creating an **electromagnet**. If the direction of the current is reversed, the polarity is also reversed, and if the circuit is broken, the magnet is 'turned off.' The electromagnet can get very hot if left on for a while.
 
 ![[Pasted image 20260518110548.png]]
@@ -20,4 +20,15 @@ Working off of the basic concept introduced previously, the two side magnets are
 #### Reversing the Current
 
 ![[Pasted image 20260518111507.png|354]]![[Pasted image 20260518111554.png|339]]![[Pasted image 20260518111901.png|308]]![[Pasted image 20260518112302.png|383]]
-An effective way of reversing the current (without having to switch the ends of the wires) is by using a **commutator**. The commutator is attached to and spins along with the armature, and has gaps on opposite ends. On the sides of the commutator are brushes that glide along the outer surface of the commutator as it spins.
+An effective way of reversing the current (without having to switch the ends of the wires) is by using a **commutator**. The commutator is attached to and spins along with the armature, and has gaps on opposite ends. On the sides of the commutator are **brushes** that glide along the outer surface of the commutator as it spins; wires connect to each brush to form a circuit, allowing current to run through one brush, through the commutator, through the armature, back through the commutator, and out the other brush.
+
+![[Pasted image 20260518113838.png|345]]![[Pasted image 20260518113902.png|337]]
+As the armature and commutator spin together, the brush on each side will cross the gap and make contact with the opposite side of the commutator. As the brushes switch sides, the current will switch directions, as shown in the images above. This allows the polarity to switch, allowing the armature to continually spin as long as current is provided. 
+
+![[Pasted image 20260518114210.png|364]]![[Pasted image 20260518114351.png|311]]
+Using only one loop for the armature is not ideal, however; the motor will spin at an irregular speed, and it is possible for the brushes to get stuck in between the gaps of the commutator, halting the armature's rotation entirely. Splitting the commutator into four segments and adding a new loop connecting to the added segments. This stabilizes the rotational speed of the motor, and reduces the risk of the brushes getting stuck. As the motor spins, the brushes will make contact with a only one pair of segments at a time. The current alternates between loops as the motor spins, with the loops effectively 'taking turns' operating as an electromagnet.
+
+![[Pasted image 20260518114919.png]]Adding more loops to the armature ensures the motor continuously spins. 
+
+![[Pasted image 20260518115242.png|352]]
+The spinning force of the motor is called **torque**, which can be increased by strengthening the electromagnets. Electromagnets can be amplified by using more wires, and/or increasing the current.

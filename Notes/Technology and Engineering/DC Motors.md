@@ -1,5 +1,5 @@
 Electric motors are present in many of our household objects, including toothbrushes, fans, kids' toys, and hairdryers. To function, they rely on principles of electric circuits and magnetism.
-### Primer on Circuits and Magnets
+### Electromagnetism
 ![[Pasted image 20260518095234.png]]
 Magnets have two poles; opposites attract, while like repel. A **permanent magnet** is always projecting a magnetic field; it can't be 'switched' off. It is comprised of many smaller magnetic domains aligned in the same direction.
 
@@ -11,7 +11,6 @@ This metal bolt is magnetic, but not a magnet. It contains several magnetic doma
 
 ![[Pasted image 20260518110548.png]]
 If the electromagnet is made to spin on an axis and introduced to another nearby magnet, the electromagnet can spin indefinitely as long as the direction of the current flowing through it is continually reversed. Placing a magnet on both sides of the electromagnet, with opposite poles facing the centre, can amplify the rotation. This concept serves as the core of how an electric motor operates.
-
 ### Electromagnetism in an Electric Motor
 
 ![[Pasted image 20260518110744.png|382]]![[Pasted image 20260518111126.png|307]]
@@ -32,3 +31,10 @@ Using only one loop for the armature is not ideal, however; the motor will spin 
 
 ![[Pasted image 20260518115242.png|352]]
 The spinning force of the motor is called **torque**, which can be increased by strengthening the electromagnets. Electromagnets can be amplified by using more wires, and/or increasing the current.
+
+![[Pasted image 20260519095540.png]]
+For all motors in general, the **stator** is the part that does not move, which is represented by the two permanent magnets on the sides. They fit within the edges of the motor case. The **rotor** is the part that rotates, which in electric magnets is represented by the armature. The **axle** runs through the middle of the rotor and extends out the back of the motor. The rotor spins the axle; the spinning of the axle is what is used for the output movement of electronic devices.
+
+### Sources
+
+![](https://www.youtube.com/watch?v=CWulQ1ZSE3c&list=PLsw0pFpRQcwAAWA42QsDcgtU4M5fUeG13&index=3)

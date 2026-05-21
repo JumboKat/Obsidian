@@ -108,4 +108,4 @@ Trim is dependent on BCD and weight placement. Maintaining the optimum body posi
 #### Choosing a Weight System
 The weight system is usually integrated with the BCD, as it simplifies kitting up, provides comfort, reduces equipment count and complexity, and commonly includes trim pockets. Some BCDs also have non-releasable weight pockets.
 
-The **weight belt** is the oldest weight system and often still used. It is a nylon belt with weights threaded into it, or placed in zippered pockets on the belt. It can be worn in addition to a BCD integrated-weight system. **Accessory weights** can also be used to adjust trim. They are sma
+The **weight belt** is the oldest weight system and often still used. It is a nylon belt with weights threaded into it, or placed in zippered pockets on the belt. It can be worn in addition to a BCD integrated-weight system. **Accessory weights** can also be used to adjust trim. They are small and 

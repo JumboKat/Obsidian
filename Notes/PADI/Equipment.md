@@ -100,4 +100,4 @@ Filling a cylinder should only be done at a reputable scuba air station. Scuba a
 ### Weight System
 A weight system's most important feature is to quickly drop enough weight to float, even with an uninflated BCD. When wearing a full wet suit or dry suit, only dropping part of your weights is necessary. When wearing no exposure suit or a partial wet suit, you can drop all or almost all of your weight, as it isn't needed. Most BCD weight systems have two quick releases so that weight can be dropped in two amounts. 
 
-Proper 
+Proper weighting 

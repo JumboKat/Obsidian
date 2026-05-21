@@ -106,3 +106,6 @@ There are two aspects to proper weighting, which are:
 ![[Pasted image 20260521085541.png]]
 Trim is dependent on BCD and weight placement. Maintaining the optimum body position in water can save energy and reduce accidental damage to the environment. Divers can use more than one weight system to help distribute weight. 
 #### Choosing a Weight System
+The weight system is usually integrated with the BCD, as it simplifies kitting up, provides comfort, reduces equipment count and complexity, and commonly includes trim pockets. Some BCDs also have non-releasable weight pockets.
+
+The **weight belt** is the oldest weight system and often still used. It is a nylon belt with weights threaded into it, or placed in zippered pockets on the belt. It can be worn in addition to a BCD integrated-weight system. **Accessory weights** can also be used to adjust trim. They are sma

@@ -100,4 +100,9 @@ Filling a cylinder should only be done at a reputable scuba air station. Scuba a
 ### Weight System
 A weight system's most important feature is to quickly drop enough weight to float, even with an uninflated BCD. When wearing a full wet suit or dry suit, only dropping part of your weights is necessary. When wearing no exposure suit or a partial wet suit, you can drop all or almost all of your weight, as it isn't needed. Most BCD weight systems have two quick releases so that weight can be dropped in two amounts. 
 
-Proper weighting 
+There are two aspects to proper weighting, which are:
+- the right amount of weight; just enough to offset positive buoyancy, but not more
+- the right distribution of weight, known as **trim**, which determines your orientation and balance in the water. Generally, the desired trim is a natural horizontal swimming position, with feet parallel to the bottom or slightly elevated.
+![[Pasted image 20260521085541.png]]
+Trim is dependent on BCD and weight placement. Maintaining the optimum body position in water can save energy and reduce accidental damage to the environment. Divers can use more than one weight system to help distribute weight. 
+#### Choosing a Weight System

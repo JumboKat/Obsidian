@@ -35,6 +35,6 @@ As the motor rotates the fan, the worm spins, causing the worm gear to spin, whi
 When the pin is pulled up, the tension from the spring would send the ball bearings flying outward in opposite directions. The gear box lid encloses around the pin to prevent the escape of the ball bearings. The outward pressure from the ball bearings pushing against the walls of the lid is what prevents the pin from falling back down when it is pulled up. When the pin is pushed back down, the spring forces the ball bearings back out and in contact with the worm gear.
 
 The combination of gears in the gear box ensures that the rotation of the crank (and thus the oscillation of the fan) is much slower than the spinning of the fan blades.
-### Sources
+### References
 
 ![](https://www.youtube.com/watch?v=BVnrD9m3nSI&list=PLsw0pFpRQcwAAWA42QsDcgtU4M5fUeG13&index=6)

@@ -24,6 +24,6 @@ The step chain and the bottom wheels move along a track, which is positioned so 
 Axle and gear system connects to the first by a roller chain, which moves the handrail. The movement of the handrail and the steps are synced. The whole system is encased in a strong metal truss. 
 
 ![[Pasted image 20260515015214.png]]At the top and bottom of the escalator lies the cone plate. The steps go just underneath the cone plate; their ridges also interlock, minimizing the chances of something getting caught underneath.
-### Sources
+### References
 
 ![](https://www.youtube.com/watch?v=1jfNIBtfWDY)

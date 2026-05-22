@@ -60,5 +60,6 @@ Below next to the bar are two black **pickup rollers**. When the one on the left
 
 ![[Pasted image 20260515235041.png|164]]![[Pasted image 20260515235136.png|199]]![[Pasted image 20260515235223.png|299]]
 A piece called the **clutch** sides on the front of the cab door. As the cab moves up and down, the clutch glides around the rollers. When the cab stops on a floor and opens its door, the clutch catches on the pickup roller as the cab door slides open, unlocking the interlock and allowing both doors to slide together. For emergency or maintenance purposes, a key held by authorized personnel can be used to unlock the hoistway door.
-### Sources
+### References
+
 ![](https://www.youtube.com/watch?v=rKp4pe92ljg)

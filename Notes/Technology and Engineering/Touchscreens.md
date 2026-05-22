@@ -24,7 +24,6 @@ High-end phones can have over 3.3 million pixels. OLED displays are essentially 
 
 ![[Pasted image 20260519143517.png]]
 To produce photons in each subpixel, electrons are driven from a negative terminal to a positive terminal and pass through the **emissive layer** on the way. When they pass through this layer, they emit photons as a release of energy. The compounds used to make up the emissive layer determines the colour of the light emitted, and the amount of electrons driven through it determine the light's intensity.
-
-### Sources
+### References
 
 ![](https://www.youtube.com/watch?v=cFvh7qM6LdA&list=PLsw0pFpRQcwAAWA42QsDcgtU4M5fUeG13&index=7)

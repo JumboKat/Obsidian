@@ -1,3 +1,4 @@
+Tags: #Russia #Japan 
 
 The Russo-Japanese War was fought between the Russian Empire and the Empire of Japan over imperial influence in Manchuria and Korea. The war ended in Russia's defeat after the Battle of Tsushima and the signing of the Treaty of Portsmouth, furthering the Russian Empire's decline and solidifying Japan's position as a world power on the international stage.
 ### Prelude
@@ -42,4 +43,21 @@ Like at the Yalu River, Oyama planned to outflank the Russian position in a pinc
 ![[Pasted image 20260521184730.png]]
 After completing its 29,000 km voyage around the world, the Russian Baltic fleet was in poor condition. Throughout its journey it faced mutinies, and refueling issues, and mechanical problems. The fleet's commander Admiral **Zinovy Rozhestvensky** even referred to its oldest ships as "self sinkers." The Japanese were well aware of the fleet's journey and used the time to make repairs and preparations in expectation of their arrival. Admiral **Togo Heihachiro** planned to intercept the Baltic fleet at the 50 km-wide **Tsushima Strait** on their way to Vladivostok. Torpedo boats would ambush them at night, followed by the main fleet the next day.
 
-The Japanese sighted the Russian fleet early on May 27th, but conditions at sea were too rough for torpedo boats, forcing an all-out attack by the Japanese main fleet.
+![[Pasted image 20260522110700.png]]
+The Japanese sighted the Russian fleet early on May 27th, but conditions at sea were too rough for torpedo boats, forcing an all-out attack by the Japanese main fleet. That afternoon, the Japanese fleet crossed in front of the Russians and performed a u-turn on its portside, then travelled obliquely towards them and opened fire, with the Mikasa badly hit in the return fire. While the Russians had heavier guns, the Japanese had a better rate of fire and better fire control. As the Japanese crossed the Russian T, the angle of attack meant the Russians could only use their forward-facing turrets, while the Japanese could fire all available guns broadsides. Within the first hour, Rozhestvensky was wounded after the Russian flagship was hit. The battleship **Oslyabya** was sunk soon afterward, the first modern ship to be sunk by gunnery alone, followed by the **Knyaz Suvorov**. The battleship **Aleksandr III** charged the Japanese line in an all-out assault, giving the Russians some reprieve. When the battle resumed at 7pm, however, the Russian ships were damaged and weak, and soon the Aleksandr III and the **Borodino** were sunk.
+
+During the night, the Russians were harried by destroyers and torpedo boats. By the next morning, only two battleships remained, and the Japanese had surrounded what remained of the Baltic fleet, forcing their surrender. The Russians had suffered a complete defeat at Tsushima; 34 of 38 ships having been sunk, captured, or interned in neutral ports, including all of the battleships, with 5000 sailors killed. The Japanese suffered minor losses, losing three torpedo boats and 110 dead. With the Russian navy now essentially non-existent, **Tsar Nicolas II** agreed to negotiate the terms of peace.
+### Treaty of Portsmouth
+The peace talks were mediated by the United States in New Hampshire, with President **Theodore Roosevelt** heavily involved. Both Russia and Japan needed the war to end quickly. While Japan was in a winning position, they were militarily exhausted, and Russia was pressured by political unrest at home. Japanese troops occupied **Sakhalin** island in July to pressure the Russians, who in turn sent reinforcements to Manchuria. The terms of the **Treaty of Portsmouth** stated that Russia were to do as follows:
+- Withdraw from Manchuria and the Liaodong Peninsula
+- Grant most of the railway concessions to Japan
+- Allow Japan to retain control over South Sakhalin
+- Recognize Japanese dominance over nominally independent Korea
+- Not pay a war indemnity to Japan, who were now bankrupt
+### Aftermath
+President Theodore Roosevelt was awarded the Nobel Peace Price for his involvement. The Japanese public, unaware of Japan's tenuous position, viewed the terms too lenient, leading to riots and martial law. While the terms were not as controversial in Russia, it fueled the flames of the 1905 Revolution, an event which the autocracy had narrowly managed to survive. Russia was greatly weakened, while Japan solidified its position as a major power.
+
+The Russo-Japanese War had a profound impact on military thinking at the time. It served as a demonstration for the destructive effectiveness of modern weaponry, like the machine gun. Many would draw the conclusion that modern warfare could be won quickly and decisively.
+### References
+
+![](https://www.youtube.com/watch?v=deuzVsKMsTA)

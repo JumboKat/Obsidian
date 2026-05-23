@@ -22,4 +22,24 @@ Water absorbs ore heat than air of the same temperature, absorbing it about 20 t
 Because the air you breathe underwater is denser than at the surface, it requires more effort to breathe. The denser the air and the faster you breathe, the more energy you use. Therefore, it is most effective to breathe *slowly and deeply*.
 #### Dead Air
 ![[Pasted image 20260523104736.png]]
-When you breathe, air passes through many parts of the airway, but only the lungs facilitate gas exchange. The air passages that do not take part in gas exchange are called **dead air space**. The first portion of air you inhale is actually leftover air from your last exhalation, and is higher in carbon dioxide.
+When you breathe, air passes through many parts of the airway, but only the lungs facilitate gas exchange. The air passages that do not take part in gas exchange are called **dead air space**. The first portion of air you inhale is actually leftover air from your last exhalation, and is higher in carbon dioxide. Dive equipment adds additional dead air space. Taking rapid and shallow breaths causes you to rebreathe a greater proportion of dead air with each breath, requiring you to use more energy to meet the body's gas exchange requirements; breathing slowly and deeply reduces the proportion of dead air in each breath.
+
+When you are relaxed, you breathe slowly and deeply. Ensuring you breathe in such a way helps you stay relaxed, and can help you calm down if you feel anxious. It also helps you stay clear-headed and improves decision-making.
+#### Airway Control
+It is common to have residual water in the regulator or snorkel. Airway control allows you to breathe air past the water without drawing it into your airway. Assume that after you clear your regulator or snorkel, there will be some water leftover. There are two techniques for airway control:
+1. Inhale slowly. Water will tend to stay in the mouthpiece (as it is heavier than air) while the air moves past. It helps to look downward slightly.
+2. Touch your tongue to the roof of your mouth as you inhale. The tongue will block water as air flows around it. It also helps to look down slightly.
+You can use either or both of these methods. If you get a few drops of water in the back of your throat, you will get an urge to cough; hold your regulator or snorkel in place when you cough.
+#### Overexertion
+**Overexertion** can be alarming and lead to panic and accidents. You can avoid/prevent it by recognizing its symptoms, which include:
+- fatigue
+- laboured breathing
+- a feeling of suffocation or air starvation
+- weakness
+- anxiety
+- headache
+- muscle cramping
+- a tendency to panic
+Overexertion usually occurs after prolonged, elevated effort (for example, fighting a current), which prompts the diver to breathe dense air faster than their equipment can provide it. Breathing slowly, deeply, and continuously will prevent overexertion, as well as avoiding lengthy, physical stress on the body. If breathing rate begins to rise, stop and rest before it becomes laboured.
+
+In the event you overexert yourself, stop and signal your buddy to rest. Avoid any further activity, which will worsen it. If you're at the surface, inflate your BCD and drop your weights so you can float without effort. Signal the boat to pick you up, if necessary. If underwater, hold onto something or rest on the bottom where you won't damage sensitive aquatic life.

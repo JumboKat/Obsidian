@@ -34,6 +34,8 @@ The spinning force of the motor is called **torque**, which can be increased by 
 
 ![[Pasted image 20260519095540.png]]
 For all motors in general, the **stator** is the part that does not move, which is represented by the two permanent magnets on the sides. They fit within the edges of the motor case. The **rotor** is the part that rotates, which in electric magnets is represented by the armature. The **axle** runs through the middle of the rotor and extends out the back of the motor. The rotor spins the axle; the spinning of the axle is what is used for the output movement of electronic devices.
+
+---
 ### References
 
 ![](https://www.youtube.com/watch?v=CWulQ1ZSE3c&list=PLsw0pFpRQcwAAWA42QsDcgtU4M5fUeG13&index=3)

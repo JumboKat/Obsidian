@@ -1,5 +1,4 @@
-
-Tags: #China 
+Tags: #China #France #Japan #Russia 
 ### Prelude
 By the late 1890s, the Qing Dynasty—the last imperial dynasty of China—had suffered from civil war (Taiping Rebellion) and military defeats by Western powers (e.g. First and Second Opium Wars), Russia, and Japan (First Sino-Japanese War), being forced to cede territories to them. Ceded territories included Port Arthur (Russia), Hong Kong (Great Britain), Qingdao/Tsingtao (Germany), and Macau (Portugal).
 ![[Pasted image 20260328183834.png]]
@@ -48,8 +47,6 @@ Following months of brutal occupation, Dowager Empress Cixi finally conceded on 
 - execute pro-Boxer members of the court
 - apologize for the killing of foreign diplomats and build memorials for them
 - prohibit Chinese from living in the legation quarters
-
----
 ### Aftermath
 The Boxer Protocol was yet another in a series of humiliations for China. The Qing court's prestige and power were greatly weakened by the war.
 
@@ -58,6 +55,8 @@ The Boxer movement largely faded shortly after, most likely due to Boxers return
 While the Alliance had made many mistakes and suffered losses, they were ultimately able to work together to defeat China, though this cooperation would not last.
 
 The Russians had gone against the terms of the Boxer Protocol and remained in Manchuria with talks of a formal annexation. This continued presence lead to resentment among the Chinese as well as the Japanese, their local rival. These tensions would eventually lead to the [[The Russo-Japanese War (1904-1905)]].
+
+---
 ### References
 
 ![](https://www.youtube.com/watch?v=bkU3kae4mFw)

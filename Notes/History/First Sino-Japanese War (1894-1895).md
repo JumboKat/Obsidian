@@ -38,6 +38,8 @@ Peace talks begin in April 1895 in Japan, but are interrupted for a week when Vi
 Following the Japanese takeover of Formosa, the island's residents began a doomed five-month insurrection against the Japanese occupation. Having suffered between 30,000 - 50,000 deaths, Korea left the war devastated. For the Qing, the loss had proven the failure and inadequacies of China's modernization efforts. 
 
 The Japanese indulged in their victory, believing it proof of their place among the world powers, but this celebration was cut short by the **Triple Intervention** in May staged by Russia, France, and Germany, who argued that Japan's control over the Liaodong peninsula posed a threat to Korea, China, and Russia, with the latter even threatening military action against them. The Japanese reluctantly returned the territory, but in 1898, the Russians pressured the Chinese into leasing the Liaodong Peninsula and Port Arthur to them. Russia also had interfered with Japan's designs for Korean dominance. Japanese agents had assassinated Queen Min and restore Daewon-gun, only to see Russia help King Kojong regain power in 1896. The Russian roadblocks against Japanese expansion in Asia caused outrage among the Japanese. Tensions between the two powers would rise, until eventually exploding into the [[The Russo-Japanese War (1904-1905)]]
+
+---
 ### References
 
 ![](https://www.youtube.com/watch?v=O5VCvyVgE5I&t=974s)

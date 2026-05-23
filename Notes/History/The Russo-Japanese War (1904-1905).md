@@ -39,7 +39,6 @@ The Japanese envisioned a large, decisive battle to end the war short. After the
 ![[Pasted image 20260521184001.png]]
 Like at the Yalu River, Oyama planned to outflank the Russian position in a pincer movement to prevent their escape. On February 17th, the Japanese Yalu Army moved onto the Russian Eastern flank in coordination with an artillery barrage that pinned the Russian centre. Believing the main attack was in the East, the Russians shifted accordingly and left the western flank weakened, which is where the Japanese main attack began. The third army swing around to try and cut-off the Russian retreat. Chaos erupted as the Russians panicked. Despite this, a rearguard was put together to prevent the Russian's total destruction. The Japanese were too exhausted at this point to pursue the Russians, who were thus mostly able to escape, and sustained a heavy loss of 25%. The battle of Mukden was likely the largest in scale up to this point in history. The Japanese had failed to achieve a decisive victory, and their land forces were burnt out. If the war were to end, it would have to be won at sea.
 ### Battle of Tsushima
-
 ![[Pasted image 20260521184730.png]]
 After completing its 29,000 km voyage around the world, the Russian Baltic fleet was in poor condition. Throughout its journey it faced mutinies, and refueling issues, and mechanical problems. The fleet's commander Admiral **Zinovy Rozhestvensky** even referred to its oldest ships as "self sinkers." The Japanese were well aware of the fleet's journey and used the time to make repairs and preparations in expectation of their arrival. Admiral **Togo Heihachiro** planned to intercept the Baltic fleet at the 50 km-wide **Tsushima Strait** on their way to Vladivostok. Torpedo boats would ambush them at night, followed by the main fleet the next day.
 
@@ -58,6 +57,8 @@ The peace talks were mediated by the United States in New Hampshire, with Presid
 President Theodore Roosevelt was awarded the Nobel Peace Price for his involvement. The Japanese public, unaware of Japan's tenuous position, viewed the terms too lenient, leading to riots and martial law. While the terms were not as controversial in Russia, it fueled the flames of the 1905 Revolution, an event which the autocracy had narrowly managed to survive. Russia was greatly weakened, while Japan solidified its position as a major power.
 
 The Russo-Japanese War had a profound impact on military thinking at the time. It served as a demonstration for the destructive effectiveness of modern weaponry, like the machine gun. Many would draw the conclusion that modern warfare could be won quickly and decisively.
+
+---
 ### References
 
 ![](https://www.youtube.com/watch?v=deuzVsKMsTA)

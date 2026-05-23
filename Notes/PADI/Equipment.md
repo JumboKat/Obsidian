@@ -6,7 +6,6 @@ The BCD is comprised of several components that best function as a single unit, 
 - **Low pressure inflator (LPI) mechanism**: Inflates the bladder with air from your cylinder via the regulator when you press a button. Another button triggers deflation of the bladder, or to inflate it orally. Usually at the end of a large-diameter hose.
 - **Overpressure/quick exhaust valves**: An overpressure valve that automatically vents air if the BCD is too full, to prevent rupturing of the bladder. Some have 'quick dump' valves to manually release air, which can be easier than using the LPI exhaust depending on your position in the water.
 - **Weight system**: Many BCDs have weight pockets that can be released in an emergency.
-
 #### Choosing a BCD
 When choosing a BCD, consider these options:
 - **Bladder capacity**: BCDs cover a wide range of diving circumstances, and should have ample buoyancy to float you and all your equipment to the surface. This is sometimes called 'lift' capacity.
@@ -56,7 +55,6 @@ When rinsing, use a gentle fresh water flow with the first stage dust cap tightl
 Run water through the second stages while rinsing, but do not press the purge button, as it could allow water to flow up the hose to the first stage.
 
 Regulators require periodic overhauls by a professional every 1-2 years.
-
 ### Cylinder
 The cylinder or tank is an aluminum or steel alloy container that stores high pressure air. It is comprised of a cylinder and a valve.
 
@@ -93,10 +91,8 @@ Cylinders are highly reliable and can last decades if properly cared for, but ha
 4. Never completely empty it to prevent moisture from entering. Draining air too quickly can also cause condensation even if you don't drain it completely.
 5. Store the cylinder in a standing position in a place where it won't get knocked over. If moisture does get in, it will accumulate at the bottom, which is the thickest part.
 6. Keep out of high heat. High temperatures raises the air pressure and could blow the burst disk. Extreme heat (like in a fire) can damage the metal alloy and reduce its strength. If a cylinder has been in a fire, it requires professional testing before reuse. Be wary about painting the cylinder, as some processes use heat and will damage the alloy.
-
 #### Filling Cylinders
 Filling a cylinder should only be done at a reputable scuba air station. Scuba air must be specially filtered, and filled by compressors specifically designed for breathing air. Contaminants in the air that are harmless at the surface can be toxic at depth due to high pressure. 
-
 ### Weight System
 A weight system's most important feature is to quickly drop enough weight to float, even with an uninflated BCD. When wearing a full wet suit or dry suit, only dropping part of your weights is necessary. When wearing no exposure suit or a partial wet suit, you can drop all or almost all of your weight, as it isn't needed. Most BCD weight systems have two quick releases so that weight can be dropped in two amounts. 
 

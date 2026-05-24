@@ -22,6 +22,6 @@ Italian plans had also greatly misjudged the attitudes of the local population, 
 ![[Pasted image 20260524123154.png]]
 The Italians came fitted with new equipment, such as their modern gray-green uniforms and the **Carcano**, both of which would see use until the end of World War Two. They were also supported by the large naval guns of their ships offshore, an advantage they held over the Ottomans. There was only a small force of 2500-5000 Ottoman regulars, with 35,000 Arab tribesmen making up the bulk of their numbers. The Italians overall were technologically and numerically superior. 
 ### Battle at Shar al-Shatt
-The Italians had entrenched themselves around Tripoli, but 
+The Italians had entrenched themselves around Tripoli, but their trenches ran directly through an oasis, which could provide cover for a potential Ottoman attack. On October 23rd, the Ottomans 
 
 ![[Pasted image 20260524124654.png]]

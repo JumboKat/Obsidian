@@ -18,3 +18,10 @@ On September 27th, 1911, Giolitti gave the Ottomans an ultimatum, citing suppose
 The Italian military, having not been notified on the government's full intentions until September, had to hastily organize a last-minute invasion. Between October 1st-23rd, Italian troops landed at Tripoli, Homs, Tobruk, Benghazi, and Derna, brushing aside Ottoman resistance with ease with superior firepower and numbers. Advancing into the countryside would prove much more difficult, however, as the Italians had very little knowledge of the land, and even relied on ancient mappings from Julius Caesar. They hoped that the Ottomans would surrender after taking the towns, but they simply retreated beyond the range of Italy's naval guns.
 
 Italian plans had also greatly misjudged the attitudes of the local population, believing to be welcomed by them as liberators. Instead, the native Arabs sided with the Ottomans in resisting the Italians.
+
+![[Pasted image 20260524123154.png]]
+The Italians came fitted with new equipment, such as their modern gray-green uniforms and the **Carcano**, both of which would see use until the end of World War Two. They were also supported by the large naval guns of their ships offshore, an advantage they held over the Ottomans. There was only a small force of 2500-5000 Ottoman regulars, with 35,000 Arab tribesmen making up the bulk of their numbers. The Italians overall were technologically and numerically superior. 
+### Battle at Shar al-Shatt
+The Italians had entrenched themselves around Tripoli, but 
+
+![[Pasted image 20260524124654.png]]

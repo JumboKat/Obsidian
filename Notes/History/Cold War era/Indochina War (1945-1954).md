@@ -1,5 +1,4 @@
 Tags: #France #Vietnam #Japan
-
 ### French Indochina
 The territory of **French Indochina**, which includes the modern-day territory of Laos, Cambodia, and Vietnam was formed in the late-nineteenth century at the height of European imperialism. Seeking to deny Great Britain—who already controlled Burma (Myanmar), Brunei, and today's Malaysia—additional imperial holdings in South-East Asia, France spreads its influence over independent kingdoms in the region of Indochina, doing so through various means, including via economic concessions, missionaries, aggressive expansion, and imposing protectorates. In 1887, these territories are incorporated into a single colony. Under the guise of 'civilising' its peoples, France exploits the colony for its resources and labour, while supressing local identities. 
 ![[Pasted image 20260510065415.png]]

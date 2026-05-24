@@ -54,7 +54,7 @@ The Boxer movement largely faded shortly after, most likely due to Boxers return
 
 While the Alliance had made many mistakes and suffered losses, they were ultimately able to work together to defeat China, though this cooperation would not last.
 
-The Russians had gone against the terms of the Boxer Protocol and remained in Manchuria with talks of a formal annexation. This continued presence lead to resentment among the Chinese as well as the Japanese, their local rival. These tensions would eventually lead to the [[The Russo-Japanese War (1904-1905)]].
+The Russians had gone against the terms of the Boxer Protocol and remained in Manchuria with talks of a formal annexation. This continued presence lead to resentment among the Chinese as well as the Japanese, their local rival. These tensions would eventually lead to the [[Russo-Japanese War (1904-1905)]].
 
 ---
 ### References

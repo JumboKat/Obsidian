@@ -53,3 +53,31 @@ During a dive, you and your buddy(ies) should ideally stay within a couple metre
 You will commonly spend time at the surface with your BCD partially inflated at the start of the dive before you descend, and at the end after you ascend. You may do this while waiting for your buddies to enter, or for your turn to exit. You may also swim at the surface if you ascend and descend some distance from where you enter and exit the water.
 
 It is a good habit to keep your mask on and a mouthpiece in place when you're in water too deep to stand in; under stress, you tend to fall back on your habits. You may need to see and breathe with your face in the water in stressful conditions. Keeping your mask and mouthpiece on can also protect your eyes and airway from unexpected splashes or waves, and you are less likely to lose them. If you will be at the surface for more than a few minutes, switch to your snorkel to conserve your air supply.
+#### Surface Swimming Methods
+There are two methods for surface swimming, the obvious one being to swim face down breathing through your snorkel. This allows you to see the bottom as you go. For longer swims, you can swim on your back with your head out of the water. This can be less tiring as you do not need to support the weight of the cylinder, although it is harder to see where you're going. Even though your face is out of the water, breathe through your snorkel anyway. Adjust it slightly so that the tip is out of the water. On the surface, the buddy system still applies.
+### Descents in Open Water
+There are five steps to follow when you descend.
+1. Confirm that your buddies are ready
+2. Orient yourself to something at the surface or underwater, such as the boat or a landmark
+3. Switch from your snorkel to your regulator
+4. Check (and if necessary activate) your dive computer or timer.
+5. Signal to descend and, with your buddies, slowly deflate your BCD
+
+The descent should be done slowly throughout, with your head kept above your feet to make equalizing easier and help you stay oriented. You usually have a line or slope as a visual reference, but sometimes you can use it to help control your descent or stay in place by holding on to it. For example, descending while holding on to a mooring line to keep the current from carrying you away from the dive boat. You may not always have a reference. In this case, stay with your buddy and control your descent by adjusting your buoyancy while watching the depth on your computer or depth gauge. Begin equalizing immediately, as soon as your head goes underwater.
+
+As you descend your buoyancy decreases, which makes you go down faster. This is caused by the increased pressure compressing the gas in your exposure suit, making it less buoyant. You can adjust for this buy adding air to your BCD (or dry suit if wearing one); do this in small amounts to ensure your buoyancy is under control. Ideally, you will arrive at the bottom with your buoyancy neutral.
+### Ascents in Open Water
+As there is with descending, there are five steps to follow when ascending.
+1. Signal "up" and confirm that your buddies are ready.
+2. Check your dive computer to be sure you're within its limits.
+3. Look up and hold up your BCD deflator hose, but do not add air. You only need to start swimming up, assuming you are properly weighted and neutrally buoyant.
+4. Ascend slowly, never exceeding your dive computer's maximum rate. The max ascent rate is 18 metres per minute, but many computers require a slower 10 metres per minute. Most will warn you if you ascend too quickly. Release air expanding in your BCD to control buoyancy and prevent rising too fast. 
+5. Look up and turn as you ascend, staying with your buddies. Watch for obstacles overhead. Reach up as you near and break through the surface.
+
+As you ascend, your suit and BCD will expand, causing your buoyancy to increase. Release air from your BCD (or dry suit) as you ascend in small amounts. 
+
+As with descending, visual, fixed references can be used to help control your ascent. When ascending without a reference, stay with your buddy. Ascend no faster than 3 metres in 10 seconds, if you do not have a dive computer. If you need to navigate will ascending without a reference, have one buddy to navigate while the other controls ascent. 
+#### Safety Stops
+A safety stop is a pause in your ascent between 6 metres and 3 metres for three to five minutes. A stop gives your body tissues extra time to release dissolved gasses. It also reduces the risk of lung overexpansion injuries and **decompression sickness**. It is easiest to make a safety stop with a reference. Depending on the environment, you can plan the dive to follow a slope upward, so that you are still near the bottom or reef while stopped at 3-6 metres, allowing you to keep exploring.
+#### Reaching the Surface
+As you ascend the final distance, look and reach up with your BCD deflator in your left hand. Keep your hand up as you break the surface. Continue to breathe through your regulator as you inflate your BCD. After you are floating comfortably, switch to your snorkel.

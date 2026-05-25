@@ -1,4 +1,4 @@
-#Italy #Turkey
+#Italy #Turkey #Russia 
 ### Prelude
 After its reunification in in 1871, Italy experienced a continued wave of nationalism and expansionism, with hopes of establishing a new "Roman Empire" via imperial conquest in the Mediterranean. 
 
@@ -51,17 +51,17 @@ Between April 28th and May 21st of 1912, the Italians captured the thirteen isla
 
 In May, Russian-led peace talks began, but failed. In June, another round of peace talks began in Switzerland, but they too, ultimately fell through; the Ottomans were willing to accept an independent Libya with Italian influence, but this was not enough for the Italians. However, anti-war sentiment was growing in Italy. The war was becoming unpopular at home, and soldiers in the trenches were deserting. The war made up 47% of Italy's total spending, turning even pro-war news publications against it. In a last attempt at gaining leverage against the Ottomans, the Italians sent camouflaged torpedo boats to sneak attack the Ottoman ships at Ankor, although they were spotted by sentries and sent away. 
 ### Treaty of Ouchy
-In August, peace talks resumed. The new Ottoman government was now facing pressure to negotiate, partly by the other powers, and partly by the recent outbreak of the [[Balkan Wars (1912-1913)|First Balkan War]] in early October. The Ottomans wanted to avoid giving the impression that they had abandoned the Libyan Arabs, which could potentially spark unrest in other Arab regions of the empire. On October 18th, 1912, the Italo-Turkish War ended with the signing of the **Treaty of Ouchy**. The outcome of the treaty was as follows:
+In August, peace talks resumed. The new Ottoman government was now facing pressure to negotiate, partly by the other powers, and partly by the recent outbreak of the [[The Balkan Wars (1912-1913)|First Balkan War]] in early October. The Ottomans wanted to avoid giving the impression that they had abandoned the Libyan Arabs, which could potentially spark unrest in other Arab regions of the empire. On October 18th, 1912, the Italo-Turkish War ended with the signing of the **Treaty of Ouchy**. The outcome of the treaty was as follows:
 - The Ottomans declared Libya as independent, avoiding accepting Italian sovereignty over it. However, they would not object when the Italians later declared sovereignty anyway.
 - The Sultan would continue as the religious head of the Libyan Muslims.
 - Italy was to return the Aegean islands back to the Ottomans.
 - European powers recognized Italian control over Libya.
 ### Aftermath
-While Italy had successfully wrested control of Libya from the Ottomans, the reaction at home was not overly positive. The war was costly in both treasure and blood, and did not bring the spectacle of victory they were promised. The victory also did little to improve the image of Italy's military in the eyes of its European contemporaries. The new colony of Libya was not easy to govern, either. The Italians would face insurrection by the locals for years to come, and would respond with brutal repression. Italy also refused to return the Aegean islands, citing the increased costs of Libyan occupation, though at this point the Ottomans had their hands tied by the [[Balkan Wars (1912-1913)|First Balkan War]].
+While Italy had successfully wrested control of Libya from the Ottomans, the reaction at home was not overly positive. The war was costly in both treasure and blood, and did not bring the spectacle of victory they were promised. The victory also did little to improve the image of Italy's military in the eyes of its European contemporaries. The new colony of Libya was not easy to govern, either. The Italians would face insurrection by the locals for years to come, and would respond with brutal repression. Italy also refused to return the Aegean islands, citing the increased costs of Libyan occupation, though at this point the Ottomans had their hands tied by the [[The Balkan Wars (1912-1913)|First Balkan War]].
 
 While the loss of Libya as their last possession in Africa contributed to the Ottoman Empire's reputation as the "Sick Man of Europe," they were now at least lifted of the economic burden of maintaining control of the territory. The suffering of the Libyan peoples could not be understated, however, and special refugee offices were set up in Constantinople for those fleeing Italian repression.
 
-Like the Austrians had feared, the Italo-Turkish War helped destabilize the Balkans and fueled the outbreak of the [[Balkan Wars (1912-1913)|Balkan Wars]], solidifying the conflict as one of many of the series of sparks that would ignite the fuse of The Great War to come.
+Like the Austrians had feared, the Italo-Turkish War helped destabilize the Balkans and fueled the outbreak of the [[The Balkan Wars (1912-1913)|Balkan Wars]], solidifying the conflict as one of many of the series of sparks that would ignite the fuse of The Great War to come.
 
 ---
 ### References

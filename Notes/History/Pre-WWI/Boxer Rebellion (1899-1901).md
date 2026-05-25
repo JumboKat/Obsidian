@@ -12,7 +12,7 @@ This foreign development disrupted local economies leading to unemployment. At t
 Many began to rely on secret society groups for protection against bandits and foreigners. The biggest secret society formed in the Shandong province, with a strong focus on practicing martial arts. They called themselves the "**Righteous and Harmonious Fists**", but were known by foreigners as "**Boxers**." They targeted Christian missionaries, Chinese Christian converts, and Chinese workers working on foreign-owned railways, while cutting telegraph lines and railroads.
 
 The Empress Dowager Cixi's government took an ambiguous approach to the Boxer situation. While publicly condemning them and ordering Imperial troops to defend the legations, she prevented the military from fully suppressing the rebels.
-
+### The Eight-Nation Alliance
 As the violence escalated and more Christians were killed, the foreign powers decided to take action. The **Eight-Nation Alliance** was formed, a loose coalition including Germany, Britain, Japan, Russia, France, Austria-Hungary, Italy, and the US, with the shared goal of suppressing the rebellion and protecting their citizens and property in China. As a fleet of warships amassed off the port of **Dagu**, naval officers from each respective nation cooperated in a collective effort to defeat the rebels, marking one of the first instances of coalition warfare in the 20th century. Since they were so far from their respective governments, this naval council often acted independently.
 ### The Seymour Expedition
 Royal Navy Officer Edward Seymour led a coalition force to relieve the legations in Beijing in June 1900. On the way to the city, their train convoy was harassed by local boxers, who ripped up sections of the track, and ambushed the foreigners when they came out to perform repairs. The boxers, armed only with bamboo spears, **gingals**, and knives, were severely beaten back by the coalition forces, but were able to force Seymour's retreat to Tianjin at the Battle of Langfang. Seymour's incursion, along with the capture of Imperial forts at Dagu by the alliance, provoke the Qing government into declaring war on the foreign coalition.
@@ -35,7 +35,7 @@ On their arrival at Beijing on August 12th, members of the coalition rushed in t
 ### Russian Invasion of Manchuria
 Chinese Boxers had also risen up against the Russian presence in Manchuria, attacking railways, stations, and killing Russians. In July, the Chinese bombarded the Russian border town of Blagoveshchensk. The Russian response was severe; Russian Cossacks and civilians began massacring Chinese civilians. Russian troops then began an invasion of Manchuria, looting towns and committing atrocities against Chinese civilians. By October, they had captured the regional capital of Mukden.
 ### The Boxer Protocol
-Following months of brutal occupation, Dowager Empress Cixi finally conceded on September 7th, 1901 and agreed to the following terms of the Boxer Protocol, which forced China to:
+Following months of brutal occupation, Dowager Empress Cixi finally conceded on September 7th, 1901 and agreed to the following terms of the **Boxer Protocol**, which forced China to:
 - pay 450 million silver dollars over 39 years
 - hand over control of strategic points to Alliance forces
 - create a ministry of foreign affairs

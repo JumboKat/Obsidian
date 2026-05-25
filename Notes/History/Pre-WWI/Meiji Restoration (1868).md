@@ -1,0 +1,2 @@
+The **Meiji Restoration** in Japan saw the overthrow of the **Tokugawa Shogunate**, the end of the **Edo Period**, and returned control of the country to direct imperial rule under the emperor **Meiji**. The period following the emperor's restoration saw intense political reform, including the end of Japan's isolation, the beginning of the country's rapid industrialization, and the adoption of Western ideas and technologies.
+### Period of Isolationism

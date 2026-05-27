@@ -105,3 +105,53 @@ Trim is dependent on BCD and weight placement. Maintaining the optimum body posi
 The weight system is usually integrated with the BCD, as it simplifies kitting up, provides comfort, reduces equipment count and complexity, and commonly includes trim pockets. Some BCDs also have non-releasable weight pockets.
 
 The **weight belt** is the oldest weight system and often still used. It is a nylon belt with weights threaded into it, or placed in zippered pockets on the belt. It can be worn in addition to a BCD integrated-weight system. **Accessory weights** can also be used to adjust trim. They are small, specialized and can attach to different places on the body or kit. They only make up a small portion of the total weight.
+### Exposure Suits
+You wear an exposure suit for two reasons: warmth, and protection against the environment. There are three main types of exposure suits: wet suits, dry suits, and skin suits.
+#### Wet Suits
+Wet suits are the most common as they provide both insulation and protection and come in a wide variety of styles for different insulation needs. They can be used in water as cold as 10C and as warm as 30C. They usually use the insulating material **neoprene**. Wet suits don't keep you dry, however, and water seeps into the wet suit around the openings (at the wrists, ankles, and neck). The water is trapped and is heated up by your body, while the neoprene greatly slows the heat loss. It is important that the suit fits comfortably. If it is too loose, water can easily escape, carrying heat with it. It should not be too tight either, as it will be uncomfortable.
+
+Wet suits have the most styles and options available to them. **Multipiece** wetsuits give layered insulation and versatility by letting you choose to wear different pieces depending on the temperature. **"Shorty"** wet suits cover your upper body and have short pant legs and sleeves. Wet suits also come in different thicknesses and levels of insulation. 
+#### Dry Suits
+Dry suits provide the most insulation. They have special watertight zippers and seals to keep your body dry, aside from your head and hands which you protect with a wet suit hood and gloves. The air trapped in the suit provides insulation, making them the best option for water colder than 10C.
+
+The air space within the dry suit must be equalized as you descend, and vent air as you ascend to control your buoyancy. An inflator hose from the regulator is used to inflate it, and the suit has an exhaust valve to release the expanding air as you ascend.
+
+You can choose different materials to customize its weight, durability, and comfort. You can wear different undergarments depending on the temperature.
+#### Skin Suits
+Also called body suits, skin suits provide little or no insulation. They are worn in comfortable warm water to protect against minor cuts, scrapes, stings, and sunburn. They are normally made of a stretchy material like **Lycra** and should fit snugly to avoid drag. In moderately warm water, you can wear a skin suit under a partial wet suit. The wet suit provides a comfortable level of insulation, while the skin suit protects the body. 
+#### Other Accessories
+**Hoods** are useful in waters cooler than 21C, as your head can be a source of significant heat loss. Ensure the hood is not too tight, else it can restrict blood flow through your neck. **Gloves** provide warmth and protection, and are ideal for waters colder than 18C. The choices, in order of increasing insulation, are: wet suit gloves, wet suit mitts (three finger) and dry gloves (on dry suits). **Wet suit boots** can be worn to protect and insulate your feet, and are usually worn with open-heel fins.
+#### Overheating
+Due to their effectiveness as insulators, wet suits make it difficult for the body to cool itself. They should be worn at the last possible moment before a dive, and you should limit activity and stay out of the sun once put on. Leave it unzipped for as long as possible.
+### Cutting Tools
+Cutting tools are carried for safety (to handle severe entanglement) or convenience (cutting a fishing line that's polluting a dive site). There are four basic types. Some areas regulate the types and sizes of cutting tools, so not all variations may be available or allowed in specific locations. They are not suitable for defending against wildlife.
+
+![[Pasted image 20260527100254.png]]
+**Dive knife**: a knife made from stainless steel or titanium, usually with a sharp cutting edge and a serrated sawing edge. Larger knives are more likely to be restricted.
+
+![[Pasted image 20260527100415.png]]
+**Dive tool**: similar to a dive knife, but with the tip replaced with a prying edge.
+
+![[Pasted image 20260527100506.png]]
+**Shears**: shears that are especially suited to cut fishing line and net. Usually not legally restricted.
+
+![[Pasted image 20260527100556.png]]
+**Z-knives**: hooks with a blade specifically for cutting fishing line and net. The shape reduces the risk of accidentally harming yourself or your equipment. Usually carried in addition to a dive knife or tool, since they aren't useful for heavy rope or other purposes.
+#### Mounting Cutting Tools
+Cutting tools have sheathes that can be mounted in a variety of locations, such as on your BCD hose, on a waist strap, strapped to the inside of your leg, or on your wrist. The tool should be reachable by either hand in case one is entangled.
+### Dive Gear Bags
+A dive gear bag is needed to carry and protect your equipment, excluding weights, cylinders, and dry suits. They are specifically designed to survive the stresses of transporting dive equipment; salt will not ruin their zippers, and their material will resist rotting. You should choose a bag larger than what you need, as you tend to accumulate equipment as you gain experience.
+### Dive Instruments
+There are three instruments used on virtually all dives.
+- **SPG (submersible pressure gauge)**: indicates how much air remains in the cylinder. Can be separate from or integrated with the dive computer.
+- **Dive computer**: tracks time underwater, how deep you are, and other info. Also guides you in keeping dissolved nitrogen in your body within limits. Applies depth and time information to a decompression model to show how much time you have left to live. Some are worn as watches.
+- **Compass**: helps with navigation to find your way back to your exit. They are pressure resistant and have clear markings. 
+
+All three of these may be combined into a single unit.
+
+Optional dive instruments include:
+- **Depth gauge and dive timer**: before dive computers, these were mandatory for use with dive tables like the Recreational Dive Planner (RDP) to track dissolved nitrogen in your body.
+- **Dive watch**: a popular lifestyle accessory.
+- **Thermometer**: display the water's temperature, helping you to determine how much exposure protection is needed.
+
+Although they are robust, dive instruments should be treated with care. Protect them from impact and avoid sun exposure or high heat for long periods. Changing the batteries is also a part of maintenance.

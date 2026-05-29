@@ -1,1 +1,8 @@
-![[Pasted image 20260525201148.png]]
+![[Pasted image 20260528200945.png]]Having controlled the Balkans for centuries, the Ottoman Empire was now losing its grip on the region. As the empire declined and nationalism among the Balkan peoples grew stronger, new independent states emerged, including Montenegro, Greece, Serbia, Romania, and Bulgaria, though through much violence and political turmoil. 
+
+After defeating the Ottomans in the **Russo-Turkish War** in 1878, Russia had positioned itself as the protector of the Balkans and the guarantor of the independence of several Balkan states, though the other European powers were concerned about Russia's influence over the region. In 1878, Austria-Hungary occupied Bosnia and Herzegovina, and at the **Berlin Conference** in 1884, the great powers returned most of Macedonia to the Ottomans.
+
+![[Pasted image 20260528202435.png]]
+By the early twentieth century, tensions among the great powers, who wanted stability in the region, and between the Balkan states, who were now looking to expand their territories, were high. Austria-Hungary wanted to stem the influence of Serbia, who was seeking influence over the South Slavs living in the empire. Serbia was now a close ally of Russia, who wanted a strong ally in the region as well as access to the Turkish straits.
+
+Having lost several wars and forced to give up many of its territories, the declining Ottoman Empire was wracked by political turmoil from within. 1908 saw the [[Young Turk Revolution]] in July, bringing a new constitution and a focus on modernizing the military, a strong Turkish identity, and preserving the empire's remaining territories, Macedonia in particular. The situation was gravely complicated in October when Austria-Hungary formally annexed Bosnia and Herzegovina, introducing even more tension to the Balkans.

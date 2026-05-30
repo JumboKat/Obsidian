@@ -81,3 +81,4 @@ As with descending, visual, fixed references can be used to help control your as
 A safety stop is a pause in your ascent between 6 metres and 3 metres for three to five minutes. A stop gives your body tissues extra time to release dissolved gasses. It also reduces the risk of lung overexpansion injuries and **decompression sickness**. It is easiest to make a safety stop with a reference. Depending on the environment, you can plan the dive to follow a slope upward, so that you are still near the bottom or reef while stopped at 3-6 metres, allowing you to keep exploring.
 #### Reaching the Surface
 As you ascend the final distance, look and reach up with your BCD deflator in your left hand. Keep your hand up as you break the surface. Continue to breathe through your regulator as you inflate your BCD. After you are floating comfortably, switch to your snorkel.
+### Dive Environments and Conditions

@@ -24,6 +24,7 @@ In the third stroke (the **power stroke**), the spark plug delivers an electrica
 
 ![[Pasted image 20260529190927.png]]
 In the fourth stroke (**exhaust**), the piston rises again, pushing the spent mixture out the exhaust valves and the exhaust port.
+
 ![[Pasted image 20260529110040.png|180]]![[Pasted image 20260529110650.png|216]]![[Pasted image 20260529110804.png|280]]
 The **timing belt** synchronizes the rotation of both the crankshaft and the **camshaft** to ensure the engine valves open and close at the right time. It is composed of a heavy-duty rubber band and cogs to grasp the pulleys of the crankshaft and camshaft. The **oil pan** sits at the bottom of the engine, just below the crankshaft, to collect lubricating oil. All moving parts of the engine are lubricated to reduce friction. The **flywheel** is mounted on the crankshaft to balance the vehicle's speed, as the speed and torque of different parts of the car's engine are not uniform.
 

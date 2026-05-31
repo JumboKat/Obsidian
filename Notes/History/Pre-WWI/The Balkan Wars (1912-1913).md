@@ -1,5 +1,5 @@
 Tags: #Turkey #Russia #Austria-Hungary #Greece #Bulgaria #Serbia
-
+### Instability in the Balkans
 ![[Pasted image 20260528200945.png]]Having controlled the Balkans for centuries, the Ottoman Empire was now losing its grip on the region. As the empire declined and nationalism among the Balkan peoples grew stronger, new independent states emerged, including Montenegro, Greece, Serbia, Romania, and Bulgaria, though through much violence and political turmoil. 
 
 After defeating the Ottomans in the **Russo-Turkish War** in 1878, Russia had positioned itself as the protector of the Balkans and the guarantor of the independence of several Balkan states, though the other European powers were concerned about Russia's influence over the region. In 1878, Austria-Hungary occupied Bosnia and Herzegovina, and at the **Berlin Conference** in 1884, the great powers returned most of Macedonia to the Ottomans.
@@ -53,7 +53,7 @@ Fearing the loss of Macedonia for good, **Tsar Ferdinand I of Bulgaria** ordered
 ![[Pasted image 20260530175109.png]]
 The initial attack was uncoordinated and not well-communicated. The Serbs halted their advance and defeated the Bulgarians at **Brgrelnica** by July 8th. Around the same time, the Greeks defeated the Bulgarians around **Kilkis**, **Doiran** and Salonika. The Serbs and Greeks met up on July 11th in a combined front against the Bulgarians. Greek, Turkish, and Serbian civilians were attacked by Bulgarians during their retreat, and Bulgarian civilians suffered at the hands of advancing Serbians and Greeks on the basis of claims of attacks against them.
 #### Romanian and Ottoman Entry
-On July 10th, Romania seized the opportunity to take southern Dobrudja. 250,000 Romanian troops advanced into Bulgaria and towards the capital of **Sofia**. While Bulgarian resistance was unorganized, the Romanians were plagued by a cholera epidemic due to lack of medical care and unsanitary conditions.
+On July 10th, Romania seized the opportunity to take Southern Dobrudja. 250,000 Romanian troops advanced into Bulgaria and towards the capital of **Sofia**. While Bulgarian resistance was unorganized, the Romanians were plagued by a cholera epidemic due to lack of medical care and unsanitary conditions.
 
 Seeing an opportunity to recover Thrace, the Ottomans crossed the Çatalca Line on July 12th, brushing past scattered Bulgarian resistance and capturing Edirne on July 23rd without firing a shot. With the Romanians so close to Sofia and no support from Russia, the pro-Russian government resigned, with a pro-German government taking its place.
 

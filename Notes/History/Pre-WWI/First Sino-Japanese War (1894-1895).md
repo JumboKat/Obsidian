@@ -33,7 +33,12 @@ Although Japan's naval superiority remains uncontested, the surviving remnants o
 
 After receiving word that no reinforcements are coming, Ding negotiates for safe passage of his men, before committing suicide. 
 ### Treaty of Shimonoseki
-Peace talks begin in April 1895 in Japan, but are interrupted for a week when Viceroy Li is shot in the face by a Japanese civilian, from which he recovers. On April 17th, 1895, the **Treaty of Shimonoseki** is signed. China is forced to recognize Korean autonomy, pay a large indemnity, open several major cities to Japan for trade, grant Japan the same preferential trade status as the Western Powers, and cede the Pescadores Islands, Liaodong Peninsula, including Port Arthur, and the island of Formosa (now called Taiwan).
+Peace talks begin in April 1895 in Japan, but are interrupted for a week when Viceroy Li is shot in the face by a Japanese civilian, from which he recovers. On April 17th, 1895, the **Treaty of Shimonoseki** is signed. China is forced to obey the following terms: 
+- recognize Korean autonomy
+- pay a large indemnity to Japan
+- open several major cities to Japan for trade
+- grant Japan the same preferential trade status as the Western Powers
+- cede the Pescadores Islands, Liaodong Peninsula, including Port Arthur, and the island of Formosa (now called Taiwan) to Japan
 ### Aftermath
 Following the Japanese takeover of Formosa, the island's residents began a doomed five-month insurrection against the Japanese occupation. Having suffered between 30,000 - 50,000 deaths, Korea left the war devastated. For the Qing, the loss had proven the failure and inadequacies of China's modernization efforts. 
 

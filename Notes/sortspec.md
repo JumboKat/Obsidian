@@ -9,6 +9,7 @@ sorting-spec: |-
   Meiji Restoration (1868)
   First Sino-Japanese War (1894-1895)
   Boxer Rebellion (1899-1901)
+  Second Boer War (1899-1902)
   Russo-Japanese War (1904-1905)
   Italo-Turkish War (1911-1912)
   The Balkan Wars (1912-1913)

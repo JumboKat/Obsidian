@@ -82,3 +82,33 @@ A safety stop is a pause in your ascent between 6 metres and 3 metres for three 
 #### Reaching the Surface
 As you ascend the final distance, look and reach up with your BCD deflator in your left hand. Keep your hand up as you break the surface. Continue to breathe through your regulator as you inflate your BCD. After you are floating comfortably, switch to your snorkel.
 ### Dive Environments and Conditions
+Common popular dive environments include:
+- coral reefs
+- temperate water oceans
+- lakes and reservoirs
+- rivers
+- springs
+- flooded quarries
+- human-made vide environments
+
+In any environment, there are six general conditions that can affect a diver to varying degrees depending on the environment. The six general conditions are:
+- temperature
+- visibility
+- water movement
+- bottom composition
+- aquatic life
+- sunlight
+#### Temperature
+Dives can take place in waters as cool as near freezing (-2C, requiring special training and equipment) to above 30C, with the majority taking place on the warmer end of this range. In many environments, temperature changes are seasonal. Water temperature can also be dependent on depth, with water getting cooler as you go deeper. Water tends to form distinct temperature layers, with the boundary between a warmer upper layer and a cooler deeper layer called a **thermocline**. Some environments, like rivers and springs, are the same temperature at all depths.
+
+When planning a dive, you should base your exposure protection on the temperature at the deepest part of the dive.
+#### Visibility
+Underwater visibility can range from 0 to over 60 metres in distance. There are four main factors that affect visibility during a dive:
+- **Water movement**: can stir sediment up from the bottom, reducing visibility. Currents can also move low visibility and high visibility around.
+- **Weather**: wind can create waves that stir up the bottom, or rain can cause sediment run-off on land. Prolonged offshore wind can push upper water seaward, replacing it with clearer and cooler deep water.
+- **Plankton**: can reproduce rapidly under certain conditions, which clouds the water. Sun can accelerate the rate of reproduction.
+- **Nature and composition of particles**: large, heavy material settles quickly, while small, light particles can remain suspended for long periods of time.
+
+Poor visibility can not only affect the quality of the dive, but can have other serious impacts. First, it makes it difficult to stay with your buddy(ies), and it is best to stay closer together and keep watch of each other. Second, low visibility makes it hard to track your location or where you are going. It is recommended to use a compass and other navigational references. Third, reduced visibility can cause disorientation when descending and ascending, especially when the bottom or surface aren't visible. This can be avoided by following a reference. In clear waters, you may experience disorientation and vertigo since the bottom and surface appear closer than they actually are.
+#### Water Movement
+There are two primary types of motion that can affect you during a dive: wave and current.

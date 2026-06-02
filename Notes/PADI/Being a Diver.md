@@ -116,3 +116,81 @@ There are two primary types of motion that can affect you during a dive: wave an
 **Currents** are the result of waves, the interaction of different temperatures of water, the Earth's rotation, and the tides. Currents that are created by rising or sinking water as it changes temperature tend to be seasonal. The motion of the current is vertical, but when it reaches the bottom or an obstacle, it can continue horizontally. 
 
 Major oceanic currents and countercurrents are produced by Earth's rotation and are permanent, though their paths and strength can vary. Tides result from the gravitational pull of the sun and moon and cause water levels to rise and fall as the earth rotates, causing currents to flow to and from enclosed areas like bays and harbours.
+
+![[Pasted image 20260602123635.png]]
+Swimming against a strong current leads to overexertion, hence they should be avoided. Current tends to be strongest at the surface and weakest near the bottom. Begin a dive in mild current swimming slowly into the current, so that when you return, the current will push you back to the exit point. If you get carried past your exit point, swim perpendicular to the current to reach shore or a line trailed from a boat, or simply to get out of the current. If you can't reach your boat because you are exhausted, remain calm and inflate your BCD, then signal the boat to pick you up.
+#### Bottom Composition
+There are five basic types of bottom composition:
+- **silt/mud**: clay, fine material or mud.
+- **sand**: larger, coarser particles.
+- **rock**: gravel and larger rock.
+- **coral**: living and dead coral in tropical waters.
+- **vegetation**: plants and algae, found in both fresh and salt water.
+The bottom can be a single composition, or a combination of multiple types. Regardless of type, there are three reasons to avoid contact with the bottom as much as possible.
+1. Contact tends to reduce visibility, even with coarse bottoms.
+2. Contact can present hazards that an result in cuts, scrapes, stings or punctures.
+3. Many organisms at the bottom are fragile and sensitive and can be harmed or destroyed.
+
+The best way to avoid bottom contact is to stay neutrally buoyant and stay well above it. If contact is necessary, choose an insensitive area and settle onto it gently. If possible, rest only on your fin tips, or light finger contact. Some entrances and exits involve wading from shore, making bottom contact unavoidable. Stop wading and start swimming as soon as the water is deep enough.
+#### Sunlight
+During dives you will often be under direct sunshine. Not only does it influence how much light there is and how warm the water is, it can also cause sunburn. To prevent sunburn, wear protective clothing and use sunscreen, staying in the shade when possible. Overcast conditions do not entirely protect you from burning. When choosing sunscreens, be aware about types specifically for diving, with chemicals that won't affect aquatic life. Long-term exposure to the sun can also harm your eyes, which can be protected with sunglasses.
+#### Freshwater vs Saltwater
+While the basic skills of a diver apply to both environments, there are general differences between the two:
+- freshwater is less dense and therefore less buoyant than saltwater.
+- marine environments tend to be richer in aquatic life.
+- very distinct thermoclines are more common in freshwater.
+- freshwater environments are more likely to have bottoms that can be easily stirred up.
+- marine environments generally have more varied water motion. Freshwater bodies don't have tides.
+### Diving Within Your Limits
+Diving within your limits means diving within the limits of your training, comfort, and experience. It is important that you do not exceed your limits when diving as it poses three risks:
+1. Some forms of diving have risks that may not be obvious, which require special training to recognize and manage. You may not know there's a danger until it is too late.
+2. "Getting away with" diving beyond your limit while nothing goes wrong can lead to false security and development of bad habits. The day something goes wrong, you may lack the equipment or experience to handle the situation without an incident.
+3. The anxiety and uncertainty associated with it may become too distracting, which can cause you to neglect other issues.
+### Aquatic Organisms
+When interacting with aquatic organisms, you can have **passive** and **active** interactions. Passive interactions leave the organism undisturbed, while active interactions affect them directly by altering their normal behaviors, including feeding, hunting, touching, moving, chasing, scaring, etc. Generally, only passive interactions are desired. Move slowly and smoothly and be sensitive to the natural rhythm of the ecosystem. You will be able to observe more when you don't disturb aquatic organisms. Active interactions can be harmful and should be avoided, though sometimes they can be reasonably especially if an animal initiates the interaction.
+#### Potentially Hazardous Aquatic Organisms
+Organisms that can sting and/or puncture include:
+- jellyfish
+- stingrays
+- sea urchins
+- Portuguese man-o-war
+- lionfish and scorpion fish
+- cone shells
+- fire coral and other hydroids
+- sea nettles
+
+Organisms that can bite include:
+- moray eels
+- fish, such as barracuda and triggerfish
+- clawed lobsters / crabs
+- crocodilians
+- sharks
+- snakes
+- octopuses
+
+Very few are outwardly aggressive, and most injuries result from defensive responses by animals. There are at least nine steps you can follow to prevent/handle aquatic animal injuries
+1. Be familiar with potentially hazardous organisms in the environment.
+2. Treat organisms with respect; do not touch, tease, or disturb them intentionally.
+3. Avoid wearing shiny, dangling jewelry, which can look like small prey to predators.
+4. Watch where you place your hands, feet and knees. 
+5. Maintain neutral buoyancy, stay well above the bottom, and move slowly and carefully.
+6. Exercise caution in murky or low-visibility water.
+7. Generally avoid contact with all organisms, especially those unfamiliar to you.
+8. Be cautious with seemingly dead organisms or detached body parts, as they can still sting.
+9. In case of aquatic life injury, apply basic first aid:
+	- Assure victim is breathing; provide CPR or control the bleeding if necessary.
+	- If diving in saltwater, rinse stings with saltwater, not fresh.
+	- Do not rub stings, which will only worsen and spread them.
+	- Apply vinegar on jellyfish, fire coral, and other hydroid stings.
+	- Immerse stings from fish spines, scorpion/lionfish and stingrays in hot water (not above 49C) for 30-90 minutes.
+	- Remove spines from punctures with forceps if it is possible to do so without breaking them, otherwise leave it for medical personnel.
+	- Treat bites like any wound by controlling bleeding and bandaging.
+	- Seek emergency care for bites, severe reactions, large injuries, or those that don't respond to treatment.
+
+Most areas have laws and regulations for protecting and preserving aquatic life, as well as for human safety. They may restrict access to some areas to avoid interrupting breeding seasons, or to reduce the potential that some species may start associating humans with food. 
+#### Aquatic Plant Hazards
+While plants themselves usually do not pose at threat, they may be homes for other organisms that may be hazardous; avoid unnecessary contact. You can also get entangled, though this can be dealt with easily:
+- Keep your kit streamlined.
+- Don't swim through dense growth areas.
+- If you get snagged, stop and simply back up if possible. Do not turn, which will make it worse.
+- If necessary, bend or snap the plant (do not struggle, pull or twist), or use your knife or cutting tool.

@@ -194,3 +194,4 @@ While plants themselves usually do not pose at threat, they may be homes for oth
 - Don't swim through dense growth areas.
 - If you get snagged, stop and simply back up if possible. Do not turn, which will make it worse.
 - If necessary, bend or snap the plant (do not struggle, pull or twist), or use your knife or cutting tool.
+### Diving from Shore

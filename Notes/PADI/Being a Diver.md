@@ -195,3 +195,6 @@ While plants themselves usually do not pose at threat, they may be homes for oth
 - If you get snagged, stop and simply back up if possible. Do not turn, which will make it worse.
 - If necessary, bend or snap the plant (do not struggle, pull or twist), or use your knife or cutting tool.
 ### Diving from Shore
+Diving from shore is an option at most environments, but in some, it is the only option. Before entering, put on all your equipment except your mask, fins, snorkel, and gloves, then conduct your predive safety check. Put on your mask, snorkel and gloves just before you enter. You may put on your fins in waist-to-chest deep water, depending on the entry technique used.
+
+There are many ways to enter and exit from shore. From a dock, you can use deep water entries/exits, or use a ladder or stairs. Often, you will wade to and from land or walk on a boat ramp.

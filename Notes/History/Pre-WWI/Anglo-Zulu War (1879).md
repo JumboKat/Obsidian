@@ -14,4 +14,17 @@ In 1824, the British establish what eventually becomes the trading hub of **Durb
 ![[Pasted image 20260607001014.png]]
 In 1838, during the Boers' **Great Trek**, the Boers and the Zulu agreed to a peaceable land treaty, however this was broken by the Zulu King, believing he had the strength in numbers to overpower the Boers. During the **Piet Retief Delegation massacre** in February 1838, after the treaty between the two peoples had just been negotiated, the Zulus massacred 100 Boers of the delegation party, starting a wider war between the Boers, British, and the Zulus, who were undergoing an internal power struggle at the time. The Zulu warriors sack the porty city of Durban, but are dealt a devastating defeat at **Blood River**, with over 3,000 Zulu casualties to just three lost by the Boers. In the aftermath of the war, the Zulus are forced to cede land to the Boers and the British.
 
-Countless skirmishes between the three groups occur in the decades afterward. 
+Skirmishes between the powers continue on in the decades following. In the 1870s, the British begin pursuing a policy to consolidate their power and bring the Zulus and Boers under their rule, believing that it is their duty to 'westernize' the natives. in 1877, the British annex the Transvaal republic, who at this point is bankrupt after constant fighting, and who fears Zulu invasion.
+### Ultimatum to Cetshwayo
+![[Pasted image 20260609140758.png|361]]
+The British now seek to incorporate the Zulu territories, but King **Cetshwayo** refuses, upset about the constant Boer incursions into his territory. The government in London seeks to avoid war and strictly forbids colonial authorities from starting one, but their orders are defied. On December 11, 1878, they present to Cetshwayo an ultimatum with terms made harsh for the purpose of being rejected. They demand that the Zulu:
+- pay fines for percieved offences
+- turn over several chiefs to the British
+- disband the army
+- end the Zulu military
+- give more rights to Christians
+- surrender all political power to a British Agent
+The King rejects the ultimatum as expected, providing the casus belli for a British invasion of the Zulu Kingdom, which starts on January 11, 1879. Leading the invasion is **Lord Chelmsford**, who had previous experience fighting in the [[Crimean War (1853-1856)||Crimean War]] and colonial conflicts, such as the war against the **Xhosa** people, and had come to form a low opinion of African warriors in general.
+
+![[Pasted image 20260609142234.png]]
+The British begin the war with a force of about 7800 men, armed with the breech-loading **Martini-Henry** rifle, with the support of several cannons, a rocket battery, and some gatling guns. Alongside them is the **Natal Native Contingent**, with native African troops serving under a white British officers. Only 1 in 10 are allowed a firearm, that being the outdated **Snider** rifle; the rest are armed with assegai. With poor training, they play more of a supporting role, and to distinguish themselves from the enemy Zulus, they wear red bandanas. Another supporting force is the **Natal Native Horse***, comprised mainly of those from the **amaNgwane** tribes who are longstanding enemies of the Zulu. They wear tan uniforms, ride basuto ponies and are armed with carbines alongside their assegai.

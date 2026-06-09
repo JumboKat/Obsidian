@@ -197,4 +197,42 @@ While plants themselves usually do not pose at threat, they may be homes for oth
 ### Diving from Shore
 Diving from shore is an option at most environments, but in some, it is the only option. Before entering, put on all your equipment except your mask, fins, snorkel, and gloves, then conduct your predive safety check. Put on your mask, snorkel and gloves just before you enter. You may put on your fins in waist-to-chest deep water, depending on the entry technique used.
 
-There are many ways to enter and exit from shore. From a dock, you can use deep water entries/exits, or use a ladder or stairs. Often, you will wade to and from land or walk on a boat ramp.
+There are many ways to enter and exit from shore. From a dock, you can use deep water entries/exits, or use a ladder or stairs. Often, you will wade to and from land or walk on a boat ramp. When wading, walk until the water is chest high (where your BCD can support you) and put your fins on; you will remove your fins at this point when exiting. If the bottom is silty, you want to swim as early as possible to preserve visibility. Bottom composition and wildlife largely determine how you will wade in and out, or how soon you put your fins on. If stingrays are known in the area, shuffle your feet. Sometimes it is best to start with your fins on, walking backward looking over your shoulder. 
+### Surf
+Shore diving can involve entering and exiting through breaking waves, called the **surf**. Going through mild surf on a gently sloping beach isn't difficult, but diving in large and rough surf requires training in special techniques; it should be avoided otherwise, as it is hazardous and signals poor dive conditions.
+
+![[Pasted image 20260608143622.png]]
+Surf or the **surf zone** is the area in which waves break. Waves break in water only slightly deeper than their height. The floor slows the bottom of the wave, making the faster water on top "tip over" and break. Waves can convey information about the water's depth. For example, waves breaking offshore can indicate a shallow reef, sandbar, or wreck (or other obstacle in the water). If waves break, reform and break again, it means the bottom rises again after a deeper pit as you go seaward. Also, if waves break along a continuous line but have a significant gap, there may be a channel underneath associated with rip currents.
+#### Surge and Undertow
+![[Pasted image 20260608145412.png]]
+As waves come into shore, they create surge and undertow. **Surge** is the forward motion of a wave as it crashes over, while **undertow**, or **backrush**, is the recession of water from a wave that has crashed, as it travels back to sea underneath the next incoming waves. Larger waves and steeper beaches create stronger undertows. As the surge pushes your upper body towards shore and the undertow pushes your feet and legs towards the sea, you can lose your balance if you're not careful. To avoid undertow, do not dive from steep shorelines unless the surf is marginal in size.
+#### Longshore Current
+![[Pasted image 20260608150115.png]]
+Waves usually approach the shore from an angle, creating a **longshore current** parallel to the shoreline and tends to move you along it. Small waves can also have this effect if they come in quickly and closely together. When diving, you can choose to enter up current and exit down current, allowing you to swim alongside the current instead of against it at the beginning and end of your dive.
+#### Rip Current
+![[Pasted image 20260608150427.png]]
+When waves travel over a long obstruction, such as a reef or sandbar, the returning water isn't able to flow through the bottom, so it all funnels back through an available opening, resulting in a **rip current**. They can sometimes be identified by turbid water you can see moving away from shore. They also usually create a break in incoming waves. The current dissipates beyond the obstruction.
+
+They are strong and can carry you away from shore quickly. In general, they should be avoided, and you may see warnings posted. If caught in one, don't panic, as this is the cause of most accidents. Do not swim against it. Instead, establish buoyancy and swim at a sustainable pace parallel to shore until you are clear of the rip. In some locations, divers use rip currents to carry them out to a dive site.
+#### Upwelling
+![[Pasted image 20260608150902.png]]
+**Upwelling** occurs when wind blowing from shore pushes surface water seaward, causing the deeper, cooler water to rise and replace it. Factors other than wind can cause upwelling, but wind is the most common in diving circumstances. It mostly occurs in oceans but can also occur in large lakes. Upwelling is usually associated with better diving conditions, as deeper water tends to be clearer. It can also bring up nutrients that support marine life.
+#### Tide
+![[Pasted image 20260608151903.png]]
+Tides occur in the ocean as a result from the sun and moon's gravity pulling on water. As the earth rotates, the shoreline sees a regular rise and fall in water level throughout the day. Geography, among other factors, can cause some places to have two high tides and two low tides in a day, whereas other places only have one each. Tides also occur in large lakes, but they are too small to be noticeable. Geographical location and the positions of the moon and sun can greatly affect the difference between high and low tides. For a given location, tides are very predictable. 
+
+![[Pasted image 20260608152555.png]]
+**Tide tables** can be used to find the time and height for local tides. Tides will have three impacts to consider when diving in an specific environment:
+- **Currents**: tides cause currents, especially when water flows in and out of enclosed areas like harbours and bays. Tidal currents change direction as the tides change. At **slack tide** (the midpoint where the tide transitions from high to low, and vice versa) there is almost no current. The strength of currents depends on the location.
+- **Depth**: Water is deepest at high tide and shallowest at low tide.
+- **Visibility**: Tidal currents tend to carry sediment as the tide recedes; incoming high tide tends to bring clearer water with it.
+In general, the best time to dive is at high tide.
+#### Entering Through Mild Surf
+The steps for entering and exiting through mild surf (waves no higher than waist level) are as follows:
+1. Watch the waves, noting their breaking and their pattern. You want to enter during lulls where waves are absent or smallest.
+2. Enter with all your gear equipped aside from your fins. Have enough air in your BCD to float. 
+3. Staying with your buddy(ies), wade quickly toward deeper water, watching for waves as you go. When one approaches, stand sideways, leaning into it a bit and holding your mask and regulator as it washes around you. If you put your fins on beforehand, walk backward looking over your shoulder.
+4. Once water is deep enough to swim, put your fins on and swim out, getting through the surf zone as quickly as possible.
+5. Once you've cleared the surf zone, switch to your snorkel to conserve air if you will continue to swim at the surface. You can descend immediately after the surf zone if you wish.
+6. When exiting, surface outside the surf zone. 
+### Diving From Boats

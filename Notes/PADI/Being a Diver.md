@@ -236,3 +236,34 @@ The steps for entering and exiting through mild surf (waves no higher than waist
 5. Once you've cleared the surf zone, switch to your snorkel to conserve air if you will continue to swim at the surface. You can descend immediately after the surf zone if you wish.
 6. When exiting, surface outside the surf zone. 
 ### Diving From Boats
+In many regions, diving from boats is the preferred or only option for diving depending on the shore, and even when a good shore is available, boats provide easier access and are able to reach sites you otherwise could not from shore. Boat diving eliminates the need for long walks with gear on and surface swims. You can dive from any size of boat, from larger dive charter boats to as small as runabouts or even kayaks.
+#### Seasickness
+Seasickness, which is a form of **motion sickness**, is preventable, but how prone one can be to it varies. The usual precaution is to take seasickness medication, which should be taken several hours before departure. Otherwise, avoid greasy or hard-to-digest foods while on board. It can also help to avoid complicated tasks and reading. 
+
+If you do feel motion sick, stay in the open, fresh air and either look at the horizon or close your eyes. Be as close to the water level and as near to the centre of the boat as possible while still in fresh air. Do not go into the head and stay away from engine exhaust. If you are going to vomit, go to the leeward rail.
+#### Boat Terminology
+![[Pasted image 20260610192955.png]]
+- The **bow** is the front of the boat, with **forward** meaning towards the bow. 
+- The **stern** is the back of the boat, with **aft** meaning towards the stern. 
+- The **port** is the left side of the boat when facing forward, while **starboard** is the right side.
+- **Leeward** refers to the side away from the wind; pronounced "loo-erd."
+- **Windward** refers to the side toward the wind.
+- The **bridge** or **wheelhouse** is where the controls are located, often elevated for visibility.
+- The **head** refers to the toilet area.
+- The **galley** is the kitchen/cooking area.
+- The **swim step** is a platform on the stern close to water level, used for entering and exiting the water.
+#### Procedures
+##### Roll Calls
+Before leaving dock, most vessels conduct a roll call. A similar check is also done after each dive. This greatly reduces the risk of accidentally abandoning someone at the site. Do not answer for another diver during a roll call, even if you are sure they are aboard. When there are fewer passengers, there may not be a formal roll call, but there will still be an established method to verify everyone's presence.
+##### Predive Preparation
+The boat ride to the dive site can be anywhere from a few minutes to several hours long. If it is short, you can gear up before the boat leaves the dock, but usually you will set up your kit and only gear up when the boat is near or arrives at the site. Ensure to secure your kit, laying your cylinder down, BCD up, and block it so it does not roll or slide. There may be racks or bungees on board as well.
+
+There will be a divemaster giving a briefing on the site, along with general diving procedures, safety issues and other information, including the best sights underwater, possible hazards, and dive conditions. Each boat will have an emergency recall signal and procedure. Often, the recall signal (e.g. underwater alarm, repeated pounding on the boat ladder, etc.) prompts you to swim to the surface.
+
+On small boats, you may gear up seated and back roll into the water. You can also inflate your BCD, put your kit into the water, and get into it after you enter. On large boats, you generally gear up while seated, though you may gear up while standing if the water is calm. 
+##### Boat Diving
+When boat diving, you can often use a descent line or the mooring/anchor line as a reference during descent/ascent. Stay away from the propellers, even when they aren't running. Boat propeller injuries are commonly fatal, and at the very least will leave permanent disabilities. They can start turning with full force at any time without warning. If there is an issue with the propeller, do not attempt to fix it; simply inform the crew.
+
+If you are surface swimming and there is boat traffic, watch for other vessels; do not swim just below the surface as you will not be visible. Either be fully visible at the surface or stay deep enough below.
+![[Pasted image 20260610195107.png]]
+When there is a mild to moderate current, you can use lines during descents and ascents. If you lose contact, surface if you haven't already and swim across the current to intercept the trail line. The more current there is, the longer the trail line will be. If you miss the trail line, inflate your BCD and signal for the boat to pick you up. 

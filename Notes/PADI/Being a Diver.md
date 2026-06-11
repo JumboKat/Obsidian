@@ -1,3 +1,4 @@
+Tags: #PADI
 ### Seeing and Hearing
 #### Apparent Size and Distance
 ![[Pasted image 20260522101508.png]]
@@ -267,3 +268,32 @@ When boat diving, you can often use a descent line or the mooring/anchor line as
 If you are surface swimming and there is boat traffic, watch for other vessels; do not swim just below the surface as you will not be visible. Either be fully visible at the surface or stay deep enough below.
 ![[Pasted image 20260610195107.png]]
 When there is a mild to moderate current, you can use lines during descents and ascents. If you lose contact, surface if you haven't already and swim across the current to intercept the trail line. The more current there is, the longer the trail line will be. If you miss the trail line, inflate your BCD and signal for the boat to pick you up. 
+### Dive Planning
+Dive planning can be divided into four stages: advance planning, preparation planning, last-minute preparation, and predive planning. These serve as guidelines to think about how to prepare for a dive, and often they may overlap.
+#### Advance Planning
+This typically begins when the decision is made to go on a dive, and can include:
+- deciding which buddy(ies) and/or dive operator to dive with.
+- choosing a dive site, this can be very specific, or just a general idea, with the specifics finalized later on.
+- agreeing on the objective of the dive.
+- scheduling logistics (where/when to meet, enter the water, etc.).
+- checking dive conditions, weather, wave, and surf information.
+#### Preparation Planning
+Preparation planning is usually initiated several days before the dive, and revolves around inspecting your gear to ensure it is working properly and together, giving you time to get something serviced or replaced if necessary. You should fill your cylinder if needed, and recheck the weather and conditions. You can also start packing your gear bag.
+#### Last-Minute Preparation
+Last-minute preparation happens from a few hours before, until right up to when you leave for the dive site. It typically occurs in five steps:
+1. Recheck weather and other conditions that can affect the dive, especially in areas with fast, variable condition.
+2. Notify someone of your trip, including where you're going, when you'll be back, and what to do if you're delayed; provide them with your phone number.
+3. Gather auxiliary personal items that you may want, like a jacket, sunscreen, lunch, etc.
+4. Pack any remaining items into your gear bag. When boat diving, put what you need first in last, so that it is readily available at the top.
+5. Double check everything.
+#### Predive Planning
+![[Pasted image 20260611155110.png]]
+Predive planning refers to the actual dive plan. Here you will settle on details and make decisions based on what you find at the dive site. Some things to keep in mind are:
+- carefully evaluate conditions.
+- decide whether conditions are acceptable for diving. If not, go to an alternate site or cancel the dive altogether.
+- agree on techniques, including entry and exit.
+- review signals and communication.
+- agree on buddy separation procedures.
+- agree on time, depth, and air supply limits.
+- discuss emergency procedures.
+

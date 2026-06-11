@@ -1,3 +1,4 @@
+Tags: #PADI
 ### Deep Water Entry
 #### Giant Stride
 A very common entry from charter dive boats, docks, and other stable platforms up to a couple metres above the water.

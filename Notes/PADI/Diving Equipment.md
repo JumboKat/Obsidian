@@ -1,4 +1,4 @@
-
+Tags: #PADI
 ### BCD - Buoyancy Control Device
 The BCD is comprised of several components that best function as a single unit, which are:
 - **Inflatable bladder**: a very durable bag that you inflate or deflate to change your buoyancy

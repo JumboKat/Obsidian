@@ -1,5 +1,6 @@
-Smartphone speakers can be very loud despite their extremely small size.
+Tags: #Technology 
 
+Smartphone speakers can be very loud despite their extremely small size.
 ![[Pasted image 20260529101035.png]]
 Most smartphones have two speakers; one at the top for phone calls, and a larger, louder, general **loudspeaker**. While the larger of the two, it only weighs about as much as a dime (2.272g) and is about the same in size, with the smaller speaker weighs only a fifth (0.446g) of its counterpart's weight. Both speakers have the same basic components and functions.
 ### Components of a Speaker

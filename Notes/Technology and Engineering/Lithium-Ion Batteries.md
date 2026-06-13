@@ -1,3 +1,5 @@
+Tags: #Technology 
+
 ![[Pasted image 20260525111245.png]]
 All batteries have a negative terminal (**anode**) and a positive terminal (**cathode**). Negatively-charged electrons flow from the anode to the cathode. In a **lithium-ion battery**, electrons come from the element lithium. 
 ### The Anode

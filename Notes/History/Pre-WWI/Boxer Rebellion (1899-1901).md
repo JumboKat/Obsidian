@@ -1,4 +1,4 @@
-Tags: #China #France #Japan #Russia #Italy #Britain
+Tags: #History #China #France #Japan #Russia #Italy #Britain
 ### Rise of the Boxer Society
 By the late 1890s, the Qing Dynasty—the last imperial dynasty of China—had suffered from civil war (Taiping Rebellion) and military defeats by Western powers (e.g. First and Second Opium Wars), Russia, and Japan (First Sino-Japanese War), being forced to cede territories to them. Ceded territories included Port Arthur (Russia), Hong Kong (Great Britain), Qingdao/Tsingtao (Germany), and Macau (Portugal).
 ![[Pasted image 20260328183834.png]]

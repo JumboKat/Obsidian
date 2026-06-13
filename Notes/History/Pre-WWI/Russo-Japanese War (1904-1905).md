@@ -1,4 +1,4 @@
-Tags: #Russia #Japan 
+Tags: #History #Russia #Japan 
 
 The Russo-Japanese War was fought between the Russian Empire and the Empire of Japan over imperial influence in Manchuria and Korea. The war ended in Russia's defeat after the Battle of Tsushima and the signing of the Treaty of Portsmouth, furthering the Russian Empire's decline and solidifying Japan's position as a world power on the international stage.
 ### Prelude

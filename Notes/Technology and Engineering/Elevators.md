@@ -1,3 +1,4 @@
+Tags: #Technology
 ### History of the Elevator
 In the 1800s, architects began to build taller buildings with more floors, but were limited by the fact that higher levels could only be accessed by walking up stairs. This problem was solved with the introduction of **elevators**, or **lifts**.
 

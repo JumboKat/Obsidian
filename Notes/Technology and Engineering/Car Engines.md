@@ -1,3 +1,5 @@
+Tags: #Technology
+
 The engine is the source of life in a car. It converts the heat from the combustion of an air-fuel mixture to the forces that power the car and turn its wheels.
 ### Engine Components
 
@@ -12,7 +14,6 @@ The cylinder block supports the pistons, crankshaft, connecting rods, and the oi
 
 The **combustion chamber** is the area within each **cylinder**. The highest position the piston reaches inside the cylinder is the **top dead centre** (TDC), while the lowest position is the **bottom dead centre (BDC)**. A **stroke** occurs when the piston travels the entire way in one direction. Over the course of one compression stroke, the piston travels from the BDC to the TDC, increasing the pressure and temperature of the air-fuel mixture. Once the piston reaches the TDC, the **spark plug** ignites the fuel. Car engines operate on a 4 stroke cycle.
 ### The 4 Stroke Cycle
-
 ![[Pasted image 20260529190316.png]]
  In the first stroke (**intake**), the piston descends, creating a low-pressure vacuum that sucks in air-fuel mixture through the **intake port**, with both **intake valves** open.
 
@@ -33,19 +34,18 @@ The **camshaft** is a metal rod that contains several **cams**, which are egg-sh
 ![[Pasted image 20260613102854.png]]
 The **timing belt** synchronizes the rotation of both the crankshaft and the **camshaft** to ensure the engine valves open and close at the right time. It is composed of a heavy-duty rubber band and cogs to grasp the pulleys of the crankshaft and camshaft. 
 
-
-![[Pasted image 20260529110040.png|180]]![[Pasted image 20260529110650.png|216]]![[Pasted image 20260529110804.png|280]]
-The **oil pan** sits at the bottom of the engine, just below the crankshaft, to collect lubricating oil. All moving parts of the engine are lubricated to reduce friction. The **flywheel** is mounted on the crankshaft to balance the vehicle's speed, as the speed and torque of different parts of the car's engine are not uniform. It is also where the starter connects to the system.
-### Air Intake
+![[Pasted image 20260529110040.png|250]]![[Pasted image 20260529110804.png|419]]
+All moving parts of the engine are lubricated to reduce friction. The **flywheel** is mounted on the crankshaft to balance the vehicle's speed, as the speed and torque of different parts of the car's engine are not uniform. It is also where the starter connects to the system.
+### Air Intake System
 ![[Pasted image 20260613104615.png]]
 Air enters the system via the grille at the car's front. It passes through an air filter, then into the **intake manifold**. Here it is mixed with fuel and then sucked into the individual cylinders through the intake ports.
-### Fuel
+### Fuel System
 ![[Pasted image 20260613104853.png]]
 The **fuel pump** carries gas from the tank (located at the rear of the car) through fuel lines, passing through a **fuel filter**, then to the engine.
 
 ![[Pasted image 20260613105033.png]]
 At the engine, the **fuel injectors** spray fuel into the intake port at precisely-timed intervals, in-sync with the rest of the system's timing.
-### Cooling
+### Cooling System
 Because of the combustion of the air-fuel mixture, the engine heats up during operation and requires a cooling system.
 ![[Pasted image 20260613144534.png]]
 **Coolant channels** run around the cylinders and through the cylinder heads carrying liquid **antifreeze**; it keeps the temperature regulated and does not freeze in cold weather. 
@@ -53,7 +53,7 @@ Because of the combustion of the air-fuel mixture, the engine heats up during op
 ![[Pasted image 20260613144909.png|697]]
 The liquid passes through the radiator through dozens of small, flat, metal tubes that absorb the heat from the coolant. In between the tubes are aluminum strips that are flat, tightly-packed and accordion-folded to maximize surface area to facilitate heat transfer. When the fans in the radiator pull in fresh air, the aluminum strips are efficiently cooled.![[Pasted image 20260613145623.png|383]]![[Pasted image 20260613145549.png|285]]
 A **water pump** maintains the liquid pressure and keeps the coolant circulating. The **thermostat** helps to regulate the temperature. It can either route coolant directly back to the engine, or to the radiator to be cooled off.
-### Electrical
+### Electrical System
 ![[Pasted image 20260613145937.png]]
 The spark plug uses electricity to ignite the air-fuel mixture. It has both a metal inner core and metal outer shell, separated by a porcelain layer. The spark jumps from the inner metal core to the outer metal surface. 
 
@@ -62,8 +62,16 @@ The electrical current used by spark plugs is delivered by **coil packs**. The t
 
 ![[Pasted image 20260613150730.png]]
 The **starter** is used to start the engine, powered by the **battery**. The **alternator** (middle) converts the rotation of the crankshaft into electrical energy to power the car's electrical systems and charge the battery.
-### Oil
-Motor oil is used to lubricate, clean, cool and prevent corrosion in the engine's parts. The rings around each piston head prevent the oil from interfering with the combustion process, while still allowing it to be lubricated.
+### Oil System
+![[Pasted image 20260613154319.png]]
+Motor oil is used to lubricate, clean, cool and prevent corrosion in the engine's parts. The rings around each piston head prevent the oil from interfering with the combustion process, while still allowing it to be lubricated. Oil flows through **oil galleries** that run throughout the engine head and engine block and to the various engine parts. 
+
+![[Pasted image 20260613154540.png]]
+Oil circulates in and out of the **oil pan** when the engine is running, but when it is off, it simply collects and rests in the pan. The **oil pump** is powered by a rotating gear and keeps the oil pressurized and running. As it circulates, the oil also passes through an **oil filter**, cleaning it of physical contaminants.
+### Exhaust System
+![[Pasted image 20260613160723.png]]
+the **exhaust manifold** (right) collects gas from multiple cylinders into one pipe. The exhaust flows through the **catalytic converter**, which captures toxic chemicals, before flowing out through the **muffler** that reduces the exhaust noise.
 
 ---
 ### References
+![](https://www.youtube.com/watch?v=ZQvfHyfgBtA&t=193s)

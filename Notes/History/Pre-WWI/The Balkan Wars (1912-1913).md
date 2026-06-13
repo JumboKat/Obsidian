@@ -1,4 +1,4 @@
-Tags: #Turkey #Russia #Austria-Hungary #Greece #Bulgaria #Serbia
+Tags: #History #Ottoman_Empire  #Russia #Austria-Hungary #Greece #Bulgaria #Serbia
 ### Instability in the Balkans
 ![[Pasted image 20260528200945.png]]Having controlled the Balkans for centuries, the Ottoman Empire was now losing its grip on the region. As the empire declined and nationalism among the Balkan peoples grew stronger, new independent states emerged, including Montenegro, Greece, Serbia, Romania, and Bulgaria, though through much violence and political turmoil. 
 

@@ -1,4 +1,4 @@
-Tags: #Britain #South_Africa 
+Tags: #History #Britain #South_Africa 
 ### The Zulu Kingdom
 ![[Pasted image 20260606233926.png]]
 In the 1870s, three main powers compete for territory in Southern Africa: Great Britain, the Boer Republics, and the Zulu Kingdom. The Zulu Kingdom came to be when King **Shaka Zulu** spearheaded a revolution in 1816, uniting the various clans under the **AmaZulu** (or Zulu). 

@@ -1,4 +1,4 @@
-Tags: #USA #Spain
+Tags: #History #USA #Spain
 ### The Cuban Crisis
 By the 19th century, the Spanish Empire was one in decline. In the 1810s, most of the former Spanish colonies in the Americas had gained their independence, with one exception being the island of Cuba. The United States had great interest in bringing Cuba under its influence, and worried that another European power would sweep in and seize it from the weakened Spanish. Americans, especially sugar and cotton plantation owners, also saw economic opportunity in Cuba. So, in 1823, U.S. President **James Monroe** announced the **Monroe Doctrine**, a pledge to keep the Americas free from foreign influences. 
 

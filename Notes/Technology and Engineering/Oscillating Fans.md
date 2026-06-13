@@ -1,3 +1,5 @@
+Tags: #Technology 
+
 ![[Pasted image 20260516012841.png|276]]
 The basic, common design of the oscillating fan includes the following:
 - buttons at the bottom to adjust fan speed

@@ -35,7 +35,7 @@ The **timing belt** synchronizes the rotation of both the crankshaft and the **c
 
 
 ![[Pasted image 20260529110040.png|180]]![[Pasted image 20260529110650.png|216]]![[Pasted image 20260529110804.png|280]]
-The **oil pan** sits at the bottom of the engine, just below the crankshaft, to collect lubricating oil. All moving parts of the engine are lubricated to reduce friction. The **flywheel** is mounted on the crankshaft to balance the vehicle's speed, as the speed and torque of different parts of the car's engine are not uniform. It is also where the **starter** connects to the system.
+The **oil pan** sits at the bottom of the engine, just below the crankshaft, to collect lubricating oil. All moving parts of the engine are lubricated to reduce friction. The **flywheel** is mounted on the crankshaft to balance the vehicle's speed, as the speed and torque of different parts of the car's engine are not uniform. It is also where the starter connects to the system.
 ### Air Intake
 ![[Pasted image 20260613104615.png]]
 Air enters the system via the grille at the car's front. It passes through an air filter, then into the **intake manifold**. Here it is mixed with fuel and then sucked into the individual cylinders through the intake ports.
@@ -46,7 +46,24 @@ The **fuel pump** carries gas from the tank (located at the rear of the car) thr
 ![[Pasted image 20260613105033.png]]
 At the engine, the **fuel injectors** spray fuel into the intake port at precisely-timed intervals, in-sync with the rest of the system's timing.
 ### Cooling
-Because of the combustion of the air-fuel mixture, the engine heats up during operation.
+Because of the combustion of the air-fuel mixture, the engine heats up during operation and requires a cooling system.
+![[Pasted image 20260613144534.png]]
+**Coolant channels** run around the cylinders and through the cylinder heads carrying liquid **antifreeze**; it keeps the temperature regulated and does not freeze in cold weather. 
+
+![[Pasted image 20260613144909.png|697]]
+The liquid passes through the radiator through dozens of small, flat, metal tubes that absorb the heat from the coolant. In between the tubes are aluminum strips that are flat, tightly-packed and accordion-folded to maximize surface area to facilitate heat transfer. When the fans in the radiator pull in fresh air, the aluminum strips are efficiently cooled.![[Pasted image 20260613145623.png|383]]![[Pasted image 20260613145549.png|285]]
+A **water pump** maintains the liquid pressure and keeps the coolant circulating. The **thermostat** helps to regulate the temperature. It can either route coolant directly back to the engine, or to the radiator to be cooled off.
+### Electrical
+![[Pasted image 20260613145937.png]]
+The spark plug uses electricity to ignite the air-fuel mixture. It has both a metal inner core and metal outer shell, separated by a porcelain layer. The spark jumps from the inner metal core to the outer metal surface. 
+
+![[Pasted image 20260613150446.png]]
+The electrical current used by spark plugs is delivered by **coil packs**. The timing of the sparks, the timing of valve opening and closing, the air-fuel ratio, etc. are directed by the **engine control module (ECM)**. 
+
+![[Pasted image 20260613150730.png]]
+The **starter** is used to start the engine, powered by the **battery**. The **alternator** (middle) converts the rotation of the crankshaft into electrical energy to power the car's electrical systems and charge the battery.
+### Oil
+Motor oil is used to lubricate, clean, cool and prevent corrosion in the engine's parts. The rings around each piston head prevent the oil from interfering with the combustion process, while still allowing it to be lubricated.
 
 ---
 ### References

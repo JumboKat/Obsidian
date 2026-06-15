@@ -1,11 +1,18 @@
 Tags: #PADI
 ### Deep Water Entry
 #### Giant Stride
+![[Pasted image 20260615184704.png]]
 A very common entry from charter dive boats, docks, and other stable platforms up to a couple metres above the water.
 - enter the water fully equipped with the BCD partially inflated.
 - hold onto the regulator and mask as you enter, breathing through it.
 - look straight ahead and take a big step in, don't jump.
 - signal "okay" and clear the entry area, then switch to your snorkel.
+#### Seated Back Roll
+![[Pasted image 20260615184732.png]]
+This is often occurs when you are relatively close to the water, when diving from small boats or platforms like low docks. It is also used by people who can't stand while wearing scuba equipment.
+- Enter with your BCD partially inflated, holding your mask and breathing from your regulator.
+- Tuck your chin toward your chest.
+- Lean backward until your weight rolls you in.
 ### Weight Check
 - check your weight in the water with a buddy, making adjustments one at a time.
 - you should float at eye level with an empty BCD and holding a normal breath; you should slowly sink when you exhale.
@@ -25,3 +32,12 @@ One popular technique for achieving neutral buoyancy is the **fin pivot**.
 - lie face down on the bottom
 - when neutrally buoyant, you should pivot upward on your fin tips when you inhale and downward when you exhale.
 - add or release air from you BCD in small amounts when adjusting buoyancy.
+### Remove and Replace Weights at the Surface
+Removing and replacing weights at the surface may be necessary to adjust your weighting in the water, and for some entries and exits.
+
+The technique may vary with equipment. Be careful not to drop the weights.
+- Give your weights to someone, put them on a platform, or secure them to a line.
+- Be sure you have enough buoyancy before taking off your weights. Breathe from your regulator.
+- It is best if buddies can put on weights one at a time so they can help each other if necessary.
+- With most integrated weight systems, you remove them as you would in an emergency weight drop, and replace them the same way you would install them when setting up your kit.
+- It can help to tilt back in the water, almost face up, so the weight pockets slide into place.

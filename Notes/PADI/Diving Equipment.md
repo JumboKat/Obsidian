@@ -155,3 +155,26 @@ Optional dive instruments include:
 - **Thermometer**: display the water's temperature, helping you to determine how much exposure protection is needed.
 
 Although they are robust, dive instruments should be treated with care. Protect them from impact and avoid sun exposure or high heat for long periods. Changing the batteries is also a part of maintenance.
+### Signaling Devices
+You should typically have two signaling devices with you on a dive; an audible device and a visual device. The following are devices that are commonly used by divers:
+- **Whistles** are the most common audible devices, normally attached to the BCD inflator, where they are easily accessible but out of the way.
+![[Pasted image 20260615142954.png]]
+- **Low pressure horns** use air from your cylinder and are much louder than whistles. They usually attach to the BCD inflator.
+![[Pasted image 20260615143016.png|382]]
+- **Inflatable signal tubes** are brightly coloured (usually orange) plastic/fabric tubes that you inflate at the surface. They stand more than a metre/three feet above the surface, increasing your visibility even in rough conditions. They can be rolled up compactly and stored in your pocket when not in use.
+- **Delayed Surface Market Buoys (DSMBs)** are like inflatable signal tubes, but they are attachable to a line and reel and can be deployed underwater or at the surface. 
+- **Signal mirrors** reflect sunlight to attract attention. You can signal both boats and aircraft. They fit in your pocket.
+- **Signal lights and flashers** work best for night dives. They can fit in your pocket, or strapped to an arm or wrist.
+### Floats and Flags
+A surface float is used when diving from shore or at some distance from a dive boat. It refers to any small float that you use for:
+1. resting
+2. marking a dive site location
+3. carrying accessories or other items
+4. assisting another diver (as a floatation aid)
+5. supporting a dive flag
+
+Depending on the dive plan and site, you may tow a float around for the entire dive, or anchor it. Either way, you will need line at least 15m/50ft long. Use a reel or line caddy to prevent entanglement. Do not attach it to your gear; tow it by hand. 
+#### Dive Flags
+A dive flag is used to alert watercraft to your presence. Some areas require them by law, but they are recommended in any area with boating traffic. They may fly from a dive boat or a surface float.
+![[Pasted image 20260615144034.png]]
+The traditional dive flag is a red rectangle with a white diagonal stripe, indicating that there are divers below. The **Alpha flag** is a blue-white pennant and indicates that the vessel flying it has divers in the water and can't maneuver. Either flag must be raised high enough or be big enough to be visible from 100m/yards. Both will have a wire extender to make them visible even without wind. Local laws usually determine how close you must stay to the dive flag and how far away boaters must stay. If there are no specific laws, stay within 15m/50ft of the flag; boats should stay 30-60m/100-200ft away. Do not assume boats will understand the flags; if one sounds close, stay deep down to be safe until it clears the area.

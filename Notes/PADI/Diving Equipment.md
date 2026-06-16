@@ -179,3 +179,43 @@ A dive flag is used to alert watercraft to your presence. Some areas require the
 ![[Pasted image 20260615144034.png]]
 The traditional dive flag is a red rectangle with a white diagonal stripe, indicating that there are divers below. The **Alpha flag** is a blue-white pennant and indicates that the vessel flying it has divers in the water and can't maneuver. Either flag must be raised high enough or be big enough to be visible from 100m/yards. Both will have a wire extender to make them visible even without wind. Local laws usually determine how close you must stay to the dive flag and how far away boaters must stay. If there are no specific laws, stay within 15m/50ft of the flag; boats should stay 30-60m/100-200ft away. Do not assume boats will understand the flags; if one sounds close, stay deep down to be safe until it clears the area.
 ### Mesh Utility Bag
+![[Pasted image 20260616100745.png|303]]
+A **mesh utility bag** is a heavy-duty bag made from nylon mesh (to drain water) or other water-resistant synthetic. These are all-purpose containers for bulky or difficult-to-carry items, and are supplementary to your gear bag. Common uses include:
+- holding litter during an underwater cleanup
+- carrying small accessories
+- transporting gear to and from the dive boat
+Be cautious about attaching it to your gear as it may result in entanglement; the mesh bag should be easily discarded in the event you need to remove excess weight or drag.
+### Slates and Wet Books
+![[Pasted image 20260616101156.png]]
+A slate or wet book allows you to write during a dive, which can be used for communication, for writing down the dive limits and backup information, and recording information during the dive.
+
+A **slate** is a reusable, rigid sheet of plastic upon which you write wit an attached pencil or marker. A **wet book** is a small notebook with waterproof pages, though the pages are not reusable.
+### Dive Lights
+Dive lights are watertight and able to withstand pressure and are meant to be used for night dives. The choice of dive light depends on size, brightness, and power source.
+- Compact lights are easy to stow, but are not as bright and have narrower beams. They are better suited for day use and as a spare light during the night.
+- Larger lights, which are brighter and cover a wider area, are used as main lights during night dives.
+### Log Books and eLogs
+You will log your dives and have your instructor sign your log during training for the purpose of validating your training. Logs should also be continued after certification, for the following reasons:
+- Reference: information in logs can make planning subsequent dives easier. You can reference notes about dive sites and your equipment.
+- Documentation: higher levels of training often require documentation of certain types and number of dives.
+- Onsite experience reference: some dive operators will want to know where you've been diving, and how often, etc. in order to tailor their assistance toward you.
+- To share: your posted logs can help inform other divers, and theirs can help you.
+
+At a minimum, for each dive you should log the:
+- Date.
+- Dive site.
+- Dive buddy(ies).
+- Dive depth and duration.
+- Objective/description.
+### Spare Parts Kit
+Simply losing an o-ring or breaking a strap can cause you to miss a dive, so it is important to have a spare parts kit, sometimes called a **save-a-dive** kit. The kit stores a collection of user-replaceable items, which can include:
+- spare mask strap, fin, strap, and snorkel keeper
+- harness/weight belt buckle
+- cable (pull) ties
+- adjustable wrench (spanner), pliers, screw drivers, hex wrenches (allen keys) or scuba tool
+- regulator mouthpiece
+- accessory clip
+- slate/wet book pencil
+- various sized cylinder valve/DIN valve o-rings
+- Cement or glue appropriate for exposure suit repair
+- Sunscreen and spare sunglasses

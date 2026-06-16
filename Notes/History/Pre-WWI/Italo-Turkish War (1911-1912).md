@@ -65,5 +65,4 @@ Like the Austrians had feared, the Italo-Turkish War helped destabilize the Balk
 
 ---
 ### References
-
 ![](https://www.youtube.com/watch?v=xJepy18PAlM&t=551s)

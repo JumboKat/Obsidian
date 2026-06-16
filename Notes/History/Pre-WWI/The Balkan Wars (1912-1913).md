@@ -62,7 +62,6 @@ The Bulgarians continued the fight, and repelled the Serbs and Montenegrins at *
 ![[Pasted image 20260530180602.png]]
 On August 10th, 1913, Bulgaria signed the **Treaty of Bucharest** with Serbia, Greece, and Montenegro, and on September 29th, 1913, signed the **Treaty of Constantinople** with the Ottoman Empire. Both treaties saw the loss of Bulgarian territory to its enemies. Romania got Southern Dobrudja; Serbia got most of Macedonia, but Bulgaria retained some of it due to the lack of support from Austria-Hungary and Russia for Serbia's demands. Greece kept Salonika, with the Ottomans regaining Eastern Thrace. 
 ### Aftermath
-
 ![[Pasted image 20260530180909.png]]
 The Balkan Wars had devastated the region, with all parties sustaining heavy losses. The Ottomans' 600-year presence in Europe was now reduced to a fraction of its size. Albania was now independent, though faced border disputes from its neighbors. Many Balkan Christians saw the outcome as the end of foreign oppression, while over 300,000 Balkan Muslims were expelled from their homes and were now forced to resettle elsewhere in the empire, bringing much political and religious angst against Christians in the empire. Enver Pasha, whose homeland was now in control of Balkan peoples, would later play a role in the [[Armenian Genocide]] and killing of Greeks in the First World War.
 

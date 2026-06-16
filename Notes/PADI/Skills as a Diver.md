@@ -32,6 +32,13 @@ One popular technique for achieving neutral buoyancy is the **fin pivot**.
 - lie face down on the bottom
 - when neutrally buoyant, you should pivot upward on your fin tips when you inhale and downward when you exhale.
 - add or release air from you BCD in small amounts when adjusting buoyancy.
+#### Hovering
+While neutrally buoyant, you can hover in midwater without having to use your limbs to maintain your depth. To do this:
+- Establish neutral buoyancy.
+- Push gently off the bottom by about 1m/3ft and maintain depth without using your hands or fins.
+- Breathe in a controlled manner to fine-tune your buoyancy. If you start to rise, exhale and breathe with a slightly lower lung volume; if you start to sink, inhale and breathe with a slightly higher lung volume.
+- Do not hold your breath.
+- If you cannot hove via adjusting your breathing, make small adjustments to you BCD.
 ### Remove and Replace Weights at the Surface
 Removing and replacing weights at the surface may be necessary to adjust your weighting in the water, and for some entries and exits.
 
@@ -41,3 +48,8 @@ The technique may vary with equipment. Be careful not to drop the weights.
 - It is best if buddies can put on weights one at a time so they can help each other if necessary.
 - With most integrated weight systems, you remove them as you would in an emergency weight drop, and replace them the same way you would install them when setting up your kit.
 - It can help to tilt back in the water, almost face up, so the weight pockets slide into place.
+### Cramp Release
+**Cramps** are painful, involuntary muscle contractions, most common in the leg or foot muscles when diving. Dehydration, cold, restricted circulation, and working a muscle beyond its fitness level can all cause cramping.
+- If you start to have a cramp, signal to your buddy and stop.
+- Allow the muscle to rest; it can help to gently stretch and massage it.
+- After relieving a cramp, rest for a few minutes, and proceed at a slower pace.

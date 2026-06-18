@@ -296,4 +296,4 @@ Predive planning refers to the actual dive plan. Here you will settle on details
 - agree on buddy separation procedures.
 - agree on time, depth, and air supply limits.
 - discuss emergency procedures.
-### Health and Fitness
+

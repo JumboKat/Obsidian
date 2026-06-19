@@ -45,3 +45,59 @@ With Allied reinforcements on the way, the Russians abandon their attack and tak
 Emboldened by the victory at Balaklava, the Russians now look toward taking Inkerman Ridge, which would allow their artillery to fire into the rear of the Allied siege lines. Perceiving the British section of the line to be weaker, 50,000 Russians attack a defending force of only 16,000 Allied troops on November 5th. The battlefield is obscured by thick fog, resulting in a breakdown of Russian command and control. The battle deteriorates into a series of chaotic small-scale actions, with Russian troops taking redoubts only to lose them to British counterattacks. The Russian confusion also prevents planned diversionary attacks against the French, who now come to the aid of the British.
 
 With the French reinforcements and confusion among Russian officers, the Russians are forced to retreat. The battle ends in a clear Allied victory, having successfully defended their position and inflicting 12,000 casualties on the Russians while only suffering 4,300 of their own. As winter draws in, the battle marks an indefinite end to any Russian attempts at lifting the siege at Sevastopol.
+### Secondary Fronts
+As the fighting in Crimea was ongoing, the Allies fought the Russians on several other fronts, though these were ultimately trivial in consequence compared to battles on the Crimean front.
+
+In the Baltic Sea, the Royal Navy leads the Allied effort to destroy the Russian Navy, hoping for a full-on engagement, but as the Russian fleet slips away, they only manage to bombard Russian coastal outposts with little consequence. On August 8th, 1854, the French make a landing on the Russian-controlled Baltic Åland Islands and force a surrender at **Bomarsund**. The Allies then offered it to the Swedes if they agreed to join the war, an offer that was refused, and so they left the base to be reoccupied by the Russians.
+
+The Allies also make attacks as far north as the **White Sea** and a failed landing on the coast of **Kamchatka** in the Pacific.
+### Winter of 1854-1855
+In January of 1855, the **Kingdom of Sardinia** (Piedmont-Sardinia) joins the war on the side of the Allies in hopes of garnering the support of **Napoleon III** on the issue of [[Italian reunification]] under the House of Savoy. 15,000 troops are sent to fight in Crimea.
+
+The Winter of 1854-1855 is especially brutal for both the besieged Russian soldiers and civilians of Sevastopol as well as the Allied troops outside. Disease had been spreading uncontrollably since the start of the war, and both Allied commanders Ragland and Saint Arnaud succumb to dysentery or cholera. The Allies are also plagued by logistical issues: the Ottomans run out of food and rely on their allies for supplies, and while the French are well equipped, the British lack inadequate winter equipment.
+
+>[!NOTE] 
+>Leo Tolstoy was an artillery officer in Sevastopol and famously wrote about the miserable conditions suffered by the Russian army during the siege.
+
+The local Muslim Tatar population, who speak a Turkic language, also suffer greatly. Based on the suspicion of Ottoman sympathy, the Tsarist government adopts many repressive policies against them, including frequent individual deportations to Central Asia. Some of them escape to settle in the Ottoman Balkans, while the Russians replace them with Slavs and Christians fleeing the Balkans. After the war, the Crimean Tatars become a permanent minority in their own homeland.
+#### Public Reception
+![[Pasted image 20260618193329.png]]
+Thanks to the invention of the telegraph, the Crimean War is the first conflict in which the public at home can follow and react to events on the battlefield thousands of kilometres away within just a day or two. Reporters such as William Howard Russel become famous for their reporting of the war, using another new invention, the photograph, to supplement their articles. With the public now able to put political pressure on their respective governments at home, the terrible conditions in Crimea and the disaster of the Light Brigade at Balaklava become major scandals, forcing British Prime Minister **Lord Aberdeen** to resign in January 1855, with **Lord Palmerston** taking his place.
+#### Medical Care
+As disease runs rampant and supplies run short on both sides, but some medical achievements are made. On the side of the Allies, nurses like **Mary Seacole** and **Florence Nightingale** (nicknamed **"The Lady with the Lamp"**) are recognized for their medical treatment of Allied soldiers, with Nightingale later becoming the first to professionalize nursing when she established the **Nightingale Training School** for nurses in St. Thomas' Hospital in London. Russian surgeon **Nikolai Pirogov** pioneers the system of **medical triage**, in which patients are categorized into tiers based on the severity and likelihood of recovery. This system was revolutionary for the time and wouldn't be adopted by other armies until the First World War. Due to his work, Russian soldiers have a higher rate of survival than Allied ones, especially after amputations.
+
+The war had taken its toll on the health of Tsar Nicholas I, who caught pneumonia and died on March 2nd, 1855. He is succeeded by his son **Alexander II**.
+### Ending the Siege of Sevastopol
+#### Battles of Malakoff and Great Redan
+In the spring of 1855, the Allies now forfeit their efforts in the Baltic and Caucasus and go all in on taking Sevastopol. The Royal Navy blocks Russian supply routes through the Sea of Azov, and the British and French make use of a new railway line that allows them to fire over 160,000 into Sevastopol in April alone, marking the first time railroads are used for an offensive purpose in war. On the ground, the Allies overtake the Russian outer defenses on June 6th, and they attack the **Malkhov** and **Great Redan** redoubts on June 18th, the 40th anniversary of the Battle of Waterloo, at the request of the French. The French would attack Malakoff first, followed by a British attack on the Great Redan, though the latter would not be needed if the French succeed. The French are shocked when Russian officers cross No Man's Land the night before the battle to taunt them, indicating that the Russians were aware of their plans and would be well-prepared. 
+
+The first French and British attacks end in disaster; the first volley of Russian fire alone takes out a third of the British. In the aftermath of the battle, the Allies lose 7500 men.
+#### Battle of Tchernaya River
+As the siege drags on, conditions in the Allied trenches worsen, while the Russians suffer steady casualties daily. Cut off from supplies from the Sea of Azov, the Russians launch an assault on the Allied watering places on the **Tchernaya River**. While the 30,000 Russians outnumber the 9,000 Sardinians and 18,000 French, they lack cavalry and artillery, and the Allies have the high ground. 8,000 Russians are lost after a fruitless full-frontal assault.
+#### Allied Breakthrough
+In September, the Allies prepare for another attack, extending their trenches to within just 50m of the Russian positions, but they lose 200 men daily to sharpshooters. They try their hand at Malakoff and Great Redan once again, with the French catching the Russians off-guard at Malakoff. At Redan, the British try and fail all three of their assaults, suffering 2,600 casualties. A fourth attack is avoided after the French take Malakoff, forcing a Russian withdrawal.
+
+Seeing the writing on the wall, the Russians begin to sack the city and set fire to it. The siege was now over, in the end costing 102,000 Russian and 71,000 Allied lives.
+### Treaty of Paris 1856
+As the winter of 1855 was rolling in, both sides were militarily exhausted. On the Caucasus front, the Russians defeat the British and Ottoman garrison in the city of Kars and capture it on November 26, leaving the Russians with more occupied territory than the Allies, which would serve as a bargaining chip in the upcoming peace talks. At this time, the the British begin assembling a large Baltic fleet called the **Grand Armament of 1856** to finish the war for good the next year. While it did not get the chance to directly participate, the potential threat imposed may have helped accelerate the push for peace.
+
+Napoleon III rejects British proposals to open up new fronts and instead both nations end the campaign in Crimea; he is satisfied with French victories and now wants peace. The French, with neutral Austria, present an ultimatum to Russia. Under the threat of Austrian intervention, the Russians open up to negotiations in Paris. The British and French disagree on the terms, with Britain wanting to be harsher on Russia, but in the end the French have their way. The **Treaty of Paris 1856** is signed on March 30, 1856, which states that Russia is to:
+- give parts of Bessarabia back to Moldavia.
+- renounce influence over the Danubian principalities.
+- accept demilitarization of the Black Sea.
+- give up claim to represent Ottoman Christians.
+The Ottomans' pre-war boundaries are restored, and even make small territorial gains in Bessarabia.
+#### Aftermath
+While peace has been achieved, the Crimean War had not solved the issue of the Eastern Question, with Russia still seeking to expand its territory and the Ottomans still weak and reliant on outside interference. In 1871, with the fall of French Emperor Napoleon III, the Western powers were no longer interested in eastern geopolitics. In the aftermath of the Russo-Turkish War (1877-1878), Russia had defeated the Ottomans and achieved all of their original goals with minimal Western interference, leading many to question the pointlessness of the bloodshed of the Crimean War.
+
+Ultimately, the only tangible outcome of the Crimean War was a tremendous loss of life. On both sides, the majority of soldiers had actually died to disease; of the almost 165,000 Allies and 130,000 Russian deaths, 120,000 and 89,000 of them, respectively, were to disease. Great Britain suffers heavy public backlash for the heavy sacrifices (due to strategic and logistical failures) in a war ultimately fought for the Ottomans.
+
+Although many view the war as pointless, it did result in several political ripple effects. Austria is isolated, and will have no allies to support them in the coming wars against France, Piedmont-Sardinia, and Prussia.  France gains prestige and solidifies the new Emperor's authority. The Kingdom of Sardinia gains the favour of France, who will come to support them in future wars for [[Italian reunification]]. 
+
+The war served as a transition point in warfare, being the last European war where religion was its primary cause, while being modern in its incorporation of new technologies like the photograph and telegraph.
+
+---
+### References
+![](https://www.youtube.com/watch?v=Q-8qqDJWvXw&t=1223s)
+
+![](https://www.youtube.com/watch?v=XQ2hme8-9e8&t=699s)

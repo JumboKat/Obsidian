@@ -296,4 +296,64 @@ Predive planning refers to the actual dive plan. Here you will settle on details
 - agree on buddy separation procedures.
 - agree on time, depth, and air supply limits.
 - discuss emergency procedures.
+### Health and Fitness
+#### Alcohol, Tobacco, and Drugs
+Never use alcohol or tobacco before diving. Alcohol impairs your judgment, and its effects can increase with depth. It also accelerates body heat loss and tends to dehydrate you, which many experts think may contribute to decompression sickness risk.
 
+Avoid smoking for several hours before a dive, as it significantly decreases circulatory and respiratory efficiencies. Because it can trap air in your lungs, it may also increase the risk of lung overexpansion injury. 
+#### Menstruation and Pregnancy
+If menstruation does not normally prevent you from other physical activities, it will likely not affect diving either. While the effect of diving on a developing fetus hasn't been conclusively determined, the consensus is that it is not worth the risk.
+### The Air You Breathe
+Air is a mixture of many different gases, though most make up less than one percent of air's composition. Therefore, air is effectively 79% **nitrogen** and 21% **oxygen**. 
+
+**Enriched air nitrox (EANx)** contains 22% or more oxygen, with many common blends containing 32% or 36% oxygen. There are advantages and disadvantages to increased oxygen content, as it can cause issues related to decompression sickness and oxygen toxicity.
+
+With respect to the depth-pressure-volume-density relationships, air can be considered as a single gas. However, there are four distinct issues associated with the constituent gases in air, which are:
+- Oxygen toxicity
+- Contaminated air
+- Decompression sickness
+- Gas narcosis
+#### Oxygen Toxicity
+Under high pressure, oxygen is toxic. Oxygen toxicity can occur when breathing it deeper than a specific depth. The higher the oxygen content, the shallower the limit. Higher oxygen content can also increase risk of fire/combustion. To avoid oxygen toxicity with non-enriched air, avoid exceeding the maximum depth for recreational diving (40m/130 ft). As for fire/combustion, it isn't an issue when using standard scuba equipment. When using enriched air, the toxicity can occur at shallower depths. For pure (100%) oxygen, the safe limit is only 6m/20ft. While pure oxygen isn't used for recreational diving, it is used by tec divers with special equipment and training.
+#### Contaminated Air
+Contaminated air is air that contains accidental impurities. While it is rare, it is imperative that scuba air be especially pure, as even trace contaminants (like carbon monoxide or oil vapour) that may normally be harmless at the surface can be toxic when breathed under pressure. Compressors used for filling scuba cylinders have special filters and separators to remove contaminants from breathing air.
+
+Possible causes of contaminated air include:
+- Getting a cylinder filled at an improper source.
+- Improper maintenance of the filling system.
+- Very high levels of contaminant in the source gas, more than the filters can keep out.
+
+Contaminated air can smell and taste bad, but sometimes it is odourless and tasteless. Breathing contaminated air can result in these signs and symptoms:
+- Headache
+- Nausea
+- Dizziness
+- Unconsciousness/Unresponsiveness
+- Cherry-red lips/fingernail beds
+
+If someone has breathed contaminated air, have them breathe fresh air. Provide CPR if necessary and contact EMS.
+#### Decompression Sickness
+The increased pressure experienced while diving causes nitrogen within breathing air to be absorbed and dissolved into your body tissues. The greater the pressure, the faster nitrogen dissolves in your tissues, and the longer you are in water, the more time it has to dissolve. Thus, the two primary factors influencing nitrogen absorption during a dive are depth and time.
+
+Since the nitrogen in your tissues isn't used or consumed, there will be more nitrogen than can remain in your tissues as you ascend. The excess will dissolve out of your body tissues, which will normally circulate through the blood to your lungs, and exits as you exhale. If the excess nitrogen is within accepted limits, your body will remove it harmlessly over the next several hours. If the excess is too high, as you ascend the nitrogen may dissolve out of solution faster than your body can purge it, causing nitrogen to bubble up within your blood and body tissues. This is known as **decompression sickness (DCS)**, or **"the bends."** Signs and symptoms depend on where they form in the body, and include:
+- Paralysis
+- Dizziness
+- Tingling
+- Join and limb pain
+- Shock
+- Numbess
+- Difficulty Breathing
+- Weakness and prolonged fatigue
+- Unconsciousness and death (in severe cases)
+
+Signs and symptoms may be clear and obvious, but they can also be subtle. They can manifest as merely a moderate, dull ache, mild tingling or numbness, weakness and prolonged fatigue. They usually occur 15 minutes to 12 hours after a dive. All suspected cases of DCS should be treated seriously, no matter the apparent mildness of the signs/symptoms.
+
+Secondary factors can influence how your body absorbs and releases excess nitrogen, and include:
+- Fatigue
+- Dehydration
+- Cold
+- Poor fitness/high body fat
+- Illness
+- Injuries
+- Age
+- Alcohol consumption
+- Vigorous exercise

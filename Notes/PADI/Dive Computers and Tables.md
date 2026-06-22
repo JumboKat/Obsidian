@@ -1,0 +1,5 @@
+To avoid decompression sickness (DCS), you must keep body nitrogen levels within accepted limits. However, as there is no way to directly monitor your body's nitrogen levels, we use dive computers and tables as a reference.
+### How They Work
+Dive computers and tables use your dive time and depth to calculate the theoretical nitrogen content of your body. These estimates are compared against limits based on experimental dives and human experience. 
+
+**Dive computers** apply a decompression model to depth and time information. The computer constantly updates your calculated nitrogen content and compares it to the model. Before dive computers, divers relied on **dive tables**. With the **Recreational Dive Planner (RDP) Table**, you use the depth from a depth gauge and the time from a timer or watch to look up the accepted limits on the RDP Table. An eRDP is an electronic calculator that takes depth and time information as inputs and looks it up on the table for you.

@@ -1,10 +1,14 @@
 ---
 sorting-spec: |-
   
-  target-folder: 
+  
   target-folder: Obsidian/Notes/History
+  Ancient History
   Pre-WWI
   Cold War era
+
+  target-folder: Obsidian/Notes/History/Ancient History
+  Alexander the Great's Conquest (336-323 BC)
 
   target-folder: Obsidian/Notes/History/Pre-WWI
   Crimean War (1853-1856)

@@ -1,5 +1,7 @@
 ---
 sorting-spec: |-
+  
+  target-folder: 
   target-folder: Obsidian/Notes/History
   Pre-WWI
   Cold War era

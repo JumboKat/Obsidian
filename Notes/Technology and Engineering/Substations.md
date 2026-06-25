@@ -1,5 +1,5 @@
 ![[Pasted image 20260618104030.png]]
-Electricity flows through the power grid in three distinct steps: generation, transmission, and distribution. **Substations** serve as the linking interfaces between these steps.
+Electricity flows through the [[Power Grids||power grid]] in three distinct steps: generation, transmission, and distribution. **Substations** serve as the linking interfaces between these steps.
 ### Switching
 ![[Pasted image 20260618104551.png]]
 A substation serves as the terminal for many several incoming power lines (called **conductors**) before heading out to their next step in the power grid. The multiple power lines ensure redundancy in the event that any one line is out of commission. If any part of the system requires maintenance or repair, **switches** are in place to disconnect it; shutting off high voltages can be risky, as electricity can still travel through the air after a line breaks in the form of an **arc**.
@@ -22,7 +22,7 @@ Many faults are quick and temporary (lightning strikes, swaying tree branches), 
 
 Substations can also be used to shed load if demand on the grid becomes too high, implementing rolling blackouts.
 ### Transformation
-At power plants, electricity is often produced at low voltage. The voltage is then greatly increased when it is transmitted via [[Power Lines]] to increase its efficiency across greater distances, as higher voltages reduces power loss during travel, but it is also more dangerous, and can't be feasibly used by consumers. Thus substations use a **transformer** to reduce the voltage.
+At power plants, electricity is often produced at low voltage. The voltage is then greatly increased when it is transmitted via [[Transmission Lines||Power Lines]] to increase its efficiency across greater distances, as higher voltages reduces power loss during travel, but it is also more dangerous, and can't be feasibly used by consumers. Thus substations use a **transformer** to reduce the voltage.
 
 ![[Pasted image 20260618111508.png]]
 A transformer contains two coils of wire; one having a greater number of loops than the other. When incoming high voltage current passes through one coil, it induces a magnetic field that creates flowing current in the other wire. The ratio of coils determines the reduction of voltage from one wire to the other; if there are 1000 coils in the incoming wire and 100 coils in the outgoing wire, the resulting voltage will be reduced to a tenth. 

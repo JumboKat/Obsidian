@@ -35,7 +35,7 @@ All dive computers provide the following information before, during, and/or betw
 - Depth
 - Elapsed time underwater and between dives
 - Remaining no stop time
-- Ascent rate, including visual speedometres and alarms
+- Ascent rate, including visual speedometers and alarms
 - Emergency decompression
 - Previous dive information
 ### Dive Computer Failure

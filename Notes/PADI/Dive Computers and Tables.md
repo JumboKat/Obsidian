@@ -23,3 +23,23 @@ The RDP and other dive tables account for repetitive diving by using three table
 
 ![[Pasted image 20260624140227.png]]
 The third table shows no stop times for each depth adjusted for by your pressure group you begin the dive with.
+### Advantages of Dive Computers
+Dive computers are superior to dive tables as they offer four advantages:
+1. Dive computers are easier to use than tables.
+2. Dive computers help offset human error.
+3. Dive computers give you more time underwater.
+4. Dive computers have additional features, like recording water temperature, and an eLog.
+#### Dive Computer Information
+All dive computers provide the following information before, during, and/or between dives:
+- No stop (no decompression) limits
+- Depth
+- Elapsed time underwater and between dives
+- Remaining no stop time
+- Ascent rate, including visual speedometres and alarms
+- Emergency decompression
+- Previous dive information
+### Dive Computer Failure
+Dive computers are extremely reliable and failure is very rare. Most computers confirm adequate battery power for 12-24 hours when you turn them on. Failures can result in bad or no information being displayed. If a failure occurs, it rarely fixes itself; have it serviced before using it again even if it seems fine. If a failure occurs during a dive, there are two options:
+1. Signal your buddies and end the dive, making a safety stop along the way.
+2. Continue using a backup computer. If you are using a backup, you must dive with both computers at all times to ensure both have the correct information. If both were to fail, defer to option 1.
+If failure occurs between dives, you may be able to use a table. Otherwise, wait 12 hours at the surface for your nitrogen levels to normalize.

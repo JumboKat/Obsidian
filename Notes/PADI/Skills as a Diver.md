@@ -13,6 +13,15 @@ This is often occurs when you are relatively close to the water, when diving fro
 - Enter with your BCD partially inflated, holding your mask and breathing from your regulator.
 - Tuck your chin toward your chest.
 - Lean backward until your weight rolls you in.
+#### Controlled Seated Entry, Put on Scuba Kit at Surface
+![[Pasted image 20260628133712.png]]
+This type of entry is used when diving from small boats in which there is not enough room to kit up. It is also useful when entering too high above the water for a giant stride.
+- Completely assemble your gear, check SPG for air and ensure the valve is open.
+- Go through the predive safety check.
+- Lower your kit into the water, then perform a controlled seated entry
+- Put both hands on the platform, then pivot your body to face away from the water, then lower yourself in.
+- Unbuckle the band, hold your kit upright and wear your kit, then secure and adjust the harness. You can now put your weight system on if it was too heavy or if it was separate from your kit.
+The controlled seated entry can also be used with your scuba kit on.
 ### Weight Check
 - check your weight in the water with a buddy, making adjustments one at a time.
 - you should float at eye level with an empty BCD and holding a normal breath; you should slowly sink when you exhale.
@@ -53,3 +62,16 @@ The technique may vary with equipment. Be careful not to drop the weights.
 - If you start to have a cramp, signal to your buddy and stop.
 - Allow the muscle to rest; it can help to gently stretch and massage it.
 - After relieving a cramp, rest for a few minutes, and proceed at a slower pace.
+### Helping a Tired Diver
+Some divers cannot swim on their own due to over exhaustion, severe leg cramps, or other issues. 
+![[Pasted image 20260628134401.png]]
+For short distances you can use the cylinder valve tow, with both of you facing up.
+
+![[Pasted image 20260628134323.png]]
+For longer tows, use the **tired diver push**, which lets you see where you are going. Put their feet on your shoulders and your hands on their knees, and swim at a controlled pace.
+### Skin Diving
+**Skin diving**, or "free diving" means diving with only a mask, fins, and snorkel (no scuba kit). Skin diving is useful for scouting potential dive sites without wasting time or air with a scuba kit. It is also for diving in places where scuba equipment isn't available, and for quickly going to someone in need of assistance in the water. 
+- Breathe from your diaphragm (called "stomach breathing" since it is above your stomach) before making a breath-hold dive; breathe so that your stomach expands.
+- Diaphragm breathing is preferred over hyperventilation, since the latter can lower carbon dioxide levels too a point where you run out of oxygen before you get the urge to breathe.
+#### Buddy Contact
+When skin diving, one buddy remains at the surface while the other dives, so that the one at the surface can come to the aid of the one diving if needed.

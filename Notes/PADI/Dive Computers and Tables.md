@@ -43,4 +43,33 @@ Dive computers are extremely reliable and failure is very rare. Most computers c
 1. Signal your buddies and end the dive, making a safety stop along the way.
 2. Continue using a backup computer. If you are using a backup, you must dive with both computers at all times to ensure both have the correct information. If both were to fail, defer to option 1.
 If failure occurs between dives, you may be able to use a table. Otherwise, wait 12 hours at the surface for your nitrogen levels to normalize.
-### Minimum Surface Interval
+### Flying After Diving and Altitude Diving
+Going to a higher altitude lowers the pressure around you and causes any excess dissolved nitrogen in your body tissues to come out of solution faster, thereby increasing the risk of DCS. Flying after diving, going to a higher altitude, or diving at a higher altitude all require following special procedures to account for the reduced pressure.
+#### Flying After Diving Recommendations
+For no stop dives:
+- Single dives: a minimum preflight surface interval of 12 hours.
+- Repetitive dives or multiday dives, or any dives involving emergency decompression stops: a minimum preflight surface interval of 18 hours. 
+#### Altitude Diving
+With most dive computers and tables, you will need to follow specific procedures for dives 300m/1000ft above sea level. Some computers automatically adjust, some require adjusted settings, and some cannot be used at altitude at all.
+
+With tables, a special table is used to convert your actual depth to a theoretical depth that adjusts for the low pressure.
+### Cold and/or Strenuous Dives
+If you get cold or exert yourself a lot during a dive, you may end up with more dissolved nitrogen in your body than calculated by your dive computer/table. In this case, be more conservative with your limits. With the RDP table and eRDP, plan cold/strenuous dives as if they are 4m/10ft deeper.
+### Emergency Decompression Stops
+Emergency decompression stops are required if you exceed a no stop limit. Where safety stops keep you well within limits, emergency decompression stops return you from outside limits. Having to perform one means you either failed to monitor your diver computer, or something forced you to overstay your time at depth. If you significantly exceed no stop limits, you may have to perform more than one stop.
+
+Your computer will enter decompression mode if you exceed its no stop limits. In this mode, it will provide the depth at which you will make your emergency stop and for how long before you can complete your ascent (or to the next stop). 
+
+If you don't have enough air to complete a stop, stop a long as you can, but save enough air to surface and exit safely. If you didn't complete the entire emergency decompression stop, or skipped it altogether, after ascending, relax and breathe 100% emergency oxygen if available and monitor yourself for DCS symptoms. Don't dive again for at least 24 hours.
+### Decompression Illness
+Lung overexpansion injuries and decompression sickness, though originating from very different causes, can produce very similar signs and symptoms, and require the same first aid treatment. Therefore, the term *decompression illness (DCI)* is used by the dive community for both conditions.
+#### Treating Suspected DCI
+- The diver should stop diving.
+- Check for breathing, providing CPR as needed.
+- Contact EMS.
+- Keep them lying down and provide emergency oxygen.
+- Monitor them and prevent shock.
+- If they are unresponsive but breathing normally, lay them level, left side down, head supported.
+- Continue treatment until EMS arrives.
+
+Almost all DCI cases are treated in a recompression chamber, where the diver is put under pressure, helping the body to absorb the gas bubbles. The pressure is then gradually lowered over many hours.

@@ -43,3 +43,4 @@ Dive computers are extremely reliable and failure is very rare. Most computers c
 1. Signal your buddies and end the dive, making a safety stop along the way.
 2. Continue using a backup computer. If you are using a backup, you must dive with both computers at all times to ensure both have the correct information. If both were to fail, defer to option 1.
 If failure occurs between dives, you may be able to use a table. Otherwise, wait 12 hours at the surface for your nitrogen levels to normalize.
+### Minimum Surface Interval

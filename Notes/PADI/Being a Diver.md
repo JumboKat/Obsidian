@@ -373,3 +373,16 @@ While gas narcosis in itself is not harmful, it impairs your judgement, thinking
 
 Gas narcosis is thought to be caused by increased dissolved gases in body tissues slowing nerve impulses that travel in the brin and nervous system, thereby slowing communication between the brain and the body, and between different parts of the brain. Most divers begin to notice narcosis at around 30m/100ft. Prescription and over-the-counter drugs can combine their effects with narcosis. Cold water, darkness and limited visibility seem to increase receptiveness to narcosis. Narcosis is avoided by staying within depth limits. It likely is not a concern down to 30m/100ft deep. If you experience narcosis, immediately ascend to  a shallower depth. Continue from there or abort the dive. It generally fades quickly when you reach a shallower depth.
 ### Navigation
+Navigating underwater has at least five benefits:
+1. It helps you plan your dive so you don't waste air trying to find the best parts of the dive site.
+2. It allows you to avoid long surface swims by navigating to your ascent point underwater.
+3. It helps you take the shortest route to the boat or shore if you have a problem.
+4. It lets you avoid certain areas or stay within a certain area.
+5. It reduces stress; you know where you are at all times and can be less concerned with how far you are from the exit point.
+#### Compass Features
+You will either use an analog or electronic compass (usually part of the dive computer). A standard analog underwater compass has four basic components.
+![[Pasted image 20260701103517.png]]
+1. **Magnetic north needle**: this needle rotates so that it always points north, as long as the compass is level and you are not too close to something made of steel or iron.
+2. **Lubber line**: a straight line through the center of the compass face. It is always your direction of travel.
+3. **Bezel with index marks**: the bezel rotates so you can align two parallel index marks over the north needle, helping you to maintain a straight line while swimming. Some have a second set opposite of the first, allowing you to set a return course without having to reset the compass.
+4. **Heading reference**: 

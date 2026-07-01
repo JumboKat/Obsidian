@@ -357,3 +357,19 @@ Secondary factors can influence how your body absorbs and releases excess nitrog
 - Age
 - Alcohol consumption
 - Vigorous exercise
+#### Gas Narcosis
+Many gases, including nitrogen and oxygen, can be intoxicating when breathed under pressure, leading to **gas narcosis**. Signs and symptoms include:
+- Feeling drunk or high
+- Loss of coordination
+- Slowed thinking
+- Slowed reactions
+- Inappropriate laughter
+- Depression
+- False sense of security
+- Ignoring or disregard for safety
+- Anxiety and/or panic 
+
+While gas narcosis in itself is not harmful, it impairs your judgement, thinking, and response times when underwater. Some gases, like helium, are not narcotic, and are used in gas mixes breathed by tec divers.
+
+Gas narcosis is thought to be caused by increased dissolved gases in body tissues slowing nerve impulses that travel in the brin and nervous system, thereby slowing communication between the brain and the body, and between different parts of the brain. Most divers begin to notice narcosis at around 30m/100ft. Prescription and over-the-counter drugs can combine their effects with narcosis. Cold water, darkness and limited visibility seem to increase receptiveness to narcosis. Narcosis is avoided by staying within depth limits. It likely is not a concern down to 30m/100ft deep. If you experience narcosis, immediately ascend to  a shallower depth. Continue from there or abort the dive. It generally fades quickly when you reach a shallower depth.
+### Navigation

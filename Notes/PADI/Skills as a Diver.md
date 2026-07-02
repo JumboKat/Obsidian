@@ -75,3 +75,19 @@ For longer tows, use the **tired diver push**, which lets you see where you are 
 - Diaphragm breathing is preferred over hyperventilation, since the latter can lower carbon dioxide levels too a point where you run out of oxygen before you get the urge to breathe.
 #### Buddy Contact
 When skin diving, one buddy remains at the surface while the other dives, so that the one at the surface can come to the aid of the one diving if needed.
+### Remove and Replace Underwater
+#### Scuba Kit
+You may find yourself in rare situations requiring you to remove and replace your kit underwater, such as freeing yourself from entanglement or to make an adjustment. This is one of the few skills where it helps to be negatively buoyant.
+
+![[Pasted image 20260702121259.png]]
+- Do this on insensitive bottom away from fragile life, if possible.
+- Completely deflate your BCD and kneel on the bottom with your left knee up and right knee down.
+- Remove the BCD starting with your left arm so the regulator stays in your mouth.
+- Keep the kit upright and do not let go of it. Stand it on top of your right knee. You may want to keep your right arm partially through the harness to secure it.
+- Put it back on like a jacket, starting with the right arm to keep the regulator in your mouth.
+- Before fastening the straps, ensure that you won't trap any hoses or accessories.
+#### Weight System
+You may need to replace your weight system underwater to adjust your trim, remove weights (which you will retrieve later) to replace a dislodged weight pouch or to untwist a weight belt. Again, it helps to be negatively buoyant.
+- On insensitive bottom, deflate your BCD and kneel.
+- Remove the weight pocket and rest it on your knee. If using a weight belt, release it and pull it from behind your back with the buckle (left side) free, and drape it over your knee.
+- Replace it as you would at the surface.

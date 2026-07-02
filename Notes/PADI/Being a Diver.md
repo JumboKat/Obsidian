@@ -385,4 +385,14 @@ You will either use an analog or electronic compass (usually part of the dive co
 1. **Magnetic north needle**: this needle rotates so that it always points north, as long as the compass is level and you are not too close to something made of steel or iron.
 2. **Lubber line**: a straight line through the center of the compass face. It is always your direction of travel.
 3. **Bezel with index marks**: the bezel rotates so you can align two parallel index marks over the north needle, helping you to maintain a straight line while swimming. Some have a second set opposite of the first, allowing you to set a return course without having to reset the compass.
-4. **Heading reference**: 
+4. **Heading reference**: numbers record your heading (current direction of travel, in degrees from magnetic north).
+#### Holding, Setting, and Navigating
+![[Pasted image 20260702103926.png]]
+While you swim, the compass should be relatively level and so the lubber line is aligned with the centerline of your body. If wearing it on your wrist, hold your arm with the compass straight out with the other arm near the elbow. With a console, hold the compass squarely in front of you with two hands.
+
+Lock your arms and look over the compass not down on it, so that you can see where you're going while you read it. To navigate using your compass, do as follows:
+- Hold the compass with the lubber line pointed in the desired direction of travel.
+- Let the north needle settle on magnetic north, then rotate the bezel until the index marks straddle the needle.
+- Swim along the lubber line, continuing to hold the compass properly in front of you. Keep the needle within the index marks.
+- If you turn off course, the needle will drift outside the marks. Turn your body to correct your course and continue.
+Typically, one buddy navigates while another maintains contact and watches the depth. You can set a return heading by rotating the bezel 180 degrees.

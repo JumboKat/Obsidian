@@ -1,3 +1,5 @@
+Tags: #PADI 
+
 To avoid decompression sickness (DCS), you must keep body nitrogen levels within accepted limits. However, as there is no way to directly monitor your body's nitrogen levels, we use dive computers and tables as a reference.
 ### How They Work
 Dive computers and tables use your dive time and depth to calculate the theoretical nitrogen content of your body. These estimates are compared against limits based on experimental dives and human experience. 

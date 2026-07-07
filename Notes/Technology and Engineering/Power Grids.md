@@ -1,3 +1,5 @@
+Tags: #infrastructure 
+
 ![[Pasted image 20260626100923.png]]
 Electricity is a resource that is consumed at the same time it is produced. In North America, there are four distinct power grids that serve almost all of the continent: the **Western** and **Eastern** grids, and the separated power grids of Quebec and Texas.
 ### Three Phases of the Grid

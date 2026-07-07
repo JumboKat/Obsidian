@@ -1,4 +1,4 @@
-#water_systems 
+Tags: #infrastructure 
 ### What is a Spillway?
 Dams are built for the purpose of storing water and protecting against flooding caused by spikes in inflows. But even for dams, water surges can vary enormously and quickly (such as in a storm). Dam failures have historically led to many human disasters, and so are designed to withstand the worst conceivable storm event, or the **probable maximum flood**. Simply building the dam higher to accommodate the worst possible scenario would be too costly. Thus, every dam has at least one **spillway** that can safely drain water in the event of overwhelming excess.
 ![[Pasted image 20260705154051.png]]

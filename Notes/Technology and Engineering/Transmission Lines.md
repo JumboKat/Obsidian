@@ -1,3 +1,5 @@
+Tags: #infrastructure 
+
 Power plants that produce electricity are typically located far away from their end consumers. This is because rural, unpopulated land is relatively cheap, and most plants require large cooling ponds. They also aren't desirable to live nearby, as they can be a major source of air, sound, and visual pollution. Thus, most electricity is distributed long distances via electric transmission lines, or **conductors**, suspended high in the air over rural area. Because electric utilities providers only profit off of the energy that reaches consumers, it is in their interest that the transmission of electricity be as efficient as possible. 
 ### Energy Loss Reduction: High Voltages
 When electricity travels over any distance through a medium, energy is lost as heat due to the resistance of the medium. Even good conductors like aluminum and copper offer some resistance to the flow of current.

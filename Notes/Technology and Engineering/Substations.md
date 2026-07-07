@@ -1,3 +1,5 @@
+Tags: #infrastructure 
+
 ![[Pasted image 20260618104030.png]]
 Electricity flows through the [[Power Grids||power grid]] in three distinct steps: generation, transmission, and distribution. **Substations** serve as the linking interfaces between these steps.
 ### Switching

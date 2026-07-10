@@ -1,4 +1,4 @@
-Tags: #France #Vietnam #Japan #Britain 
+Tags: #France #Vietnam #Japan #Britain #China #USA 
 ### French Indochina
 The territory of **French Indochina**, which includes the modern-day territory of Laos, Cambodia, and Vietnam was formed in the late-nineteenth century at the height of European imperialism. Seeking to deny Great Britain—who already controlled Burma (Myanmar), Brunei, and today's Malaysia—additional imperial holdings in South-East Asia, France spreads its influence over independent kingdoms in the region of Indochina, doing so through various means, including via economic concessions, missionaries, aggressive expansion, and imposing protectorates. In 1887, these territories are incorporated into a single colony. Under the guise of 'civilising' its peoples, France exploits the colony for its resources and labour, while supressing local identities. 
 ![[Pasted image 20260510065415.png]]
@@ -98,4 +98,24 @@ The French now come up with three ways to get them out of their situation.
 2. **Operation Albatross** would be a breakout of the base towards French positions.
 3. **Operation Vulture** would be a request to the U.S. for more military support.
 
-It is difficult for the French to scrape up the troops and aircraft necessary for Condor, and Albatross is held a backup option. Therefore, Navarre focuses on Vulture, and asks the U.S. to lend the French B-29 Bombers. Given the training difficulties, it is debatable as to how successful the French aircrews will be, and the Americans understand that this is a request for direct U.S. intervention. While the plan does have its supporters (such as secretary of state **John Dulles** and Vice President **Richard Nixon**), the U.S. were already covering 80% of French expenditures in Indochina, and many feared that further intervention would be a drain on resources and risk provoking Chinese intervention.
+It is difficult for the French to scrape up the troops and aircraft necessary for Condor, and Albatross is held a backup option. Therefore, Navarre focuses on Vulture, and asks the U.S. to lend the French B-29 Bombers. Given the training difficulties, it is debatable as to how successful the French aircrews will be, and the Americans understand that this is a request for direct U.S. intervention. While the plan does have its supporters (such as secretary of state **John Dulles** and Vice President **Richard Nixon**), the U.S. were already covering 80% of French expenditures in Indochina, and General **Matthew B. Ridgway**, former U.S. commander in Korea, feared that further intervention would be a drain on resources and risk provoking Chinese intervention. House Minority Leader **Lyndon B. Johnson** says that U.S. involvement should only occur as part of an international coalition involving Britain and other democratic Asian nations. However, the public in Britain are in favour of a diplomatic resolution; no official U.S. intervention would occur, however some American pilots would fly resupply sorties to Dien Bien Phu under a company secretly operated by the CIA.
+#### French Defeat
+By March, Dien Bien Phu is on its last legs. The Viet Minh make it near impossible for any outside support to reach the base; French relief efforts from Laos are stifled, while the impact of outside air support (as all of the local aircraft had been destroyed) was minimized by anti-aircraft fire. Meanwhile, the Viet Minh continue to close in on Dien Bien Phu.
+
+![[Pasted image 20260709224456.png]]
+On March 30th, the Viet Minh launch an assault from the east, in what would be known as the "Battle of the Five Hills." The French make a desperate defence, even finding success in using anti-aircraft guns on ground targets. As the battle is unfolding, the Viet Minh make another attack from the west.
+
+So far, the assaults on the base have taken a heavy toll on the Viet Minh, who have are suffering decreasing morale in the face of high casualty rates. Giap turns to siege tactics, digging tunnels and trenches with the help of Chinese engineers to close in on the French defences. By April, the French only hold an area of 1.5km in diametre. Supply drops are unable to reach the French position, and the relief columns are slowed by guerilla ambushes and the monsoon rains. By May, the French endure constant artillery-fire and pouring rains. 
+
+![[Pasted image 20260709230128.png]]
+New Chinese six-barreled rocket launchers now arrive on the battlefield, used by the Viet Minh to soften up the French defences before their assault on May 7th. By 6pm, the main camp was taken, followed shortly after by the lone isolated bunker 'Isabella' to the south
+### Geneva Accords
+While France still held a significant presence in the country after the fall of Dien Bien Phu, the troops had lost the will to fight, and both public interest and opinion back home had soured, with many calling it "la sale guerre," or "the dirty war." The war had resulted in 79,000 and 200,000 deaths for the French and the Viet Minh, respectively. 
+
+![[Pasted image 20260709231321.png]]
+At the **Geneva Accords**, a conference where the issues of the Korean War and First Indochina War were to be settled by the U.S., France, Great Britain, Soviet Union, and China, it was to be decided that Laos and Cambodia would become independent states, while Vietnam would be divided into two along the *17th Parallel*: a communist state in the north under Hồ Chí Minh, and non-communist one in the south led by Bảo Đại and Prime Minister **Ngô Đình Diệm**. The Viet Minh withdraw all of its units to the north in anticipation of Vietnam-wide elections in 1956. The Republic of Vietnam in the south expels French administrators and troops in favour of American support. 
+### Aftermath
+The Viet Minh were not satisfied with this conclusion; they wanted a unified Vietnamese state, but were pressured by the Chinese to compromise; the Chinese simply wanted stability to its south and to prevent U.S. involvement. The U.S. are concerned with the new communist Vietnamese North. Eisenhower fears that communism may soon spread to other nearby countries in Asia, a fear that would later be known as the **Domino Theory**. The Americans soon take great interest in 'protecting' the new Republic of Vietnam from its communist neighbor
+
+---
+![](https://www.youtube.com/watch?v=JlirH5pq040&t=2859s)

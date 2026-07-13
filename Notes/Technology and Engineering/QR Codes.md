@@ -29,7 +29,7 @@ While they are favoured for being quick and convenient, QR codes are also highly
 - Software actions
 
 ![[Pasted image 20260713115805.png]]
-Dynamic QR codes are an innovation upon the original QR code design. With older QR codes, the desired information was directly encoded into the QR code, and could not be changed afterward. Dynamic QR codes solve this issue by encoding an intermediate URL. This intermediate can then be altered to change the destination without changing the QR code itself. It also allows tracking statistics, like when, how often, and where it was scanned.
+Dynamic QR codes are an innovation upon the original QR code design. With older QR codes, the desired information was directly encoded into the QR code, and could not be changed afterward. Dynamic QR codes solve this issue by encoding an intermediate URL. This intermediate can then be altered to change the destination without changing the QR code itself. It also allows tracking statistics, like when, how often, and where it was scanned. The pattern also tends to be not as dense, making it easier for scanners to read.
 
 ---
 ### References

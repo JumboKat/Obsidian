@@ -1,4 +1,4 @@
-Tags: #History #China #Japan #Korea
+#History #China #Japan #Korea
 ### Prelude
 In the early 1890s, Korea finds itself the centre of attention of larger powers, those being China, Japan, Russia, and Great Britain. During this time, the country is plagued by political instability as well, with great debate on whether to modernize and embrace Western technologies similar to Japan during the Meiji restoration, or increase its dependency on Qing China. 
 

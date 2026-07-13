@@ -1,4 +1,4 @@
-Tags: #History #Russia #Britain #France #Ottoman_Empire
+ #History #Russia #Britain #France #Ottoman_Empire
 ### Prelude
 During the mid-19th century, the Ottoman Empire has fallen behind the other European powers in terms of modernization and technology since the late 18th century, earning it the nickname "**the sick man of Europe**." Its weakness threatens the balance of power in Europe, a problem known as the **Eastern Question**, and results in several wars between the Ottomans and the Russians between the 1760s to 1820s, of which the Russians are mostly victorious. Now in the 1850s, Russia views itself as the protector and leader of Orthodox Christians, seeking to unite Constantinople and Central Asia under a shared Christian empire. Britain, France, and Austria want to limit Russian expansion while keeping the Ottoman's afloat, and so they offer assistance to the ailing empire, though with concessional demands.
 ### Escalation

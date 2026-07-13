@@ -1,4 +1,4 @@
-Tags: #History #Britain #South_Africa
+ #History #Britain #South_Africa
 ### Prelude
 Since the mid-17th century, Dutch settlers had established the **Cape Colony** settlement in what is now South Africa. They called themselves Afrikaners and spoke their own dialect of **Afrikaans**, but are more often referred to as **Boers**, meaning "peasant" in Dutch. They seized lands from and enslaved the natives of South Africa. After the Battle of Cape Town in 1806 during the Napoleonic Wars, Great Britain maintained permanent control over the colony after 1815, but conflicts over language, culture, and legislation arose between the Boers and the British, which came to a head in 1834 when Britain outlawed slavery. 
 

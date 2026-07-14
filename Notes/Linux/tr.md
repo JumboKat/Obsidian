@@ -36,4 +36,13 @@ cat log_entry.txt | tr -cd '[:digit:]'
 ```
 Which prints "123094520230815." With the set '[:digit:]' specifying all digits (0-9), together -cd '[:digit:]' means "delete all characters that are not digits."
 ### Squeezing Repeats (-s)
-Using the squeeze option (-s) 
+The squeeze option (-s) can be used to clean up data with unnecessary repetition by "squeezing" repeated characters into a single occurrance.
+
+The following is an example:
+```
+echo "This is a test with extra spaces." > ~/project/spaced.txt
+cat spaced.txt | tr -s ' '
+```
+Which gives the output: "This is a test with extra spaces." The **-s** option squeezes the repeats of the ' ' character together.
+### Truncate (-t)
+The **-t** option, followed by two strings, truncates string1 to the length of string2.

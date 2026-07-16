@@ -26,7 +26,7 @@ The following is an example command, where "encoded.txt" contains the text "Uijt
 ```
 cat encoded.txt | tr 'b-zaB-ZA' 'a-zA-Z'
 ```
-Which will print "This is a secret message." To the terminal. Here, the first set represents a shifted alphabet (covering both lowercase and uppercase letters), while the second is a regular alphabet. This creates a mapping where each letter in the text is shifted back by one letter in the alphabet (b in first set → a in second set, c in first set → b in second set, etc.). This example shows a type of encryption called a**Caesar cipher**.
+Which will print "This is a secret message." To the terminal. Here, the first set represents a shifted alphabet (covering both lowercase and uppercase letters), while the second is a regular alphabet. This creates a mapping where each letter in the text is shifted back by one letter in the alphabet (b in first set → a in second set, c in first set → b in second set, etc.). This example shows a type of encryption called a **Caesar cipher**.
 ### Compliment Set (-c)
 The compliment option (-c) specifies all characters not contained within the following set.
 

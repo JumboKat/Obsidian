@@ -44,4 +44,34 @@ $ awk '$4 == "POST" {print $0}' server_logs.txt | head -n 10
 2023-08-01 16:57:50 192.168.1.184 POST /api/data 200
 2023-08-01 18:56:24 192.168.1.102 POST /login.php 400
 ```
-Here, **$4 == "POST"** is a pattern/condition that evaluates if the fourth field in the line is equal to the string "POST"
+Here, **$4 == "POST"** is a pattern/condition that evaluates if the fourth field in the line is equal to the string "POST".
+
+You can also combine multiple conditions using logical operators:
+```bash
+$ awk '$4 == "POST" && 6 >= 400 {print $0}' server_logs.txt
+```
+### Counting and Summarizing Data
+The awk command can also be used for counting occurrences and summarizing data:
+```bash
+$ awk '{count[$6]++} END {for (code in count) print code, count[code]}' server_logs.txt | sort -n
+200 3489
+301 261
+302 268
+304 227
+400 256
+403 81
+404 267
+500 151
+```
+Here is a breakdown of the code:
+- **{count[$6]++}** is the main action performed at each line.
+	- count is an associative array (dictionary), which is created if it doesn't exist.
+	- [$6] uses the the value of the 6th field (status code) as the array index.
+	- ++ is the incremental operator, which adds one to the current value.
+	- For each line, we increment the counter for each specific status code (6th field) in the array. If a status code does not exist in the array, a new key is created for it.
+- **END {for (code in count) print code, count[code]}** is executed after processing all lines.
+	- END is a special pattern that matches the end of the input.
+	- {...} contains the action to perform after all input has been processed.
+	- for (code in count) is a loop that iterates through all keys in the count array.
+	- print code, count[code] prints each status code as well as its associated count.
+In all, this command prints a list of all status codes and the number of lines they appear in.

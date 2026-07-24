@@ -23,3 +23,7 @@ You can find the resistance by reading the packaging or by using a multimeter. W
 #### Metal Film Resistor
 ![[Pasted image 20260724153540.png]]
 Also very commonly used, a metal film resistor consists of a ceramic core coated in a thin metal layer. The metal connectors are attached via end caps. Like a carbon film resistor, a helical cut is used to control the resistance. A protective coating covers the resistor, with five coloured bands to indicate resistance level.
+##### Reading 5-Band Resistors
+![[Pasted image 20260724165110.png]]
+Reading the resistance of a 5-band resistor is similar to reading a 4-band resistor, except that the first three bands represent digits, rather than the first two.
+#### Wirewound Resistors

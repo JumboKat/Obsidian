@@ -27,3 +27,22 @@ Also very commonly used, a metal film resistor consists of a ceramic core coated
 ![[Pasted image 20260724165110.png]]
 Reading the resistance of a 5-band resistor is similar to reading a 4-band resistor, except that the first three bands represent digits, rather than the first two.
 #### Wirewound Resistors
+![[Pasted image 20260726142454.png]]
+Wirewound resistors are high-power rated and come in many forms, all which share a very basic design; a metal wire wrapped around a ceramic core and covered in a thin insulating layer. The thickness, length, and material used determine the resistance. Some are buried within a block of concrete and are used for high-heat use cases. In another design, the wire is encased in aluminum casing with a ridged surface designed to dissipate heat.
+#### Surface Mount Device (SMD) Resistors
+![[Pasted image 20260726142842.png]]
+SMD resistors usually come in very small sizes, with some even being microscopic. They consist of a ceramic core, an electrode at each end connected by a thin resistive material. This is then covered by an insulting case and capped off with metal connectors.
+
+![[Pasted image 20260726143011.png]]
+A laser-cut groove is made in the resistive material to reduce the area in which electrons can flow to increase resistance. 
+
+While they can have high tolerances, their small size limits their ability to dissipate heat, and so have very low power ratings. On top of the case is a numeric value representing resistance.
+##### Reading SMD Resistances
+![[Pasted image 20260726143217.png]]In three digit SMDs, the first two represent significant values, while the third is the multiplier. For example, "101" indicates a significant value of 10 and a multiplier of 10, meaning it has a resistance of 100Ω. The same is true of four-digit SMDs, except that the first three digits are significant values, and the fourth represents the multiplier.
+
+![[Pasted image 20260726143514.png]]
+If the letter R is present, it represents a decimal value. For example, "47R5" indicates a resistance of 47.5Ω.
+
+![[Pasted image 20260726143655.png]]
+With ratings that include two digits and a letter (e.g. C or Z), we use this specific table to calculate the resistance, where the first two digits serving as the code pointing to a value, and the letter indicating the multiplier.
+#### Potentiometer

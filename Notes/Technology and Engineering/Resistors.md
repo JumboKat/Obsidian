@@ -4,7 +4,7 @@ Resistors come in many forms, and are represented by many different symbols in c
 ### Resistance
 ![[Pasted image 20260724110726.png]]
 A resistor provides resistance to the flow of electrons (measured in Ω/ohms). It does not slow the speed of electrons, but rather limits how many can pass through at any given time. The resistor contains obstacles that electrons collide with, producing heat. This also results in a voltage drop across the resistor.
-### Types of Resistors
+### Types of Resistors - Invariable Resistors
 #### Carbon Composite Resistor
 ![[Pasted image 20260724111419.png]]
 The core of a carbon composite resistor is made by mixing a conducting material (graphite) with an insulating material (ceramic). Metal connectors are attached to each end, with the core wrapped in an insulating case. Electrons flow through the solid core. This type of resistor has fallen out of use, as modern versions are more efficient and robust.
@@ -45,4 +45,16 @@ If the letter R is present, it represents a decimal value. For example, "47R5" i
 
 ![[Pasted image 20260726143655.png]]
 With ratings that include two digits and a letter (e.g. C or Z), we use this specific table to calculate the resistance, where the first two digits serving as the code pointing to a value, and the letter indicating the multiplier.
+### Types of Resistors - Variable Resistors
 #### Potentiometer
+![[Pasted image 20260726202448.png|449]]![[Pasted image 20260726202402.png|240]]
+Potentiometers contain a dial that allows for its resistance to be changed. General-use potentiometers (brown) are often used on larger-scale electronics; for instance, serving the role of volume control on a radio. Precision potentiometers (blue) are used for tuning electronics on circuit boards.
+
+![[Pasted image 20260726202923.png]]A potentiometer has three terminals, with the two end pins connected by a circular resistive track. A dial rotates around the centre pin and connects to the track. Moving the dial increases the length electrons must travel, thus increasing the resistance. Only the centre terminal's voltage can be adjusted.
+##### Reading Potentiometers
+![[Pasted image 20260726203228.png]]
+On general-use potentiometeres, the front will have a number and a letter. The number directly indicates the resistance in Ohms, while the letter indicates whether the resistance scales linearly with rotation (**B**) or logarithmically (**A**).
+
+Smaller, precision potentiometers will have three digits, which are read in the same way as a three-digit SMD resistor (first two digits are values, third is the multiplier, same reference table).
+#### Rheostat
+![[Pasted image 20260726203944.png]]A rheostat is a variable resistor used to control the current in a circuit. They are typically very large as current tends to be high. They can have up to three or four terminals, though only two are used at a time.

@@ -45,6 +45,11 @@ If the letter R is present, it represents a decimal value. For example, "47R5" i
 
 ![[Pasted image 20260726143655.png]]
 With ratings that include two digits and a letter (e.g. C or Z), we use this specific table to calculate the resistance, where the first two digits serving as the code pointing to a value, and the letter indicating the multiplier.
+#### Fusible Resistors
+![[Pasted image 20260727212422.png]]
+A fusible resistor looks almost identical to a standard invariable resistor, but it also acts as a fuse. When a standard resistor is overloaded, it bursts into flames, but when a fusible resistor is overloaded, it shorts the circuit. It consists of a ceramic core with a resistive wire wound around it, connecting the two end caps, and covered by a protective casing. The wire acts as a fuse, breaking if a certain heat threshold is passed. Some variations have a sheet of metal rather than a wire, with a groove cut into it to increase resistance.
+##### Reading Fusible Resistors
+A fusible resistor has five bands, with a white band at the end identifying it as a fusible resistor. The other four indicate the resistance, and would be read as a standard four-band resistor (first two are significant values, third is the multiplier, fourth is the tolerance).
 ### Types of Resistors - Variable Resistors
 #### Potentiometer
 ![[Pasted image 20260726202448.png|449]]![[Pasted image 20260726202402.png|240]]
@@ -57,4 +62,18 @@ On general-use potentiometeres, the front will have a number and a letter. The n
 
 Smaller, precision potentiometers will have three digits, which are read in the same way as a three-digit SMD resistor (first two digits are values, third is the multiplier, same reference table).
 #### Rheostat
-![[Pasted image 20260726203944.png]]A rheostat is a variable resistor used to control the current in a circuit. They are typically very large as current tends to be high. They can have up to three or four terminals, though only two are used at a time.
+![[Pasted image 20260726203944.png]]A rheostat is a variable resistor used to control the current in a circuit. They are typically very large as current tends to be high. They can have up to three or four terminals, though only two are used at a time. Smaller circuits can use a potentiometer as a rheostat. To control current, a rheostat uses a resistive wire coiled around an insulating ceramic core, which is either arced (left) or cylindrical (right). In either form, the rheostat features an arm that moves along the wire that determines how far electrons have to travel through the resistive wire, thus modifying the resistance. Maximum ratings for resistance, power, and/or current can be found marked on the side of the component.
+#### Varistors
+![[Pasted image 20260727212948.png]]
+A **varistor** is a variable resistor similar in appearance to a ceramic capacitor, but cannot be manually controlled like a potentiometer. Instead, it changes its resistance on its own, depending on the voltage it is exposed to.
+
+![[Pasted image 20260727213057.png]]
+It is typically connected in parallel to the supply in delicate circuits. Normally, it provides very high resistance, acting like an insulator and allowing almost no current to pass through. However, after a certain voltage threshold, it behaves like a conductor and short to ground, thus protecting the circuit against spikes in voltage.
+
+![[Pasted image 20260727213345.png]]
+Inside the component lies a mixture of zinc oxide and ceramic at its core, sandwiched between two metal electrodes with metal connectors attached, and is encased in an epoxy protective casing.
+##### Reading Varistors
+![[Pasted image 20260727213443.png]]
+On its face is a rating indicating its diameter (mm), shape (D = disk, S = square), voltage rating (value, number of zeros afterward, in this example 121 means 12 x 10 = 120V), and a letter indicating tolerance (K = ±10%)
+#### Thermistors
+Thermistors are variable resistors whose resistances change based on their temperature.

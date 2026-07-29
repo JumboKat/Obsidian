@@ -32,8 +32,13 @@ $ free -m
 Mem:        15322        3857        6742          45        4722       10834
 Swap:           0           0           0
 ```
-Note that mebibytes (MiB = 1,048,576 bytes) are not the same as megabytes (MB = 1,000,000 bytes) and should not be used interchangeably.
-### Continuous Monitoring (-s)
+Note that mebibytes (MiB = 1,048,576 bytes) are not the same as megabytes (MB = 1,000,000 bytes) and should not be used interchangeably. 
+
+Other units include:
+- **-b** for bytes.
+- **k** for kilobytes
+- **-g** for gigabytes
+### Continuous Monitoring (-s, -c)
 We can use the **-s N** option (seconds) to make the display update every N seconds. The **-c N** option can be used to stop after N updates:
 ```bash
 $ free -h -s 3 -c 5
@@ -68,3 +73,4 @@ Mem:         14Gi       3.2Gi       7.2Gi        47Mi       4.5Gi        11Gi
 Swap:          0B          0B          0B
 Total:       14Gi       3.2Gi       7.2Gi
 ```
+- A row for the total is added at the bottom, showing the sum of physical and virtual RAM.

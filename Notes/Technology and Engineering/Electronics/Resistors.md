@@ -1,9 +1,17 @@
 ![[Pasted image 20260724110331.png]]
 ![[Pasted image 20260724110347.png]]
 Resistors come in many forms, and are represented by many different symbols in circuit diagrams to reflect this. The purpose of a resistor is to convert excess current in a circuit into heat to protect electronics from being overloaded and damaged/destroyed.
-### Resistance
+### Resistance and Power Dissipation
 ![[Pasted image 20260724110726.png]]
-A resistor provides resistance to the flow of electrons (measured in Ω/ohms). It does not slow the speed of electrons, but rather limits how many can pass through at any given time. The resistor contains obstacles that electrons collide with, producing heat. This also results in a voltage drop across the resistor.
+A resistor provides resistance to the flow of electrons (measured in Ω/ohms). It does not slow the speed of electrons, but rather limits how many can pass through at any given time, which reduces the current. The resistor contains obstacles that electrons collide with, producing heat. This also results in a voltage drop across the resistor.
+#### Voltage Divider
+![[Pasted image 20260728181724.png]]
+Putting two equal resistors in series will divide the voltage drop equally across each; the same current passes through both of them.
+#### Current Divider
+![[Pasted image 20260728181938.png]]
+Placing two resistors in parallel splits the current passing through them equally among them. Current is the same everywhere in a circuit; it cannot accumulate at any point of the wire. Additionally, voltage drops and resistance are additive. This means that the order in which resistors are placed in a circuit have no effect on current or voltage (in series).
+#### Power Dissipation
+Resistors are rated for very specific wattages (a.k.a. their ability to dissipate power). Since power is given by the formula P = $I^2$R, the greater the resistance, the greater a resistor's ability to dissipate power as heat. If a resistor's voltage is too low, the current of the circuit, and subsequently the power generated, will overload the resistor and cause it to combust.
 ### Types of Resistors - Invariable Resistors
 #### Carbon Composite Resistor
 ![[Pasted image 20260724111419.png]]
@@ -76,4 +84,30 @@ Inside the component lies a mixture of zinc oxide and ceramic at its core, sandw
 ![[Pasted image 20260727213443.png]]
 On its face is a rating indicating its diameter (mm), shape (D = disk, S = square), voltage rating (value, number of zeros afterward, in this example 121 means 12 x 10 = 120V), and a letter indicating tolerance (K = ±10%)
 #### Thermistors
-Thermistors are variable resistors whose resistances change based on their temperature.
+![[Pasted image 20260728174337.png|366]]
+Thermistors are variable resistors whose resistances change based on their temperature. There are two types: **PTC (Positive Temperature Coefficient)**, which increases resistance as temperature increases, and **NTC (Negative Temperature Coefficient)**, which decreases resistance as temperature increases. They can come in many forms, including film, ceramic bead, chip, disk, and glass-encapsulated.
+
+![[Pasted image 20260728174454.png]]
+They are constructed very simply, with a semiconductor sandwiched between two conductors and covered in a protective coating.
+
+![[Pasted image 20260728174628.png]]
+The semiconductor acts as a insulator, trapping the electrons. When heat is applied, however, the energy excites the electrons enough to allow them to escape, thus facilitating a current. The more heat that is applied, the stronger the current and thus the lower the resistance.
+
+![[Pasted image 20260728174835.png]]
+Thermistors are used in inrush current limiting, temperature sensing, temperature control, and the glass-encapsulated ones are used in high-temperature applications.
+#### Resistance Temperature Detectors (RTDs)
+![[Pasted image 20260728175025.png]]
+RTDs are simple temperature sensors, typically consisting of a ceramic core with a platinum wire wrapped around it and connected to metal connectors, with a protective layer of glass on top. Platinum is specifically used since its resistance scales almost linearly with temperature, which helps simplify calculations. When exposed to heat, the atoms within the wire are excited and move around, making it harder for electrons to pass through them without collisions.
+#### Light Dependent Resistors (LDRs)
+![[Pasted image 20260728180205.png]]
+Light dependent resistors adjust their own resistance depending on the level of light they are exposed to. An LDR consists of a ceramic base with a cadmium sulphide plate on top, followed by electrode plates separated by a thin margin. Electrical connectors run through, and the main body is encased in a protective transparent cover. In normal conditions, the electrons are held tightly by the cadmium atoms, providing a high level of resistance. 
+
+![[Pasted image 20260728180442.png]]
+When exposed to light, however, photons travel through the gaps and knock a few electrons forward, with the electrons behind moving upward to take their place. As the amount of light increases, the resistance decreases, as more electrons begin to flow.
+
+LDRs come in a range of resistances, but aren't typically marked; you must see the packaging or test them in complete darkness using a multimeter. They are used for night lights and dark sensor circuits.
+#### Strain Gauges
+![[Pasted image 20260728180854.png]]Strain gauges are variable resistors that can deform under stress. They consist of an insulating film and a thin conductive foil cut into a winding pattern, which provides a resistive path for electricity. Deforming the strain gauge in a certain direction, its resistance increases (and decreases as it deforms in the other direction). This is due to the stretching and compression of the conductor, which increases or decreases its cross-sectional area and thus changes its resistance (longer and thinner wires have less resistance than shorter, thicker ones)
+___
+### References
+![](https://www.youtube.com/watch?v=DYcLFHgVCn0&t=1209s)

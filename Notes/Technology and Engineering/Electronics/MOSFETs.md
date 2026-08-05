@@ -1,11 +1,14 @@
+### What is a MOSFET?
 ![[Pasted image 20260730172129.png]]
 A MOSFET (*Metal-Oxide-Semiconductor Field-Effect Transistor*) is a component used to switch or amplify electrical signals. Every MOSFET has three terminals: **gate**, **drain**, and **source**, although some may have these in a different order, which is specified by the manufacturer's datasheet.
 
 ![[Pasted image 20260730172503.png]]
 The part number, which is printed on the front, can be used to find the component's datasheet online.
+#### MOSFET Forms
+They come in both through-hole form (larger, used on test boards and PCBs) and SMD (*surface mounted device*) form (used in compact electronics).
 
-![[Pasted image 20260730172322.png]]
-In electrical diagrams, they are represented by the symbols above.
+![[Pasted image 20260804194947.png]]
+Multi-pin MOSFETs combine multiple units into one device.
 ### How a MOSFET Functions
 ![[Pasted image 20260802155230.png]]
 A MOSFET works as a switch or current amplifier, depending on the voltage received by the **gate** terminal. In a circuit, the **drain** acts as the negative terminal, while the **source** as the positive. If no voltage is applied to the gate terminal, the MOSFET will act as an open switch, preventing electrons from flowing through. If voltage is applied, however, current will be allowed to flow. Additionally, varying the voltage received by the gate pin will vary the current passing through. As an example, if the MOSFET is used to control the operation of a lamp, it can be used to switch it on and off, as well as dim its brightness by controlling the power it receives. A controller or sensor can be used to control the lamp automatically.\
@@ -14,5 +17,30 @@ MOSFETs can be turned on and off very fast using a **pulse width modulation (pwm
 #### Managing Heat
 ![[Pasted image 20260804110613.png]]
 High current can cause a MOSFET to heat up, so they are often attached to heat sinks, which increase the surface area for heat dissipation.
-### MOSFET vs BJT
+#### MOSFET vs BJT
 A BJT (*bipolar junction transistor*) transistor and a MOSFET play the same role in a circuit. The main difference is that a BJT requires current to be applied to the base pin, whilst a MOSFET only requires voltage to be applied to its gate pin, making the circuit more efficient and simpler in design. A MOSFET can also handle much more current than a BJT.
+### Example Circuits
+#### Floating Gate Problem
+![[Pasted image 20260804195305.png]]
+In this example circuit, a lightbulb is connected to one end of a 9V battery. The other end of the lightbulb connects to the drain of a MOSFET, while the other end of the battery connects to the source. The gate is connected to an open wire. In this state, the lightbulb is off.
+
+![[Pasted image 20260804195555.png]]
+If the gate wire is connected to the 9V supply, the MOSFET is activated and the lightbulb is turned on. If we now disconnect the gate pin, the lightbulb remains on; the gate acts like a capacitor, storing charge. The charge has nowhere to go when the wire is disconnected. We can connect the gate wire to ground to disconnect it.
+#### Gate Protection 
+![[Pasted image 20260804200028.png]]
+Normally, there is no current at the gate terminal. However, when the MOSFET switches from off to on, electrons rush into the gate terminal in an instant, causing a spike in current. A device controlling the MOSFET like an arduino or microcontroller can be damaged by the flux in current.
+
+![[Pasted image 20260804200809.png]]To limit the current, a resistor should be used between the source and the gate terminal. To avoid the floating gate problem, a path to ground should be provided, however simply adding a wire would create a short circuit, resulting in too much current flowing through. A pull down resistor should be placed to limit the current as the MOSFET is discharged.
+![[Pasted image 20260804200954.png]]
+Placing the pull down resistor on the left side is usually preferred, as placing it on the right would create a voltage divider, resulting in less voltage reaching the gate pin.
+#### Dimming with a Potentiometer
+![[Pasted image 20260804201244.png]]
+A potentiometer can be used in conjunction with a MOSFET to control the brightness of a lightbulb in a circuit. The potentiometer, in series with a resistor, is connected to the gate. Here, the resistance is so high that the current is negligible, and only a voltage is received. Disconnected the power to the resistor (and hence breaking the circuit) causes the MOSFET to drain to ground through the potentiometer. 
+
+While connected, turning the potentiometer to increase its resistance will decrease the voltage at the gate. As the resistance is increased, the MOSFET begins to deactivate, and the brightness of the lightbulb dims, until it eventually turns off.
+### Enhancement vs. Depletion
+![[Pasted image 20260804201918.png]]
+There are two types of MOSFET, which are distinguished by their operation state when no voltage is applied to the gate: **enhancement** (which is off by default) and **depletion** (which is on by default).
+
+![[Pasted image 20260730172322.png]]
+Physically, the two types look nearly identical. On electrical diagrams, the enhancement type is represented with a broken line across the terminals, whereas the depletion type has its terminals in a continuous line. Both come in either N-channel or P-channel versions, indicated by the direction of the arrow 

@@ -40,7 +40,7 @@ A potentiometer can be used in conjunction with a MOSFET to control the brightne
 While connected, turning the potentiometer to increase its resistance will decrease the voltage at the gate. As the resistance is increased, the MOSFET begins to deactivate, and the brightness of the lightbulb dims, until it eventually turns off.
 ### Enhancement vs. Depletion
 ![[Pasted image 20260804201918.png]]
-There are two types of MOSFET, which are distinguished by their operation state when no voltage is applied to the gate: **enhancement** (which is off by default) and **depletion** (which is on by default).
+There are two types of MOSFET, which are distinguished by their operation state when no voltage is applied to the gate: **enhancement** (which is off by default) and **depletion** (which is on by default). 
 
 ![[Pasted image 20260730172322.png]]
-Physically, the two types look nearly identical. On electrical diagrams, the enhancement type is represented with a broken line across the terminals, whereas the depletion type has its terminals in a continuous line. Both come in either N-channel or P-channel versions, indicated by the direction of the arrow 
+Physically, the two types look nearly identical. On electrical diagrams, the enhancement type is represented with a broken line across the terminals, whereas the depletion type has its terminals in a continuous line. Both come in either N-channel or P-channel versions, indicated by the direction of the arrow.

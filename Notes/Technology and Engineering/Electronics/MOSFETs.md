@@ -55,4 +55,4 @@ If we inject phosphorus atoms (called "**doping**"), which have five valence ele
 If we inject Boron atoms (which have 3 valence electrons), they won't have enough electrons to satisfy all of their neighbors, resulting in a "hole" of positive charge, resulting in a **P-type material**.
 
 ![[Pasted image 20260805164704.png]]
-When an N-type and P-type material meet, a **PN junction** forms between them, where a depletion region occurs; some electrons will move to the P side, while some "holes" move to the N side. This creates an electric field, which acts as a barrier preventing more electrons from moving across.
+When an N-type and P-type material meet, a **PN junction** forms between them, where a depletion region occurs; some electrons will move to the P side, while some "holes" move to the N side. This creates an electric field, which acts as a barrier preventing more electrons or holes from moving across.

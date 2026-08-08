@@ -56,3 +56,9 @@ If we inject Boron atoms (which have 3 valence electrons), they won't have enoug
 
 ![[Pasted image 20260805164704.png]]
 When an N-type and P-type material meet, a **PN junction** forms between them, where a depletion region occurs; some electrons will move to the P side, while some "holes" move to the N side. This creates an electric field, which acts as a barrier preventing more electrons or holes from moving across.
+#### The MOSFET Design
+![[Pasted image 20260806180120.png]]
+For an N-channel enhancement type MOSFET, a P-type silicon forms the base layer, with two small regions of N-type material. At the junctions between the two materials, a depletion region forms. The drain terminal connects to one N-type region while the source connects to the other. The **body** metal plate connects to the underside of the silicon substrate and to the source (in electrical diagrams, the symbol shows the base terminal directly connected to source). A layer of silicon dioxide (*SiO<sub>2</sub>*) sits between the source and drain and between the metal plate that represents the gate terminal. 
+
+![[Pasted image 20260806180951.png]]The silicon dioxide is an insulator, separating the gate from the silicon semiconductor base and prevents current from flowing through. It is also a dielectric; if a positive charge is induced on one side, negative charges build up on the other side, forming an electric field between them, similar to a capacitor.
+

@@ -1,5 +1,5 @@
 ![[Pasted image 20260809133504.png]]
-A diode is an electrical component that only allows current to flow in one direction. It is comprised of a cylindrical body with a stripe at one end and two metal connectors at each end, with one end being the **anode** and the other the **cathode**. Common specialized diodes include **zener diodes** and **light emitting diodes (LEDs)**. 
+A diode is an electrical component that only allows current to flow in one direction. It is comprised of a cylindrical body with a stripe at one end and two metal connectors at each end, with one end being the **anode** and the other the **cathode**. Common specialized diodes include **zener diodes** and **light emitting diodes (LEDs)**.
 ### How Diodes Work
 #### Operation States
 ![[Pasted image 20260809134046.png]]
@@ -28,4 +28,22 @@ Pure silicon has very few free electrons; its atoms have exactly four valence el
 The p-type material contains holes for electrons, while the n-type material contains excess electrons. When these two materials are put together, the region between them is called the **PN junction**. Here, some electrons from the negative side move to occupy some holes on the positive side, leaving holes on the positive side. This migration forms a region that is slightly negatively charged on the P side and a region that is slightly positively charged on the N side. These regions, while charged, cannot facilitate electron movement; the N-type atoms who lost an electron, and the P-type atoms who gained an electron, now have their valence shells complete.
 
 ![[Pasted image 20260809141054.png]]
-Between these slightly charged regions, an electric field forms, that pulls electrons back toward the N-type material and pushes holes toward the P-type material. These factors combined result in a **depletion region**, where no free movement of electrons can occur.
+Between these slightly charged regions, an electric field forms, that pulls electrons back toward the N-type material and pushes holes toward the P-type material. These factors combined result in a **depletion region**, where no free movement of electrons can occur. The potential difference across the region is around 0.7V (0.3V if germanium is used instead of silicon)
+#### Achieving Forward and Reverse Bias
+![[Pasted image 20260809165827.png]]
+When a voltage source is connected to the diode, with the negative end to the cathode and the positive end to the anode, forward bias is achieved as electrons flow from the cathode to the anode if the *voltage is greater than the 0.7V barrier.*
+
+![[Pasted image 20260809170035.png]]
+If we reverse the direction of the voltage source, where the positive end is connected to the cathode and the negative end is connected to the anode, the electrons in the N-type material are attracted toward the cathode and the 'holes' toward the anode. Current will not flow, and reverse bias is achieved.
+### Technical Details
+#### Identifying Diodes
+![[Pasted image 20260809170401.png]]
+These are the symbols for diodes in an electrical diagram. The stripe is represented as a vertical line, with an arrowhead indicating the direction of *conventional* current (electrons are flowing in the opposite direction in actuality).
+
+![[Pasted image 20260809170553.png]]
+The physical diode will have an identifying label on it indicating its max voltage and current parameters.
+#### Plotting a Diode
+![[Pasted image 20260809171045.png]]Above is a graph plotting the  behavior of a diode. When applied voltage is *less than 0.7V*, the diode behaves as an insulator, blocking current from flowing. However, once a certain threshold is reached (called the **max reverse voltage**), the diode, and likely the rest of the circuit, breaks, and no longer works to block current from flowing. When the applied voltage is *greater than 0.7V*, the diode behaves as a conductor, and the current allowed through increases rapidly with voltage.
+
+The diode also provides a voltage drop to the circuit.
+### 

@@ -45,5 +45,43 @@ The physical diode will have an identifying label on it indicating its max volta
 #### Plotting a Diode
 ![[Pasted image 20260809171045.png]]Above is a graph plotting the  behavior of a diode. When applied voltage is *less than 0.7V*, the diode behaves as an insulator, blocking current from flowing. However, once a certain threshold is reached (called the **max reverse voltage**), the diode, and likely the rest of the circuit, breaks, and no longer works to block current from flowing. When the applied voltage is *greater than 0.7V*, the diode behaves as a conductor, and the current allowed through increases rapidly with voltage.
 
-The diode also provides a voltage drop to the circuit.
-### 
+The diode also provides a voltage drop of 0.7V to the circuit.
+### Why use Diodes
+#### Protecting Circuits
+![[Pasted image 20260809171210.png]]
+Diodes are used to prevent current from flowing in the opposite direction. This is useful for protecting components and devices in a circuit in the event the voltage source is installed in the wrong direction.
+#### Converting AC to DC via Rectifiers
+![[Pasted image 20260809171453.png]]
+Because of its ability to only allow current to flow in one direction, diodes can be used to create **rectifiers** to smooth out alternating current by blocking the negative current from flowing. In this example, A transformer receives incoming AC current, and its output is connected to a single diode. The diode only allows half the wave (the positive half) to pass through. This is known as a **half wave rectifier**.
+
+![[Pasted image 20260809173529.png|459]]
+An improvement on this is the **full bridge rectifier**, which sees four diodes arranged in a closed loop (the "bridge"). This arrangement forces both halves of AC current to flow in the same direction.
+##### The Positive Half-Cycle
+![[Pasted image 20260809173616.png]]
+During the positive half of the AC cycle, the upper AC terminal becomes positive, and the lower terminal becomes negative (conventionally).
+- Diodes D<sub>1</sub> and D<sub>2</sub> become forward-biased (ON) while diodes D<sub>3</sub> and D<sub>4</sub> become reverse-biased (OFF)
+- Current flows from the upper AC terminal through D<sub>1</sub>, through the load resistor from top to bottom (the DC output), through D<sub>2</sub> and to the lower AC terminal.
+##### The Negative Half-Cycle
+![[Pasted image 20260809173629.png]]
+During the negative half of the AC cycle, the lower AC terminal becomes positive and the upper terminal becomes negative.
+-  Diodes D<sub>3</sub> and D<sub>4</sub> become forward-biased (ON) while diodes D<sub>1</sub> and D<sub>2</sub> become reverse-biased (OFF)
+- Current flows from the lower AC terminal, through D<sub>3</sub>, through the load resistor from top to bottom, then through D<sub>4</sub> and to the upper AC terminal.
+
+![[Pasted image 20260809174212.png]]
+The waveform above is the output of a full bridge rectifier. Both the positive and negative half-cycles of AC are forced to flow through the load in the same direction, resulting in consistent positive DC current. It is to be noted that since the current flows through two diodes at any given time, the output voltage will be 1.4V less than the input.
+##### Using a Smoothing Capacitor
+![[Pasted image 20260809174316.png]]
+The rectifier can be improved further using a [[Capacitors||capacitor]]. The capacitor charges with excess voltage during the peaks, and discharges during the troughs to smoothen the output.
+### Testing Diodes
+![[Pasted image 20260809174555.png]]
+To test a diode, we switch the multimeter to the diode setting, and connect the black terminal to the end of the diode with the stripe, and the red terminal to the other end. The reading given by the multimeter is the minimum voltage required for current to flow through.
+
+![[Pasted image 20260809174858.png]]
+Reversing the diode produces "OL" on the multimeter, meaning "outside limits." This means that the circuit was not completed and the multimeter could not get a reading, which means the diode is working and is blocking current flow in the opposite direction. A reading in this configuration means that the diode is faulty and should not be used.
+
+![[Pasted image 20260809175109.png]]
+To read the voltage drop across the diode in a live circuit, set the multimeter to the DC voltage setting and place the terminals at the ends of the diode (black to striped, red to other). The multimeter should give a reading indicating the voltage drop across the diode.
+
+---
+### References
+![](https://www.youtube.com/watch?v=Fwj_d3uO5g8&t=302s)

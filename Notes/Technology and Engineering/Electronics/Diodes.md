@@ -1,0 +1,31 @@
+![[Pasted image 20260809133504.png]]
+A diode is an electrical component that only allows current to flow in one direction. It is comprised of a cylindrical body with a stripe at one end and two metal connectors at each end, with one end being the **anode** and the other the **cathode**. Common specialized diodes include **zener diodes** and **light emitting diodes (LEDs)**. 
+### How Diodes Work
+#### Operation States
+![[Pasted image 20260809134046.png]]
+To allow current to flow through (achieving **forward bias**), the stripe end of the diode must be connected to the negative, and then other end to the positive. The diode is now operating as a conductor.
+
+To achieve **reverse bias** (block the flow of current) the stripe end must be connected to the positive, and the other end to the negative. The diode is now operating as an insulator.
+#### Conductive Materials
+![[Pasted image 20260809134723.png]]
+Electricity is the flow of free electrons between atoms. Copper is widely used as a conductor since it has many free electrons. Rubber is used as an insulator, since its electrons are held tight and cannot move freely. 
+
+When looking at an atom, it is comprised of a nucleus at its centre with concentric rings of electrons called shells. The outermost shell, the **valence shell**, is where electrons contain the most energy, as the further they are from the nucleus, the more energy they have. The final layer of the atom is the **conduction band**. If electrons can reach this layer, they can become free electrons and move between atoms. 
+
+In a conductor like copper, there are 1-3 electrons in its valence shell. Since atoms tend towards complete shells, the valence shell is more likely to lose its atoms than gain new ones. Furthermore, the valence shell and conduction band overlap, making it very easy for electrons to break free from its atom.
+
+In an insulator, the outermost shell has many electrons, with little room for new electrons. The nucleus has a tight hold on its electrons, and the conduction band is far away. Thus, electrons are very unlikely to escape, and electricity will not flow through this material.
+
+In a semiconductor like silicon, there are one too many electrons in its valence shell to be a conductor (usually four in total), so normally it behaves like an insulator. However, the conduction band is relatively close, and when external energy is received, some electrons in the outermost shell can make the jump to become free. Thus, semiconductors can behave as either a conductor or an insulator.
+#### The PN Junction
+![[Pasted image 20260809140551.png]]
+Within the silicon core of a diode is a P-type material at the anode end, and an N-type material at the cathode end. This is all encased in a protective resin shell.
+
+![[Pasted image 20260809140040.png]]
+Pure silicon has very few free electrons; its atoms have exactly four valence electrons, and to achieve eight in total, they 'share' electrons with each other via **covalent bonds**. When an **N-type** material like phosphorous is added (aka "doped"), the atoms form covalent bonds as before, but since phosphorous has five valence electrons, the fifth is able to move freely throughout the material. **P-type** material like aluminum, which only has three valence electrons, there aren't enough electrons to satisfy all four of its neighbors with a full shell, thus resulting in a "hole" that is of positive charge.
+
+![[Pasted image 20260809140752.png]]
+The p-type material contains holes for electrons, while the n-type material contains excess electrons. When these two materials are put together, the region between them is called the **PN junction**. Here, some electrons from the negative side move to occupy some holes on the positive side, leaving holes on the positive side. This migration forms a region that is slightly negatively charged on the P side and a region that is slightly positively charged on the N side. These regions, while charged, cannot facilitate electron movement; the N-type atoms who lost an electron, and the P-type atoms who gained an electron, now have their valence shells complete.
+
+![[Pasted image 20260809141054.png]]
+Between these slightly charged regions, an electric field forms, that pulls electrons back toward the N-type material and pushes holes toward the P-type material. These factors combined result in a **depletion region**, where no free movement of electrons can occur.

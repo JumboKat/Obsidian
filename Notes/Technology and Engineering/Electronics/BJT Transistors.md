@@ -17,3 +17,13 @@ At least **0.6-0.7V** needs to be applied to the base to turn the transistor on.
 ![[Pasted image 20260820170751.png]]
 The base pin typically has a very low current relative to the collector current. The ratio between these two, represented by β, is called the **current gain**.
 ### NPN and PNP Types
+While there are two types of BJT transistors, they visually look identical; they can be distinguished by checking their part number.
+#### NPN Transistor
+![[Pasted image 20260820202308.png]]
+In an NPN transistor, the current flowing through the collector and the base *combine* to flow out of the emitter.
+#### PNP Transistor
+![[Pasted image 20260820202515.png]]
+In a PNP transistor, the emitter connects to the positive; current flows into the emitter and *divides* as it flows out through the base and collector terminals.
+
+![[Pasted image 20260820202626.png]]
+Transistors are represented by the above symbols in circuit diagrams. There is an arrow at the emitter which indicates the direction of conventional current.

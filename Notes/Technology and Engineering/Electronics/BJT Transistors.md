@@ -27,3 +27,19 @@ In a PNP transistor, the emitter connects to the positive; current flows into th
 
 ![[Pasted image 20260820202626.png]]
 Transistors are represented by the above symbols in circuit diagrams. There is an arrow at the emitter which indicates the direction of conventional current.
+#### PN-Junctions
+![[Pasted image 20260824093655.png]]
+P-type and N-type materials are combined to form NPN or PNP transistors with two [[Diodes#How Diodes Work|PN Junctions]] between them. These junctions naturally prevent current from flowing through them.
+
+![[Pasted image 20260824095029.png]]
+In an NPN transistor, the emitter is heavily doped with many excess electrons, the base is lightly doped with only a few holes, and the collector is moderately doped, with some excess electrons.
+
+![[Pasted image 20260824095318.png]]
+The base layer is kept thin and lightly doped on purpose to create as few holes as possible. This means that only a small amount of electrons combine with holes in the base, while the majority are able to cross the barrier. The negative terminal pushes electrons toward the emitter, while the positive end pulls electrons away from the base. This is how a BJT works as an amplifier; a small amount of current in the base terminal allows for a much larger current from the emitter to the collector. 
+
+![[Pasted image 20260824095804.png]]
+When the collector is connected to the positive, the electrons (and the holes) in the collector are pulled toward the positive terminal, causing a reverse bias. While this keeps the electrons in the collector from crossing to the P-type side, the electrons in the P-type side are pulled to the holes in the collector, while the holes in the collector are pulled to the base. Because of the excess of electrons in the emitter, these will occupy the holes in the base, and because of the electric field pointing from the collector to the base, some of these will be pulled across, developing a current across the reverse bias junction. A higher voltage at the base pin means more electrons passing through the emitter while relatively few combine in the base.
+
+---
+### References
+![](https://www.youtube.com/watch?v=J4oO7PT_nzQ&list=PLWv9VM947MKi8KxDEki9x0FkQv3WBb2Ev&index=5)

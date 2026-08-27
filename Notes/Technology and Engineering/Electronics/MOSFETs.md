@@ -11,7 +11,7 @@ They come in both through-hole form (larger, used on test boards and PCBs) and S
 Multi-pin MOSFETs combine multiple units into one device.
 ### Using MOSFETs
 ![[Pasted image 20260802155230.png]]
-A MOSFET works as a switch or current amplifier, depending on the voltage received by the **gate** terminal. In a circuit, the **drain** acts as the negative terminal, while the **source** as the positive. If no voltage is applied to the gate terminal, the MOSFET will act as an open switch, preventing electrons from flowing through. If voltage is applied, however, current will be allowed to flow. Additionally, varying the voltage received by the gate pin will vary the current passing through. As an example, if the MOSFET is used to control the operation of a lamp, it can be used to switch it on and off, as well as dim its brightness by controlling the power it receives. A controller or sensor can be used to control the lamp automatically.\
+A MOSFET works as a switch or current amplifier, depending on the voltage received by the **gate** terminal. In a circuit, the **drain** acts as the negative terminal, while the **source** as the positive. If no voltage is applied to the gate terminal, the MOSFET will act as an open switch, preventing electrons from flowing through. If voltage is applied, however, current will be allowed to flow. Additionally, varying the voltage received by the gate pin will vary the current passing through. As an example, if the MOSFET is used to control the operation of a lamp, it can be used to switch it on and off, as well as dim its brightness by controlling the power it receives. A controller or sensor can be used to control the lamp automatically.
 
 MOSFETs can be turned on and off very fast using a **pulse width modulation (pwm)** signal. 
 #### Managing Heat
@@ -35,7 +35,7 @@ Normally, there is no current at the gate terminal. However, when the MOSFET swi
 Placing the pull down resistor on the left side is usually preferred, as placing it on the right would create a voltage divider, resulting in less voltage reaching the gate pin.
 #### Dimming with a Potentiometer
 ![[Pasted image 20260804201244.png]]
-A potentiometer can be used in conjunction with a MOSFET to control the brightness of a lightbulb in a circuit. The potentiometer, in series with a resistor, is connected to the gate. Here, the resistance is so high that the current is negligible, and only a voltage is received. Disconnected the power to the resistor (and hence breaking the circuit) causes the MOSFET to drain to ground through the potentiometer. 
+A potentiometer can be used in conjunction with a MOSFET to control the brightness of a lightbulb in a circuit. The potentiometer, in series with a resistor, is connected to the gate. Here, the resistance is so high that the current is negligible, and only a voltage is received. Disconnecting the power to the resistor (and hence breaking the circuit) causes the MOSFET to drain to ground through the potentiometer. 
 
 While connected, turning the potentiometer to increase its resistance will decrease the voltage at the gate. As the resistance is increased, the MOSFET begins to deactivate, and the brightness of the lightbulb dims, until it eventually turns off.
 ### How MOSFETs Work
@@ -44,7 +44,8 @@ While connected, turning the potentiometer to increase its resistance will decre
 There are two types of MOSFET, which are distinguished by their operation state when no voltage is applied to the gate: **enhancement** (which is off by default) and **depletion** (which is on by default). 
 
 ![[Pasted image 20260730172322.png]]
-Physically, the two types look nearly identical. On electrical diagrams, the enhancement type is represented with a broken line across the terminals, whereas the depletion type has its terminals in a continuous line. Both come in either N-channel (*NMOS*) or P-channel (*PMOS*) versions, indicated by the direction of the arrow. NMOS and PMOS transistors differ in how they are activated (turning on for enhancement type and off for depletion type); an NMOS is activated by a positive gate-to-source voltage (Vg > Vs), while a PMOS is activated by a negative gate-to-source voltage. "Activation" is achieved by increasing or decreasing the resistance of the drain-to-source channel.
+Physically, the two types look nearly identical. On electrical diagrams, the enhancement type is represented with a broken line across the terminals, whereas the depletion type has its terminals in a continuous line. 
+Both come in either N-channel (*NMOS*) or P-channel (*PMOS*) versions, indicated by the direction of the arrow. NMOS and PMOS transistors differ in how they are activated (turning on for enhancement type and off for depletion type); an NMOS is activated by a positive gate-to-source voltage (Vg > Vs), while a PMOS is activated by a negative gate-to-source voltage. "Activation" is achieved by increasing or decreasing the resistance of the drain-to-source channel.
 
 ![[Pasted image 20260805163650.png]]
 The drain terminal is attached to a copper plate with a semiconductor soldered onto it. From this semiconductor are two wires that attach to the gate and source. The semiconductor is usually made of silicon, whose atoms have four valence electrons. Thus, on their own, they will share electrons with each other via **covalent bonds**. 

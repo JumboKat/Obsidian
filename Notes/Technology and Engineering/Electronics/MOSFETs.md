@@ -70,5 +70,37 @@ The breakdown for the meaning behind MOSFET is as follows:
 - **F**ield-**E**ffect: the electric field formed by sending voltage to the gate controls the current through the channel (as opposed to current directly driving the base like in a BJT).
 - **T**ransistor: describes the role of a MOSFET: a semiconductor device used to switch or amplify signals.
 
-When current is applied across the MOSFET (with no voltage to the gate), no current will flow. From drain 
+When current is applied across the MOSFET (with no voltage to the gate), no current will flow. Between source and drain, current must flow through the P-type substrate to get from one N-type region to the other. This structure is essentially two PN junctions placed together back-to-back, meaning one of the two will always be reverse-biased no matter which way the current flows.
 ![[Pasted image 20260901193429.png]]
+When a positive voltage is applied to the gate pin, an electric field forms that penetrates through the silicon dioxide and into the conductor substrate, making it act like a capacitor.
+
+![[Pasted image 20260908105834.png]]
+As the voltage on the gate increases, more and more electrons are attracted to it, but can't pass through the silicon dioxide barrier. Holes in the region are filled or pushed away. 
+
+![[Pasted image 20260908110040.png]]
+Eventually, the build-up of electrons at the surface creates a negatively charged channel, (hence the name N-channel MOSFET). This region is now essentially of N-type material and forms a continuous bridge between source and drain. If voltage is taken away, the electrons disperse and current stops flowing. The voltage must also reach a certain voltage, called the **threshold voltage** to properly form the connection, else the bridge is incomplete and current does not flow. 
+
+![[Pasted image 20260908111914.png]]
+The symbol for an N-channel enhancement type MOSFET shows an arrow pointing towards the gate, indicating that electrons are being pulled up to form the channel.
+#### Channel Width
+Increasing the gate voltage widens the channel, increasing current. The bridge is maintained by the voltage difference between the gate and the bridge at any point along its length. (The higher relative voltage, the more electrons are pulled toward the gate).
+![[Pasted image 20260908111020.png|340]]![[Pasted image 20260908110956.png|346]]
+As the drain-to-source voltage increases, the resistance decreases, causing the current to increase linearly. This takes place in the **ohmic region**. However, as voltage increases, the channel narrows at one end as the voltage difference between the gate and drain decreases. The channel narrows as voltage increases until the **pinch off point**.
+
+![[Pasted image 20260908111630.png]]
+Beyond the pinch off point is the **saturation region**, where the channel can't fully close, but the current can't increase anymore. Only increasing the gate voltage will increase the current.
+#### N-channel Depletion Type
+The depletion type is similar to the enhancement type, except that in its default state, the source and drain are physically connected by a thin N-type layer, facilitating current flow.
+
+![[Pasted image 20260908112207.png]]
+As negative voltage is applied to the gate, electrons in the substrate are pushed away while holes are attracted. This narrows the channel until, when enough negative voltage is applied, the channel becomes blocked. However, applying a positive voltage to the gate will have the reverse effect, widening the channel and increasing current flow.
+#### P-channel Enhancement Type
+![[Pasted image 20260908112412.png]]
+A P-channel enhancement type is off by default, with an N-type substrate and an isolated P-type region at both the source and drain. As a negative voltage is applied to the gate, electrons are repelled while holes are attracted, creating a positive bridge linking the two P-type regions, allowing current to flow. 
+#### P-channel Depletion Type
+![[Pasted image 20260908112653.png]]
+A p-channel depletion type is on by default, with the two P-type regions physically connected by a P-type bridge. When positive voltage is applied to the gate, electrons are attracted while holes are pushed away, narrowing the channel until it is eventually blocked. Thus, we can turn it off by applying a positive voltage. However, applying a negative voltage has the opposite effect.
+
+---
+### References
+![](https://www.youtube.com/watch?v=AwRJsze_9m4&list=PLWv9VM947MKi8KxDEki9x0FkQv3WBb2Ev)

@@ -27,4 +27,4 @@ Where:
 - W = average time a job spends in the system (wait time + service time)
 Little's law explains that throughput is equal to concurrency over latency.
 #### Amdahl's Law
-Proposed at a 1967 conference by Gene Amdahl at IBM.
+Proposed at a 1967 conference by Gene Amdahl at IBM, Amdahl's Law 

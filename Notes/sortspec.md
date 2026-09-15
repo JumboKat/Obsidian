@@ -24,5 +24,10 @@ sorting-spec: |-
 
   target-folder: Obsidian/Notes/History/Cold War era
   Indochina War (1945-1954)
+  
+  target-folder: Obsidian/Notes/Coding/C++/Basic Structures
+  Basic Types
+  Variables
+  Arrays
 ---
 

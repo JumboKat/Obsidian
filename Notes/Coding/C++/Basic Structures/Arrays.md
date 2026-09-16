@@ -40,3 +40,42 @@ void f() {
 	int t[3] = {0, delta, 2*delta};
 }
 ```
+This is allowed because N is a const and delta is a static; both values are known by the compiler, and expressions involving them can be computed at compile-time.
+
+For an automatic array (array defined within a function), values can be determined at runtime.
+```cpp
+const int NEL = 10;
+void fct(int p){
+	int n = 1;
+	.....
+	int tab[] = { NEL, p, 2*p, n+1, n+p }
+}
+```
+Here, the value of p is not known until fct() is called.
+### Vectors
+Instead of arrays, we can use the vector class by including its header file:
+```cpp
+#include <vector>
+```
+To declare an array, we use its constructor, which follows the syntax:
+vector\<type> name(size, init)
+```cpp
+vector<int> T(100, 5); //a vector with 100 elements set to 5
+// second parameter is optional
+
+//We can copy the values of another vector in our initialization
+vector<type> name1 = name2;
+```
+
+The vector class has predefined methods which standard arrays do not have:
+- T.size() returns the size of vector T.
+- T\[i] returns the i-th element in T.
+#### 2-D Vectors
+```cpp
+//defines a 2-d vector
+vector<vector<int>> T; 
+
+//Initializes a 2-d vector
+vector<vector<int>> T2(100, vector<int>(50,1));
+//A vector of 100 elements, each being a vector of size 50 filled with 1
+```

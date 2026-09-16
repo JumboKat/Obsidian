@@ -29,5 +29,14 @@ sorting-spec: |-
   Basic Types
   Variables
   Arrays
+  Expressions
+  Statements
+  Input and Output
+  Program Structure
+  
+  target-folder: Obsidian/Notes/Comparch 3
+  Parallelism in Common Architectures
+  Computer Architectures
+  Performance
 ---
 

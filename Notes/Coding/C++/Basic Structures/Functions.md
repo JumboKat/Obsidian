@@ -51,4 +51,51 @@ void swap(int &a, int &b)
 }
 ```
 When passing by reference, rather than copying the values of the variables passed to a function, the parameters actually point to the same space in memory as the original variables. 
+#### Default Arguments
+Unlike Java, C++ allows for default values of arguments to be set in cases where the arguments are not provided when the function is called. If default arguments are set, they must be the *last* arguments defined in the function's namespace to avoid confusion on which parameters correspond to which default arguments.
+```cpp
+#include <iostream>
+using namespace std;
+int main(){
+	int n=10, p=20;
+	void fct(int, int=12);
+	fct(n,p);
+	fct(n);
+	//fct() would cause a compilation error
+}
 
+void fct(int a, int b){
+	cout << ... ;
+}
+```
+Default arguments are set in the function's statement, not its definition.
+### Overloaded Functions
+In C++, functions can be overloaded, meaning two or more can have the same name but accept different parameters. The choice of which function is called depends on the type of arguments that are passed to it. If arguments are not an exact match, the argument(s) will be implicitly converted to the data type of the parameter of a function closes to the value passed to it:
+```cpp
+//example 1
+void image(int);
+void image(double);
+char c;
+float y;
+...
+
+image(c); //calls first image, converts char c to an int
+image(y); //calls second image, converts float y to a double
+```
+
+In the case where two or more functions are an equal fit and the choice is ambiguous, the compiler throws an error:
+```cpp
+void test(int, double);
+void test(double, int);
+int n,p;
+double z;
+char c;
+
+test(n,z); //call first test
+test(c,z); //call second test
+test(n,p); //compilation error; can either convert p into double without changing n and call first test, or convert n into double without changing p and call second test
+
+test(); //this also throws an error due to ambiguity
+
+void test(const int); //also error; since parameters passed by value aren't affected outside the function, there is no distinction within a function between a regular int and a const int.
+```

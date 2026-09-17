@@ -60,3 +60,20 @@ So within the same 1-hour timeframe, 16 processors can perform 15.25x more total
 This table shows how processor runtimes decrease as the number of processing cores increases. It measures the speedup and calculates the parallel efficiency:$$E_P=\frac{S_P}{P}$$
 - The program speeds up, but not linearly; the speedup slows as the number of cores increases
 - Efficiency declines as cores increases, indicating that the serial portion serves as a bottleneck; eventually, the runtime will hit a floor, as no amount of additional processors can speed up the serial portion of the program.
+### Benchmarks
+Benchmarks are are defined, standardized way to quantify the behavior of a computing system, allowing us to compare systems with each other on certain performance aspects using the same benchmark. A benchmark consists of the following components:
+- **Workload**: the computation the system will be tasked to perform.
+- **Input**: the inputs that the system works with that define the problem instance.
+- **Implementation**: exposes software/hardware interactions.
+- **Measurement**: defines what is quantified (e.g. time, throughput, energy, power).
+- **Protocol**: makes results reproducible. (e.g. defines how many repetitions, level of concurrency, etc.)
+#### Why are Benchmarks Important?
+Benchmarks provide experimental information on which architectural decision are made.
+- Comparison between systems/components under common conditions (e.g. processors, GPUs, FPGAs, memories, networks)
+- Design feedback: identify limiting factors of the architecture (computation, memory, software overhead, etc.)
+- Reproducibility
+- Procurement and deployment: select a system for a workload rather than relying on peak specifications
+- Optimization
+
+Benchmarks don't measure performance outright; they measure aspects of performance under certain conditions and parameters.
+#### Comparing Systems

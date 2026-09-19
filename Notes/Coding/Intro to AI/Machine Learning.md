@@ -21,5 +21,8 @@ Unsupervised learning tasks include:
 - **Density Estimation**
 - **Anomaly Detection**: identifies things that differ from the expected pattern.
 ### Reinforcement Learning
-In reinforcement learning, an agent performs actions in an environment and receives numerical rewards.
+In reinforcement learning, an agent performs actions in an environment and receives numerical rewards. The goal is for the AI to develop a policy that maximizes cumulative reward. This is done by repeating the process of making an observation, performing an action, and receiving a reward. Rewards aren't necessarily a target label specifying the correct action. They can also be delayed, forcing the agent to prioritize long-term gains. The main struggle of the AI is balancing exploration of unfamiliar actions and exploiting known actions that have proven effective.
+
+Typical applications include games, robotics, resource allocation and control systems.
 ### Supervised Learning
+The supervised learning workflow is divided into two phases: the **learning** phase (building and training the model) and **inference** (using the model).

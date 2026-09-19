@@ -10,4 +10,4 @@ There are two main approaches to AI, though these are not mutually exclusive nor
 - **Symbolic AI** represents information with explicit symbols (objects, concepts, relationships) that are manipulated using defined rules and logic.
 	- e.g.: "Parent(alan, chris)" is a symbol indicating relationships. Inference rules allow you to derive new facts like inferring a grandparent relationship from two parent relationships.
 - **Connectionist AI** represents information through patterns and connection weights in artificial neural networks. Instead of being restricted by explicit facts and rules, the system learns its own behavior by adjusting parameters (weights) during training to improve performance some object. Deep learning falls into this category.
-While symbolic AI traditionally dominated thinking early on in AI's development, connectionist AI takes the center stage today.
+While symbolic AI traditionally dominated thinking early on in AI's development, connectionist AI takes the center stage today

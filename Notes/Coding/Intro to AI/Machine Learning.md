@@ -25,4 +25,33 @@ In reinforcement learning, an agent performs actions in an environment and recei
 
 Typical applications include games, robotics, resource allocation and control systems.
 ### Supervised Learning
-The supervised learning workflow is divided into two phases: the **learning** phase (building and training the model) and **inference** (using the model).
+The supervised learning workflow is divided into two phases: the **learning** phase (building and training the model) and **inference** (using the model). These phases may not always be distinct; many workflows (such as reinforcement learning) can be cyclical, with acting, receiving feedback, and making improvements being interleaved with one another.
+#### Learning
+![[Pasted image 20260919161631.png]]
+Training a model can be the most challenging and resource-intensive part. Data must be curated, and an algorithm that best fits the data must be selected and trained. 
+
+From raw training data, features are extracted, and each piece of data corresponds to a features vector. 
+#### Inference
+Inference is typically cheaper than learning, but the total cost can be substantial if the model serves many users, and some reasoning systems use more computation during inference.
+### Example: Supervised Learning
+Objective: develop a predictive model that classifies a fishing day as poor, average, or excellent.
+
+Training a model on labelled data to make predictions on new data is called **classification**. "Poor," "Average," and "Excellent" are classes for the target variable.
+#### Attributes
+The following are the features that will be analyzed from the data to observe patterns and relationships:
+- **Moon Phase (categorical)**: 'New Moon,' 'First Quarter,' 'Full Moon,' and 'Last Quarter.'
+- **Forecast (categorical)**: 'Rainy,' 'Cloudy,' and 'Sunny.'
+- **Outdoor Temperature (Numerical)**: The air temperature in degrees Celsius.
+- **Water Temperature (Numerical)**: The water temperature in degrees Celsius.
+#### Training Data
+![[Pasted image 20260919163519.png]]
+Since the target is known for each example, this is a **supervised-learning** problem, with the possible targets being categories making this a **classification task**.
+
+From here, training data is split into data and labels. The data is usually presented in tabular (matrix) format where each row represents a feature vector denoted as x_i, corresponding to the i-th example in the training set. The labels are represented as a column vector, with y_i denoting the i-th label example.
+#### Model Training
+This step involves using labelled examples to construct a model that can make predictions. In this case, a model that could arise would be:
+- If the forecast is Sunny, predict Excellent
+- If the forecast is Cloudy, predict Average
+- If the forecast is Rainy, predict Poor
+Fitting the model to the example data does not guarantee that it will be able to make accurate predictions on new data.
+### Life Cycle

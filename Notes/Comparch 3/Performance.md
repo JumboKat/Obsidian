@@ -75,5 +75,13 @@ Benchmarks provide experimental information on which architectural decision are 
 - Procurement and deployment: select a system for a workload rather than relying on peak specifications
 - Optimization
 
-Benchmarks don't measure performance outright; they measure aspects of performance under certain conditions and parameters.
+Benchmarks don't measure performance outright; they measure aspects of performance under certain conditions and parameters. The best practice is to use a **benchmark portfolio**: one general-purpose benchmark, one subsystem benchmark, one application benchmark, and one power/energy measurement when energy matters.
 #### Comparing Systems
+A defensible comparison follows this general protocol:
+1. Define the question (what are we measuring?): latency, throughput, energy, cost efficiency, etc.
+2. Select a representative workload and fixed inputs.
+3. Compile and configure each system using documented settings.
+4. Warm up the system and run and measure multiple repetitions.
+5. Report the appropriate statistic: mean, median, percentile, or confidence interval.
+6. Normalize results to a reference system or workload when useful.
+7. Report the complete configuration, including software, clocks, power mode, and concurrency.

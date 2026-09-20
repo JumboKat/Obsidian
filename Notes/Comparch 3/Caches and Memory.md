@@ -123,4 +123,5 @@ $$miss\ penalty_{L2}=access\ time_{L3}=hit\ time_{L3} + miss\ rate_{L3} \times m
 | Bigger cache         | fewer capacity misses                                        | longer hit time;<br>more area, power, and cost                                 |
 | Higher associativity | fewer conflict misses                                        | longer hit time;<br>more energy per access                                     |
 #### Prefetching
-**Prefetching** predicts future accesses and brings blocks in before they are demanded. If done right, this can convert misses into hits.
+**Prefetching** predicts future accesses and brings blocks in before they are demanded. If done right, this can convert misses into hits. This can be done in the following ways:
+- Hardware, L1: detect sequential/stride streams: e.g. accesses to 0x8000, 0x8100, 0x8200 trigger a fetch of 0x8300

@@ -75,7 +75,7 @@ A policy also determines what to do on a write hit:
 - **Write-through**: update the cache and memory together and keep them in sync; simple but increases write traffic.
 - **Write-back**: update only the cache and set a dirty bit; write to memory later (on eviction, flush, or coherence event). Less traffic, but the data in memory is temporarily stale. This is most popular in modern multi-level caches.
 ### Multi-level Caches
-A cache can't be both fast and large, so we use a hierarchy of caches instead, with smaller, faster caches close to the core and larger, slower caches near memory. A miss at a higher level (closer to core) is served by the next level down.
+A cache can't be both fast and large, so we use a hierarchy of caches instead, with smaller, faster caches close to the core and larger, slower caches near memory. A miss at a higher level (closer to core) is served by the next level down. Each step down is roughly 3-10x slower and 10x larger.
 ![[Pasted image 20260919182754.png]]
 L1 is the smallest and fastest and located on the core. It is usually split into instruction and data caches so that fetch and load/store units get a dedicated port.
 #### Shared Caches
@@ -85,3 +85,42 @@ In multi-core systems, caches can be private or shared. L1s are almost always pr
 - Private caches guarantee capacity for their respective core and are faster to access.
 - Sharing is where coherence is important.
 #### Inclusion Policy
+The **inclusion policy** of a cache hierarchy determines how the existence of a block in a cache affects its existence in other caches.
+- **Inclusive**: data that exists at a higher level exists in every lower level cache, but not vice versa. Simplifies coherence but wastes capacity with duplicates.
+	- If a block is evicted from L2, it is also evicted from L1.
+	- If a block is evicted in L1, it stays in L2.
+	- A miss in L1 means it reads from a lower-level cache.
+- **Exclusive**: a block lives in exactly one level. Maximizes capacity but complicates fills/evictions.
+	- A block that is evicted at a higher level is moved to a lower level, even if it means eviction to make space.
+	- A miss at a higher level means it is read from a lower level and evicted from that lower level.
+- **NINE** (*non-inclusive/non-exclusive*): No policy; an eviction/miss at one level has no effect on other levels.
+### Cache Performance
+#### Terminology
+- **Hit / miss**: whether the requested block is present.
+- **Miss rate**: fraction of accesses that miss: 1 - hit rate.
+- **Miss penalty**: extra time to fetch the block from the next level on a miss.
+- **MPKI**: misses per thousand instructions; normalizes miss count to work done, unlike miss rate.
+- It follows that lower level caches tend to miss less often. 
+- The miss penalty of one level is the access time of the next level down.
+- The miss rate of a level is the local miss rate multiplied by the miss rates of all higher levels.
+- The number of stall cycles is calculated by the miss rate of the current level * miss penalty
+#### Cache Misses
+Cache misses can be categorized based on their cause:
+- **Compulsory**: This occurs on the first access on a block; this can be reduced with bigger blocks (more prefetch).
+- **Capacity**: The working set exceeds the cache; a block that was evicted must be read from memory again. Can be reduced with bigger cache size.
+- **Conflict**: When too many blocks contend for the same set. Can be reduced by higher associativity, and completely avoided with a fully-associative cache.
+- **Coherence**: occurs in multi-core systems.
+#### AMAT
+Hit rate alone does not tell us how much time is saved/lost. For this, we use **average memory access time (AMAT)**:$$AMAT=hit\ time + miss\ rate \times miss\ penalty$$
+Because the miss penalty at one level is the access time at the next, it follows that:
+$$AMAT=hit\ time_{L1} + miss\ rate_{L1} \times miss\ penalty_{L1}$$
+$$miss\ penalty_{L1}=access\ time_{L2}=hit\ time_{L2} + miss\ rate_{L2} \times miss\ penalty_{L2}$$
+$$miss\ penalty_{L2}=access\ time_{L3}=hit\ time_{L3} + miss\ rate_{L3} \times miss\ penalty_{L3}$$$$miss\ penalty_{L3}=access\ time_{main\ memory}$$Adding a cache should reduce AMAT, otherwise it does more harm than good.
+#### Reducing Misses
+| Lever                | Helps                                                        | Hurts                                                                          |
+| -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| Larger blocks        | spatial locality; <br>fewer tags;<br>fewer compulsory misses | higher miss penalty;<br>more capacity and conflict misses;<br>over-fetch waste |
+| Bigger cache         | fewer capacity misses                                        | longer hit time;<br>more area, power, and cost                                 |
+| Higher associativity | fewer conflict misses                                        | longer hit time;<br>more energy per access                                     |
+#### Prefetching
+**Prefetching** predicts future accesses and brings blocks in before they are demanded. If done right, this can convert misses into hits.

@@ -1,3 +1,5 @@
+#ComparchIII
+
 In terms of performance, architectures can fall into one of four categories based on the number of data and instruction streams: single instruction single data (**SISD**, which includes **RISC** processors), single instruction multiple data (**SIMD**), multiple instruction single data (**MISD**), multiple instruction multiple data (**MIMD**).
 ### Parallelism within One Processor/Core
 #### Pipelining

@@ -38,5 +38,7 @@ sorting-spec: |-
   Parallelism in Common Architectures
   Computer Architectures
   Performance
+  Caches
+  Virtual Memory
 ---
 

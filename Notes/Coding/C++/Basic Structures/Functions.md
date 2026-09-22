@@ -82,8 +82,8 @@ float y;
 image(c); //calls first image, converts char c to an int
 image(y); //calls second image, converts float y to a double
 ```
-
-In the case where two or more functions are an equal fit and the choice is ambiguous, the compiler throws an error:
+#### Ambiguity
+In the case where two or more functions are an equal fit and the choice is ambiguous, the compiler throws an error; there must only be one unique option for any function call:
 ```cpp
 void test(int, double);
 void test(double, int);
@@ -95,7 +95,21 @@ test(n,z); //call first test
 test(c,z); //call second test
 test(n,p); //compilation error; can either convert p into double without changing n and call first test, or convert n into double without changing p and call second test
 
-test(); //this also throws an error due to ambiguity
-
-void test(const int); //also error; since parameters passed by value aren't affected outside the function, there is no distinction within a function between a regular int and a const int.
+test(); //this also throws an error due to ambiguity 
 ```
+#### Const Parameters
+When passing parameters by value, the original variable is not altered. Thus, there is no difference between the two function headers:
+```cpp
+void test(int);
+void test(const int); 
+```
+In both cases, a constant int is being passed to the function. Thus, any call will invoke an error due to ambiguity.
+
+A distinction *can* be made when passing parameters by reference:
+```cpp
+void test(int &);
+void test(const int &);
+```
+These two functions are distinct; the first accepts a reference to a variable as a parameter, and any change that occurs within the function will affect the original variable. The second strictly specifies a constant int, meaning that a *copy* of the variable value is made, and this copy is treated as a constant int.
+
+Passing by reference does not allow implicit conversion, but passing a constant reference does (we simply convert the constant copy of the value).

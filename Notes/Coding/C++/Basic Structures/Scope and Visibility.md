@@ -1,6 +1,6 @@
 The scope of a variable or function is the area of code in which its name has a particular meaning
 - The scope of a **global** variable or function spans the whole program.
-- The scope of a **local** variable is confined to the range from its definition to the end of the first composite instruction that contains its definition (or, where the curly braces end).
+- The scope of a **local** variable is confined to the range from its definition to the end of the first composite instruction that contains its definition (or, where the curly braces end). Local functions and variables exist only on the stack and are deleted after their use.
 - Two variables can have the same name but have different scopes; the variable with the most confined scope takes precedence within the range of code its scope presides.
 ### Visibility
 The visibility of a variable or function indicates when it is accessible. It is a component of the scope. The **lifespan** of a variable refers to the period from its inception to its deletion. Lifespan and scope typically coincide.
@@ -27,3 +27,11 @@ void fct(){
 In the example above, even though i is a local variable declared within the fct() function, its value persists after each subsequent call, so its value will actually increase from 1 to 5. 
 
 Static variables are by default initialized to zero, but we can also explicitly initialize static variables; static variables are only initialized once even if the block of code they preside in is executed multiple times.
+
+Making a variable or function static also gives it **internal linkage**, meaning it is only visible within the file it is defined in. 
+### Extern
+The **extern** keyword is the opposite of static; we use it when we declare variables or functions that have been defined in other files. Within the file using it, we would declare it like so:
+```cpp
+extern int globalCounter;
+```
+As long as the variable or function has been defined elsewhere, we are allowed to use it without defining it within the current file.

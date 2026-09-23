@@ -18,4 +18,19 @@ In this example, a decision boundary in the shape of a quadratic curve fits the 
 #### Complex Decision Boundaries
 A decision tree can lead to irregular and non-linear decision boundaries. Each decision determines an edge of the boundary.
 ![[Pasted image 20260923113823.png]]
-### Constructing a Decision Tree
+### Entropy
+A **pure node** contains examples from only a single class, while a **mixed node** contains examples from several classes. A split is useful if it produces children that are *less* mixed than their parent.
+
+**Entropy** is a numerical score that allows for candidate splits to be compared. Pure nodes have a score of zero, and the score increases as the proportions of each class become more evenly balanced. The entropy of a node i is calculated as:
+$$H_i=-\sum_{k=1}^{K}p_{i,k}log_2p_{i,k}$$
+Where:
+- p<sub>i,k</sub> be the proportion of examples from class k.
+- H<sub>i</sub> = 0 when the node is pure.
+-  H<sub>i</sub> increases as the classes become more evenly represented.
+- A smaller value is better.
+#### Binary Entropy
+If p is the proportion of one class (e.g. Gentoo penguins), then 
+$$H(p)=-plog_2p-(1-p)log_2(1-p)$$
+![[Pasted image 20260923121049.png]]
+Entropy is greatest when the two classes are equally likely. At p = 0 or p = 1, the class is certain (only one is represented) and entropy is zero. 
+### Evaluating a Split

@@ -1,3 +1,4 @@
+#AI
 ### Why should a Computer Learn?
 - Adaptability and continuous improvement: adapt to changing conditions in dynamic settings and stay current with new trends.
 	- etc: self-driving cars adjusting to traffic and weather changes.

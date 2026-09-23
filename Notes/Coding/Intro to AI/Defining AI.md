@@ -1,3 +1,4 @@
+#AI
 ### Levels of AI
 ![[Pasted image 20260917182826.png]]
 AI is a broad, encapsulating term that can include many layers of complexity.

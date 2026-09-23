@@ -55,3 +55,16 @@ This step involves using labelled examples to construct a model that can make pr
 - If the forecast is Rainy, predict Poor
 Fitting the model to the example data does not guarantee that it will be able to make accurate predictions on new data.
 ### Life Cycle
+The life cycle of a machine learning model is as follows:
+1. **Data collection and preparation**: data should be sufficient, high quality (low noise), few or no missing values, and representative. 
+2. **Feature engineering**: selecting, transforming, and creating input variables (features) that help a model learn useful patterns. This can include scaling numerical variables, representing categorical variables, and constructing new features.
+3. **Training**
+4. **Model evaluation**: assessing the model's performance based on metrics such as accuracy, precision, recall, F1-score, and/or AUC-ROC. Usually, the model is tested on a separate validation/test dataset or split of the dataset to ensure it generalizes well to new data and not simply memorizing the training data.
+5. **Model deployment**: integrating the model into an application. Many deployed models have fixed parameters and are periodically updated, while others continuously learn from new data. 
+6. **Monitoring and maintenance**: model performance is continuously monitored. *Concept drift* is often observed (the data the model was trained on may become obsolete or outdated), requiring the system to be retrained.
+### Formal Definitions
+#### Supervised Learning
+The **dataset** is a collection of labelled examples.
+![[Pasted image 20260923000122.png]]
+
+A **classification** task is when the target y<sub>i</sub> is a discrete class, among a finite set of classes. When the target is a real number, it is a **regression** task.

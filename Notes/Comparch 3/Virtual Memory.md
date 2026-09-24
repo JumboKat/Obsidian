@@ -19,4 +19,6 @@ The TLB is a specialized [[Caches|cache]] that stores recent VPN→PFN mappings 
 
 In the TLB, the VPN serves as the tag, while the corresponding PFN + permissions are the data of each entry.
 
-####
+As translation is necessary for L1 access, designers overlap it with cache lookups. There are two main designs:
+- **PIPT** (*Physically-indexed, physically-tagged*): translate first, then access L1. Simple and coherence-friendly, but serial.
+- **VIPT** (*Virtually-indexed, physically-tagged*): use the untranslated page-offset bits as the index, so the TLB lookup and L1 set read happen in parallel. The physical tag from the TLB is then compared. This is the common L1 design.

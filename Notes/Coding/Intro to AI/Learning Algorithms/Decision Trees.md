@@ -34,3 +34,8 @@ $$H(p)=-plog_2p-(1-p)log_2(1-p)$$
 ![[Pasted image 20260923121049.png]]
 Entropy is greatest when the two classes are equally likely. At p = 0 or p = 1, the class is certain (only one is represented) and entropy is zero. 
 ### Evaluating a Split
+A split using feature j and threshold t produces two children, those who fall below the threshold, and those who are above it. The split's score is calculated by its **weighted entropy**:
+$$J(j,t)=\frac{N_{left}}{N_{parent}}H_{left}+\frac{N_{right}}{N_{parent}}H_{right}$$
+We want to choose a feature and threshold that minimize the weighted entropy J(j,t). 
+
+Weights matter; a single pure example should not outweigh leaving almost all of the rest of the examples in a highly mixed child. Each child's weight is proportional to the number of examples it contains.

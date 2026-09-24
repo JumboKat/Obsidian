@@ -17,4 +17,7 @@ DRAM is hierarchical and allows for parallelism on multiple levels.
 
 A row-buffer hit (accessing data in a row that's already in the row buffer) is fast, since the data has already been read. A row miss is slow, because it now must precharge then activate the new row before it can access it. This means that spatial locality is important.
 ### DDR
-**DDR** stands for *Double Data Rate*, meaning data is transferred on both the rising and falling edges of the clock (data rate is twice the I/O clock). Newer generations of DDR have widened the **prefetch** (bits fetched per column access) to feed faster buses.
+**DDR** stands for *Double Data Rate*, meaning data is transferred on both the rising and falling edges of the clock, so the transfer rate (mega-transfers/second or MT/s) is twice the I/O clock. Newer generations of DDR have widened the **prefetch** (bits fetched per column access) to feed faster buses.
+#### Example: DRAM Bandwidth
+For a dual-channel DDR5-6400 laptop, the peak bandwidth is given by the transfer rate times the width of the memory channel times the number of channels:
+$$BW_{peak}=6400\frac{MT}{s}\times8B\times2$$

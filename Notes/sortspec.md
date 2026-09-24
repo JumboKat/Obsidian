@@ -40,5 +40,7 @@ sorting-spec: |-
   Performance
   Caches
   Virtual Memory
+  DRAM
+  Performance Counters
 ---
 

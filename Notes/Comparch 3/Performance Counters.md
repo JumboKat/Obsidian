@@ -16,5 +16,7 @@ The PMU can operate in two modes:
 - **Sampling** mode: periodically checks counts based on events (e.g. every 10000 instructions, the *performance record*). This is carried out by calling the ISA, which interrupts execution.
 ### Measurement Methodology
 - Warm up first: the first run pays cold caches, TLB, page faults, and CPU frequency ramp.
-- Repeat and report variance: 
-- Isolate the region:
+- Repeat and report variance: measure many times, report median and spread.
+- Isolate the region: measure kernel, not whole program's start-up and I/O (unless that is the point).
+- Beware the observer effect
+- Change one thing at a time and re-measure to check.

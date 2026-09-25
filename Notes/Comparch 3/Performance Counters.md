@@ -20,3 +20,4 @@ The PMU can operate in two modes:
 - Isolate the region: measure kernel, not whole program's start-up and I/O (unless that is the point).
 - Beware the observer effect
 - Change one thing at a time and re-measure to check.
+### Heterogenous 

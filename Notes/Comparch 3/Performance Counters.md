@@ -20,4 +20,19 @@ The PMU can operate in two modes:
 - Isolate the region: measure kernel, not whole program's start-up and I/O (unless that is the point).
 - Beware the observer effect
 - Change one thing at a time and re-measure to check.
-### Heterogenous 
+### Heterogenous SoC (System on Chip)
+A SoC is comprised of a CPU and some hardware accelerators that all share cache and memory. They can each perform compute tasks on their own, but contend for the same memory access. This SoC contains three engines: a CPU, GPU, and NPU.
+![[Pasted image 20260925161057.png]]
+
+Latency includes not only compute time, but data movement between engines and launch/synchronization overhead. These cannot be avoided and during these times, no engine is computing.
+![[Pasted image 20260925161405.png]]
+
+We can pipeline across different stages of a task to the different engines as shown below to reduce stalling. Throughput is determined by the slowest single stage, rather than the sum of all individual stages plus copies.
+![[Pasted image 20260925161418.png]]
+#### The Transfer Tax
+Offloading a stage to an accelerator incurs an overhead cost of moving the data back and forth. According to Amdahl's law, it is only worth it if the accelerator time and transfer time is less than the time taken simply computing on CPU:
+$$\frac{T}{s}+T_x<T⇐⇒ T_x<T(1-\frac{1}{s})$$
+Where:
+- T = Time it takes to execute the stage on CPU.
+- T<sub>x</sub> = Time it takes to transfer the data to and from accelerator.
+- s = Speedup gained by executing on accelerator.

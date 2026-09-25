@@ -25,6 +25,10 @@ sorting-spec: |-
   target-folder: Obsidian/Notes/History/Cold War era
   Indochina War (1945-1954)
   
+  target-folder: Obsidian/Notes/Coding/C++
+  Comparing C++ and Java
+  Basic Structures
+  Pointers
   target-folder: Obsidian/Notes/Coding/C++/Basic Structures
   Basic Types
   Variables
@@ -33,6 +37,9 @@ sorting-spec: |-
   Statements
   Input and Output
   Program Structure
+  target-folder: Obsidian/Notes/Coding/C++/Pointers
+  Pointers
+  Arrays and Pointers
   
   target-folder: Obsidian/Notes/Comparch 3
   Parallelism in Common Architectures

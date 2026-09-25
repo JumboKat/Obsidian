@@ -1,0 +1,1 @@
+During the execution of a program, data is stored in different sections in memory with different lifespans depending on their scope. For any program, there are three separate regions in memory that data can be allocated to:

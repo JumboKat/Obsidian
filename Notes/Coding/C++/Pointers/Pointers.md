@@ -65,3 +65,36 @@ void exchange(int *ad1, int *ad2){
 }
 ```
 In this example, we pass the addresses of two variables as parameters. The function then uses the dereference operator to swap the values of the two variables. Like passing by reference, we are able to modify the values of the original variables this way.
+
+We can populate the array in any of the ways shown below:
+```cpp
+for (i = 0; i < 10; i++) t[i] = 1;
+for (i = 0; i < 10; i++, t++) *t = 1; //t represents a copy of the array argument, so we are allowed to increment it directly as we are not changing the pointer outside the function's scope
+for (i = 0; i < 10; i++) *(t + i) = 1;
+int* p; for (p = t; p < t = 10; p++) *p = 1;
+//here we copy the t address to pointer p
+```
+#### Multi-dimensional Arrays
+Because multi-dimensional arrays are stored in memory as flat blocks, where accessing the next inner array means skipping over the previous, the compiler must know the size of the inner arrays:
+```cpp
+void raun(int t[10][15]) {
+	int i, j;
+	for (i = 0; i < 10; i++){
+		for (j = 0; j < 15; j++)
+			t[i][j] = 1;
+	}
+}
+```
+While we can rewrite the header as raun(int\[]\[15]), we cannot rewrite it as raun(\[]\[]). The compiler needs to know the size of each array so that it knows how many rows in memory to skip to find the address of the next inner array.
+
+For a multi-dimensional array of variable size, the dimension(s) of the array(s) would need to be passed as a separate argument:
+```cpp
+void diag(int* p, int n){
+	int i;
+	for (i = 0; i < n; i++){
+		*p = 0;
+		p += n + 1;
+	}
+}
+```
+This function places the value 0 in each of the diagonal element of an n\*n square array. 

@@ -42,3 +42,7 @@ Pointer arithmetic requires the compiler to know the size of the pointed-to type
 The fix is to cast pointers of type void * to that of type char \*. Since char is always guaranteed to be 1 byte in size, the compiler is able to perform arithmetic operations.
 
 Char * specifically is conversion-safe because it will never cause an alignment problem. Some types (like int, double) require their addresses to be aligned to specific byte boundaries (e.g. 4-byte int needs to start at an address divisible by 4) for hardware to access them correctly. Char has the loosest alignment requirement since its size is only one byte, meaning it can be held at any address.
+### Pointers and Overloaded Functions
+Pointer behavior when calling overloaded function is dictated by the fact that implicit conversion of pointers is only allowed from any type to void type (but not vice versa). Unless a function accepts void * as a type, only function calls with an exact match of arguments is accepted.
+
+As with references, the distinction between int * and const int * is justified, as passing a pointer will effect change to the original variable outside of the function; calling const means that any local changes do not effect variables outside of the functions scope.

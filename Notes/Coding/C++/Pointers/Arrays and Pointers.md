@@ -35,3 +35,22 @@ Here, the following hold true:
 - t\[0] ≡ &t\[0]\[0]
 - t\[1] ≡ &t\[1]\[0] ≡ t + 1
 Incrementing t moves it to the next array element (not integer element); in other words, the next 4-int block in memory.
+### Passing an Array as an Argument
+Passing the name of an array as an argument provides the address of an array and allows the function to perform any operations on its elements, whether that be reading its values or manipulating them.
+
+The function header accepting an array can be written in one of three ways, all of which are equivalent:
+```cpp
+void fct(int t[10]);
+void fct(int *t);
+void fct(int t[]);
+```
+
+This is because when an array is passed as a function parameter, it decays to a pointer to its element type. Because of this, the specification of the size of the array (t\[10]) is purely cosmetic and only provides information to the programmer; the compiler does not check nor enforce the size of the array; specifying any size would have no effect on the compilation.
+
+In C/C++, arrays can't be passed by value; copying the elements of an entire array on every function call is expensive. Thus, arrays are always passed by their address. If the size of an array must be known by the function, it must be passed as a separate parameter:
+```cpp
+void fct(int* t, int n){
+	for (int i = 0; i < n; i++) t[i] = 0;
+}
+```
+

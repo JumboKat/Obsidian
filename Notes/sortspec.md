@@ -40,6 +40,14 @@ sorting-spec: |-
   target-folder: Obsidian/Notes/Coding/C++/Pointers
   Pointers
   Arrays and Pointers
+  Generic Pointers
+  Pointer Operations
+  Dynamic Management
+  target-folder: Obsidian/Notes/Coding/Intro to AI
+  Defining AI
+  Machine Learning
+  Learning Algorithms
+  Linear Regression
   
   target-folder: Obsidian/Notes/Comparch 3
   Parallelism in Common Architectures

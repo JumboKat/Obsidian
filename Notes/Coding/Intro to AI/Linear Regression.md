@@ -36,4 +36,10 @@ Optimization is a looping process that evaluates the loss function, comparing th
 Parameter space is the set of all possible parameter combinations. For the model:$$h(x_i;\theta)=\theta_0+\theta_1x_1^{(1)}$$the parameter space $\Theta = \mathbb{R}^2$ would be the set of all possible (θ<sub>0</sub>, θ<sub>1</sub> ) pairs. The hypothesis space would be the set of all possible lines (functions of x) you could draw. Every point in parameter space corresponds to exactly one line in hypothesis space. E.g. θ = (5,2) gives h(x) = 5 + 2x. Gradient descent operates in parameter space. It adjusts the parameter θ to reduce the loss J(θ).
 
 The notation h(x<sub>i</sub>;θ), which comes from statistics, indicates that the value of the function h depends on the input example x<sub>i</sub> and the parameters θ. The semicolon is used to semantically differentiates these two sets of values. We can also use the equivalent notation h<sub>θ</sub>(x<sub>i</sub>) in machine learning. This reads: "the function h, parameterized by θ, applied to the input x<sub>i</sub>."
+### Derivatives
+The derivative tells you the slope of the tangent line at any point (i.e. the instantaneous rate of change, or, the **gradient**). When the derivative function is negative (f'(t)< 0), the function is decreasing. When the derivative function is positive, the function is increasing. When the derivative is equal to zero, this is the minimum of the function, local or maximum. The sign indicates direction uphill the function is going, while the magnitude indicates how steep it is.
 
+To achieve the minimum value of f(t), we look at the sign of f'(t). If the slope is positive, we want to move left (decrease t) to move toward the minimum. If the slope is negative, we want to move right.
+
+Gradient descent takes the derivative of the MSE J($\theta$) and finds the values of $\theta$ that sit at the minimum. 
+### Gradient Descent - Step-by-Step

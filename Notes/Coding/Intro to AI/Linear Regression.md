@@ -33,4 +33,7 @@ A typical learning algorithm consists of the following components:
 ### Optimization
 Optimization is a looping process that evaluates the loss function, comparing the hypothesis h with the target label y, then making small changes to parameters in order to reduce loss. This continues until an end criterion is met.
 
-Parameter space is the set of all possible parameter combinations. For the model:$$h(x_i;\theta)=\theta_0+\theta_1x_1^{(1)}$$the parameter space $\Theta = \mathbb{R}^2$ would be the set of all possible (θ<sub>0</sub>, θ<sub>1</sub> ) pairs. The hypothesis space would be the set of all possible lines (functions of x) you could draw. Every point in parameter space corresponds to exactly one line in hypothesis space. E.g. θ = (5,2) gives h(x) = 5 + 2x. 
+Parameter space is the set of all possible parameter combinations. For the model:$$h(x_i;\theta)=\theta_0+\theta_1x_1^{(1)}$$the parameter space $\Theta = \mathbb{R}^2$ would be the set of all possible (θ<sub>0</sub>, θ<sub>1</sub> ) pairs. The hypothesis space would be the set of all possible lines (functions of x) you could draw. Every point in parameter space corresponds to exactly one line in hypothesis space. E.g. θ = (5,2) gives h(x) = 5 + 2x. Gradient descent operates in parameter space. It adjusts the parameter θ to reduce the loss J(θ).
+
+The notation h(x<sub>i</sub>;θ), which comes from statistics, indicates that the value of the function h depends on the input example x<sub>i</sub> and the parameters θ. The semicolon is used to semantically differentiates these two sets of values. We can also use the equivalent notation h<sub>θ</sub>(x<sub>i</sub>) in machine learning. This reads: "the function h, parameterized by θ, applied to the input x<sub>i</sub>."
+

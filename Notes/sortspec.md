@@ -62,5 +62,6 @@ sorting-spec: |-
   Tightly-Coupled Memory (TCM)
   Memory Protection Unit (MPU)
   Real-Time Operating Systems (RTOS)
+  Multiprocessor System-on-Chip (MPSoC)
 ---
 

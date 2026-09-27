@@ -1,0 +1,2 @@
+![[Pasted image 20260927114553.png]]
+A RTOS sits at the middle of the OS spectrum, balancing predictability and structure. It adds a preemptive scheduler, keeping scheduling latency consistent. It uses solely physical addressing with MPU-based task isolation.

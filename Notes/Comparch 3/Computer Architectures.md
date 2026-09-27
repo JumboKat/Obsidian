@@ -25,7 +25,7 @@ Use complicated, specialized processing units to perform many **MAC** operations
 ### Multiprocessor Memory Architectures
 #### Uniform Memory Access (UMA)
 In UMA, all processors access memory via a shared bus/network. The memory, which can be one central memory or several memory banks, can be accessed from any processor within an equal amount of time.
-#### Non-Uniform Memory Accessm (NUMA)
+#### Non-Uniform Memory Access (NUMA)
 ![[Pasted image 20260912112133.png|287]]
 In NUMA, processors have access to their own memory, which are then connected to a shared network. A processor accesses its own memory in the shortest amount of time; if it wants to access another processor's memory, it must first go through the network, which takes much longer.
 #### Cache-Only Memory Architecture (COMA)

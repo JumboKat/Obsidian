@@ -12,6 +12,12 @@ This graph shows the relationship between the waiting time to next eruption and 
 A linear model asserts that the predicted value y<sub>i</sub> can be expressed as a linear combination of the feature values:
 $$\hat{y}_i=\theta_0+\theta_1x_1^{(1)}+\theta_2x_i^{(2)}+...+\theta_Dx_i^{(D)}$$
 Where:
-- θ<sub>0</sub> is the bias (shifts the line/hyperplane so it doesn't pass through the origin)
+- θ<sub>0</sub> is the **bias term** / intercept, because it shifts the prediction independently of the inputs.
+	- Moves the regression hyperplane so that the model is not forced to pass through the origin
+	- It is a constant offset, compensating for systematic effects not explained by the features
+	- If all features are 0, $\hat{y}$ is always 0, which is a hardcoded assumption we want to avoid
+	- ex: The relationship between eruption duration (x) and time to next eruption (y). $$\hat{y} = 32.910 + 10.503x$$ Even if x was hypothetically 0, the model predicts a wait time of about 33 minutes. Forcing the line through the origin would distort the fit in the region that does matter (between 1.5 and 5 minutes).
+	- It is called bias because it is a fixed baseline to which the contributions of other parameters (weights and biases) are added.
 - θ<sub>j</sub> is the jth parameter of the model (its feature weight)
-- $\hat{y}$ and h<sub>θ</sub>(x) mean the same thing ("the hypothesis h, parameterized by θ, applied to input x)
+- $\hat{y}$ and h<sub>θ</sub>(x) mean the same thing (h is the hypothesis function from a predefined hypothesis space, which encompasses the set of all possible models that can be used to predict outcomes based on input).
+- 

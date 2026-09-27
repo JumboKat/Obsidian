@@ -20,4 +20,17 @@ Where:
 	- It is called bias because it is a fixed baseline to which the contributions of other parameters (weights and biases) are added.
 - θ<sub>j</sub> is the jth parameter of the model (its feature weight)
 - $\hat{y}$ and h<sub>θ</sub>(x) mean the same thing (h is the hypothesis function from a predefined hypothesis space, which encompasses the set of all possible models that can be used to predict outcomes based on input).
-- 
+### Mean Squared Error (MSE)
+The MSE is a common objective for regression problems. The model trains by searching for parameter values that minimize MSE. It is calculated by:
+![[Pasted image 20260927171243.png]]
+
+**RMSE** is the square root of MSE. Because the square-root function only increases, both MSE and RMSE have the same minimizing parameter values. It is preferred to minimize MSE over RMSE because the derivative is simpler. 
+### Characteristics
+A typical learning algorithm consists of the following components:
+1. A **model**, often consisting of a set of **parameters** whose values will be learned.
+2. An **objective function** that measures prediction error on the training data. This is commonly the MSE.
+3. **Optimization** algorithm; **gradient descent** is commonly used and can be applied to a wide variety of models.
+### Optimization
+Optimization is a looping process that evaluates the loss function, comparing the hypothesis h with the target label y, then making small changes to parameters in order to reduce loss. This continues until an end criterion is met.
+
+Parameter space is the set of all possible parameter combinations. For the model:$$h(x_i;\theta)=\theta_0+\theta_1x_1^{(1)}$$the parameter space $\Theta = \mathbb{R}^2$ would be the set of all possible (θ<sub>0</sub>, θ<sub>1</sub> ) pairs. The hypothesis space would be the set of all possible lines (functions of x) you could draw. Every point in parameter space corresponds to exactly one line in hypothesis space. E.g. θ = (5,2) gives h(x) = 5 + 2x. 

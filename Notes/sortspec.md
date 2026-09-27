@@ -57,5 +57,10 @@ sorting-spec: |-
   Virtual Memory
   DRAM
   Performance Counters
+  target-folder: Obsidian/Notes/Comparch 3/Real-Time Cores
+  Real-Time Systems
+  Tightly-Coupled Memory (TCM)
+  Memory Protection Unit (MPU)
+  Real-Time Operating Systems (RTOS)
 ---
 

@@ -1,4 +1,4 @@
-**Linear regression** is a supervised learning model that makes use of **gradient descent**  as its training algorithm. This method of learning is used by almost everything in modern ML, including deep neural networks.
+![[Pasted image 20260927230533.png]]**Linear regression** is a supervised learning model that makes use of **gradient descent**  as its training algorithm. This method of learning is used by almost everything in modern ML, including deep neural networks.
 ### History
 In 1886, Sir Francis Galton introduced the idea of "regression," which focused on the relationship between the heights of children and their parents, observing that children's heights tended to regress towards the average. Important ideas in correlation and regression were later formalized by Karl Pearson.
 
@@ -41,5 +41,8 @@ The derivative tells you the slope of the tangent line at any point (i.e. the in
 
 To achieve the minimum value of f(t), we look at the sign of f'(t). If the slope is positive, we want to move left (decrease t) to move toward the minimum. If the slope is negative, we want to move right.
 
+In linear regression, the MSE function J(θ) is dependent on multiple parameters/variables. Thus, we use partial derivatives; the derivative of J with respect to one parameter, while keeping all others constant. This lets us find the effect of the parameter on J in isolation:
+![[Pasted image 20260927230700.png]]
+Where $\alpha$ is the learning rate, which controls the size of each step.
+
 Gradient descent takes the derivative of the MSE J($\theta$) and finds the values of $\theta$ that sit at the minimum. 
-### Gradient Descent - Step-by-Step

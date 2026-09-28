@@ -9,3 +9,7 @@ The fabric is a grid of components:
 - a switching network that decides how pieces connect to each other.
 
 To program an FPGA, you write a giant configuration file known as the **bitstream** that sets each switch. 
+
+There are two major caveats when dealing with PL:
+- **Building the machine is slow; running it is fast**: working out how to place and wire your design onto the grid requires difficult optimization; generating a bitstream can take 10-20 mins just for one NAND gate. Once loaded, however, it responds in ns.
+- **The machine does not exist until it is loaded**: only until xmutil loadapp is ran does the NAND gate exist.

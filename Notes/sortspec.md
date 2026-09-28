@@ -50,6 +50,7 @@ sorting-spec: |-
   Linear Regression
   
   target-folder: Obsidian/Notes/Comparch 3
+  Lab
   Parallelism in Common Architectures
   Computer Architectures
   Performance

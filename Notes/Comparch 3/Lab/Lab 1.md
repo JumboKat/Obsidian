@@ -6,7 +6,7 @@ The **Kria K26 SOM** is AMD/Xilinx's module; the **KV260 Vision AI Starter Kit**
 The core processor of the K26 SOM is the *Zynq UltraScale+ MPSoC*. It is **heterogenous**, meaning it contains different kinds of compute on one chip:
 - **APU**: contains four ARM Cortex-A53 64-bit cores running Linux and perform general purpose work. Everything typed in the Kria shell runs here.
 - **RPU**: Two ARM Cortex-R5F cores for bare-metal, deterministic real-time firmware.
-- **PL**: The FPGA fabric. Custom digital hardware is defined here, like the lab's NAND gate.
+- **PL**: [[Programming Logic (PL)||The FPGA fabric]]. Custom digital hardware is defined here, like the lab's NAND gate.
 - **PMU (Platform Management Unit) with CSU (Configuration Security Unit)**: Dedicated controllers that manage power, boot, and configuration of everything above.
 
 The APU (software) and PL (custom hardware) talk to each other over an on-chip bus standard called **AXI**. Below is the KV260 at a glance.

@@ -29,6 +29,9 @@ sorting-spec: |-
   Comparing C++ and Java
   Basic Structures
   Pointers
+  C-Style Strings
+  Classes and Objects
+  
   target-folder: Obsidian/Notes/Coding/C++/Basic Structures
   Basic Types
   Variables

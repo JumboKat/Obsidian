@@ -1,0 +1,3 @@
+C++ is an object-oriented language, meaning it allows class manipulation. Classes are a generalization of a [[Structures||structure]]. A class contains variables and functions to manipulate those variables. Object-oriented programming (OOP) has been used for its modularity and reuse of code. OOP languages come with a class library.
+
+Primitive types like int, double, long, char, and float are are **intrinsic** classes to C++. Classes designed by the programmer are **esxtrinsic** classes.

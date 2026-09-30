@@ -28,3 +28,7 @@ We can initialize a structure like so:
 Regist art1 = {100, 285, 200};
 ```
 Omitting certain fields will initialize them based on the allocation of the struct (either zero for static or random for automatic). We can also initialize the fields of a structure with the values of another structure of the same type. Constant structures can be initialized too; their fields cannot be modified thereafter.
+### Scope
+Unlike variable names, which at the link editing level, refer to addresses, a struct name is more than just an address, and so cannot be used with **extern**. To share a structure type across files, place its statement in a header file that is \#include incorporated into whatever file it is used in.
+
+Two different structures can have the same field name.

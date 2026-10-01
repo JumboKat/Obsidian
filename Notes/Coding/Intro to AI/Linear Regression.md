@@ -39,10 +39,13 @@ The notation h(x<sub>i</sub>;θ), which comes from statistics, indicates that th
 ### Derivatives
 The derivative tells you the slope of the tangent line at any point (i.e. the instantaneous rate of change, or, the **gradient**). When the derivative function is negative (f'(t)< 0), the function is decreasing. When the derivative function is positive, the function is increasing. When the derivative is equal to zero, this is the minimum of the function, local or maximum. The sign indicates direction uphill the function is going, while the magnitude indicates how steep it is.
 
-To achieve the minimum value of f(t), we look at the sign of f'(t). If the slope is positive, we want to move left (decrease t) to move toward the minimum. If the slope is negative, we want to move right.
-
+To achieve the minimum value of f(t), we look at the sign of f'(t). If the slope is positive, we want to move left (decrease t) to move toward the minimum. If the slope is negative, we want to move right. Gradient descent takes the derivative of the MSE J($\theta$) and finds the values of $\theta$ that sit at the minimum. 
+#### Partial Derivatives
 In linear regression, the MSE function J(θ) is dependent on multiple parameters/variables. Thus, we use partial derivatives; the derivative of J with respect to one parameter, while keeping all others constant. This lets us find the effect of the parameter on J in isolation:
 ![[Pasted image 20260927230700.png]]
-Where $\alpha$ is the learning rate, which controls the size of each step.
-
-Gradient descent takes the derivative of the MSE J($\theta$) and finds the values of $\theta$ that sit at the minimum. 
+Where $\alpha$ is the learning rate, which controls the size of each step. All parameter values are updated at the same time using their previous values.
+#### Gradient Vector
+The **gradient vector** is a vector containing the partial derivatives of J with respect to each parameter in D features:
+![[Pasted image 20261001121652.png]]
+This vector, which is the gradient, gives the direction of the steepest ascent. As the name **gradient descent** implies, we want to move in the opposite direction of this. This is why when we update parameters, this vector is subtracted:
+$$\theta^{(t+1)}=\theta^{(t)}-\alpha∇_\theta J(\theta^{(t)})$$

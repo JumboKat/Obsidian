@@ -16,3 +16,9 @@ enum Colour {yellow = 5, red, blue = 6, green, orange = 0, purple};
 //yellow=5, red=6, blue=6, green=7, orange=0, purple=1;
 ```
 There are no restrictions against two different strings being assigned the same value.
+
+Why enums?
+- Readability for the programmer.
+- Easy to change representations.
+- enum types are implicitly converted to int.
+- Strong typing.

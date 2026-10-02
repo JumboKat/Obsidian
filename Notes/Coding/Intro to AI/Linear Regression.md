@@ -49,3 +49,29 @@ The **gradient vector** is a vector containing the partial derivatives of J with
 ![[Pasted image 20261001121652.png]]
 This vector, which is the gradient, gives the direction of the steepest ascent. As the name **gradient descent** implies, we want to move in the opposite direction of this. This is why when we update parameters, this vector is subtracted:
 $$\theta^{(t+1)}=\theta^{(t)}-\alpha∇_\theta J(\theta^{(t)})$$
+### Convexity
+A function is convex if for any two points on the graph of the function, the line connecting these two points lies above or on the graph. A convex function has no local minima, only a global minimum. The MSE for linear regression, along with logistic regression objectives, are convex in their parameters. Non-convex functions, like neural network training objectives, can have local minima, and so gradient descent may approach a local minimum instead of the global minimum.
+
+For functions that lack a global minimum (etc. the cubic function), gradient descent can go on indefinitely, preventing convergence. This means that being differentiable on its own is not a sufficient condition to guarantee convergence. 
+### Learning Rate
+![[Pasted image 20261001182642.png|401]]
+If the gradient tells us which direction to descend, learning rate ($\alpha$) tells us how big a step to take in that direction. Having a small learning rate is safe and can ensure you reach the minimum, but it means taking more iterations, which can be slow and wasteful. Having a large learning rate can cause you to overshoot the minimum, and actually start diverging away from the minimum.
+
+Because the gradient shrinks as you approach the minimum (at which it is zero), a fixed learning rate will naturally produce smaller steps the closer you get to the minimum. 
+### Example Size in Gradient Calculation
+When calculating the gradient of a dataset, we do not necessarily need to use all of the examples. There are three approaches to the number of examples we use:
+#### Batch Gradient Descent
+This algorithm uses all N examples in the dataset for every single parameter update. This means the gradient is exactly accurate, and so the trajectory is smooth and direct.
+
+However, each update is expensive, requiring the entire dataset to be processed. It also does not scale well as the number of examples grows; it is straight-up useless if the dataset doesn't fit in memory.
+#### Stochastic Gradient Descent
+This algorithm uses exactly one random example per update. This means that every update is insanely fast and cheap, and works naturally for very large datasets. The random selection aspect can also help reduce systematic bias caused by the order of the examples.
+
+However, the trajectory is very noisy. Because the gradient calculation based off just one example is a very rough approximation of the true gradient, it can point in a direction that is different from the true downhill direction. Thus, it can scatter around the true direction. In non-convex objectives this may be helpful, as it can redirect the optimizer away from local minima or saddle points. This is random, however, and does not apply to convex objectives like linear regression's MSE. Additionally, SGD on its own tends to oscillate around the minimum, but never settling at the minimum. Since we are using a different random example each update, the next gradient is unlikely to be exactly zero. Thus, a **learning schedule** that reduces the learning rate close to the minimum is often used.
+#### Mini-Batch Gradient Descent
+This algorithm serves as the middle ground between the two previous methods. It takes a random subset of size B, where 1 < B < N. Its the common practical default because:
+- **Computation efficiency**: matrix operations on a batch (e.g. 32 examples) can be vectorized and run efficiently on a GPU, which makes better use of hardware than just one example at a time.
+- **Reasonable noise level**: there is enough averaging to avoid the worst zig-zagging, while remaining far cheaper per update than scanning the full dataset.
+
+![[Pasted image 20261001190127.png]]
+The choice on the algorithm to use is a matter of *optimization*, not necessarily *generalization*. In some experiments, models trained with smaller batches performed better on new data; the randomness of mini-batch training can influence the solution found even when no explicit penalty is added. This is called **implicit regularization**. This isn't a general rule, as large batches can perform just as well with a well-adjusted learning rate, training schedule, and training duration.

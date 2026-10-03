@@ -22,8 +22,32 @@ $$L(\theta )=P(y_1|x_1)\times P(y_2|x_2)\times ...\times P(y_N|x_N)$$
 **Maximum Likelihood Estimation (MLE)** means finding the parameter θ that makes the likelihood L(θ) as large as possible. There are two tricks that are used to help the optimization:
 - Taking the log turns the product into a sum (the log of a product is the sum of its logs), which is easier to work with and does not change where the maximum is.
 - Since optimizers typically try to minimize (loss), we can flip the sign and minimize the negative log-likelihood instead.
-#### Bernoulli Distribution
+### Loss Function
 ![[Pasted image 20261003174457.png|339]]
 The **Bernoulli Distribution** models a distribution of either yes (1) or no (0). For binary outcomes, the probability is given by:
-$$P(y|x,\theta )=\sigma (\theta ^\top x)^y(1-\theta ^\top x))^{1-y}$$
-- Since y can only be 0 or 1, one factor always has the exponent zero and is simplified to 1. The other selects the probability assigned to the predicted label.
+$$P(y|x,\theta )=\sigma (\theta ^\top x)^y(1-\theta ^\top x))^{1-y}$$Since y can only be 0 or 1, one factor always has the exponent zero and is simplified to 1. The other selects the probability assigned to the predicted label. Taking the **mean negative log-likelihood**: 
+$$J(\theta ) = -\frac{1}{N}logL(\theta )=-\frac{1}{N}\sum_{i=1}^NlogP(y_i|x_i,\theta)=-\frac{1}{N}\sum_{i=1}^Nlog[\sigma (\theta ^\top x_i)^{y_i}(1-\theta ^\top x_i))^{1-y_i}]$$
+
+This is the **loss function** J(θ) that we aim to minimize.
+### Cross-Entropy
+**Entropy** measures the uncertainty in a random outcome. An event with a guaranteed outcome has an entropy of zero.
+
+**Cross-entropy**, given by H(p, q), is the average penalty you pay when the model prediction is wrong (p is the true distribution but q was predicted). So, **binary cross-entropy (BCE)** = **log loss** = mean negative log-likelihood; they are all terms for the same thing. Again, because y is either 0 or 1, only one term is active per example. If y - 1m the loss is -logp̂. 
+- As p̂ → 1 (confident and correct), loss → 0.
+- As p̂ → 0 (confident and wrong), loss → ∞.
+This means BCE punishes confidently wrong answers more harshly.
+#### BCE vs MSE
+![[Pasted image 20261003183337.png|614]]
+Why is BCE used over [[Linear Regression#Mean Squared Error (MSE)||MSE]] with logistic regression? 
+##### Gradient
+Given linear score z = θ<sup>⊤</sup>x and probability p̂ = σ(z), we want to find how an update to the parameters (changing z) affects the loss. The gradient (rate of change of the loss) of the two loss functions are as follows:
+- **MSE gradient**: ∂ℓ/∂z = 2(p̂ − y) · p̂(1 − p̂)
+- **BCE gradient**: ∂ℓ/∂z = p̂ − y
+
+Take a positive example where the model is confidently wrong (y=1 but p̂ ≈ 0).  
+- MSE: the error factor (p̂ − y) is about -1, but the positive factor p̂(1 − p̂) is about 0. The product is near-zero, so the gradient vanishes and the loss **saturates**. This means that the model learns slowly when it is wrong (the loss is not much higher if the model is more confidently wrong).
+- **BCE**: (p̂ − y) gives -1, so the loss is harshest when the model is confidently wrong. When the model is confidently right, the loss tends to zero.
+##### Loss matches the data type
+The model produces a binary outcome, and so does the loss function. Outputs are meaningful probabilities; minimizing the BCE pushes p̂ toward the true frequency of class 1, so if the model says 0.8 for a group of examples, about 80% of them should be positive. 
+
+On the other hand, MSE 

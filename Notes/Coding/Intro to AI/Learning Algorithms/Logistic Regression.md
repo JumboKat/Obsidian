@@ -50,4 +50,7 @@ Take a positive example where the model is confidently wrong (y=1 but p̂ ≈ 0)
 ##### Loss matches the data type
 The model produces a binary outcome, and so does the loss function. Outputs are meaningful probabilities; minimizing the BCE pushes p̂ toward the true frequency of class 1, so if the model says 0.8 for a group of examples, about 80% of them should be positive. 
 
-On the other hand, MSE 
+On the other hand, MSE does not always correlate to a maximum likelihood; it works for a continuous prediction.
+##### BCE is convex
+For BCE with a sigmoid, J(θ) is convex. For MSE with a sigmoid, the loss function is not convex, but flattens at both ends; it is not globally convex, and so there are regions where gradient descent will stall (where it flattens). MSE is convex for linear regression; it is only incompatible with the sigmoid function.
+### Geometric 

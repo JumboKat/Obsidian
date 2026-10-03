@@ -16,3 +16,5 @@ The model, in its vectorized form, is given by:
 ![[Pasted image 20261002155248.png]]
 ### Predictions and the Decision Boundary
 If the probability is greater than or equal to 0.5, we predict class 1; otherwise predict class 0. Since the **decision boundary** is where the score is 0, the model is 50/50 about the prediction here. The further away the model is from the boundary, the more confident it is in its prediction.
+### Minimizing Loss
+The an objective of logistic regression is to maximize its confidence in its predictions. The **likelihood** is the measure of how much probability the model, with a given θ, assigned to the true label across the whole dataset. 

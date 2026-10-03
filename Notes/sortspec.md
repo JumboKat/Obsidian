@@ -49,8 +49,8 @@ sorting-spec: |-
   target-folder: Obsidian/Notes/Coding/Intro to AI
   Defining AI
   Machine Learning
+  Classification Tasks
   Learning Algorithms
-  Linear Regression
   
   target-folder: Obsidian/Notes/Comparch 3
   Lab

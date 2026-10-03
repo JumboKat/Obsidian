@@ -16,5 +16,14 @@ The model, in its vectorized form, is given by:
 ![[Pasted image 20261002155248.png]]
 ### Predictions and the Decision Boundary
 If the probability is greater than or equal to 0.5, we predict class 1; otherwise predict class 0. Since the **decision boundary** is where the score is 0, the model is 50/50 about the prediction here. The further away the model is from the boundary, the more confident it is in its prediction.
-### Minimizing Loss
-The an objective of logistic regression is to maximize its confidence in its predictions. The **likelihood** is the measure of how much probability the model, with a given θ, assigned to the true label across the whole dataset. 
+### Likelihood
+The an objective of logistic regression is to maximize its confidence in its predictions. The **likelihood** is the measure of how much probability the model, with a given θ, assigned to the true label across the whole dataset. The **likelihood function** is the product of each example's probability:
+$$L(\theta )=P(y_1|x_1)\times P(y_2|x_2)\times ...\times P(y_N|x_N)$$
+**Maximum Likelihood Estimation (MLE)** means finding the parameter θ that makes the likelihood L(θ) as large as possible. There are two tricks that are used to help the optimization:
+- Taking the log turns the product into a sum (the log of a product is the sum of its logs), which is easier to work with and does not change where the maximum is.
+- Since optimizers typically try to minimize (loss), we can flip the sign and minimize the negative log-likelihood instead.
+#### Bernoulli Distribution
+![[Pasted image 20261003174457.png|339]]
+The **Bernoulli Distribution** models a distribution of either yes (1) or no (0). For binary outcomes, the probability is given by:
+$$P(y|x,\theta )=\sigma (\theta ^\top x)^y(1-\theta ^\top x))^{1-y}$$
+- Since y can only be 0 or 1, one factor always has the exponent zero and is simplified to 1. The other selects the probability assigned to the predicted label.

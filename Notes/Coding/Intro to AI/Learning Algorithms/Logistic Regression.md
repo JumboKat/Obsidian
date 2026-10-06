@@ -54,4 +54,8 @@ On the other hand, MSE does not always correlate to a maximum likelihood; it wor
 ##### BCE is convex
 For BCE with a sigmoid, J(θ) is convex. For MSE with a sigmoid, the loss function is not convex, but flattens at both ends; it is not globally convex, and so there are regions where gradient descent will stall (where it flattens). MSE is convex for linear regression; it is only incompatible with the sigmoid function.
 ### Geometric Interpretation
-The feature-dependent part of the linear score is a dot product between 
+A linear score t is computed as:
+$$t(x)=\theta_0+w^\top x$$
+- w is the vector of feature weights
+- θ<sub>0</sub> is the intercept (bias)
+- $w^\top x=||w|| ||x||cos\phi$ (is a dot product)

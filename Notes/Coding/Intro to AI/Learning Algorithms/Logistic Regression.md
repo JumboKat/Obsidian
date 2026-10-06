@@ -59,3 +59,5 @@ $$t(x)=\theta_0+w^\top x$$
 - w is the vector of feature weights
 - θ<sub>0</sub> is the intercept (bias)
 - $w^\top x=||w|| ||x||cos\phi$ (is a dot product)
+
+The decision boundary is where the linear score is zero t(x) = 0 and is a hyperplane in feature space. 

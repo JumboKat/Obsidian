@@ -53,4 +53,5 @@ The model produces a binary outcome, and so does the loss function. Outputs are 
 On the other hand, MSE does not always correlate to a maximum likelihood; it works for a continuous prediction.
 ##### BCE is convex
 For BCE with a sigmoid, J(θ) is convex. For MSE with a sigmoid, the loss function is not convex, but flattens at both ends; it is not globally convex, and so there are regions where gradient descent will stall (where it flattens). MSE is convex for linear regression; it is only incompatible with the sigmoid function.
-### Geometric 
+### Geometric Interpretation
+The feature-dependent part of the linear score is a dot product between 

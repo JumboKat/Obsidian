@@ -15,4 +15,4 @@ A confusion matrix provides a summary, but there exist more concise metrics.
 
 ![[Pasted image 20261006150319.png]]
 
-For a multiclass problem we derive a [[Classification Tasks#One-vs-Rest (OvR)||one-vs-rest]] 
+For a multiclass problem we derive a [[Classification Tasks#One-vs-Rest (OvR)||one-vs-rest]] count for each class, then combine the resulting class-specific metrics. In the example above, comp.graphics is the positive class, while the rest are treated as the negative class. Any classification where the model predicts another class as NOT comp.graphics is a true negative, even if the specific class predicted was incorrect.

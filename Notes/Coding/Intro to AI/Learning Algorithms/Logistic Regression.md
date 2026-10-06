@@ -60,4 +60,7 @@ $$t(x)=\theta_0+w^\top x$$
 - θ<sub>0</sub> is the intercept (bias)
 - $w^\top x=||w|| ||x||cos\phi$ (is a dot product)
 
-The decision boundary is where the linear score is zero t(x) = 0 and is a hyperplane in feature space. 
+The decision boundary is where the linear score is zero t(x) = 0 and is a hyperplane in feature space. At t(x) = 0, the evidence for class 1 and class 0 are perfectly balance; decisions are a 50/50 choice. This is because positive weights and negative weights are balanced and the net result is zero. 
+
+The weight vector w is normal to the decision boundary. Its magnitude determines the distance a point lies from the boundary (greater weights in one direction means the model is more confident in its decision). The bias shifts the boundary without changing its orientation.
+![[Pasted image 20261006144943.png]]

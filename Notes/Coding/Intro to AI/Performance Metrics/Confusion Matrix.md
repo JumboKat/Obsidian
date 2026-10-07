@@ -1,8 +1,8 @@
 A **confusion matrix** is a table that summarizes the performance of a classification algorithm. 
 ![[Pasted image 20261006145757.png]]
 - **True positive (TP)**: The true label was positive and the model predicted positive.
-- **False positive (FP)**: the true label was negative and the model predicted positive.
-- **False negative (FN)**: the true label was positive and the model predicted negative.
+- **False positive (FP)**: the true label was negative and the model predicted positive (AKA a type I error).
+- **False negative (FN)**: the true label was positive and the model predicted negative (AKA a type II error).
 - **True negative (TN)**: the true label was negative and the model predicted negative.
 
 The diagonal elements represent the correct predictions (TPs and TNs). The off-diagonal elements correspond to incorrect predictions.

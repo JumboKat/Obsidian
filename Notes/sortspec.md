@@ -51,6 +51,16 @@ sorting-spec: |-
   Machine Learning
   Classification Tasks
   Learning Algorithms
+  Performance Metrics
+  target-folder: Obsidian/Notes/Coding/Intro to AI/Performance Metrics
+  Confusion Matrix
+  Accuracy
+  Precision
+  Recall
+  F1-Score
+  Micro and Macro Averaging
+  Precision-Recall Trade-off
+  ROC Curve
   
   target-folder: Obsidian/Notes/Comparch 3
   Lab

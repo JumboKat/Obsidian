@@ -24,3 +24,9 @@ The **AUROC** summarizes how well a score ranks positive examples above negative
 ![[Pasted image 20261006222059.png]]
 
 AUROC does not measure probability calibration or select a threshold. Moving a threshold changes predicted labels, confusion matrix, accuracy, and the ROC operating point, but not AUROC, since score ordering is unchanged.
+### ROC vs Precision-Recall
+ROC relies on recall and FPR. Since FPR has all negatives in its denominator, a very small positive class and a very large negative class can make FPR look small even when the positive prediction rate is low, which makes the ROC look optimistic.
+
+Since precision responds directly to false positives, PR curves reflect the performance of a rare positive class more directly.
+
+Match the curve to the decision problem; check class prevalence and operating threshold.

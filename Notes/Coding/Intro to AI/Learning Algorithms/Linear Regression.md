@@ -23,6 +23,7 @@ Where:
 ### Mean Squared Error (MSE)
 The MSE is a common objective for regression problems. The model trains by searching for parameter values that minimize MSE. It is calculated by:
 ![[Pasted image 20260927171243.png]]
+For each example, take the error (actual minus predicted) and square it, then average. Squaring makes all the errors positive and penalizes large errors much more than small ones. 
 
 **RMSE** is the square root of MSE. Because the square-root function only increases, both MSE and RMSE have the same minimizing parameter values. It is preferred to minimize MSE over RMSE because the derivative is simpler. 
 ### Characteristics

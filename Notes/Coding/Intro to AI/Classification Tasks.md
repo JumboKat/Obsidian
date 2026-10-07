@@ -1,5 +1,5 @@
 Classification tasks involves categorizing an example into one or more discrete **classes**. 
-### Binary Classifcation
+### Binary Classification
 **Binary classification** is a supervised learning task where the objective is to categorize examples into one of two discrete classes. [[Logistic Regression||Logistic regression]] and **support vector machines (SVMs)** are such examples.
 ### Multiclass Classification
 **Multiclass classification** categorizes examples into one of three or more classes. This is not to be confused with **multilabel classification**, where examples can belong to multiple classes. 

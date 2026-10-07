@@ -1,4 +1,3 @@
-%%?%%#AI
 A **decision tree** is a rooted, hierarchical structure used for regression and classification tasks. Each node marks a decision that performs a binary test on a certain feature (Must fit in one of two categories, or must be above or below a threshold number). The trees structure is inferred (learned) from the training data. Each leaf produces a prediction: a class label/class probabilities for classification or a numerical value for regression. Decision trees are useful because they clearly show the rules learned by the model.
 ![[Pasted image 20260923001058.png]]
 #### Classifying New Instances (Inference)

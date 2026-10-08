@@ -12,5 +12,7 @@ To go faster, we need three things: branch prediction + speculation, register re
 ### Generic Out-of-Order Superscalar Processor
 ![[Pasted image 20261008173606.png]]
 This is the generic design of a superscalar pipeline. 
-- The instruction fetch, decode, and rename occur in-order. Renaming maps register names to fresh physical registers, avoiding WAR and WAW dependencies.
-- 
+- The [[The Front-End||front-end]] (instruction fetch, decode, and rename) occurs in-order. Renaming maps register names to fresh physical registers, avoiding WAR and WAW dependencies.
+- The issue stage schedules instructions into a queue (based on dependencies, required FUs)
+- Read registers, FUs + LS unit (operation execution) and reg write are the execution stages of an instruction. Instructions can be executed out of order here, based on [[Tomasulo's Method]].
+- The commit stage outputs the results of each instruction in the order they were fetched. An instruction that finishes execution earlier must still wait for the previous instruction to commit before doing so.

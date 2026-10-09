@@ -77,5 +77,12 @@ sorting-spec: |-
   Memory Protection Unit (MPU)
   Real-Time Operating Systems (RTOS)
   Multiprocessor System-on-Chip (MPSoC)
+  target-folder: Obsidian/Notes/Comparch 3/Superscalars
+  Instruction Level Parallelism
+  Dependencies
+  Superscalar Processor
+  The Front-End
+  Register Renaming
+  Tomasulo's Method
 ---
 

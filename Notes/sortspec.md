@@ -67,10 +67,10 @@ sorting-spec: |-
   Parallelism in Common Architectures
   Computer Architectures
   Performance
-  Caches
-  Virtual Memory
-  DRAM
-  Performance Counters
+  Caches and Memory
+  Real-Time Cores
+  Superscalars
+  Hardware Multithreading
   target-folder: Obsidian/Notes/Comparch 3/Real-Time Cores
   Real-Time Systems
   Tightly-Coupled Memory (TCM)
@@ -84,5 +84,12 @@ sorting-spec: |-
   The Front-End
   Register Renaming
   Tomasulo's Method
+  target-folder: Obsidian/Notes/Comparch 3/Hardware Multithreading
+  Multicore Processors
+  Multitasking Without Multithreading
+  Multithreading Support
+  Coarse-Grained Multithreading
+  Fine-Grained Multithreading
+  Simultaneous Multithreading (SMT)
 ---
 

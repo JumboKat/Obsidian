@@ -9,3 +9,6 @@ A core with multithreading support includes:
 - [[Simultaneous Multithreading (SMT)]]: run instructions from multiple threads in the same cycle.
 
 **Vertical waste** (empty rows) occurs when no instruction runs; this is addressed by coarse- and fine-grained MT (as well as SMT). **Horizontal waste** (partially-empty rows) is addressed by SMT.
+### Trends
+Here is where each style of multithreading is used today:
+- **Fine-grained**: GPUs, DPS, AI accelerators.

@@ -22,3 +22,4 @@ The Intel Core i7 is an asymmetric/hybrid multicore, boasting:
 - An Intel Thread Director reports each thread's expected P vs E benefit to the OS scheduler.
 
 Each P-core holds 2 threads, 12 in total. All cores share one memory address space. The chip is a shared-memory MIMD model.
+### Apple A19 Pro

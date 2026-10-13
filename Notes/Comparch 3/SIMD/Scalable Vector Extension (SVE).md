@@ -1,0 +1,5 @@
+The **AArch64 Neon** is a fixed-width 128-bit [[SIMD in General-Purpose CPUs||SIMD]] architecture originally developed for multimedia. Registers are vectors of same-type elements. Instructions usually perform the same operation on all lanes. There are 32 registers 128 wide.
+### Problem
+Standard Neon ISA is always 128 bits. If hardware gets wider, it still must use 128 bits. To exploit a greater register size (256 or 512), the vendor needs a new extension, requiring new code or recompilation.
+
+An **SVE** is **vector-length agnostic (VLA)**: the ISA does not specify register width. Hardware can choose anything from 128 to 2048 bits in 128 steps, and the program asks at runtime how many lanes it has. One binary can run on every SVE chip with no recompilation and automatically uses all the width available.

@@ -1,4 +1,4 @@
-[[Coarse-Grained Multithreading||Coarse-]] and [[Fine-Grained Multithreading||fine-grained]] MT are forms of **temporal** multithreading. In any cycle, each pipeline stage holds instructions from one thread, meaning the core is shared across time. On superscalar cores, this leaves horizontal waste. some issue slots/functional units are idle during low IPC phases.
+ [[Coarse-Grained Multithreading||Coarse-]] and [[Fine-Grained Multithreading||fine-grained]] MT are forms of **temporal** multithreading. In any cycle, each pipeline stage holds instructions from one thread, meaning the core is shared across time. On superscalar cores, this leaves horizontal waste. some issue slots/functional units are idle during low IPC phases.
 
 **Simultaneous Multithreading** allows instructions from different threads to occupy the same stage in the same cycle. SMT turns thread-level parallelism into instruction-level parallelism for an out-of-order machine.
 ### SMT Core

@@ -46,6 +46,15 @@ sorting-spec: |-
   Generic Pointers
   Pointer Operations
   Dynamic Management
+  
+  target-folder: Obsidian/Notes/Coding/C++/Classes and Objects
+  OOP
+  Structures
+  Unions
+  Enumerations
+  Typedef
+  Auto
+  Classes
   target-folder: Obsidian/Notes/Coding/Intro to AI
   Defining AI
   Machine Learning

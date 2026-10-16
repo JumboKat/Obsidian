@@ -1,1 +1,0 @@
-The destructor is a member function that is systematically called at the end of an object's life.  

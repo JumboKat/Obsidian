@@ -1,4 +1,4 @@
-A class is a [[Structures||structure]] where members and member functions are by default private. 
+A class is a [[Structures||structure]] where members and [[Member Functions||member functions]] are by default private. 
 ### Declaration
 Its declaration is similar to that of a structure's, except we replace the word **struct** with **class**. Members are grouped based on whether they are public or private; since private is the default security level, it does not need to be explicitly declared.
 
@@ -51,3 +51,17 @@ b.y = a.y;
 ```
 
 Regardless of status, the assignment a = b is always legal.
+### Class as a Data Member
+A class can declare another class as a member. In this case, its scope is limited to the class.
+```cpp
+class A {
+	public:
+		class B { // ..... // B class declared in A class
+		};
+};
+int main(){
+	A a;
+	A::B b; //declaration of object b of type B belonging to type A
+	return 0;
+}
+```

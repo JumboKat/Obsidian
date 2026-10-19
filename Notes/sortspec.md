@@ -55,6 +55,7 @@ sorting-spec: |-
   Typedef
   Auto
   Classes
+  
   target-folder: Obsidian/Notes/Coding/Intro to AI
   Defining AI
   Machine Learning

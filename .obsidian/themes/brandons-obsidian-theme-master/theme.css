@@ -1,0 +1,998 @@
+/*
+default = value is same as original Obsidian settings, but I added it in incase I wanted to change
+??? = I have no idea what the value changes, but I added it in incase it could be important
+*/
+
+
+:root {
+
+/* General values ------------------------------------------------------------------------------- */
+
+	--ncg-thickness-1:							1px;
+	--ncg-thickness-2:							2px;
+
+	--ncg-view-radius:							8px;
+
+/* Font values ---------------------------------------------------------------------------------- */
+
+	--ncg-font-interface-theme: 				"Lora", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--ncg-font-text-theme: 						"Lora", "Times New Roman", serif;
+	--ncg-font-monospace-theme:					"Source Code Pro", "Courier New", monospace;
+	--ncg-bold-modifier:						300;
+
+
+/* Bases values --------------------------------------------------------------------------------- */
+
+	--ncg-bases-header-width:					0 0 var(--ncg-thickness-1) 0;
+	--ncg-bases-header-height:					48px;
+
+/* Callout values ------------------------------------------------------------------------------- */
+
+	--ncg-callout-padding: 						0px;
+	--ncg-callout-title-padding: 				8px;
+	--ncg-callout-content-padding: 				0px 8px;
+
+/* Embed values --------------------------------------------------------------------------------- */
+
+	--ncg-embed-max-height:						1000px;
+	--ncg-embed-canvas-max-height:				400px;
+	--ncg-embed-padding: 						0px 0px 0px 12px;
+
+/* Header values -------------------------------------------------------------------------------- */
+
+	--ncg-header-line-height:					1.2;
+
+	--ncg-h1-size:								2.0em;
+	--ncg-h2-size:								1.7em;
+	--ncg-h3-size:								1.5em;
+	--ncg-h4-size:								1.4em;
+
+	--ncg-h1-weight:							1000;
+	--ncg-h2-weight:							900;
+	--ncg-h3-weight:							900;
+	--ncg-h4-weight:							900;
+
+/* Link values ---------------------------------------------------------------------------------- */
+
+	--ncg-link-unresolved-opacity:				0.5;
+	--ncg-link-decoration:						none;
+
+/* Popover values ------------------------------------------------------------------------------- */
+
+	--ncg-popover-width:						700px;
+	--ncg-popover-height:						700px;
+	--ncg-popover-font-size:					0.8em;
+
+}		
+
+
+
+.theme-light {
+
+/* General color values ------------------------------------------------------------------------- */
+
+	--ncg-color-transparent:					transparent;
+
+	--ncg-alpha-l:								0.2;
+	--ncg-alpha-m:								0.4;
+	--ncg-alpha-d:								0.9;
+
+	--ncg-color-unknown-value:					#FF00FF;
+	--ncg-color-unknown-value-hsl:				300, 100, 50;
+
+/* Main color values ---------------------------------------------------------------------------- */		
+
+	/* Accent colors # */
+	--accent-h:									355;
+	--accent-s:									59%;
+	--accent-l:									72%;
+
+--ncg-color-accent-1:                       	#E18C93;
+--ncg-color-accent-1-rgb:                   	225, 140, 147;
+--ncg-color-accent-1-hsl:                  	 	355, 59%, 72%;
+
+--ncg-color-accent-2:                      		#C6616A;
+--ncg-color-accent-2-rgb:                   	198, 97, 106;
+--ncg-color-accent-2-hsl:                   	355, 47%, 58%;
+
+--ncg-color-accent-3:                      		#93323B;
+--ncg-color-accent-3-rgb:                  		147, 50, 59;
+--ncg-color-accent-3-hsl:                 		354, 49%, 39%;
+/*	
+	--ncg-color-accent-1:                       #D55648;
+	--ncg-color-accent-1-rgb:                   213, 86, 72;
+	--ncg-color-accent-1-hsl:                   6, 62%, 56%;
+	
+	--ncg-color-accent-2:                       #AC4842;
+	--ncg-color-accent-2-rgb:                   172, 72, 66;
+	--ncg-color-accent-2-hsl:                   3, 45%, 47%;
+
+	--ncg-color-accent-3:                       #843939;
+	--ncg-color-accent-3-rgb:                   132, 57, 57;
+	--ncg-color-accent-3-hsl:                   0, 40%, 37%;
+*/
+
+	/* Base colors # */
+	--color-base-00:							#FFF4ED;
+	--ncg-color-base-00-rgb:					255, 244, 237;
+
+	--color-base-05: 							#FDF1EB;
+	--color-base-10: 							#FBEEE9;
+
+	--color-base-20: 							#F7E8E4;
+	--ncg-color-base-20-rgb:					247, 232, 228;
+
+	--color-base-25: 							#F5E4E2;
+	--color-base-30: 							#F3E1E0;
+	--color-base-35: 							#F1DEDD;
+
+	--color-base-40: 							#EFDBDB;
+	--ncg-color-base-40-rgb:					239, 219, 219;
+
+	--color-base-50: 							#CFC0C2;
+	--color-base-60: 							#AFA6A9;
+	--color-base-70: 							#7F7E84;
+	--color-base-100:							#2F3B45;
+
+	/* Extra colors # */
+	--ncg-color-solid:							#5a667e;
+	--ncg-color-gradient:					
+linear-gradient(
+	#729eaa 0%,
+	#748fa4 40%,
+	#5f6983 80%,
+	#4b4e6a 100%
+/* 
+	#7e98a9,
+	#717f96,
+	#5d6278,
+	#4a485e
+
+Sunset gradient colors
+    #564b7e 0%,
+    #845e8b 25%,
+    #8f6466 50%,
+    #a7765f 75%,
+	#b89b5b 100%
+	*/
+);
+
+	/* Background colors # */
+	--ncg-color-background-1-alt:				var(--color-base-00);
+	--ncg-color-background-1:					var(--color-base-00);
+	--ncg-color-background-2-alt:				var(--color-base-25);
+	--ncg-color-background-2:					var(--color-base-25);
+	--ncg-color-background-3-alt:				var(--color-base-40);
+	--ncg-color-background-3:					var(--color-base-40);
+	--ncg-color-background-4:					var(--ncg-color-gradient);
+
+/* Other color values --------------------------------------------------------------------------- */
+
+	/* Extended color values */
+	--color-red:                                #D75B5B;
+	--color-red-rgb:                            215, 91, 91;
+	
+	--color-orange:                             #EDAD2D;
+	--color-orange-rgb:                         237, 173, 45;
+	
+	--color-yellow:                             #ecb51e;
+	--color-yellow-rgb:                         231, 178, 54;
+	
+	--color-green:                              #61A152;
+	--color-green-rgb:                          97, 161, 82;
+	
+	--color-cyan:                               #5fb2ae;
+	--color-cyan-rgb:                           88, 177, 173;
+	
+	--color-blue:                               #5A83D0;
+	--color-blue-rgb:                           90, 131, 208;
+	
+	--color-purple:                             #a150b6;
+	--color-purple-rgb:                         132, 102, 200;
+	
+	--color-pink:                               #D579A1;
+	--color-pink-rgb:                           213, 121, 161;
+
+	/* Code syntax highlighting colors */
+	--ncg-color-code-normal:        			var(--ncg-color-text-normal);
+	--ncg-color-code-comment:       			#19cde9;
+	--ncg-color-code-keyword:       			#de1f1f;
+	--ncg-color-code-function:      			#f1b418;
+	--ncg-color-code-string:        			#0f9197;
+	--ncg-color-code-value:         			#a22fd7;
+	--ncg-color-code-important:     			#8f8f8f; /* regex, invalid, emphasis */
+	--ncg-color-code-property:      			#8f8f8f;
+	--ncg-color-code-tag:           			#c00d0d;
+	--ncg-color-code-operator:      			#ff0000;
+	--ncg-color-code-punctuation:   			#8f8f8f;
+
+	/* Main text colors # */
+	--ncg-color-text-normal:					var(--color-base-100);
+	--ncg-color-text-muted:						var(--color-base-70);
+	--ncg-color-text-faint:						var(--color-base-60);
+	--ncg-color-text-pop:						var(--color-base-00);
+	--ncg-color-text-accent-1:					var(--ncg-color-accent-2);
+	--ncg-color-text-accent-2:					var(--ncg-color-accent-3);
+
+	/* Text formatting colors */
+	--ncg-color-bold:							var(--color-red);
+	--ncg-color-italic:							var(--color-cyan);
+	--ncg-color-highlight:						var(--color-yellow);
+	--ncg-color-blockquote:						var(--text-normal);
+	--ncg-color-message:						rgba(var(--ncg-color-accent-1-rgb), var(--ncg-alpha-d));
+
+	/* Heading text colors */
+	--ncg-color-h1:								var(--color-red);
+	--ncg-color-h2:								var(--color-yellow);
+	--ncg-color-h3:								var(--color-cyan);
+	--ncg-color-h4:								var(--color-purple);
+	--ncg-color-h5:								var(--color-green);
+	--ncg-color-h6:								var(--color-orange);
+
+	/* Transparent accent colors */
+	--ncg-color-transparent-l:					rgba(var(--ncg-color-accent-1-rgb), var(--ncg-alpha-l));
+	--ncg-color-transparent-m:					rgba(var(--ncg-color-accent-1-rgb), var(--ncg-alpha-m));
+
+	/* Embed border color */
+	--ncg-embed-border-1: 						var(--ncg-thickness-2) dashed var(--ncg-color-accent-1);
+
+	/* Border color */
+	--ncg-color-border:							var(--color-base-60);
+
+/* Other color values --------------------------------------------------------------------------- */
+
+	--background-secondary-alt: 				var(--color-base-05); /* default */
+	--ncg-color-graph-line:						var(--ncg-color-background-3);
+	--ncg-color-canvas-dot:						var(--ncg-color-text-faint);
+
+}
+
+
+.theme-dark {
+
+/* General color values ------------------------------------------------------------------------- */
+
+	--ncg-color-transparent:					transparent;
+
+	--ncg-alpha-l:								0.15;
+	--ncg-alpha-m:								0.3;
+	--ncg-alpha-d:								0.9;
+
+	--ncg-color-unknown-value:					#FF00FF;
+	--ncg-color-unknown-value-hsl:				300, 100, 50;
+
+/* Main color values ---------------------------------------------------------------------------- */		
+
+	/* Accent colors # */
+	--accent-h:									0;
+	--accent-s:									59%;
+	--accent-l:									60%;	
+
+	--ncg-color-accent-1:     					#e67272;
+	--ncg-color-accent-1-rgb: 					230, 114, 114;
+	--ncg-color-accent-1-hsl: 					0, 70%, 67%;
+	
+	--ncg-color-accent-2:     					#eb8b9b;
+	--ncg-color-accent-2-rgb: 					235, 139, 155;
+	--ncg-color-accent-2-hsl: 					350, 71%, 73%;
+	
+	--ncg-color-accent-3:     					#f2a7c0;
+	--ncg-color-accent-3-rgb: 					242, 167, 192;
+	--ncg-color-accent-3-hsl: 					340, 74%, 80%;
+
+	/* Base colors # */
+	--color-base-00:          					#141116;
+	--ncg-color-base-00-rgb:  					20, 17, 22;
+
+	--color-base-05:          					#161218;
+	--ncg-color-base-05-rgb:  					22, 18, 24;
+
+	--color-base-10:          					#18141A;
+	--ncg-color-base-10-rgb:  					24, 20, 26;
+
+	--color-base-20:          					#1C161F;
+	--ncg-color-base-20-rgb:  					28, 22, 31;
+
+	--color-base-25:          					#1D1721;
+	--ncg-color-base-25-rgb:  					29, 23, 33;
+
+	--color-base-30:          					#1F1923;
+	--ncg-color-base-30-rgb:  					31, 25, 35;
+
+	--color-base-35:          					#211A25;
+	--ncg-color-base-35-rgb:  					33, 26, 37;
+
+	--color-base-40:          					#231B27;
+	--ncg-color-base-40-rgb:  					35, 27, 39;
+
+	--color-base-50:                            #49404A;
+	--color-base-60:                            #6E646B;
+	--color-base-70:                            #B6ABAC;
+	--color-base-100:                           #FFF2EE;
+
+/*
+	--color-base-00:                            #19181F;
+	--color-base-05:                            #1C1A21;
+	--color-base-10:                            #1F1D24;
+	--color-base-20:                            #242229;
+	--color-base-25:                            #27242B;
+	--color-base-30:                            #2A262D;
+	--color-base-35:                            #2C2930;
+	--color-base-40:                            #2F2B32;
+	--color-base-50:                            #504A50;
+	--color-base-60:                            #716A6E;
+	--color-base-70:                            #B4A8AB;
+	--color-base-100:                           #F6E7E7;
+/*
+
+	/* Extra colors # */
+	--ncg-color-solid: 							#1b191f;
+	--ncg-color-gradient:					
+linear-gradient(
+	#4f3f85,
+    #8a5196,
+    #88484e,
+    #a8654a,
+	#a38347
+/*
+	#271a27,
+    #251a22,
+	#251d29,
+	#24212a
+
+	#201723,
+	#2e1c27,
+	#201723
+	*/
+);
+
+	--ncg-color-gradient-1:					
+radial-gradient(
+	circle at top left,
+	#26242b,
+	#231e1e,
+	#221f1c
+	/*
+	#201723,
+	#2e1c27,
+	#201723
+	*/
+);
+
+
+	/* Background colors # */
+	--ncg-color-background-1-alt:				rgba(var(--ncg-color-base-40-rgb), 0.8);
+	--ncg-color-background-1:					var(--color-base-20);
+	--ncg-color-background-2-alt:				rgba(var(--ncg-color-base-10-rgb), 0.8);
+	--ncg-color-background-2:					var(--color-base-05);
+	--ncg-color-background-3-alt:				rgba(var(--ncg-color-base-00-rgb), 0.8);
+	--ncg-color-background-3:					var(--color-base-00);
+	--ncg-color-background-4:					var(--ncg-color-gradient);
+
+	/*
+	--ncg-color-background-1:					rgba(var(--ncg-color-base-00-rgb), 0.4);
+	--ncg-color-background-2:					rgba(var(--ncg-color-base-00-rgb), 0.6);
+	--ncg-color-background-3:					rgba(var(--ncg-color-base-00-rgb), 0.8);
+	--ncg-color-background-4:					var(--ncg-color-gradient);
+	*/
+
+/* Other color values --------------------------------------------------------------------------- */
+
+	/* Extended color values */
+	--color-red:                                #f78989;
+	--color-red-rgb:                            235, 122, 122;
+	
+	--color-orange:                             #eebb85;
+	--color-orange-rgb:                         242, 182, 117;
+	
+	--color-yellow:                             #efd281;
+	--color-yellow-rgb:                         237, 207, 126;
+	
+	--color-green:                              #b0ec8f;
+	--color-green-rgb:                          155, 218, 122;
+	
+	--color-cyan:                               #8fe5e0;
+	--color-cyan-rgb:                           127, 223, 218;
+	
+	--color-blue:                               #84a9ec;
+	--color-blue-rgb:                           132, 169, 236;
+	
+	--color-purple:                             #be91ef;
+	--color-purple-rgb:                         186, 141, 233;
+	
+	--color-pink:                               #f499c3;
+	--color-pink-rgb:                           242, 149, 193;
+
+	/* Code syntax highlighting colors */
+	--ncg-color-code-normal:         			var(--ncg-color-text-normal);
+	--ncg-color-code-comment:        			#71f8ff;
+	--ncg-color-code-keyword:        			#ff6a6a;
+	--ncg-color-code-function:       			#ffd54d;
+	--ncg-color-code-string:         			#71f8ff;
+	--ncg-color-code-value:          			#d16dff;
+	--ncg-color-code-important:      			#ff00ff;
+	--ncg-color-code-property:       			#c3c9d4; 
+	--ncg-color-code-tag:            			#ff6a6a;
+	--ncg-color-code-operator:       			#ffd54d;
+	--ncg-color-code-punctuation:    			#c3c9d4;
+
+	/* Main text colors # */
+	--ncg-color-text-normal:					var(--color-base-100);
+	--ncg-color-text-muted:						var(--color-base-70);
+	--ncg-color-text-faint:						var(--color-base-60);
+	--ncg-color-text-pop:						var(--color-base-100);
+	--ncg-color-text-accent-1:					var(--ncg-color-accent-2);
+	--ncg-color-text-accent-2:					var(--ncg-color-accent-1);
+
+	/* Text formatting colors */
+	--ncg-color-bold:							var(--color-red);
+	--ncg-color-italic:							var(--color-cyan);
+	--ncg-color-highlight:						#b28524;
+	--ncg-color-blockquote:						var(--text-normal);
+	--ncg-color-message:						rgba(var(--ncg-color-accent-1-rgb), var(--ncg-alpha-d));
+
+	/* Heading text colors */
+	--ncg-color-h1:								var(--color-red);
+	--ncg-color-h2:								var(--color-yellow);
+	--ncg-color-h3:								var(--color-cyan);
+	--ncg-color-h4:								var(--color-purple); 
+	--ncg-color-h5:								var(--color-green);
+	--ncg-color-h6:								var(--color-orange);
+
+	/* Transparent accent colors */
+	--ncg-color-transparent-l:					rgba(var(--ncg-color-accent-1-rgb), var(--ncg-alpha-l));
+	--ncg-color-transparent-m:					rgba(var(--ncg-color-accent-1-rgb), var(--ncg-alpha-m));
+
+	/* Embed border color */
+	--ncg-embed-border-1: 						var(--ncg-thickness-2) dashed var(--ncg-color-accent-1);
+
+	/* Border color */
+	--ncg-color-border:							var(--color-base-60);
+
+/* Other color values --------------------------------------------------------------------------- */
+
+	--background-secondary-alt: 				var(--color-base-05); /* default */
+	--ncg-color-graph-line:						var(--color-base-50);
+	--ncg-color-canvas-dot:						var(--color-base-50);
+
+}
+
+
+body {
+
+/* ============================================================================================== */
+/* Components =================================================================================== */
+/* ============================================================================================== */
+
+/* Button --------------------------------------------------------------------------------------- */
+/* Checkbox ------------------------------------------------------------------------------------- */
+/* Color input ---------------------------------------------------------------------------------- */
+/* Dialog --------------------------------------------------------------------------------------- */
+/* Dragging ------------------------------------------------------------------------------------- */
+
+	--drag-ghost-background:					var(--ncg-color-accent-1);
+	--drag-ghost-text-color:					var(--ncg-color-text-pop);
+
+/* Dropdowns------------------------------------------------------------------------------------- */
+/* Indentation guides --------------------------------------------------------------------------- */
+
+	--indentation-guide-width-active: 			var(--ncg-thickness-2);
+	--indentation-guide-color:					var(--ncg-color-border);
+	--indentation-guide-color:					var(--ncg-color-border);
+
+/* Modal ---------------------------------------------------------------------------------------- */
+
+	--modal-border-color:						var(--ncg-color-border);
+
+/* Multi-select --------------------------------------------------------------------------------- */
+/* Navigation ----------------------------------------------------------------------------------- */
+
+	--nav-item-weight-active:					var(--font-bold);
+	--nav-indentation-guide-color:				var(--ncg-color-border);
+	--nav-collapse-icon-color:					var(--ncg-color-text-muted);
+	--nav-collapse-icon-color-collapsed:		var(--ncg-color-text-muted);
+
+	/* Navigation headings # */
+
+/* Popover -------------------------------------------------------------------------------------- */
+
+	--popover-width:							var(--ncg-popover-width);
+	--popover-height:							var(--ncg-popover-height);
+	--popover-font-size: 						var(--ncg-popover-font-size);
+
+/* Prompt --------------------------------------------------------------------------------------- */
+
+	--prompt-border-color:						var(--ncg-color-border);
+
+/* Slider --------------------------------------------------------------------------------------- */
+/* Tabs ----------------------------------------------------------------------------------------- */
+
+	--tab-text-color:							var(--ncg-color-text-muted);
+	--tab-text-color-active:					var(--ncg-color-text-normal);
+	--tab-text-color-focused:					var(--ncg-color-text-muted);
+	--tab-text-color-focused-active:			var(--ncg-color-text-normal);
+
+	--tab-container-background: 				var(--ncg-color-transparent);
+	--tab-divider-color: 						transparent;
+	--tab-outline-color: 						transparent;
+	--tab-radius:								var(--ncg-view-radius);
+	--tab-radius-active:						var(--ncg-view-radius);
+
+	/* Tab stacks # */
+
+/* Text input ----------------------------------------------------------------------------------- */
+/* Toggle --------------------------------------------------------------------------------------- */
+
+
+
+
+/* ============================================================================================== */
+/* Editor ======================================================================================= */
+/* ============================================================================================== */
+
+/* Bases ---------------------------------------------------------------------------------------- */
+	/* Base container */
+
+		--bases-header-border-width: 			var(--ncg-bases-header-width);
+		--bases-header-height: 					var(--ncg-bases-header-height);
+
+	/* Table view */
+
+		--bases-table-header-weight: 			var(--font-bold);
+		--bases-table-header-color: 			var(--ncg-color-text-normal);
+
+		--bases-table-border-color:				var(--ncg-color-border);
+		--bases-table-cell-background-active: 	var(--ncg-color-transparent-l);
+
+	/* Cards view */
+
+		--bases-cards-background: 				var(--ncg-color-background-1-alt);
+
+/* Block ---------------------------------------------------------------------------------------- */
+/* Blockquote ----------------------------------------------------------------------------------- */
+
+	--blockquote-background-color:				var(--ncg-color-background-3-alt);
+	--blockquote-color:							var(--ncg-color-blockquote);
+
+/* Callout ----------------------------------------------------------------------------------- */
+
+	--callout-border-width: 					var(--ncg-thickness-1);
+	--callout-padding: 							var(--ncg-callout-padding);
+	--callout-title-padding: 					var(--ncg-callout-title-padding);
+	--callout-content-padding: 					var(--ncg-callout-content-padding);
+	--callout-content-background: 				var(--ncg-color-background-1);
+	
+	/* Type colors # */
+
+/* Code ----------------------------------------------------------------------------------------- */
+	
+	--code-background:							var(--ncg-color-background-2-alt);
+
+	/* Syntax highlighting # */
+
+		--code-normal:							var(--ncg-color-code-normal);
+		--code-comment:	 						var(--ncg-color-code-comment);
+		--code-keyword: 						var(--ncg-color-code-keyword);
+		--code-function: 						var(--ncg-color-code-function);
+		--code-string: 							var(--ncg-color-code-string);
+		--code-value: 							var(--ncg-color-code-value);
+		--code-important: 						var(--ncg-color-code-important);
+		--code-property: 						var(--ncg-color-code-property);
+		--code-tag: 							var(--ncg-color-code-tag);
+		--code-operator: 						var(--ncg-color-code-operator);
+		--code-punctuation: 					var(--ncg-color-code-punctuation);
+
+
+
+
+/* Embed ---------------------------------------------------------------------------------------- */
+
+	--embed-max-height: 						var(--ncg-embed-max-height);
+	--embed-canvas-max-height: 					var(--ncg-embed-canvas-max-height);
+
+	--embed-border-end: 						var(--ncg-embed-border-1);
+	--embed-border-start: 						var(--ncg-embed-border-1);
+	--embed-border-top: 						var(--ncg-embed-border-1);
+	--embed-border-bottom: 						var(--ncg-embed-border-1);
+
+	--embed-padding: 							var(--ncg-embed-padding);
+
+/* File ----------------------------------------------------------------------------------------- */
+/* Footnote ------------------------------------------------------------------------------------- */
+/* Headings ------------------------------------------------------------------------------------- */
+
+	--h1-color:									var(--ncg-color-h1);
+	--h2-color:									var(--ncg-color-h2);
+	--h3-color:									var(--ncg-color-h3);
+	--h4-color:									var(--ncg-color-h4);
+	--h5-color:									var(--ncg-color-h5);
+	--h6-color:									var(--ncg-color-h6);
+
+	--h1-line-height: 							var(--ncg-header-line-height);
+	--h2-line-height: 							var(--ncg-header-line-height);
+	--h3-line-height: 							var(--ncg-header-line-height);
+	--h4-line-height: 							var(--ncg-header-line-height);
+	--h5-line-height: 							var(--ncg-header-line-height);
+	--h6-line-height: 							var(--ncg-header-line-height);
+
+	--h1-size:									var(--ncg-h1-size);
+	--h2-size:									var(--ncg-h2-size);
+	--h3-size:									var(--ncg-h3-size);
+	--h4-size:									var(--ncg-h4-size);
+	--h5-size:									var(--ncg-h4-size);
+	--h6-size:									var(--ncg-h4-size);
+
+	--h1-weight: 								var(--ncg-h1-weight);
+	--h2-weight: 								var(--ncg-h2-weight);
+	--h3-weight: 								var(--ncg-h3-weight);
+	--h4-weight: 								var(--ncg-h4-weight);
+	--h5-weight: 								var(--ncg-h4-weight);
+	--h6-weight: 								var(--ncg-h4-weight);
+
+/* Horizontal rule ------------------------------------------------------------------------------ */
+
+	--hr-color:									var(--ncg-color-border);
+
+/* Inline title --------------------------------------------------------------------------------- */
+
+	--inline-title-color:						var(--ncg-color-text-accent-2);
+
+/* Link ----------------------------------------------------------------------------------------- */
+
+	--link-decoration:							var(--ncg-link-decoration);
+	--link-unresolved-opacity: 					var(--ncg-link-unresolved-opacity);
+
+/* List ----------------------------------------------------------------------------------------- */
+
+	--list-marker-color:						var(--ncg-color-accent-1);		
+	--list-marker-color-hover:					var(--ncg-color-accent-2);	
+	--list-marker-color-collapsed:				var(--ncg-color-accent-1);
+
+/* Properties ----------------------------------------------------------------------------------- */
+	/* Properties container # */
+
+		--metadata-background: 					var(--ncg-color-background-2-alt);
+		--metadata-padding:						var(--size-4-2);
+		--metadata-border-color: 				var(--ncg-color-border);
+		--metadata-border-radius: 				var(--radius-m);
+		--metadata-border-width: 				var(--ncg-thickness-1);
+
+	/* Individual properties # */
+
+		--metadata-label-background-active: 	var(--ncg-color-transparent-l);
+		--metadata-input-background-active: 	var(--ncg-color-transparent-l);
+
+/* Table ---------------------------------------------------------------------------------------- */
+/* Tag ------------------------------------------------------------------------------------------ */
+
+	--tag-color:								var(--ncg-color-text-accent-1);
+	--tag-color-hover:							var(--ncg-color-text-accent-2);
+	--tag-background:							var(--ncg-color-transparent-l);
+	--tag-background-hover:						var(--ncg-color-transparent-m);
+
+
+
+/* ============================================================================================== */
+/* Foundations ================================================================================== */
+/* ============================================================================================== */
+
+/* Borders -------------------------------------------------------------------------------------- */
+/* Colors --------------------------------------------------------------------------------------- */
+	/* Base colors # */
+		/* IN .THEME */
+	/* Accent color */
+	/* Extended colors # */
+		/* IN .THEME */
+	/* Black and white */
+	/* Semantic colors # */
+		/* Surface colors # */
+
+		--background-primary:					var(--ncg-color-background-1);
+		--background-primary-alt: 				var(--ncg-color-background-2);
+		--background-secondary:					var(--ncg-color-background-2);
+		/*background-secondary-alt in .theme*/
+
+		--background-modifier-hover:			var(--ncg-color-transparent-m);
+		--background-modifier-active-hover:		hsla(var(--ncg-color-unknown-value), 1); /* ??? */
+		--background-modifier-border:			var(--ncg-color-border);
+		--background-modifier-border-hover:		var(--ncg-color-border);
+		--background-modifier-border-focus:		var(--ncg-color-border); 
+
+		--background-modifier-error-rgb: 		var(--color-red-rgb); /* default */
+		--background-modifier-error: 			var(--color-red); /* default */
+		--background-modifier-error-hover: 		var(--color-red); /* default */
+		--background-modifier-success-rgb: 		var(--color-green-rgb); /* default */
+		--background-modifier-success: 			var(--color-green); /* default */
+		--background-modifier-form-field: 		var(--color-base-00); /* default */
+		--background-modifier-message: 			var(--ncg-color-message);
+
+		/* Interactive colors # */
+		--interactive-normal:					var(--ncg-color-background-2);
+		--interactive-hover:					var(--ncg-color-background-3);
+		--interactive-accent:					var(--ncg-color-accent-1);
+		--interactive-accent-hsl:				var(--ncg-color-accent-1-hsl);
+		--interactive-accent-hover:				var(--ncg-color-accent-2);
+
+		/* Text colors # */
+			/* Text foreground colors # */
+
+			--text-normal: 						var(--ncg-color-text-normal);
+			--text-muted: 						var(--ncg-color-text-muted);
+			--text-faint: 						var(--ncg-color-text-faint);
+			--text-on-accent: 					var(--ncg-color-text-pop);
+			--text-on-accent-inverted: 			var(--ncg-color-text-normal);
+			--text-success: 					var(--color-green); /* default */
+			--text-warning: 					var(--color-orange); /* default */
+			--text-error: 						var(--color-red); /* default */
+			--text-accent:						var(--ncg-color-text-accent-1);
+			--text-accent-hover:				var(--ncg-color-text-accent-2);
+
+			/* Text background colors # */
+			--text-selection:					var(--ncg-color-transparent-l);
+			--text-highlight-bg:				var(--ncg-color-highlight);
+
+			/* Caret color */
+
+/* Cursor --------------------------------------------------------------------------------------- */
+/* Icons ---------------------------------------------------------------------------------------- */
+
+	--icon-color:								var(--ncg-color-text-muted);
+	--icon-color-hover:							var(--ncg-color-text-accent-2);
+	--icon-color-active:						var(--ncg-color-text-accent-1);
+	--icon-color-focused: /*clicked*/			var(--ncg-color-text-normal);
+
+	/* Icon sizes */
+
+/* Layers --------------------------------------------------------------------------------------- */
+/* Radiuses ------------------------------------------------------------------------------------- */
+/* Spacing -------------------------------------------------------------------------------------- */
+/* Typography ----------------------------------------------------------------------------------- */
+	/* Fonts # */
+
+		--font-interface-theme: 				var(--ncg-font-interface-theme);
+		--font-text-theme: 						var(--ncg-font-text-theme);
+		--font-monospace-theme:					var(--ncg-font-monospace-theme);
+
+	/* Font size */
+	/* Font weight */
+	/* Text formatting # */
+
+		--bold-modifier:						var(--ncg-bold-modifier);
+		--bold-color:							var(--ncg-color-bold);
+		--italic-color:							var(--ncg-color-italic);
+
+	/* Line height */
+	/* Paragraph spacing */
+
+
+
+/* ============================================================================================== */
+/* Plugins ====================================================================================== */
+/* ============================================================================================== */
+
+/* Canvas --------------------------------------------------------------------------------------- */
+
+	--canvas-background:						var(--ncg-color-background-1-alt);
+	--canvas-dot-pattern: 						var(--ncg-color-canvas-dot);
+
+/* File explorer -------------------------------------------------------------------------------- */
+/* Graph ---------------------------------------------------------------------------------------- */
+
+	--graph-line: 								var(--ncg-color-graph-line);
+	--graph-line-hover: 						var(--ncg-color-text-muted);
+	--graph-node-unresolved: 					var(--ncg-color-text-faint);
+	--graph-node-focused: 						var(--ncg-color-accent-1);
+	--graph-node-tag: 							var(--color-cyan);
+	--graph-node-attachment: 					var(--color-red);
+
+/* Search --------------------------------------------------------------------------------------- */
+/* Sync ----------------------------------------------------------------------------------------- */
+
+}
+
+/*
+::-webkit-scrollbar {
+	display: none;
+}
+*/
+
+/* Background */
+.workspace {
+	background: var(--ncg-color-background-4) !important;
+}
+
+/* Hide borders */
+.workspace-ribbon::before, .workspace-ribbon, .workspace-tab-header-container, .workspace-leaf-resize-handle {
+	border-color: transparent !important;
+}
+
+/* Left, middle, and right panes */
+.workspace-split.mod-left-split, .workspace-split.mod-root, .workspace-split.mod-right-split {
+	height: calc(100% - 24px);
+}
+
+/* Headers + workspace backgrounds */
+.workspace-tab-header-container, .workspace-leaf, .workspace-leaf-content, .view-header, .view-content {
+	background: var(--ncg-color-transparent) !important;
+}
+
+.notebook-navigator * {
+	background: var(--ncg-color-transparent);
+}
+
+.nn-pane-header, .nn-list-pane {
+	background: var(--ncg-color-transparent) !important;
+}
+
+
+
+/* Views backgrounds */
+.workspace-leaf-content:not(.workspace-leaf-content:has(.notebook-navigator)) {
+	background: var(--ncg-color-background-1-alt) !important;
+}
+
+/* Tab buttons */
+.workspace-tab-header-container-inner:not(.mod-root .workspace-tab-header-container-inner) {
+	background: var(--ncg-color-background-1-alt);
+	border-radius: var(--ncg-view-radius) var(--ncg-view-radius) 0 0;
+	padding: 7px 6px !important;
+	margin-top: 8px !important;
+	margin-bottom: auto !important;
+}
+
+.nn-navigation-pane {
+	background: var(--ncg-color-background-2-alt);
+}
+
+.nn-list-pane {
+	background: var(--ncg-color-background-1-alt) !important;
+}
+
+.canvas-wrapper {
+	background: var(--ncg-color-transparent) !important;
+}
+
+.bases-tbody, .bases-table-container {
+	background: var(--ncg-color-transparent) !important;
+}
+
+.bases-thead {
+	background: var(--ncg-color-background-2-alt) !important;
+
+}
+
+
+
+/* Sidebar toggle buttons */
+.sidebar-toggle-button .clickable-icon, .workspace-tab-header-tab-list .clickable-icon, .workspace-tab-header-new-tab .clickable-icon {
+	color: var(--ncg-color-text-pop);
+}
+
+/* Left sidebar --------------------------------------------------------------------------------- */
+
+/* Left ribbon */
+.workspace-ribbon, .workspace-ribbon::before {
+	background: var(--ncg-color-transparent) !important;
+	border: 0;
+}
+
+/* Sidebar styling */
+.side-dock-actions {
+	background: var(--ncg-color-background-1-alt) !important;
+	padding: 6px 8px 6px 6px;
+	margin-right: auto;
+	border-radius: var(--ncg-view-radius) 0 0 var(--ncg-view-radius);
+}
+
+/* Left pane ------------------------------------------------------------------------------------ */
+.mod-left-split, .mod-root {
+	padding: 0 2px 0 0;
+}
+
+/* Top left */
+.mod-left-split .workspace-tab-container {
+	border-left: 0px solid var(--ncg-color-border);
+	border-top: 0px solid var(--ncg-color-border);
+	border-right: 0px solid var(--ncg-color-border);
+	border-radius: var(--ncg-view-radius) var(--ncg-view-radius) 0 0;
+}
+
+/* Bottom left profile */
+.workspace-sidedock-vault-profile {
+	background: var(--ncg-color-background-2-alt) !important;
+	border-top: 1px solid var(--ncg-color-border) !important;
+	border-radius: 0 0 var(--ncg-view-radius) var(--ncg-view-radius);
+}
+
+
+/* Middle pane ---------------------------------------------------------------------------------- */
+.mod-root.workspace-split{
+	background: var(--ncg-color-transparent);
+	padding: 0px;
+}
+
+/* Middle content */
+.mod-root .workspace-tabs{
+	padding: 0px 2px;
+}
+
+/* Not selected tabs */
+.mod-root .workspace-tab-header.tappable:not(.mod-stacked .workspace-tab-header.tappable) {
+	background: var(--ncg-color-background-2);
+	margin: 0px 2px 4px 2px;
+	border-radius: 8px !important;
+	padding: 0px !important;
+}
+
+/* Selected tab */
+.mod-root .workspace-tab-header.tappable.is-active {
+	background: var(--ncg-color-background-1) !important;
+}
+
+/* Middle middle */
+.mod-root .workspace-tab-container {
+	border: 0px solid var(--ncg-color-border);
+	border-radius: var(--ncg-view-radius);
+}
+
+
+/* Right pane ----------------------------------------------------------------------------------- */
+.mod-right-split {
+	padding: 0px 8px 0px 2px;
+}
+
+/* Right tabs */
+.mod-right-split .workspace-tab-container {
+	border: 0px solid var(--ncg-color-border);
+	border-radius: var(--ncg-view-radius);
+}
+
+/* Top right exit buttons */
+.titlebar-button-container.mod-right {
+	background-color: var(--ncg-color-transparent) !important;
+	color: var(--ncg-color-text-pop);
+}
+
+/* Bottom status bar ---------------------------------------------------------------------------- */
+.status-bar {
+	padding: 0;
+	border: 0px;
+	border-radius: 0px;
+	width: 100%;
+	height: 24px;
+	background: var(--ncg-color-transparent);
+	color: var(--ncg-color-text-pop);
+}
+
+/* Other styling -------------------------------------------------------------------------------- */
+
+/* Callout margin */
+.callout-content p {
+	margin: 8px 0px;
+}
+
+
+
+
+.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+	display: none;
+}
+
+svg * {
+	stroke-linecap: square;
+	stroke-linejoin: miter;
+	rx: 0;
+	ry: 0;
+}
+
+.menu {
+	padding: var(--size-2-1);
+}
+
+.menu-item {
+	padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}

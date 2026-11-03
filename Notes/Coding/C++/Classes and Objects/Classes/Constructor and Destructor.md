@@ -12,7 +12,7 @@ class Point{
 		void display();
 }
 
-Point:Point(int abs, int ord){
+Point::Point(int abs, int ord){
 	x = abs; y = abs;
 }
 ```

@@ -118,3 +118,22 @@ class Point {
 ```
 
 Member functions can be overloaded with a const and non-const version. Non-const objects will call the non-const function, while const objects will call the const function. If no const version exists, const objects cannot call it. However, both const and non-const objects can call a const function.
+
+Constant member functions don't exist in Java.
+### Mutable Members
+The `mutable` keyword is used to designate fields that can be modified, even by constant member functions.
+```cpp
+class Truc {
+	int x, y;
+	mutable int n;
+	void f(...) const{
+		x = 5; //error; f is const and x is not mutable
+		n++; //OK because n is mutable
+	}
+};
+
+//We can also change a mutable value by assignment
+const Truc c;
+c.x = 5; //error, object is constant
+c.n = 5; //OK
+```

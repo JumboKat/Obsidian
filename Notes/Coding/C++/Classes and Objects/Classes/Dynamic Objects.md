@@ -23,3 +23,4 @@ adr->x;
 delete adr;
 ```
 #### With a Constructor
+When dynamically allocating memory, the **new** operator will call the object's constructor. Similarly, the **delete** operator calls the destructor.

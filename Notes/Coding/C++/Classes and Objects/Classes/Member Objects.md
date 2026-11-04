@@ -1,0 +1,1 @@
+Like any other data, an object can be a member of a different class. If the member object contains private fields, they cannot be accessed by the object that contains it. Furthermore, if the object has a defined constructor, the class is required to also define a constructor, since the object must be supplied arguments.

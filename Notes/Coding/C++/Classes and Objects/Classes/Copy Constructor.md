@@ -23,3 +23,27 @@ Both of the first two forms above can exist within the same class, however it is
 In Java, objects are handled by reference only, and so the concept of a copy constructor does not exist.
 ### Object as a Return Value of a Function
 When an object is the return value of a function, by default it is a copy using the object's copy constructor. If the object has dynamic fields, this leads to a 'superficial copy', and changes to the copy can be effected on the original.
+### Initialization with a Statement
+It is possible to initialize an object with an **initializer** within the statement.
+```cpp
+class Point
+{
+int x, y;
+public:
+	Point(int abs){x = abs; y = 0;}
+};
+
+//These are equivalent
+Point a(3);
+Point a = 3;
+```
+The second option is allowed as long as there exists a constructor with exactly one argument of type int. Both statements take 3 to mean abs. The copy constructor works the same way:
+```cpp
+Point a;
+Point b = a;
+Point b(a);
+```
+
+If the class had a constructor with two int arguments, then the declaration 
+`Point a = Point(1,5);` does not call the copy constructor to initialize the new object with the temporary expression Point(1,5). Instead, the statement is treated as:
+`Point a(1, 5);`. We create a single object using the constructor; no copy is made.

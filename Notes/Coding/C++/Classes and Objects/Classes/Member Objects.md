@@ -36,6 +36,11 @@ class C {
 	B b;
 	A a2;
 	
-	C(int n, int p, double x, int q, int r) : a1
-}
+	C(int n, int p, double x, int q, int r) : a1(p), b(x, q),
+		a2(r);
+};
 ```
+
+The class constructor (C) is executed at the end, after the member constructors have been executed.
+### Copying
+When [[Copy Constructor||copying]] an object with member objects, that object will be copied by calling its own copy constructor. 

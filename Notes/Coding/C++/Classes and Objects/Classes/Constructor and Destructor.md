@@ -20,6 +20,28 @@ Point::Point(int abs, int ord){
 A class may have any number of different constructors; they will all have the same name, but take different parameters. If a class has declared *any* constructor, it is not possible to create an object without providing the arguments required by the constructor. This means that `Point a;` is no longer possible (unless there is a constructor with no arguments, in which case it is correct, but `Point a()` is not).
 
 A constructor can be overloaded or have default arguments. If a class does not define a constructor, it has a default constructor (do nothing).
+#### Header Initialization
+We can initialize members within the constructor's header statement like so:
+```cpp
+class Point {
+	int x, y;
+	public:
+	Point(int abs = 0, int ord = 0) : x(abs), y(ord) {...}
+};
+```
+
+The constructor call will thus initialize the specified members. By initializing in the header, it is not necessary to define the constructor outside of the header, and in fact essential when initializing constant members:
+```cpp
+class Truc {
+	const int n;
+	public:
+	Truc();
+};
+
+Truc
+```
+
+
 ### Destructor
 The destructor is a member function that is systematically called at the end of an object's life. It takes no parameters and it releases the memory allocated to the object. All classes have a destructor by default if one is not defined. Additionally, the act of releasing allocated memory does not need to be explicitly defined. It shares the same name as the class, preceded by the tilde (~).
 ```cpp

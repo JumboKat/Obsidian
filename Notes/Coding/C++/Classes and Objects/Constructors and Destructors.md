@@ -38,10 +38,10 @@ class Truc {
 	Truc();
 };
 
-Truc
+Truc::Truc() {n=12;} //Illegal; n is constant
+
+Truc::Truc(): n(12) {...} //Correct, we can only initialize constants, not assign a new value to them.
 ```
-
-
 ### Destructor
 The destructor is a member function that is systematically called at the end of an object's life. It takes no parameters and it releases the memory allocated to the object. All classes have a destructor by default if one is not defined. Additionally, the act of releasing allocated memory does not need to be explicitly defined. It shares the same name as the class, preceded by the tilde (~).
 ```cpp
@@ -61,7 +61,6 @@ Test::~Test(){
 }
 
 ```
-
 ### Rules
 - A constructor is not limited to initializing values with the arguments provided. It can execute any desired code that is defined. For instance, a constructor can dynamically allocate member functions.
 - For dynamically allocated members, the assignment between objects using the = operator does not copy dynamic values (a=b). To do this requires overloading the operator=.

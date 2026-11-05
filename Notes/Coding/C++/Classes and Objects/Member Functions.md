@@ -1,5 +1,5 @@
 ### Overloading
-All member functions, including [[Constructor and Destructor||constructors]] can be [[Functions#Overloaded Functions||overloaded]]. The status (private/public) of a member function does not interfere in which function is chosen when a call is made. If the best fit function is private, it cannot be called unless the call is in another class member function.
+All member functions, including [[Constructors and Destructors||constructors]] can be [[Functions#Overloaded Functions||overloaded]]. The status (private/public) of a member function does not interfere in which function is chosen when a call is made. If the best fit function is private, it cannot be called unless the call is in another class member function.
 ```cpp
 class A {
 	public: void f(int);

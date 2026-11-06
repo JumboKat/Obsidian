@@ -37,3 +37,22 @@ class B
 int B::f(char ..., A ...);
 ```
 ### Friend Function to Several Classes
+```cpp
+class A {
+	friend void f(A, B)
+};
+
+class B {
+	friend void f(A, B)
+};
+
+void f(A ..., B...){}
+```
+
+For f to be compiled, the class statements of A and B are required.
+### Friend Class to Another Class
+We can make as many friend declarations as needed. To make all functions of a class friends with another, we can simply declare the class itself as a friend with 
+```cpp
+friend class B;
+```
+If B is a friend of A, its statement must precede A's class statement for A to be compiled.

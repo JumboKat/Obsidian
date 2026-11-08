@@ -42,9 +42,30 @@ int n = 3; //global variables
 float x = 3.5;
 
 int& f1(...){
-	return 5; //illegal
+	return 5; //illegal; we cannot modify a literal/bind a non-const 
 	return n; //allowed
-	return x; //illegal
+	return x; //illegal; x is converted to a temporary int that is destroyed after function call, so this would mean we are modifying a temporary copy
 }
 ```
 
+If we make the return type constant, then we are allowed to return literals and temporaries. The caveat is that a constant reference cannot be used as an lvalue (since it is unmodifiable):
+```cpp
+const int& f2(){
+	return 5; //ok, reference to a temporary int holding 5
+	return n;
+	return x; 
+}
+
+const int& f();
+
+//these produce errors, as f is not a modifiable value.
+f() = 2 * n + 5; 
+f() = x;
+```
+### Conversion on the Return Value
+Unlike arguments, there are no restraints on the return reference type of a function.
+```cpp
+int& f();
+float x;
+x = f(); //reads the int through the reference, converts it to float before storing.
+```

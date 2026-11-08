@@ -4,7 +4,9 @@ C++ allows overloading of operators with respect to an object. For example, if a
 - a * b
 - a/b
 
-An operator can only be over-defined if if there is at least one class-type argument. It is impossible to over-define an operator on basic types, with the exception of the `new` and `delete` operators which can be changed globally (for all objects and basic types)
+An operator can only be over-defined if if there is at least one class-type argument. It is impossible to over-define an operator on basic types, with the exception of the `new` and `delete` operators which can be changed globally (for all objects and basic types).
+
+Java does not allow operator over-definition.
 ### Over-definition of Operators
 Suppose we want to define the operator **+** to give meaning to an expression a + b, where a and be are Point type. We would have to define a function named `operator+`. This function takes two Point type arguments and returns a value of the same type. The function can be a member of the class or an independent function (typically a friend function).
 

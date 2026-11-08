@@ -21,4 +21,30 @@ int p;
 p = f();
 ```
 
-It behaves as if the function returned by value (p is a separate variable and thus gets a )
+It behaves as if the function returned by value (p is a separate variable and thus gets a copy), so there is no difference here. In addition, the value being returned must not be local to the function, else it is destroyed before the value can be copied. In this case, the value needs to be global or static.
+
+The real purpose is for use in overloading certain operators; `[]`, `=`, `+=`, and `<<` all return references.
+#### lvalues
+An **lvalue** is something that can appear on the left side of `=`, meaning it refers to an actual storage location. A function that returns by value gives a temporary (an **rvalue**) so you cannot assign anything to it. A function that returns a reference provides the variable itself, allowing us to do this:
+```cpp
+int& f();
+f() = 2 * n + 5; // We store the statement result to the reference provide by f
+
+f() = x; //store the value of x to the reference provided by f; normal conversion rules still apply, so  x is converted to an int first before being stored.
+
+//A more familiar example; the [] operator returns int&, which we are allowed to assign 10 to.
+v[2] = 10; 
+```
+#### Returning a Constant
+If a function is returning a reference, it cannot return a `const` value, as the caller is at risk of modifying something that is unmodifiable.
+```cpp
+int n = 3; //global variables
+float x = 3.5;
+
+int& f1(...){
+	return 5; //illegal
+	return n; //allowed
+	return x; //illegal
+}
+```
+

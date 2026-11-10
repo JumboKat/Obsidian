@@ -16,4 +16,3 @@ The common default for unordered (**nominal**) categories. A categorical variabl
 - **Avoids artificial similarity and order** : integer codes can introduce distance and order where there should be none.
 	- ex: `w = 1, 2, 3, etc...` implies features 1 and 2 are similar, while 1 and 3 are not.
 	- ex: `w = [0,0,0], [0,0,1], etc...` may suggest similarity based on numeric patters (the first two numbers are the same, so the features are related).
-

@@ -26,3 +26,5 @@ Pandas offers a method called `get_dummies()` for one-hot encoding, but there ar
 - **Handling missing values**: `get_dummies()` encodes a missing value as all zeros by default, with an explicit missing-value column created with `dummy_na=True`.
 
 Ensuring consistency in encoding across training, validation, and production datasets is essential.
+
+### ColumnTRa

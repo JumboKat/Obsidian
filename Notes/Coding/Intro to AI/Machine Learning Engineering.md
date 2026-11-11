@@ -24,7 +24,31 @@ An encoder learns categories and their column order during `fit`. Fitting an enc
 Pandas offers a method called `get_dummies()` for one-hot encoding, but there are some differences:
 - **Category memory**: `OneHotEncoder` remembers the categories it was trained on, `get_dummies()` does not. It builds columns from the data handed to it each time, so it suffers the problem mentioned above. 
 - **Handling missing values**: `get_dummies()` encodes a missing value as all zeros by default, with an explicit missing-value column created with `dummy_na=True`.
-
+### ColumnTransformer
 Ensuring consistency in encoding across training, validation, and production datasets is essential.
+```python
+# Apply OneHotEncoder and StandardScaler using ColumnTransformer 
+preprocessor = ColumnTransformer(    
+	transformers=[
+		(
+			'onehot',
+			OneHotEncoder(drop='first', handle_unknown='ignore'),
+			columns_to_encode,        
+		),        
+		('scaler', StandardScaler(), numerical_columns)    
+	] 
+)
+```
 
-### ColumnTRa
+Sci-Kit Learn's `ColumnTransformer` is used to apply different transformations to select columns. It's transformer can also be `drop`, which excludes the selected columns, or `passthrough`, which leaves them unchanged. 
+
+```python
+# The pipeline fits preprocessing and the classifier on training data only
+heart_pipeline = Pipeline([
+	('preprocessor', preprocessor),
+	('classifier', LogisticRegression()),
+])
+heart_pipeline.fit(X_train, y_train)
+```
+A `Pipeline` is an engineering pattern that surrounds the column transformer. calling `fit` learns both the preprocessing parameters and the classifier from the training data. Calling `predict` applies the already-fitted transformations before classifications. during CV, each fold learns its own peprocessing parameters from that fold's training partition.
+

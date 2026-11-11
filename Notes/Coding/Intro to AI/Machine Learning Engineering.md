@@ -19,3 +19,7 @@ The common default for unordered (**nominal**) categories. A categorical variabl
 
 Sci-kit Learn provides OneHotEncoder. Ensure you use the same encoding on the validation set, test set, and production data.
 
+An encoder learns categories and their column order during `fit`. Fitting an encoder a second time on any set can have a different number of categories or a different order. The correct method is to fit the encoder on the training data once, and reuse it everywhere else. A pipeline does this during cross-validation.
+
+Pandas offers a method called `get_dummies()` for one-hot encoding, but there are some differences:
+- **Category memory**:

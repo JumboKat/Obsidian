@@ -18,3 +18,4 @@ The common default for unordered (**nominal**) categories. A categorical variabl
 	- ex: `w = [0,0,0], [0,0,1], etc...` may suggest similarity based on numeric patters (the first two numbers are the same, so the features are related).
 
 Sci-kit Learn provides OneHotEncoder. Ensure you use the same encoding on the validation set, test set, and production data.
+

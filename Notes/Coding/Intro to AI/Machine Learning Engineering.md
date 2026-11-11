@@ -22,4 +22,7 @@ Sci-kit Learn provides OneHotEncoder. Ensure you use the same encoding on the va
 An encoder learns categories and their column order during `fit`. Fitting an encoder a second time on any set can have a different number of categories or a different order. The correct method is to fit the encoder on the training data once, and reuse it everywhere else. A pipeline does this during cross-validation.
 
 Pandas offers a method called `get_dummies()` for one-hot encoding, but there are some differences:
-- **Category memory**:
+- **Category memory**: `OneHotEncoder` remembers the categories it was trained on, `get_dummies()` does not. It builds columns from the data handed to it each time, so it suffers the problem mentioned above. 
+- **Handling missing values**: `get_dummies()` encodes a missing value as all zeros by default, with an explicit missing-value column created with `dummy_na=True`.
+
+Ensuring consistency in encoding across training, validation, and production datasets is essential.

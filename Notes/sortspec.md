@@ -55,6 +55,14 @@ sorting-spec: |-
   Typedef
   Auto
   Classes
+  Class as a Software Component
+  Constructors and Destructors
+  Copy Constructor
+  Member Functions
+  Member Objects
+  Static Members
+  Dynamic Objects
+  Array of Objects
   
   target-folder: Obsidian/Notes/Coding/Intro to AI
   Defining AI

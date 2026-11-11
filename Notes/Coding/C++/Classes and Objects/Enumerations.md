@@ -8,7 +8,7 @@ c2 = c1;
 int c3 = red;
 int c4 = 4*red + green;
 ```
-We can manipulate an enum's strings as if they were an integer. However, since they are still constants, we cannot modify their value after creation.
+We can manipulate an enum's strings as if they were an integer. However, since they are still constants, we cannot modify their value after creation. An enum does not allow implicit conversion to int, and doesn't compare enumerators from different enumerations.
 
 By default, the value of enum strings start at zero and increment by one for each additional element. However, their values can be explicitly set:
 ```cpp

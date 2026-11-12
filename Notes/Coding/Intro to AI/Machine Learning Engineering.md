@@ -161,4 +161,17 @@ While we can apply resampling during training, we keep validation and test data 
 **Feature engineering** is the process of creating, transforming, and selecting attributes from raw data to improve model performance. 
 
 ![[Pasted image 20261112171332.png|519]]
-A model that is too simple for the data underfits. In this example, the linear model cannot properly represent the curve/turning point. We can use `PolynomialFeatures` to introduce a new 
+A model that is too simple for the data underfits. In this example, the linear model cannot properly represent the curve/turning point. We can use `PolynomialFeatures` to introduce a new feature:
+```python
+from sklearn.preprocessing import PolynomialFeatures
+
+poly_features = PolynomialFeatures(degree=2, include_bias=False)
+X_poly = poly_features.fit_transform(X)
+
+# If X[0] is [-0.75275929], then X_poly[0] is [-0.75275929,  0.56664654
+```
+
+`PolynomialFeatures` multiplies inputs together to create new inputs, up to the max degree specified. If there are originally two features and degree=3, it would add $a^2, a^3, b^2, b^3, ab, a^2b,$ and $ab^2$. From two input features, we get 9, which can cause the model to overfit. Hence, we select the appropriate degree and use regularization only when needed.
+
+![[Pasted image 20261112172621.png]]
+We now get the new model $y=0.56x^2+(-1.06)x+1.78$. A model's linearity is in respect to it

@@ -107,7 +107,7 @@ There are many ways we can handle missing values:
 - **Use Algorithms**: algorithms that tolerate missing values (etc. model or drop them)
 - **Data imputation**: replace missing values using statistics or a model learned from the training data.
 #### Data Imputation
-##### Using Mean or Median
+##### Simple Imputation: Using Mean or Median
 ```python
 from sklearn.impute import SimpleImputer
 
@@ -119,6 +119,15 @@ X_train_missing = np.array([
 X_new_missing = np.array([[4.0, np.nan]])
 
 imputer = SimpleImputer(strategy="median")
-imputer = fit(X_train_missing)
-imputer.transform(X_new_missing)
+imputer = fit(X_train_missing) #learn fill values from dataset
+imputer.transform(X_new_missing) #impute median values
+# New X_new_missing becomes array([[4.0, 11.0]])
 ```
+This method is simple, but it ignores relationships between features and reduces variability. For categorical features, we use the most frequent category or a special "missing" category.
+
+Missing data can be:
+- **MCAR (Missing Completely at Random)**
+- , **MAR (Missing at Random)**: Missingness is related to other features (e.g. younger survey participants are more likely to skip a mental health question, but you do have their age recorded in the dataset. Accounting for age, missingness within age groups is random).
+- **MNAR (Missing Not at Random)**: Missingness is related to the missing values themselves (e.g. patients drop out of a clinical trial because their side effects are severe)
+
+A simple imputer cannot determine which mechanism produced the missing values. Mean, median, and most-frequent imputation serve as baselines, but can distort distributions and relationships. As with scaling, imputer sh

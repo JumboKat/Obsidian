@@ -147,7 +147,15 @@ There are two main methods:
 - **Iterative model-based methods**: predict each incomplete feature based on the present features; repeat the process across features.
 
 Unlike univariate imputation, these methods use relationships between features to predict missing values; it isn't guaranteed to be better.
-### Remedying Class Imbalance
+### Resampling: Remedying Class Imbalance
 Class imbalance can hide poor performance on a rare class. How can the training procedure respond to class imbalance without interfering with evaluation?
-#### Training-Time Remedies
-- **Class or sample weights**: 
+#### Training-Time Remedies (Resampling)
+- **Class or sample weights**: make errors on select examples (of the rare class) more corrective toward the training objective.
+- **Random oversampling**: repeat some training examples of the minority class.
+- **Random undersampling**: retain fewer training examples of the majority class.
+- **SMOTE**: impute synthetic minority-class examples based on neighbouring training examples.
+- **Decision threshold**: select an operating point using validation data.
+
+While we can apply resampling during training, we keep validation and test data untouched. During CV, resample separately inside each training fold using an `imbalanced-learn` pipeline.
+### Feature Engineering: Creating New Features
+**Feature engineering** is the process of creating, transforming, and selecting attributes from raw data to improve model performance. 

@@ -107,7 +107,7 @@ There are many ways we can handle missing values:
 - **Use Algorithms**: algorithms that tolerate missing values (etc. model or drop them)
 - **Data imputation**: replace missing values using statistics or a model learned from the training data.
 #### Data Imputation
-##### Simple Imputation: Using Mean or Median
+##### Univariate Imputation: Using Mean or Median
 ```python
 from sklearn.impute import SimpleImputer
 
@@ -140,4 +140,14 @@ imputer_with_indicator = SimpleImputer(
 imputer_with_indicator.fit_transform(X_train_missing)
 ```
 ##### Model-based Imputation: Predicting a Missing Feature
-Set a feature with missing values as the prediction target and rows with that feature present as the training examples.
+Set a feature with missing values as the prediction target and rows with that feature present as the training examples. Other observed features are inputs. Then use a regression or classification model to predict missing entries.
+
+There are two main methods:
+- **Neighbour-based method**: KNN finds the k closest examples and impute using the non-missing values from the neighbourhood.
+- **Iterative model-based methods**: predict each incomplete feature based on the present features; repeat the process across features.
+
+Unlike univariate imputation, these methods use relationships between features to predict missing values; it isn't guaranteed to be better.
+### Remedying Class Imbalance
+Class imbalance can hide poor performance on a rare class. How can the training procedure respond to class imbalance without interfering with evaluation?
+#### Training-Time Remedies
+- **Class or sample weights**: 

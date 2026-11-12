@@ -174,4 +174,9 @@ X_poly = poly_features.fit_transform(X)
 `PolynomialFeatures` multiplies inputs together to create new inputs, up to the max degree specified. If there are originally two features and degree=3, it would add $a^2, a^3, b^2, b^3, ab, a^2b,$ and $ab^2$. From two input features, we get 9, which can cause the model to overfit. Hence, we select the appropriate degree and use regularization only when needed.
 
 ![[Pasted image 20261112172621.png]]
-We now get the new model $y=0.56x^2+(-1.06)x+1.78$. A model's linearity is in respect to it
+We now get the new model $y=0.56x^2+(-1.06)x+1.78$. A model's linearity is in respect to it's coefficients (weights), not the input x. From the algorithm's point of view, it simply sees another column of numbers and learns a weight for it. `PolynomialFeatures` changes the feature representation, not the estimator.
+### Data Quantity and Augmentation
+Increasing the amount of training data samples can help improve robustness to variation that might be expected in deployment. However, it must be relevant, correctly labelled, and representative. This can be done in many different ways:
+- **Images**: rotations, translations, crops, flips, noise, as long as these transformations preserve the label.
+- **Text**: Paraphrasing/edits and language translations that are carefully controlled to preserve meaning and assigned label.
+As with everything else, augmentation is applied only to training examples, and to each training fold during CV. 

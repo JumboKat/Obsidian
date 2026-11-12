@@ -77,3 +77,6 @@ Binning encodes useful domain thresholds and can help simplify the model. For in
 **Scaling** means to make values fall within comparable ranges. This is required by some estimates that use distance, like [[K-Nearest Neighbours (KNN)]]. In these cases, large-scale features can dominate the distance. Gradient-based optimization often converges more readily when features are scaled.
 
 Since tree-based models make threshold comparisons for one feature at a time, scaling has no effect (relative thresholds stay the same). 
+
+For a fair ML workflow, scaling parameters are computed on training data only, then used to transform both train and test subsets. Again, scaling and regression occurs within the same pipeline. When values aren't scaled, the nearest neighbours, and subsequently the model's prediction, is different. Scaling ensures fair distance weighting; it may change the neighbour and prediction, but it does not improve the model's accuracy.
+#### Min-Max Scaling

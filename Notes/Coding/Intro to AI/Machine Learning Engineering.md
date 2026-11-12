@@ -130,4 +130,14 @@ Missing data can be:
 - , **MAR (Missing at Random)**: Missingness is related to other features (e.g. younger survey participants are more likely to skip a mental health question, but you do have their age recorded in the dataset. Accounting for age, missingness within age groups is random).
 - **MNAR (Missing Not at Random)**: Missingness is related to the missing values themselves (e.g. patients drop out of a clinical trial because their side effects are severe)
 
-A simple imputer cannot determine which mechanism produced the missing values. Mean, median, and most-frequent imputation serve as baselines, but can distort distributions and relationships. As with scaling, imputer sh
+A simple imputer cannot determine which mechanism produced the missing values. Mean, median, and most-frequent imputation serve as baselines, but can distort distributions and relationships. As with scaling, imputer should only be fit on the training partition. A pipeline then repeats the fit correctly within every CV fold.
+##### Preserving Missingness Information
+We can accompany an imputed value with a binary feature indicating that the original value was missing:
+```python
+imputer_with_indicator = SimpleImputer(
+	strategy="median", add_indicator=True
+)
+imputer_with_indicator.fit_transform(X_train_missing)
+```
+##### Model-based Imputation: Predicting a Missing Feature
+Set a feature with missing values as the prediction target and rows with that feature present as the training examples.

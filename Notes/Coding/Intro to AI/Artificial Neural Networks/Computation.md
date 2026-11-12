@@ -1,0 +1,3 @@
+Neural networks are connectionist models inspired by biological neurons, where many simple computational units work together to map inputs to outputs. **Computation** deals with what the network does once parameters have been defined and fixed, while **learning** deals with choosing those parameters based on data. Specifically, we are dealing with NN within the framework of supervised learning (classification, regression).
+### Neurons
+ANNs adopt the idea of interconnected units from biological neurons, which receive and send signals to and from other connected neurons. Each unit in a NN combines its inputs to produce an output. When interconnected to form a network, these units collectively perform complex computation.

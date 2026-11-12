@@ -10,4 +10,13 @@ The **threshold unit** is neuron idealized by McCulloch and Pitts (1943). An ind
 
 ![[Pasted image 20261112183536.png]]
 
-Two binary inputs x₁ and x₂ ∈ {0, 1} go into one unit
+Two binary inputs x₁ and x₂ ∈ {0, 1} go into one unit that sums them up as $z=x_1+x_2$. Then, it applies a step function with threshold θ, which gives one of two outputs:
+- $f(z)=0$ if $z < \theta$
+- $f(z)=1$ if $z>=θ$
+Hence, the unit is either 'on' or 'off' based on whether the total input reached the threshold or not.
+
+Choosing θ gives a logic gate.
+- **AND**: When θ = 2, the sum much reach two, which only happens when both inputs are 1.
+- **OR**: When θ = 1, which can happen if at least one input is 1.
+- **NOT**: For a single input x with weight -1 and θ = -0.5. A negative weight alone does not specify a gate; it depends on the threshold and other inputs.
+AND, OR, and NOT units can be combined into circuits to compute any Boolean function. 

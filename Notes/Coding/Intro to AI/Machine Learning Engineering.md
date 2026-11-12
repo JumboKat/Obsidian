@@ -97,3 +97,28 @@ To avoid data leakage, follow this workflow:
 - During CV, fit preprocessing separately inside each training fold, usually by placing it in a `Pipeline`.
 
 Means, S.D.s, extremes, category sets, and imputation values are all learned information and must come from the training data only. The test set represents unseen data. Allowing it to influence preprocessing gives the training procedure information it would not normally have on genuine new data. Data leakages can produce an optimistic estimate on generalization performance.
+### Imputation
+**Missing values** are data points or entries missing when it is expected. 
+- ex: some patients withhold their age for privacy reasons.
+#### Handling Missing Values
+There are many ways we can handle missing values:
+- **Drop Examples**: drop an entire row that contains one or more missing values. Reasonable as long as enough data is left over and missing rows are not systematically different.
+- **Drop Features**: fine if a feature is not essential and there isn't enough reliable information anyway.
+- **Use Algorithms**: algorithms that tolerate missing values (etc. model or drop them)
+- **Data imputation**: replace missing values using statistics or a model learned from the training data.
+#### Data Imputation
+##### Using Mean or Median
+```python
+from sklearn.impute import SimpleImputer
+
+X_train_missing = np.array([
+	[1.0, 10.0],
+	[2.0, np.nan],
+	[3.0, 12.0],
+])
+X_new_missing = np.array([[4.0, np.nan]])
+
+imputer = SimpleImputer(strategy="median")
+imputer = fit(X_train_missing)
+imputer.transform(X_new_missing)
+```

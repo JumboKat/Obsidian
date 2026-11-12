@@ -79,4 +79,21 @@ Binning encodes useful domain thresholds and can help simplify the model. For in
 Since tree-based models make threshold comparisons for one feature at a time, scaling has no effect (relative thresholds stay the same). 
 
 For a fair ML workflow, scaling parameters are computed on training data only, then used to transform both train and test subsets. Again, scaling and regression occurs within the same pipeline. When values aren't scaled, the nearest neighbours, and subsequently the model's prediction, is different. Scaling ensures fair distance weighting; it may change the neighbour and prediction, but it does not improve the model's accuracy.
-#### Min-Max Scaling
+#### Scaling Methods
+**Min-max scaling** maps each feature to a chosen interval, usually \[0, 1]. It is useful when a bounded input range is required.
+
+**Standardization** subtracts the training mean and divides by the training standard deviation:
+![[Pasted image 20261112160957.png]]
+The transformed training feature has mean 0 and variance 1, but its distribution does not become normal and its range is not bounded. Standardization is a commonly used for distance-based methods, regularized linear models, and gradient-based optimization.
+
+Both methods are sensitive to outliers; min-max scaling uses extremes, while standardization uses mean and S.D. For strongly-skewed features or outliers, `RobustScaler` uses the median anad IQR, which is less sensitive to extreme values.
+
+![[Pasted image 20261112161242.png]]
+#### Data Leakage
+To avoid data leakage, follow this workflow:
+- Split into training and test sets before learning any preprocessing parameters.
+- Fit the scaler on the training data only.
+- Reuse the same scaler to transform validation, test, and production data.
+- During CV, fit preprocessing separately inside each training fold, usually by placing it in a `Pipeline`.
+
+Means, S.D.s, extremes, category sets, and imputation values are all learned information and must come from the training data only. The test set represents unseen data. Allowing it to influence preprocessing gives the training procedure information it would not normally have on genuine new data. Data leakages can produce an optimistic estimate on generalization performance.

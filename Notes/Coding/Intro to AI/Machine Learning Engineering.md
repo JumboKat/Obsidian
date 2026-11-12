@@ -24,7 +24,7 @@ An encoder learns categories and their column order during `fit`. Fitting an enc
 Pandas offers a method called `get_dummies()` for one-hot encoding, but there are some differences:
 - **Category memory**: `OneHotEncoder` remembers the categories it was trained on, `get_dummies()` does not. It builds columns from the data handed to it each time, so it suffers the problem mentioned above. 
 - **Handling missing values**: `get_dummies()` encodes a missing value as all zeros by default, with an explicit missing-value column created with `dummy_na=True`.
-### ColumnTransformer
+#### ColumnTransformer
 Ensuring consistency in encoding across training, validation, and production datasets is essential.
 ```python
 # Apply OneHotEncoder and StandardScaler using ColumnTransformer 
@@ -39,7 +39,6 @@ preprocessor = ColumnTransformer(
 	] 
 )
 ```
-
 Sci-Kit Learn's `ColumnTransformer` is used to apply different transformations to select columns. It's transformer can also be `drop`, which excludes the selected columns, or `passthrough`, which leaves them unchanged. 
 
 ```python
@@ -52,3 +51,29 @@ heart_pipeline.fit(X_train, y_train)
 ```
 A `Pipeline` is an engineering pattern that surrounds the column transformer. calling `fit` learns both the preprocessing parameters and the classifier from the training data. Calling `predict` applies the already-fitted transformations before classifications. during CV, each fold learns its own peprocessing parameters from that fold's training partition.
 
+#### Ordinal Encoding
+**Ordinal encoding** assigns numerical values to categorical attributes based on their inherent order or rank. It preserves ordinal relationships among categories. It is also more compact than one hot encoding. However, if there is uncertainty about the ordinal nature of the data, `OneHotEncoder` is the safer option.
+```python
+from sklearn.preprocessing import OrdinalEncoder
+
+X = [['Poor'], ['Average'], ['Good'], ['Average'], ['Average']]
+
+encoder = OrdinalEncoder(categories=[['Poor', 'Average', 'Good']])
+encoder.fit(X)
+
+X_encoded = encoder.transform(X)
+
+"""X_encoded looks like:
+array([[0.], [1.], [2.], [1.], [1.]])
+"""
+```
+We must explicitly provide the category order we want to the encoder as shown in the example above. Otherwise, it defaults to alphabetical order.
+#### Binning
+A form of **discretization**, where continuous or fine-grained numerical features are mapped into a finite set of intervals ("bins"). 
+- ex: Categorizing ages into bins like 'infant', 'child', 'teen', 'adult', 'senior citizen'.
+
+Binning encodes useful domain thresholds and can help simplify the model. For instance, it can help decision trees produce a more compact model because they no longer have to discover every threshold from the sample. However, it removes differentiation between points within the same interval, and introduces abrupt boundaries. The boundaries themselves may also be arbitrary.
+### Scaling
+**Scaling** means to make values fall within comparable ranges. This is required by some estimates that use distance, like [[K-Nearest Neighbours (KNN)]]. In these cases, large-scale features can dominate the distance. Gradient-based optimization often converges more readily when features are scaled.
+
+Since tree-based models make threshold comparisons for one feature at a time, scaling has no effect (relative thresholds stay the same). 

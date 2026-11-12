@@ -159,3 +159,6 @@ Class imbalance can hide poor performance on a rare class. How can the training 
 While we can apply resampling during training, we keep validation and test data untouched. During CV, resample separately inside each training fold using an `imbalanced-learn` pipeline.
 ### Feature Engineering: Creating New Features
 **Feature engineering** is the process of creating, transforming, and selecting attributes from raw data to improve model performance. 
+
+![[Pasted image 20261112171332.png|519]]
+A model that is too simple for the data underfits. In this example, the linear model cannot properly represent the curve/turning point. We can use `PolynomialFeatures` to introduce a new 

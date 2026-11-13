@@ -38,4 +38,8 @@ With multiple outputs, a perceptron can perform multiple binary predictions, whi
 - Bias terms can be included above or represented separately. Separately, it is a vector with length = # of neurons.
 ### XOR
 ![[Pasted image 20261112190739.png]]
- For binary inputs, XOR is 1 at (0,1) and (1,0) and 0 at (0,0) and (1,1). XOR is not linearly separable in the original input space; a single threshold unit cannot separate the two XOR classes with one straight line.
+ For binary inputs, XOR is 1 at (0,1) and (1,0) and 0 at (0,0) and (1,1). XOR is not linearly separable in the original input space; a single threshold unit cannot separate the two XOR classes with one straight line. XOR must be implemented via a **multilayer perceptron (MLP)**:
+ ![[Pasted image 20261112191031.png]]
+An MLP has one or more **hidden layers** between its inputs and output layer. The hidden units in this example compute AND (top) and OR (bottom). Altogether, XOR is computed as:
+$$A⊕B=(A∨B)∧¬(A∧B)$$
+or A XOR B = (A OR B) AND NOT (A AND B).

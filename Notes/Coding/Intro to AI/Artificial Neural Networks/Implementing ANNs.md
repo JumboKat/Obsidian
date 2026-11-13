@@ -41,4 +41,4 @@ The drawbacks of this algorithm:
 
 Even with the small networks mere 37 parameters, this means three probes per parameter (-step, 0, and +step). This means 3x37=111 loss evaluations. With one baseline and one final evaluation, this comes out to 113 evaluations per sweep. Every evaluation runs the network on the whole training set. This does not scale well; repeating full evaluations becomes more expensive as the number of parameters increases.
 
-**Backpropagation** computes all parameter gradients using a **forward pass** and a **backward pass**. An optimizer then updates the parameters together. Backpropagation reuses intermediate results to compute gradients efficiently. 
+[[Backpropagation]] computes all parameter gradients using a **forward pass** and a **backward pass**. An optimizer then updates the parameters together. Backpropagation reuses intermediate results to compute gradients efficiently. 

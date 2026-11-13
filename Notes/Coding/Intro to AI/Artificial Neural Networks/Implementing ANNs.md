@@ -32,3 +32,13 @@ We can improve loss while not changing accuracy. Increasing probability lowers B
 The algorithm without backpropagation tries isolated parameter changes one at time, then updates it using the best change. Once all parameters have been examined, we apply the new changes together. Each of these parameter sweep is an **epoch**, with each sweep evaluating the training set multiple times.
 
 A change that lowers its own loss may interact badly with changes to other parameters. Thus it is possible to increase overall loss when applying all changes at once. Neither decreasing loss nor increasing accuracy is guaranteed at every iteration.
+#### Why a Faster Method is Needed
+The drawbacks of this algorithm:
+- Repeated evaluations: each parameter probe recomputes predictions and loss on the training set.
+- Fixed step size: the available changes are only -step, +step, and 0. 
+- Parameter interactions: individual helpful changes can conflict when applied together.
+- Sensitivity: results depend on initialization, step size, and the dataset. 
+
+Even with the small networks mere 37 parameters, this means three probes per parameter (-step, 0, and +step). This means 3x37=111 loss evaluations. With one baseline and one final evaluation, this comes out to 113 evaluations per sweep. Every evaluation runs the network on the whole training set. This does not scale well; repeating full evaluations becomes more expensive as the number of parameters increases.
+
+**Backpropagation** computes all parameter gradients using a **forward pass** and a **backward pass**. An optimizer then updates the parameters together. Backpropagation reuses intermediate results to compute gradients efficiently. 

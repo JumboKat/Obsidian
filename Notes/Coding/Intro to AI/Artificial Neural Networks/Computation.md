@@ -43,3 +43,55 @@ With multiple outputs, a perceptron can perform multiple binary predictions, whi
 An MLP has one or more **hidden layers** between its inputs and output layer. The hidden units in this example compute AND (top) and OR (bottom). Altogether, XOR is computed as:
 $$A⊕B=(A∨B)∧¬(A∧B)$$
 or A XOR B = (A OR B) AND NOT (A AND B).
+
+![[Pasted image 20261113125906.png]]The output computes A AND NOT B. The hidden representation makes XOR linearly separable.
+
+**The credit assignment problem**: generally, hidden-unit targets aren't given, so training must figure out how hidden weights affect the final error. This can be solved by **backpropagation**. 
+### Feedforward Neural Network (FNN)
+![[Pasted image 20261113130850.png|479]]
+In this architecture, information flows forward only, from input to output. The diagram above shows a **two-layer network**, as it has only two layers that perform parameterized computations (hidden layer and output layer). **Input units** or **input neurons** simply introduce input features without performing any calculations on them. There is typically as many input units as there are features.
+
+Nodes are labelled to clarify the weights between them. For instance, $w_{1,5}$ is between nodes 1 and 5. The output of a node is written as $o_k$, with k being the node's label. 
+#### Weighted Sum and Activation
+Each unit performs two operations:
+- $z_j=\sum_{i→j}w_{i,j}o_i+b_j$ , the weighted sum + bias before activation
+- $o_j=φ(z_j)$, the output after applying activation φ.
+
+The sum runs over all nodes connec
+ted to unit j. The weight $w_{i,j}$ connects source node i to destination node j, and $b_j$ is the bias of unit i. 
+
+$z_j$ is also called the **preactivation**, while output $o_j$ is the **activation**. φ represents a general activation function, though σ is used when the activation is the logistic sigmoid.
+#### Forward Pass Computation
+![[Pasted image 20261113130850.png|408]]
+The computation for this FNN is as follows:
+
+Calculate hidden outputs first:
+$$o_3=\sigma(w_{1,3}x^{(1)}+(w_{2,3}x^{(2)}+b_3)$$
+$$o_4=\sigma(w_{1,4}x^{(1)}+(w_{2,4}x^{(2)}+b_4)$$
+$$o_5=\sigma(w_{1,5}x^{(1)}+(w_{2,5}x^{(2)}+b_5)$$
+For final outputs:
+$$o_6=\sigma(w_{3,6}o_3+w_{4,6}o_4+w_{5,6}o_5+b_6)$$
+$$o_7=\sigma(w_{3,7}o_3+w_{4,7}o_4+w_{5,7}o_5+b_7)$$
+Each computational unit has its own bias, independent of its inputs. For a threshold unit, it shifts the decision boundary away from the origin. For a sigmoid or ReLU unit, it shifts the position of the activation's transition.
+### Nonlinear Activation Functions
+Stacking layers with without a nonlinear activation (the weighted sum is always linear) only results in one **affine** linear transformation. Nonlinear activations allow the network to represent more complex input-output relationships. 
+
+An affine transformation is a weighted sum + bias. For a 1-D example, composing $h=w_1x+b_y$ with $y=w_2h+b_2$ gives:
+$$y=(w_1w_2)x+(w_2b_1+b_2)$$
+Which is another affine transformation. This applies to matrix computations as well, so stacking affine layers alone does not allow the network to represent more complex relationships like XOR.
+
+Activation functions play two roles: nonlinearity affects what can be represented, and derivatives affect trainability.
+#### Sigmoid
+![[Pasted image 20261113134649.png]]
+The sigmoid function maps any finite real input to a value between 0 and 1 using the formula:
+$$\sigma(z)=\frac{1}{1+e^{-z}}$$
+#### Hyperbolic Tangent (tanh)
+![[Pasted image 20261113134854.png|569]]
+Unlike sigmoid, tanh can produce negative and positive activations (-1, 1), with tanh(0) = 0. Its output range is centered on zero, but the actual mean activation still depends on inputs and parameters. Its formula is: $$tanh(z)=2\sigma(2z)-1$$
+#### Rectified Linear Unit (ReLU)
+![[Pasted image 20261113135044.png]]
+Common choice for hidden layers. It returns zero for negative inputs, while keeping positive inputs unchanged. The change of slope at zero makes it nonlinear. Composing affine transformations with ReLU can produce piecewise-linear functions with many regions. Its formula is:$$ReLU(z)=max(0,z)$$
+#### Comparing Activation Functions
+![[Pasted image 20261113135251.png]]
+### Universal Approximation
+The **universal approximation theorem (UAT)**

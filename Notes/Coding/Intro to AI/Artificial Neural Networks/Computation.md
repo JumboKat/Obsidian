@@ -94,4 +94,12 @@ Common choice for hidden layers. It returns zero for negative inputs, while keep
 #### Comparing Activation Functions
 ![[Pasted image 20261113135251.png]]
 ### Universal Approximation
-The **universal approximation theorem (UAT)**
+The **universal approximation theorem (UAT)** states that on a compact input domain (closed and bounded), a network with a sufficiently wide single hidden layer, sigmoid activations, and a linear output can approximate any specified continuous target function to any desired accuracy.
+
+In other words, as long as network can be made wide enough, one hidden layer is enough to mimic any continuous function as closely as you like, for a bounded region of inputs. This only describes what a network can represent, it does not guarantee:
+- that a training algorithm will find the right parameters.
+- that the network will be small.
+- that learning from a finite sample will generalize well.
+- good extrapolation outside the domain.
+
+It extends to other activations like ReLU, but the activation must be nonpolynomial; nonlinearity alone isn't sufficient.

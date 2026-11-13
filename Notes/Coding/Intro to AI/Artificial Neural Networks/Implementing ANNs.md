@@ -15,3 +15,8 @@ Matrix multiplication requires the number of features to match the number of inp
 
 ![[Pasted image 20261113170944.png]]
 For neuron 1 in layer $ℓ_1$, the pre-activation value is computed as:$$z_1=x_1W_{1,1}+x_2W{1,2}+b_1$$
+#### NumPy Broadcasting
+![[Pasted image 20261113171339.png|431]]
+The big empty grid is the matrix A = X @ W($ℓ_1$). The bias vector only has four entries. Normally, these do not line up for matrix multiplication. NumPy's broadcasting rule matches the four entries to the four columns, then stretches b down the rows, essentially copying them into a (10, 4) matrix. $b_1$ is added to every entry in column 1, $b_2$ is added to every entry in column 2, etc. Each column corresponds to one neuron, and a neuron has one bias shared across all examples. 
+### Predictions
+The `forward` method creates an array of probabilities ranging from 0 to 1, representing the likelihood of that particular example $x_i$ belonging to class 1. Evaluating `self.forward(X)>=threshold` gives an array of Boolean values; True if the probability is above the threshold, and False otherwise. These are then converted into binary 0s and 1s.

@@ -31,4 +31,4 @@ We can improve loss while not changing accuracy. Increasing probability lowers B
 ### The Naïve Training Algorithm
 The algorithm without backpropagation tries isolated parameter changes one at time, then updates it using the best change. Once all parameters have been examined, we apply the new changes together. Each of these parameter sweep is an **epoch**, with each sweep evaluating the training set multiple times.
 
-A change that lowers its own loss may interact badyl
+A change that lowers its own loss may interact badly with changes to other parameters. Thus it is possible to increase overall loss when applying all changes at once. Neither decreasing loss nor increasing accuracy is guaranteed at every iteration.

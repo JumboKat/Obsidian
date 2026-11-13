@@ -31,4 +31,11 @@ The **bias**/**intercept** is another input feature with a fixed value.
 ![[Pasted image 20261112185642.png]]
 A **perceptron** is the combination of threshold logic units arranged in a single layer. With each connected to all inputs, this configuration is known as **fully connected** or **dense**. Since the units in this layer also generate an output, it is referred to as the **output layer**.
 
-With multiple outputs, a perceptron can perform multiple binary predictions, which makes either a **multilabel** or **multiclass** classifier.
+With multiple outputs, a perceptron can perform multiple binary predictions, which makes either a **multilabel** (each instance can fit multiple labels simultaneously) or **multiclass** (each instance assigned to one class out of many mutually exclusive options) classifier.
+#### Notation
+- **X** is the input data matrix where each row corresponds to an example and each column represents one of the **D** features.
+- **W** is the weight matrix, with one row per input feature and one column per neuron. **w** is a weight vector.
+- Bias terms can be included above or represented separately. Separately, it is a vector with length = # of neurons.
+### XOR
+![[Pasted image 20261112190739.png]]
+ For binary inputs, XOR is 1 at (0,1) and (1,0) and 0 at (0,0) and (1,1). XOR is not linearly separable in the original input space; a single threshold unit cannot separate the two XOR classes with one straight line.

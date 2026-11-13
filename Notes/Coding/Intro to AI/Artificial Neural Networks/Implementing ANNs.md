@@ -18,5 +18,17 @@ For neuron 1 in layer $ℓ_1$, the pre-activation value is computed as:$$z_1=x_1
 #### NumPy Broadcasting
 ![[Pasted image 20261113171339.png|431]]
 The big empty grid is the matrix A = X @ W($ℓ_1$). The bias vector only has four entries. Normally, these do not line up for matrix multiplication. NumPy's broadcasting rule matches the four entries to the four columns, then stretches b down the rows, essentially copying them into a (10, 4) matrix. $b_1$ is added to every entry in column 1, $b_2$ is added to every entry in column 2, etc. Each column corresponds to one neuron, and a neuron has one bias shared across all examples. 
-### Predictions
+### Probabilities, Labels, and Loss
 The `forward` method creates an array of probabilities ranging from 0 to 1, representing the likelihood of that particular example $x_i$ belonging to class 1. Evaluating `self.forward(X)>=threshold` gives an array of Boolean values; True if the probability is above the threshold, and False otherwise. These are then converted into binary 0s and 1s.
+
+![[Pasted image 20261113172152.png]]
+Given an example whose true label is 1, both predictions above are correct, but with different losses.
+- `forward(X)` returns probabilities.
+- `predict(X)` returns class labels.
+- `loss(X, y)` evaluates the probabilities against the targets.
+
+We can improve loss while not changing accuracy. Increasing probability lowers BCE even though the prediction does not change. Conversely, a confidently incorrect prediction (high probability but wrong prediction) receives a larger loss. This is the same BCE used for [[Logistic Regression|logistic regression]].
+### The Naïve Training Algorithm
+The algorithm without backpropagation tries isolated parameter changes one at time, then updates it using the best change. Once all parameters have been examined, we apply the new changes together. Each of these parameter sweep is an **epoch**, with each sweep evaluating the training set multiple times.
+
+A change that lowers its own loss may interact badyl

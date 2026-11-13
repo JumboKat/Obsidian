@@ -109,3 +109,4 @@ The graph above shows how increasing hidden units (which increases the number of
 ### Keras
 **PyTorch**, **TensorFlow**, and **JAX** provide tools for numerical computation and automatic differentiation. **Keras** provides a high-level API for building and training models with these backends.
 
+A dense layer with n inputs and m outputs has (n + 1)m trainable parameters, including biases. 

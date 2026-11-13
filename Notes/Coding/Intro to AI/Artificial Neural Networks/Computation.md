@@ -103,3 +103,9 @@ In other words, as long as network can be made wide enough, one hidden layer is 
 - good extrapolation outside the domain.
 
 It extends to other activations like ReLU, but the activation must be nonpolynomial; nonlinearity alone isn't sufficient.
+
+![[Pasted image 20261113162327.png]]
+The graph above shows how increasing hidden units (which increases the number of bends) can help closer represent the target function. The UAT guarantees the existence of an approximation under its assumptions, not the success of its training runs.
+### Keras
+**PyTorch**, **TensorFlow**, and **JAX** provide tools for numerical computation and automatic differentiation. **Keras** provides a high-level API for building and training models with these backends.
+

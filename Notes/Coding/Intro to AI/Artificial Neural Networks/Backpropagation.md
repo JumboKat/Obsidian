@@ -15,4 +15,11 @@ Representing a function and learning suitable parameters are distinct problems. 
 A **forward pass** computes activations; a **backward pass** computes parameter gradients. **Gradient descent** uses those gradients to update parameters. A positive derivative means decrease the parameter, while a negative derivative means increase it. 
 
 Backpropagation is an algorithm that methodically computes the partial derivatives of the loss function with respect to each weight and bias parameter. It applies the **chain rule** recursively.
+### Chain Rule
+The chain rule in calculus determines the derivative of a composite function. If a function h is the composite of two functions f and g, the chain rule states:
+$$h'(x)=f'(g(x))g'(x)$$
+Or in Leibniz notation:
+$$\frac{dv}{dx}=\frac{dv}{du}*\frac{du}{dx},\ u=g(x),\ v=f(x)$$
+If you know the instantaneous ROC of v w.r.t. u, and the ROC of u w.r.t. to x, then the ROC of v w.r.t. x is the product of these two ROCs. 
 
+![[Pasted image 20261114180200.png|441]]

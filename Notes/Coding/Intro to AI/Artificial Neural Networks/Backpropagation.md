@@ -10,4 +10,8 @@ Subscripts select a feature, while superscripts $^{(l)}$ select a layer.
 
 Lowercase a and z describe one example, while uppercase A and Z describe a batch of examples stored as rows.
 ### Backpropagation
-Representing a func
+Representing a function and learning suitable parameters are distinct problems. For a new task, training must determine how each hidden-layer parameter influences the loss even though target values for hidden units are not supplied. Backpropagation efficiently computes those sensitivities. 
+
+A **forward pass** computes activations; a **backward pass** computes parameter gradients. **Gradient descent** uses those gradients to update parameters. A positive derivative means decrease the parameter, while a negative derivative means increase it. 
+
+Backpropagation is an algorithm that methodically computes the partial derivatives of the loss function with respect to each weight and bias parameter. It applies the **chain rule** recursively to compute the 

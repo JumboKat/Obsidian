@@ -31,7 +31,17 @@ $$\frac{dl}{du}=\frac{dz}{du}*\frac{dl}{dz}$$ Backpropagation decomposes the com
 
 This is an example with a scalar input and one unit per layer. Each processing layer has one weight, one bias, one preactivation, and one activation, written as $w_l, b_l, z_l, a_l$. Thus, $a_l$ is the single entry of $a^{(l)}$ and $z_l$ is the single entry of $z^{(l)}$. 
 
-####
-The second diagram separates each layer into its preactivation and activation. At the first level, the preactivation $z_1$ is equal to the weight $w_1$ times x + $b_1$. The activation is just the sigmoid applied to $z_1$. The preactivation for layer 2 is the layer's weight times the activation of layer 1 + layer 2's bias. Its activation, which is also the NN's output, is the sigmoid applied to layer 2's preactivation.
-
-Now to ba
+##### Forward Pass
+The second diagram separates each layer into its preactivation and activation. At the first level, the preactivation $z_1$ is equal to the weight $w_1$ times x + $b_1$. The activation is just the sigmoid applied to $z_1$. The preactivation for layer 2 is the layer's weight times the activation of layer 1 + layer 2's bias. Its activation, which is also the NN's output, is the sigmoid applied to layer 2's preactivation:
+$$
+\begin{aligned}
+z_1&=w_1*x+b_1 \\
+a_1&=\sigma(z1) \\
+z_2&=w_2*a_1+b_2 \\
+a_2&=\sigma(z_2) \\
+\hat{p}&=a_2
+\end{aligned}$$
+Now, we must find each local derivative:
+- Loss (w.r.t. $\hat{p}$): $\frac{dl}{d\hat{p}}=-(\frac{y}{\hat{p}}-\frac{1-y}{1-\hat{p}})$ 
+##### Backward Pass:
+![[Pasted image 20261114183233.png|170]]

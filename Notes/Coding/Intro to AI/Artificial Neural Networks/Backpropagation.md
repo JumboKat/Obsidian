@@ -26,5 +26,12 @@ If you know the instantaneous ROC of v w.r.t. u, and the ROC of u w.r.t. to x, t
 ![[Pasted image 20261114180200.png|441]]
 For a downstream route: 
 $$\frac{dl}{du}=\frac{dz}{du}*\frac{dl}{dz}$$ Backpropagation decomposes the computation into a series of small steps, applying chain rule at each one. The pink box computes an output $z$ from its inputs $v$ and $u$. The loss for one example is denoted by $l$. The partial derivative $\frac{dl}{du}$ measures the loss's local sensitivity to $u$. The sign indicates the effect of a small increase in $u$, and its magnitude measures the sensitivity. 
-#### Example
-![[Pasted image 20261114182017.png|429]]
+#### Example: Scalar Input, One Hidden Node
+![[Pasted image 20261114182456.png|518]]![[Pasted image 20261114182515.png|388]]
+
+This is an example with a scalar input and one unit per layer. Each processing layer has one weight, one bias, one preactivation, and one activation, written as $w_l, b_l, z_l, a_l$. Thus, $a_l$ is the single entry of $a^{(l)}$ and $z_l$ is the single entry of $z^{(l)}$. 
+
+####
+The second diagram separates each layer into its preactivation and activation. At the first level, the preactivation $z_1$ is equal to the weight $w_1$ times x + $b_1$. The activation is just the sigmoid applied to $z_1$. The preactivation for layer 2 is the layer's weight times the activation of layer 1 + layer 2's bias. Its activation, which is also the NN's output, is the sigmoid applied to layer 2's preactivation.
+
+Now to ba

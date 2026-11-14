@@ -43,5 +43,10 @@ a_2&=\sigma(z_2) \\
 \end{aligned}$$
 Now, we must find each local derivative:
 - Loss (w.r.t. $\hat{p}$): $\frac{dl}{d\hat{p}}=-(\frac{y}{\hat{p}}-\frac{1-y}{1-\hat{p}})$ 
+- $\hat{p}$ derivative w.r.t. $z_2$: $\frac{d\hat{p}}{dz_2}= \sigma'(z_2)=\hat{p}(1-\hat{p})$
+- Local derivatives of $z_2$ = $w_2a_1+b_2$: $\frac{dz_2}{dw_2}=a_1,\ \frac{dz_2}{db_2}=1, \ \frac{dz_2}{da_1}=w_2$
+- $a_1=\sigma(z_1)$: $\frac{da_1}{dz_1}=\sigma'(z_1)=a_1(1-a_1)$
+- $z_1 = w_1x+b_1$: $\frac{dz_1}{dw_1}=x,\ \frac{dz_1}{db_1}=1\ \frac{dz_1}{dx}=w_1$
+
 ##### Backward Pass:
 ![[Pasted image 20261114183233.png|170]]

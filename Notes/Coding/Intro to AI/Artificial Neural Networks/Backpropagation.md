@@ -14,4 +14,4 @@ Representing a function and learning suitable parameters are distinct problems. 
 
 A **forward pass** computes activations; a **backward pass** computes parameter gradients. **Gradient descent** uses those gradients to update parameters. A positive derivative means decrease the parameter, while a negative derivative means increase it. 
 
-Backpropagation is an algorithm that methodically computes the partial derivatives of the loss function with respect to each weight and bias parameter. It applies the **chain rule** recursively to compute the 
+Backpropagation is an algorithm that methodically computes the partial derivatives of the loss function with respect to each weight and bias parameter. It applies the **chain rule** recursively.

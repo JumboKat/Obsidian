@@ -1,5 +1,6 @@
 {
   "accentColor": "",
   "cssTheme": "Nado City Garden",
-  "theme": "system"
+  "theme": "system",
+  "showRibbon": true
 }

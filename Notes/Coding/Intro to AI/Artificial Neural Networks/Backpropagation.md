@@ -22,4 +22,9 @@ Or in Leibniz notation:
 $$\frac{dv}{dx}=\frac{dv}{du}*\frac{du}{dx},\ u=g(x),\ v=f(x)$$
 If you know the instantaneous ROC of v w.r.t. u, and the ROC of u w.r.t. to x, then the ROC of v w.r.t. x is the product of these two ROCs. 
 
+#### Applying the Chain Rule Recursively
 ![[Pasted image 20261114180200.png|441]]
+For a downstream route: 
+$$\frac{dl}{du}=\frac{dz}{du}*\frac{dl}{dz}$$ Backpropagation decomposes the computation into a series of small steps, applying chain rule at each one. The pink box computes an output $z$ from its inputs $v$ and $u$. The loss for one example is denoted by $l$. The partial derivative $\frac{dl}{du}$ measures the loss's local sensitivity to $u$. The sign indicates the effect of a small increase in $u$, and its magnitude measures the sensitivity. 
+#### Example
+![[Pasted image 20261114182017.png|429]]

@@ -102,9 +102,15 @@ Examples of multi-output regression problems:
 - predicting bounding box coordinates (xmin,ymin,xmax,ymax) in object detection.
 #### Multi-label Predictions
 ![[Pasted image 20261115161102.png|411]]
-Multi-label predictions produce independent sigmoid outputs for a single example (multiple labels apply simultaneously), and their probabilities do not need to sum to one. 
+Multi-label predictions produce independent **sigmoid** outputs for a single example (multiple labels apply simultaneously), and their probabilities do not need to sum to one. 
 #### Multi-class Predictions
 ![[Pasted image 20261115161228.png|428]]
-A multiclass prediction is where the model predicts one class out of a pool of mutually exclusive classes for an example. Only exactly one class can be correct. The **softmax** function ensures that all activation outputs fall between 0 and 1 and collectively sum to 1.
+A multiclass prediction is where the model predicts one class out of a pool of mutually exclusive classes for an example. Only exactly one class can be correct. 
 
-An output **logit** is the unrestricted real-valued score before the final activation converts it into a probability (in other words, the output layer's preactivations).
+An output **logit** is the raw score before the final activation converts it into a probability (in other words, the output layer's preactivations). 
+
+The **softmax** function is used for multiclass predictions. It ensures that all activation outputs fall between 0 and 1 (non-negative) and collectively sum to 1, allowing the outputs to be interpreted as probabilities. It preserves relative ordering, with the largest logit corresponding to the largest probability.
+
+The **argmax** is an alternative that simply picks the class with the largest score. While it is good for the final decision, it is terrible for training. Unless it changes the overall winner, a small change in the scores does not affect the score at all. This means the derivative is almost zero everywhere. At the point where the winner does flip, it manifests as a sudden jump, where the derivative is undefined. Argmax gives zero or nothing, which clashes with how gradient descent facilitates learning, which needs a smooth signal that indicates a direction to move toward. Softmax fulfils this. 
+
+During training, use softmax. After training, apply argmax to the softmax output for class predictions. 

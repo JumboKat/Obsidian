@@ -60,9 +60,17 @@ A good initialization tries to start q around 1 on average, keeping the signal's
 
 ![[Pasted image 20261114214004.png]]
 ![[Pasted image 20261114214009.png]]
-The graphs show the effect on activation value and gradients with standard initialization (top) and normalized initialization (bottom). With normalized initialization, the distributions are roughly the same across all five layers.
+The graphs show the effect on activation value and gradients with standard initialization (top) and normalized initialization (bottom). With normalized initialization, the distributions are roughly the same across all five layers. 
 
+There are two kinds of initialization:
 **Xavier/Glorot initialzation**: $Var(W)=\frac{2}{n_{in}+n_{out}}$
 - $n_{in}$ and $n_{out}$ are the layer's number of inputs and outputs
-- Keeps the forward signal (depends on $n_{in}$) stable as well as the backward ($n_{out}$ )
+- Keeps the forward signal (depends on $n_{in}$) stable as well as the backward (depends on$n_{out}$)
 - Used for sigmoid and tanh layers
+
+**He initialization**: $Var(W)=\frac{2}{n_{in}}$
+- Used for ReLU hidden layers
+`SimpleMLP` applies He init to ReLU hidden layers, and Xavier/Glorot to everything else. `SimplerMLP` uses Xavier/Glorot throughout.
+
+Initialization helps signal propagation, but does not guarantee convergence or optimize performance. It also only controls the starting point; training can still be destabilized later by large updates.
+### Gradient Clipping

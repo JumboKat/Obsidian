@@ -83,3 +83,6 @@ Since it is only multiplied by a positive scalar, the direction is unchanged. An
 Clipping helps prevent exploding gradients, but it does not solve the vanishing gradient, nor does it guarantee convergence. 
 ### Output Layers
 While we can replace a hidden activation (sigmoid) with a ReLU, replacing the output's activation has an additional challenge: the output must match the target's dimensions and range.
+
+Activation functions in the hidden layers are chosen to improve performance and convergence, while the activation function in the output layer is chosen to match the nature of the prediction task:
+- Regression: 

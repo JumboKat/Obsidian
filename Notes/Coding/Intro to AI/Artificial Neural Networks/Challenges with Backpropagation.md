@@ -18,3 +18,4 @@ The issue is that a stationary point can be a minimum (loss rises in all directi
 
 ![[Pasted image 20261114202438.png]]
 In the convex example, the algorithm converges to the global (and local) minimum. The nonconvex example converges on only a local minimum, and the third converges where it started, since it is on a flat region.
+### Gradient Propagation

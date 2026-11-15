@@ -121,3 +121,9 @@ The **argmax** is an alternative that simply picks the class with the largest sc
 During training, use softmax. After training, apply argmax to the softmax output for class predictions. 
 ##### Softmax Limitations
 The fundamental problem with softmax is that it distributes probability among only known classes; there is no option for "none of these". An example from a class absent from the training tasks is called an **out-of-distribution** input. It can receive a high probability for a known class. While there are ways to reject such outputs (e.g. requiring the largest probability to meet a threshold), it is still possible for unknown inputs to receive high probabilities and avoid rejection.
+### Regularization
+**Regularization** encompasses any modification to an algorithm that reduces its generalization error. Overfitting can still occur after applying appr
+#### Early Stopping
+![[Pasted image 20261115165437.png|420]]
+A **checkpoint** is a saved copy of the model's parameters for a specific training step. It is sometimes favourable to stop a procedure early and keep an early checkpoint of the model at its lowest validation error rather than at its final epoch, despite continuing improvement in training error.
+

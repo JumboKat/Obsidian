@@ -157,5 +157,7 @@ The L1 term sums absolute weight values; the L2 sums squared weight values.
 - Can promote sparsity by pushing weights to exactly zero.
 - Supports feature selection, especially in linear models.
 **L2 Regularization**:
-- Shrinks all weights, usually stays dense.
+- Shrinks all weights, usually stays dense (few or no zeroes).
 - Promotes stability, small distributed weights.
+![[Pasted image 20261115172808.png]]
+This linear-regression example shows the penalty's impact. 

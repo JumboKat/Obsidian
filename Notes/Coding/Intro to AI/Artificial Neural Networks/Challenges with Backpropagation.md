@@ -49,3 +49,20 @@ Furthermore, ReLU's derivative of 1 on the positive side avoids the shrinking ef
 
 ![[Pasted image 20261114213137.png]]
 The **Leaky ReLU** mitigates the dying ReLU problem by using a small slope $\alpha$ for negative inputs. This makes the negative side's derivative non-zero, allowing a unit with z < 0 to receive some gradient, allowing it to recover instead of dying.
+### Initialization
+Weights must be randomized. If two hidden units have identical initial parameters and the same role, they compute the same output, receive the same gradient, and get the same update. They stay identical forever, and essentially both behave like one unit. This is the **symmetry problem**. Randomizing the weights breaks this symmetry, ensuring that each unit can learn a different feature. Biases can start at zero, since the random weights already distinguish each unit.
+#### Scaling Weights
+Because weights are a component of the per-step multiplier, their initial size affects whether signals shrink or grow as they pass through layers:
+- Too small: activations and gradients shrink (vanishing)
+- Too large: units saturate, and signals can blow up (exploding)
+
+A good initialization tries to start q around 1 on average, keeping the signal's size reasonable in both directions.
+
+![[Pasted image 20261114214004.png]]
+![[Pasted image 20261114214009.png]]
+The graphs show the effect on activation value and gradients with standard initialization (top) and normalized initialization (bottom). With normalized initialization, the distributions are roughly the same across all five layers.
+
+**Xavier/Glorot initialzation**: $Var(W)=\frac{2}{n_{in}+n_{out}}$
+- $n_{in}$ and $n_{out}$ are the layer's number of inputs and outputs
+- Keeps the forward signal (depends on $n_{in}$) stable as well as the backward ($n_{out}$ )
+- Used for sigmoid and tanh layers

@@ -14,6 +14,7 @@ A real network has thousands to billions of parameters, so its loss landscape li
 - A **stationary point** is any point where the gradient is zero. Gradient descent has no reason to move from this point.
 The issue is that a stationary point can be a minimum (loss rises in all directions), a maximum (loss falls in all directions), or a saddle point. A **saddle point** is a point where the loss goes up in some directions and down in others (like the shape of a horse saddle; curved up front-to-back and curved down side-to-side). A 1D plot cannot show this since you only move in one direction.
 
-**Convergence** means an algorithm settles toward some limiting value on each iteration, though this may not be the optimal value.
+**Convergence** means an algorithm settles toward some limiting value on each iteration, though this may not be the optimal value. The three loss landscapes below show this: the green point indicates the starting point, with the red indicating the end.
 
-![[Pasted image 20261114202246.png]]
+![[Pasted image 20261114202438.png]]
+In the convex example, the algorithm converges to the global (and local) minimum. The nonconvex example converges on only a local minimum, and the third converges where it started, since it is on a flat region.

@@ -22,3 +22,6 @@ In the convex example, the algorithm converges to the global (and local) minimum
 In backpropagation, the error signal at layer $l$ is computed from the signal at later $l+1$ by multiplying by a single number q = wₗ₊₁ · φ′(zₗ), which combines:
 - the weight connecting the layers
 - the activation's derivative at that unit.
+So at each step towards the input, the signal gets multiplied b q. After d steps, starting from signal 1, the magnitude is $q^d$.
+![[Pasted image 20261114210108.png]]
+

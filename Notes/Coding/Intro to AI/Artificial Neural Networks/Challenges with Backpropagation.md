@@ -159,5 +159,7 @@ The L1 term sums absolute weight values; the L2 sums squared weight values.
 **L2 Regularization**:
 - Shrinks all weights, usually stays dense (few or no zeroes).
 - Promotes stability, small distributed weights.
-![[Pasted image 20261115172808.png]]
-This linear-regression example shows the penalty's impact. 
+#### Dropout
+**Dropout** randomly sets some activations to zero temporarily during training. The goal is to reduce overfitting by discouraging the reliance on particular units always being available. Repeating this for different units forces the model to make predictions without relying too heavily on certain combinations of units. While training loss may increase, the goal is to increase validation performance by improving generalization. 
+
+The 

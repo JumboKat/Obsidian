@@ -98,7 +98,7 @@ With $\delta_u=\frac{dl}{dz_u}$ and $\delta_v=\frac{dl}{dz_v}$:$$\frac{dl}{da}=r
 In this case, a change to a changes both $z_u$ and $z_v$, so to find the change in loss $l$ w.r.t. $a$, we **add** the effects of both paths. All contributions should be collected before continuing upstream.
 #### Training with Backpropagation
 Overall, the training steps are:
-1. Initialize weights randomly and biases (usually as zero).  
+1. Initialize weights randomly and biases (usually as zero). The randomness breaks symmetry, since units with identical weights get identical gradients and never learn different features. Since random weights already distinguish units, biases can start at zero.
 2. Forward pass: compute activations and retain intermediate values.
 3. Compute the loss for the current batch.
 4. Backward pass: compute all parameter gradients (chaining derivatives),  using error signals to save on computations..
@@ -118,5 +118,4 @@ $z_1$ and $\delta$ are each one row with the shape (1,4) (one weighted sum per h
 For a batch of examples, we stack each example's activations and error signals as rows of $A^{(l)}$ and $\Delta^{(l)}$. We also stack inputs (x→X) and preactivations (z→Z).
 
 W and b do not change shape since parameters belong to the model, not to examples.
-
 We sum/average over examples.

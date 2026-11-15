@@ -25,7 +25,8 @@ In backpropagation, the error signal at layer $l$ is computed from the signal at
 So at each step towards the input, the signal gets multiplied b q. After d steps, starting from signal 1, the magnitude is $q^d$.
 ![[Pasted image 20261114210108.png]]
 This graph shows the effect of different per-step multiplier values on the signal's magnitude. If the factors that make up the per-step multiplier are small (less than 1), the gradient shrinks with each step. Eventually, the gradient is so small that early layers barely learn (since the change in loss w.r.t. a change in the layer's parameters will be marginal). This is known as the **vanishing gradient** problem. Conversely, a large per-step multiplier (greater than 1) expands the gradient with every step, resulting in an **exploding gradient**. This is why parameter initialization is important to keeping training stable.
-### Activation Functions and their Derivatives
+#### Activation Functions and their Derivatives
+Choosing the right activation function can help propagate gradients.
 ![[Pasted image 20261114211732.png]]
 An activation is **saturated** when changing its input produces very little change in its output, making its local derivative close to zero. An activation that can avoid saturation (low derivative value) keeps a backward signal useful
 
@@ -34,7 +35,7 @@ For a sigmoid, this generally occurs near either end of its output range. The si
 Tanh's max derivative is 1 at 0, but it also saturates as you move away from the origin. 
 
 ReLU's derivative is 1 for positive preactivations and 0 for negative ones. It avoids saturation for positive values, but not for negative values. 
-#### Dying ReLU Problem
+##### Dying ReLU Problem
 **Sparsity** means that many entries are exactly zero. ReLU produces sparse activations because it outputs zero for non-positive inputs (including at zero). The activations are sparse, meaning for any given input, many hidden units output 0. This does not necessarily mean that the weights are zero. 
 
 During backpropagation, the signal passing through that unit is multiplied by its activation derivative. Since ReLU's derivative is 0 for z < 0, this means the signal becomes zero. No update happens through that unit. For a single example, this is fine since other examples can still update the unit. The problem arises when a unit is inactive for all training inputs. This means that:
@@ -44,14 +45,14 @@ During backpropagation, the signal passing through that unit is multiplied by it
 - nothing pushes z back above 0, and it stays inactive ("dead")
 
 The unit no longer contributes to the network. It is possible for dead units to revive if an earlier layer's weights change and shifts its z to become positive. This is the **Dying ReLU Problem**
-#### Leaky ReLU
+##### Leaky ReLU
 Furthermore, ReLU's derivative of 1 on the positive side avoids the shrinking effect of the sigmoid, but there are still other sources of attenuation (incoming activations, downstream weights, etc.), so ReLU helps, but does not solve the vanishing gradient.
 
 ![[Pasted image 20261114213137.png]]
 The **Leaky ReLU** mitigates the dying ReLU problem by using a small slope $\alpha$ for negative inputs. This makes the negative side's derivative non-zero, allowing a unit with z < 0 to receive some gradient, allowing it to recover instead of dying.
-### Initialization
+#### Initialization
 Weights must be randomized. If two hidden units have identical initial parameters and the same role, they compute the same output, receive the same gradient, and get the same update. They stay identical forever, and essentially both behave like one unit. This is the **symmetry problem**. Randomizing the weights breaks this symmetry, ensuring that each unit can learn a different feature. Biases can start at zero, since the random weights already distinguish each unit.
-#### Scaling Weights
+##### Scaling Weights
 Because weights are a component of the per-step multiplier, their initial size affects whether signals shrink or grow as they pass through layers:
 - Too small: activations and gradients shrink (vanishing)
 - Too large: units saturate, and signals can blow up (exploding)
@@ -73,8 +74,12 @@ There are two kinds of initialization:
 `SimpleMLP` applies He init to ReLU hidden layers, and Xavier/Glorot to everything else. `SimplerMLP` uses Xavier/Glorot throughout.
 
 Initialization helps signal propagation, but does not guarantee convergence or optimize performance. It also only controls the starting point; training can still be destabilized later by large updates.
-### Gradient Clipping
+#### Gradient Clipping
 **Gradient clipping** caps how big a single update step can be without changing its direction. For a chosen threshold $c$, with $g$ being the gradient vector:
 - if $||g|| ≤ c$, no changes
 - if $||g|| > c$, rescale it to have length exactly c ($g=c*g/||g||$)
-Since it is only multiplied by a positive scalar, the direction is unchanged. An update step then has a size at most 
+Since it is only multiplied by a positive scalar, the direction is unchanged. An update step then has a norm of at most a\*c.
+
+Clipping helps prevent exploding gradients, but it does not solve the vanishing gradient, nor does it guarantee convergence. 
+### Output Layers
+While we can replace a hidden activation (sigmoid) with a ReLU, replacing the output's activation has an additional challenge: the output must match the target's dimensions and range.

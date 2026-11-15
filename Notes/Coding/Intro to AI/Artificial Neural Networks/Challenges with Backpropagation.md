@@ -172,7 +172,11 @@ Activations should not be dropped during inference. Because retained activations
 - Inactive for validation, `model.evaluate`, and `model.predict`
 ### Inference and Further Learning
 - **Further learning** means updating parameters.
-- **Online learning** 
+- **Online learning** updates a model incrementally.
 - **Fine-tuning**: further training an already-trained model.
 - **Continual learning** studies from successive data/tasks while retaining earlier capabilities
-- 
+
+Further training can cause forgetting. A **class-incremental** setup introduces classes in incremental steps and evaluates the model's ability to recognize all models seen so far. Training a model on new classes can sharply reduce performance on earlier tasks (called **catastrophic forgetting**). 
+#### Replay
+![[Pasted image 20261115180111.png]]
+A small memory can help. **Replaying** stored old classes in the new training improves the model's **retention** on the old classes. A **balanced memory** stores equal numbers from each old class.

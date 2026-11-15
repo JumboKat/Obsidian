@@ -133,5 +133,21 @@ If regularization is too strong, it can cause underfitting.
 ![[Pasted image 20261115165437.png|420]]
 A **checkpoint** is a saved copy of the model's parameters for a specific training step. It is sometimes favourable to stop a procedure early and keep an early checkpoint of the model at its lowest validation error rather than at its final epoch, despite continuing improvement in training error.
 
-We can choose when to stop by monitoring a validation metric, and stop after a number of epochs pass without meaningful improvement and restore the best parameters.
+We can choose when to stop by monitoring a validation metric, and stop after a number of epochs pass without meaningful improvement and restore the best parameters. Set `restore_best_weights=True` as it is not default in Keras.
 #### Penalties
+Training normally only minimizes data loss. We can change the objective so that training also prefers small weights:$$J_{reg}(W,b)=J_{data}(W, b)+\Omega(W)$$
+- $J_{data}$ is how well the model fits the task
+- $\Omega(W)$ is the **penalty**, which grows when the weights are big (not biases)
+- Training minimizes both together; it must balance fit against weight size.
+##### Measuring Weight Size
+There are multiple ways to measure weight size. We can either **sum absolute values (L1)** or **Sum the squares (L2)**. For example, take the two weights (4,0) and (2,2).
+- L1 sees them as equal (4 = 2 + 2)
+- L2 prefers (2,2), as squaring them punishes one large entry more than two smaller ones.
+L2 favours spreading weight evenly, while L1 ignores distribution.
+
+##### Norm ()
+A **norm** assigns a non-negative 'length' to a vector:
+![[Pasted image 20261115171506.png]]
+- A norm is non-negative and is zero only for the zero vector. 
+- Scaling a vector by c scales its norm by |c|.
+- The triangle inequality: ‖u + v‖ ≤ ‖u‖ + ‖v‖

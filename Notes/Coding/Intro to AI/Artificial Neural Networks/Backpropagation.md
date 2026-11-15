@@ -109,4 +109,14 @@ Backpropagation is step 4. The optimizer (gradient descent) does step 5.
 #### Matrix Form
 The core idea remains the same; cache the forward pass, compute error signals backwards, turn each $\delta$ into parameter gradients. What changes is that every scalar is now a vector or matrix, and every multiplication is a matrix multiplication. Additionally, we now have branching, which means we must sum the contributions of each activation along different paths. Also, since each unit has its own sigmoid, the activation derivative is applied elementwise
 #### From one Example to a Batch
-In one example, everything is in a single row 
+In one example, everything is in a single row. For the network \[2,4,4,1]:
+- x is a row with two columns
+- $a_1$ and $a_2$ are rows with 4 columns
+- $\hat{p}$ is a row with one column.
+$z_1$ and $\delta$ are each one row with the shape (1,4) (one weighted sum per hidden unit and one sensitivity per hidden unit).
+
+For a batch of examples, we stack each example's activations and error signals as rows of $A^{(l)}$ and $\Delta^{(l)}$. We also stack inputs (x→X) and preactivations (z→Z).
+
+W and b do not change shape since parameters belong to the model, not to examples.
+
+We sum/average over examples.

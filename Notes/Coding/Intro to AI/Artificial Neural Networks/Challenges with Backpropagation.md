@@ -85,4 +85,26 @@ Clipping helps prevent exploding gradients, but it does not solve the vanishing 
 While we can replace a hidden activation (sigmoid) with a ReLU, replacing the output's activation has an additional challenge: the output must match the target's dimensions and range.
 
 Activation functions in the hidden layers are chosen to improve performance and convergence, while the activation function in the output layer is chosen to match the nature of the prediction task:
-- Regression: 
+- Regression: linear, ReLU, or softplus, depending on range constraints. 1 output per dimension.
+- Binary classification: sigmoid; 1 output.
+- Multi-class classification: separate sigmoids; 1 output per class.
+- Multi-label classification: softmax; 1 output per label. 
+
+Examples of multi-output regression problems:
+2 outputs:
+- predicting latitude and longitude of a location from an image.
+- estimating with and height of a bounding box in object detection
+- forecasting temperature and humidity simultaneously.
+3 outputs:
+- predicting the x, y, z coordinates of a point in space.
+- estimating RGB colour values from spectral measurements.
+4 outputs:
+- predicting bounding box coordinates (xmin,ymin,xmax,ymax) in object detection.
+#### Multi-label Predictions
+![[Pasted image 20261115161102.png|411]]
+Multi-label predictions produce independent sigmoid outputs for a single example (multiple labels apply simultaneously), and their probabilities do not need to sum to one. 
+#### Multi-class Predictions
+![[Pasted image 20261115161228.png|428]]
+A multiclass prediction is where the model predicts one class out of a pool of mutually exclusive classes for an example. Only exactly one class can be correct. The **softmax** function ensures that all activation outputs fall between 0 and 1 and collectively sum to 1.
+
+An output **logit** is the unrestricted real-valued score before the final activation converts it into a probability (in other words, the output layer's preactivations).

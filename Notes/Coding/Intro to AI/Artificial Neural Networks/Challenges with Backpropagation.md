@@ -24,4 +24,6 @@ In backpropagation, the error signal at layer $l$ is computed from the signal at
 - the activation's derivative at that unit.
 So at each step towards the input, the signal gets multiplied b q. After d steps, starting from signal 1, the magnitude is $q^d$.
 ![[Pasted image 20261114210108.png]]
-
+This graph shows the effect of different per-step multiplier values on the signal's magnitude. If the factors that make up the per-step multiplier are small (less than 1), the gradient shrinks with each step. Eventually, the gradient is so small that early layers barely learn (since the change in loss w.r.t. a change in the layer's parameters will be marginal). This is known as the **vanishing gradient** problem. Conversely, a large per-step multiplier (greater than 1) expands the gradient with every step, resulting in an **exploding gradient**.
+#### Vanishing Gradients
+An activation is **saturated** when changing its input produces very little change in its output, making its local derivative close to zero. For a sigmoid, this generally occurs near either end of its output range. 

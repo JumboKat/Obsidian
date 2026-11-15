@@ -122,8 +122,16 @@ During training, use softmax. After training, apply argmax to the softmax output
 ##### Softmax Limitations
 The fundamental problem with softmax is that it distributes probability among only known classes; there is no option for "none of these". An example from a class absent from the training tasks is called an **out-of-distribution** input. It can receive a high probability for a known class. While there are ways to reject such outputs (e.g. requiring the largest probability to meet a threshold), it is still possible for unknown inputs to receive high probabilities and avoid rejection.
 ### Regularization
-**Regularization** encompasses any modification to an algorithm that reduces its generalization error. Overfitting can still occur after applying appr
+**Regularization** encompasses any modification to an algorithm that reduces its generalization error. Overfitting can still occur even after an appropriate loss and effective parameter updates.
+
+**Training loss** only measures how well a model fits to the supplied examples. **Validation performance** helps identify choices that generalize. Training and validation loss can often diverge, and so reducing only training loss is not sufficient. Regularization influences learning to favour generalization. Methods can include:
+- Stopping early to control how long parameters are adjusted.
+- Penalties to change the objective.
+- Dropout changes training computations.
+If regularization is too strong, it can cause underfitting.
 #### Early Stopping
 ![[Pasted image 20261115165437.png|420]]
 A **checkpoint** is a saved copy of the model's parameters for a specific training step. It is sometimes favourable to stop a procedure early and keep an early checkpoint of the model at its lowest validation error rather than at its final epoch, despite continuing improvement in training error.
 
+We can choose when to stop by monitoring a validation metric, and stop after a number of epochs pass without meaningful improvement and restore the best parameters.
+#### Penalties

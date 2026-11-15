@@ -31,7 +31,7 @@ $$\frac{dl}{du}=\frac{dz}{du}*\frac{dl}{dz}$$ Backpropagation decomposes the com
 
 This is an example with a scalar input and one unit per layer. Each processing layer has one weight, one bias, one preactivation, and one activation, written as $w_l, b_l, z_l, a_l$. Thus, $a_l$ is the single entry of $a^{(l)}$ and $z_l$ is the single entry of $z^{(l)}$. 
 
-##### Forward Pass
+##### Step 1: Forward Pass
 The second diagram separates each layer into its preactivation and activation. At the first level, the preactivation $z_1$ is equal to the weight $w_1$ times x + $b_1$. The activation is just the sigmoid applied to $z_1$. The preactivation for layer 2 is the layer's weight times the activation of layer 1 + layer 2's bias. Its activation, which is also the NN's output, is the sigmoid applied to layer 2's preactivation:
 $$
 \begin{aligned}
@@ -41,12 +41,31 @@ z_2&=w_2*a_1+b_2 \\
 a_2&=\sigma(z_2) \\
 \hat{p}&=a_2
 \end{aligned}$$
+##### Step 2: Compute Local Derivatives
 Now, we must find each local derivative:
 - Loss (w.r.t. $\hat{p}$): $\frac{dl}{d\hat{p}}=-(\frac{y}{\hat{p}}-\frac{1-y}{1-\hat{p}})$ 
 - $\hat{p}$ derivative w.r.t. $z_2$: $\frac{d\hat{p}}{dz_2}= \sigma'(z_2)=\hat{p}(1-\hat{p})$
 - Local derivatives of $z_2$ = $w_2a_1+b_2$: $\frac{dz_2}{dw_2}=a_1,\ \frac{dz_2}{db_2}=1, \ \frac{dz_2}{da_1}=w_2$
 - $a_1=\sigma(z_1)$: $\frac{da_1}{dz_1}=\sigma'(z_1)=a_1(1-a_1)$
 - $z_1 = w_1x+b_1$: $\frac{dz_1}{dw_1}=x,\ \frac{dz_1}{db_1}=1\ \frac{dz_1}{dx}=w_1$
+##### Step 3: Chain them for Each Parameter
+Multiply along the path from the loss back to the parameter.
+For loss w.r.t. $w_2$: $\frac{dl}{dw_2}=\frac{dl}{d\hat{p}}*\frac{d\hat{p}}{dz_2}*\frac{dz_2}{dw_2}=(\hat{p}-y)a_1$
+![[Pasted image 20261114185354.png]]
+
+For loss w.r.t. $b_2$:
+![[Pasted image 20261114185730.png]]
+
+For loss w.r.t. $w_1$
+![[Pasted image 20261114185805.png]]
+![[Pasted image 20261114185814.png]]
+
+And loss w.r.t. $b_2$:
+![[Pasted image 20261114185834.png]]
+
+In the end we get:
+![[Pasted image 20261114185906.png]]
+
 
 ##### Backward Pass:
 ![[Pasted image 20261114183233.png|170]]

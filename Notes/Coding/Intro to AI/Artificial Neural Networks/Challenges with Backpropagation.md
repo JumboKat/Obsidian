@@ -24,6 +24,15 @@ In backpropagation, the error signal at layer $l$ is computed from the signal at
 - the activation's derivative at that unit.
 So at each step towards the input, the signal gets multiplied b q. After d steps, starting from signal 1, the magnitude is $q^d$.
 ![[Pasted image 20261114210108.png]]
-This graph shows the effect of different per-step multiplier values on the signal's magnitude. If the factors that make up the per-step multiplier are small (less than 1), the gradient shrinks with each step. Eventually, the gradient is so small that early layers barely learn (since the change in loss w.r.t. a change in the layer's parameters will be marginal). This is known as the **vanishing gradient** problem. Conversely, a large per-step multiplier (greater than 1) expands the gradient with every step, resulting in an **exploding gradient**.
-#### Vanishing Gradients
-An activation is **saturated** when changing its input produces very little change in its output, making its local derivative close to zero. For a sigmoid, this generally occurs near either end of its output range. 
+This graph shows the effect of different per-step multiplier values on the signal's magnitude. If the factors that make up the per-step multiplier are small (less than 1), the gradient shrinks with each step. Eventually, the gradient is so small that early layers barely learn (since the change in loss w.r.t. a change in the layer's parameters will be marginal). This is known as the **vanishing gradient** problem. Conversely, a large per-step multiplier (greater than 1) expands the gradient with every step, resulting in an **exploding gradient**. This is why parameter initialization is important to keeping training stable.
+### Activation Functions and their Derivatives
+![[Pasted image 20261114211732.png]]
+An activation is **saturated** when changing its input produces very little change in its output, making its local derivative close to zero. An activation that can avoid saturation (low derivative value) keeps a backward signal useful
+
+For a sigmoid, this generally occurs near either end of its output range. The sigmoid's derivative is <=0.25, and goes to zero when saturated, so it can contribute to the vanishing gradient problem.
+
+Tanh's max derivative is 1 at 0, but it also saturates as you move away from the origin. 
+
+ReLU's derivative is 1 for positive preactivations and 0 for negative ones. It avoids saturation for positive values, but not for negative values. 
+#### Dying ReLU Problem
+**Sparsity** means that many entries are exactly zero. ReLU produces sparse activations because it outputs zero for non-positive inputs (including at zero). The activations are sparse, meaning for any given input, many hidden units output 0. This does not necessarily mean that the weights are zero. 

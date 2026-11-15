@@ -109,8 +109,15 @@ A multiclass prediction is where the model predicts one class out of a pool of m
 
 An output **logit** is the raw score before the final activation converts it into a probability (in other words, the output layer's preactivations). 
 
-The **softmax** function is used for multiclass predictions. It ensures that all activation outputs fall between 0 and 1 (non-negative) and collectively sum to 1, allowing the outputs to be interpreted as probabilities. It preserves relative ordering, with the largest logit corresponding to the largest probability.
-
+![[Pasted image 20261115162913.png|353]]
+The **softmax** function is used for multiclass predictions. It ensures that all activation outputs fall between 0 and 1 (non-negative) and collectively sum to 1, allowing the outputs to be interpreted as probabilities. It preserves relative ordering, with the largest logit corresponding to the largest probability. Bigger gaps between scores gives the winner a bigger share of the overall probability, while small gaps give a near-even split. With softmax, only the differences between outputs matters. Adding a constant to every logit changes nothing, since the relative differences stay the same.
+##### Overflow and Underflow
+If logits are too large (e.g. 1000), the softmax computation $e^{1000}$ **overflows**. The solution is to subtract all outputs by the largest logit first. This works since only the relative differences matter, not the raw magnitudes. **Underflow** is the opposite problem, where a tiny probability can round exactly to 0, and since cross-entropy loss takes the log of the probability, log(0) is undefined. Use **log-sum-exp** for stable loss.
+##### from_logits
+If the model already applies softmax, but you set `from_logits=True` for the output softmax, the loss applies softmax a second time to values that are already probabilities. Only set `from_logits` if the last layer does not already apply softmax.
+##### Argmax
 The **argmax** is an alternative that simply picks the class with the largest score. While it is good for the final decision, it is terrible for training. Unless it changes the overall winner, a small change in the scores does not affect the score at all. This means the derivative is almost zero everywhere. At the point where the winner does flip, it manifests as a sudden jump, where the derivative is undefined. Argmax gives zero or nothing, which clashes with how gradient descent facilitates learning, which needs a smooth signal that indicates a direction to move toward. Softmax fulfils this. 
 
 During training, use softmax. After training, apply argmax to the softmax output for class predictions. 
+##### Softmax Limitations
+The fundamental problem with soft

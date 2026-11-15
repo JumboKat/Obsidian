@@ -106,3 +106,7 @@ Overall, the training steps are:
 6. Repeat for remaining batches and epochs.
 
 Backpropagation is step 4. The optimizer (gradient descent) does step 5. 
+#### Matrix Form
+The core idea remains the same; cache the forward pass, compute error signals backwards, turn each $\delta$ into parameter gradients. What changes is that every scalar is now a vector or matrix, and every multiplication is a matrix multiplication. Additionally, we now have branching, which means we must sum the contributions of each activation along different paths. Also, since each unit has its own sigmoid, the activation derivative is applied elementwise
+#### From one Example to a Batch
+In one example, everything is in a single row 

@@ -74,3 +74,7 @@ There are two kinds of initialization:
 
 Initialization helps signal propagation, but does not guarantee convergence or optimize performance. It also only controls the starting point; training can still be destabilized later by large updates.
 ### Gradient Clipping
+**Gradient clipping** caps how big a single update step can be without changing its direction. For a chosen threshold $c$, with $g$ being the gradient vector:
+- if $||g|| ≤ c$, no changes
+- if $||g|| > c$, rescale it to have length exactly c ($g=c*g/||g||$)
+Since it is only multiplied by a positive scalar, the direction is unchanged. An update step then has a size at most 

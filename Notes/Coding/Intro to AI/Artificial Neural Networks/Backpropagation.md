@@ -95,4 +95,14 @@ Repeat for remaining batches and epochs.
 If an activation feeds into several units, sum the contributions:
 ![[Pasted image 20261114192927.png|491]]
 With $\delta_u=\frac{dl}{dz_u}$ and $\delta_v=\frac{dl}{dz_v}$:$$\frac{dl}{da}=r\delta_u+s\delta_v$$
-In this case, a change to a changes both $z_u
+In this case, a change to a changes both $z_u$ and $z_v$, so to find the change in loss $l$ w.r.t. $a$, we **add** the effects of both paths. All contributions should be collected before continuing upstream.
+#### Training with Backpropagation
+Overall, the training steps are:
+1. Initialize weights randomly and biases (usually as zero).  
+2. Forward pass: compute activations and retain intermediate values.
+3. Compute the loss for the current batch.
+4. Backward pass: compute all parameter gradients (chaining derivatives),  using error signals to save on computations..
+5. Gradient step: update the parameters using those gradients.
+6. Repeat for remaining batches and epochs.
+
+Backpropagation is step 4. The optimizer (gradient descent) does step 5. 

@@ -144,10 +144,18 @@ There are multiple ways to measure weight size. We can either **sum absolute val
 - L1 sees them as equal (4 = 2 + 2)
 - L2 prefers (2,2), as squaring them punishes one large entry more than two smaller ones.
 L2 favours spreading weight evenly, while L1 ignores distribution.
-
-##### Norm ()
+##### Norm (Length)
 A **norm** assigns a non-negative 'length' to a vector:
 ![[Pasted image 20261115171506.png]]
 - A norm is non-negative and is zero only for the zero vector. 
 - Scaling a vector by c scales its norm by |c|.
 - The triangle inequality: ‖u + v‖ ≤ ‖u‖ + ‖v‖
+##### $ℓ1$ and $ℓ_2$ Regularization 
+The combined objective:$$J_{reg}=J_{data}+\lambda_1||w||_1+\frac{\lambda_2}{2}||w||_2^2$$
+The L1 term sums absolute weight values; the L2 sums squared weight values.
+**L1 Regularization:**
+- Can promote sparsity by pushing weights to exactly zero.
+- Supports feature selection, especially in linear models.
+**L2 Regularization**:
+- Shrinks all weights, usually stays dense.
+- Promotes stability, small distributed weights.

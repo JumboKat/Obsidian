@@ -36,3 +36,16 @@ Tanh's max derivative is 1 at 0, but it also saturates as you move away from the
 ReLU's derivative is 1 for positive preactivations and 0 for negative ones. It avoids saturation for positive values, but not for negative values. 
 #### Dying ReLU Problem
 **Sparsity** means that many entries are exactly zero. ReLU produces sparse activations because it outputs zero for non-positive inputs (including at zero). The activations are sparse, meaning for any given input, many hidden units output 0. This does not necessarily mean that the weights are zero. 
+
+During backpropagation, the signal passing through that unit is multiplied by its activation derivative. Since ReLU's derivative is 0 for z < 0, this means the signal becomes zero. No update happens through that unit. For a single example, this is fine since other examples can still update the unit. The problem arises when a unit is inactive for all training inputs. This means that:
+- its derivative is 0 on every example
+- It receives no data-loss gradient
+- its weights stop being updated
+- nothing pushes z back above 0, and it stays inactive ("dead")
+
+The unit no longer contributes to the network. It is possible for dead units to revive if an earlier layer's weights change and shifts its z to become positive. This is the **Dying ReLU Problem**
+#### Leaky ReLU
+Furthermore, ReLU's derivative of 1 on the positive side avoids the shrinking effect of the sigmoid, but there are still other sources of attenuation (incoming activations, downstream weights, etc.), so ReLU helps, but does not solve the vanishing gradient.
+
+![[Pasted image 20261114213137.png]]
+The **Leaky ReLU** mitigates the dying ReLU problem by using a small slope $\alpha$ for negative inputs. This makes the negative side's derivative non-zero, allowing a unit with z < 0 to receive some gradient, allowing it to recover instead of dying.

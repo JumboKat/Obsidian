@@ -65,7 +65,14 @@ And loss w.r.t. $b_2$:
 
 In the end we get:
 ![[Pasted image 20261114185906.png]]
-
+![[Pasted image 20261114190253.png]]
+##### Step 4: Error Signals
+Some derivative terms are used multiple times ($\frac{dl}{d\hat{p}}*\frac{d\hat{p}}{dz_2}=\hat{p}-y$). Save them as **error signals:**
+- $\delta_2=\frac{dl}{d\hat{p}}*\frac{d\hat{p}}{dz_2}=\hat{p}-y$  
+- $\delta_1=\delta_2 \cdot \frac{dz_2}{da_1} \cdot \frac{a_1}{dz_1} =\delta_2\cdot w_2\cdot a_1(1-a_1)$ 
+Hence, we can rewrite each partial derivative as:
+![[Pasted image 20261114190930.png]]
+**δₗ = ∂ℓ/∂zₗ** 
 
 ##### Backward Pass:
 ![[Pasted image 20261114183233.png|170]]

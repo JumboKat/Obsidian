@@ -161,5 +161,18 @@ The L1 term sums absolute weight values; the L2 sums squared weight values.
 - Promotes stability, small distributed weights.
 #### Dropout
 **Dropout** randomly sets some activations to zero temporarily during training. The goal is to reduce overfitting by discouraging the reliance on particular units always being available. Repeating this for different units forces the model to make predictions without relying too heavily on certain combinations of units. While training loss may increase, the goal is to increase validation performance by improving generalization. 
+##### Scaling
+![[Pasted image 20261115174933.png]]
+The **dropout rate** $p$ is the probability that an activation is dropped, with the probability of it being retained being $1-p$. For an activation that equals 4 before dropout and is dropped half the time, the average value is 2. Dividing each retained activation by its retainment probability ($1-p=0.5$) doubles it, lifting its average to 4. This **scaling** compensates for the activations that were dropped. 
 
-The 
+In general, an activation $a$ = 0 when dropped, and $a/(1-p)$ when retained. Scaling keeps the activation magnitude comparable to ordinary use. 
+
+Activations should not be dropped during inference. Because retained activations were scaled during training, no additional dropout scaling is needed at inference. Keras automatically handles this distinction:
+- Dropout is active for training inside `model.fit`
+- Inactive for validation, `model.evaluate`, and `model.predict`
+### Inference and Further Learning
+- **Further learning** means updating parameters.
+- **Online learning** 
+- **Fine-tuning**: further training an already-trained model.
+- **Continual learning** studies from successive data/tasks while retaining earlier capabilities
+- 

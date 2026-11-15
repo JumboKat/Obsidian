@@ -70,12 +70,29 @@ In the end we get:
 Some derivative terms are used multiple times ($\frac{dl}{d\hat{p}}*\frac{d\hat{p}}{dz_2}=\hat{p}-y$). Recomputing them results in a lot of waste. Save them as **error signals:**
 - $\delta_2=\frac{dl}{d\hat{p}}*\frac{d\hat{p}}{dz_2}=\hat{p}-y$  
 - $\delta_1=\delta_2 \cdot \frac{dz_2}{da_1} \cdot \frac{a_1}{dz_1} =\delta_2\cdot w_2\cdot a_1(1-a_1)$ 
-Hence, we can rewrite each partial derivative as:
+Hence, we can rewrite each partial derivative/gradients as:
 ![[Pasted image 20261114190930.png]]
+
+Which is the same as:
+![[Pasted image 20261114192408.png]]
+
 $\delta_2$ is the sensitivity of the loss to $z_2$ (output layer), and δₗ = ∂ℓ/∂zₗ is how sensitive the loss is to changes in $z_1$ (hidden layer). These are error signals, and the index matches the layer and is tied to z, since every parameter in each layer enters the loss through z. If you know how loss responds to a layer's z, you're one cheap step away from the gradient of any single weight or bias in that layer.
 
 Additionally, a hidden unit does not need its own target value; its error signal describes how a small change to its preactivation would affect the final loss.
 
 By reusing the error signals, we can avoid recomputing the same derivative products for different parameters.
-##### Backward Pass:
-
+##### Step 5: Gradient Descent
+Now with all four gradients, we can update every parameter with the same rule:
+```python
+w1 = w1 - alpha * grad_loss_w1
+b1 = b1 - alpha * grad_loss_b1
+w2 = w2 - alpha * grad_loss_w2
+b2 = b2 - alpha * grad_loss_b2
+```
+##### Step 6: Repeat
+Repeat for remaining batches and epochs.
+#### Branching
+If an activation feeds into several units, sum the contributions:
+![[Pasted image 20261114192927.png|491]]
+With $\delta_u=\frac{dl}{dz_u}$ and $\delta_v=\frac{dl}{dz_v}$:$$\frac{dl}{da}=r\delta_u+s\delta_v$$
+In this case, a change to a changes both $z_u

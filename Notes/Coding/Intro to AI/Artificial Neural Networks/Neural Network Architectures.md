@@ -1,0 +1,5 @@
+In practice, the number of weights in a NN grows rapidly, making training difficult. Many architectures use explicit **inductive biases**, which are assumptions a learning algorithm relies on to generalize on unseen examples. It constrains or shapes the range of possible predictions to help the model select among multiple plausible solutions that may have a similar level of fit to the data. Without such bias, a model cannot reliably generalize beyond its training examples.
+
+For example, logistic regression exhibits strong inductive bias because it assumes that the input-output relationship can be modelled by a linear function, whereas high-degree polynomials impose a weaker assumption.
+
+**Convolutional Neural Networks (CNNs)** are a class of NNs characterized by strong inductive bias. They are the backbone of modern vision systems, including autonomous vehicles.

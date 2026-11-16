@@ -13,3 +13,6 @@ To program an FPGA, you write a giant configuration file known as the **bitstrea
 There are two major caveats when dealing with PL:
 - **Building the machine is slow; running it is fast**: working out how to place and wire your design onto the grid requires difficult optimization; generating a bitstream can take 10-20 mins just for one NAND gate. Once loaded, however, it responds in ns.
 - **The machine does not exist until it is loaded**: only until xmutil loadapp is ran does the NAND gate exist.
+
+The Kria's PL is built from four kinds of resource:
+- **LUT (Look-Up Table)**: a tiny programmable memory you fill so it outputs

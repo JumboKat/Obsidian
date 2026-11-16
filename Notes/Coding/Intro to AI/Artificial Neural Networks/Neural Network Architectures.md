@@ -24,3 +24,4 @@ The Sobel $x$ kernel ($K_x$) estimates how fast image intensity changes across c
 
 Transposing the Sobel $x$ kernel gives the Sobel $y$ kernel. It does the same, but for horizontal edges row-by-row.
 ### Central Computational Idea
+In image processing, the kernel values are manually specified. CNNs learn their kernels and biases automatically during training.

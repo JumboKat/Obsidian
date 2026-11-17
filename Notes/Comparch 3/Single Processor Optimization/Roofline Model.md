@@ -12,4 +12,6 @@ P = 64 GFLOPS/s, BW = 20 GB/s
 - Memory limit: Q/BW = $\frac{2.4 GB}{20}=120ms$
 Memory sets the time. Making arithmetic faster does nothing, so we should decrease bytes or increase bandwidth.
 ### Arithmetic Intensity
-**Arithmetic intensity** essentially means how much work is done for every byte brought in. It determines whether compute or memory 
+**Arithmetic intensity** essentially means how much work is done for every byte brought in. It determines whether compute or memory wins:$$AI=\frac{W}{Q}$$Low AI points to a memory limit, while a high AI means a compute limit. AI depends on the algorithm and how well the caches work. The same matmul with 0.25AI can have 4 with blocking.
+### Which Bytes Count?
+![[Pasted image 20261117182636.png|379]]

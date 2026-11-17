@@ -1,0 +1,1 @@
+The **roofline model** examines which optimization technique is worth trying. The source of a bottleneck can differ depending on the task at hand.

@@ -34,4 +34,4 @@ This brings the total number of words from $N^3$ down to $(N/T)3\times 2T^2=2N^3
 The remaining 8 KB of the cache is deliberately left as slack. We can't use the entire cache due to set-associativity. 
 ### The Modern Solution
 ![[Pasted image 20261117174557.png|436]]
-Instead of just L1, most architectures block for every level in memory. 
+Instead of just L1, most architectures block for every level in memory. A library call is typically used, since it is many times faster than a hand-written loop.

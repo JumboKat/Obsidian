@@ -6,5 +6,8 @@ Usually, this is done via **invalidation**: Before a core writes, all other copi
 
 Coherence tracks whole cache lines, not just variables (when any variable is read, its whole line is transferred).
 ### Coherence vs. Consistency
-Coherence means that all processors agree on one order of writes to the same address (the **coherence order**) and eventually read the latest write in that order. This means two things:
+Coherence means that all processors agree on one order of writes to the same address (the **coherence order**) and eventually read the latest write in that order. This requires two things:
+- **Write propagation**: a write is visible to all other processors.
+- **Write serialization**: all processors sees the same order of writes to one location. No two writes happen in parallel.
 
+Consistency applies to all memory locations. It deals with the problem: in what order may accesses to different addresses appear to other processors?

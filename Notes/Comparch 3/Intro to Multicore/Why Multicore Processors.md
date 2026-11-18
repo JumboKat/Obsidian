@@ -15,7 +15,10 @@ Two cores deliver 60% more throughput for roughly the same amount of power as th
 
 **Pollack's Rule**: single-core performance scales with roughly the square root of area. So, spending 2x the area (transistors) on a bigger core only gives 1.41x the performance, whereas spending it on two cores gives 2x the performance.
 ### Multicore Hierarchy
+![[Pasted image 20261117202505.png]]
 - **Chip multiprocessor (CMP)**: several cores with a shared cache (usually) on one chip or package.
 - **Symmetric multiprocessor (SMP)**: several processors with equal access to one memory.
 - **cc-NUMA server**: several sockets, each with its own memory but one shared address space.
-- **Cluster**: many servers, each a shared-memory machine, connected by a network.
+- **Cluster**: many servers, each a shared-memory machine, connected by a network. Message passing between nodes, shared memory within nodes.
+### Cache Organizations
+![[Pasted image 20261117202515.png]]

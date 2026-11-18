@@ -51,12 +51,12 @@ The modern solution is to share, but partition when needed. E.g. assign cache wa
 - The LLC is sliced; a fixed address hash picks the home slice of each line, so lookups spread over all slices and cache bandwidth grows with the core count. This also means every memory access has a distance depending on which slice/chiplet/socket its located in.
 #### Shared-Memory Abstraction
 Despite it being sliced, all threads see memory as one address space. Communication does not need to be made explicit. This comes with three requirements:
-- **Coherence**
+- [[Cache coherence]]
 - **Consistency**: rules for the order in which accesses to different locations become visible.
 - **Synchronization**: atomic operations to build locks and barriers.
 
 Private cores complicate shared memory:
-- **Coherence**: two cores can hold different values for the same address; requires protocols such as MESI.
+- [[Cache coherence||Coherence]]: two cores can hold different values for the same address; requires protocols such as MESI.
 - **Consistency**: in what order do different addresses become available?
 - **Scalability**: broadcasting every write to 200 cores does not scale; solved by [[networks]] and [[interconnects]].
 #### UMA vs. NUMA
@@ -74,6 +74,13 @@ $$Y=e^{-DA}$$
 - D = defect density (defects/$cm^2$)
 - A = die area ($cm^2$)
 Yield falls exponentially with area; doubling the area hurts more than doubling the defect count.
+Ex:
+A monolithic $8cm^2$ die has yield $Y=e^{-0.8} = 45$%
+A 1$cm^2$ chiplet: $Y=e^-0.1=90$%. Translates to 2x more usable silicon per wafer.
 
-- 
+- One core chiplet design can be used in multiple different products. A server part just uses more of them. This reuse cuts design costs.
+
+Chiplets do increase cost, however. Die-to-die links add latency and energy per bit. Packaging is also more complex.
+
+
  

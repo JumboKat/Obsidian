@@ -14,3 +14,8 @@ Since energy = power $\times$ time, the winner depends on $P_{static}$
 A task takes 1s to compute at full speed ($V_0,f_0$), with $P_{dyn}=4 W$
 **DVFS**: half the frequency and 80% of the voltage, so $f=0.5f_0, V=0.8V_0$:
 $$\frac{P_{dyn}}{P_{dyn,0}}=0.8^2\times 0.5=0.32$$
+So $P_{dyn}=0.32\times 4\ W=1.28\ W$ for 2 s.
+
+Now compare:
+![[Pasted image 20261117193455.png]]
+With small static power, slowing down barely costs extra static energy, so DVFS wins. With large static power, running longer means paying more of that static energy cost, so race-to-idle wins. Most systems have large static and platform power, so DVFS is rarely used. Instead, the strategy is to optimize speed, which also minimizes energy cost; every speed up also saves energy.

@@ -22,3 +22,17 @@ Two cores deliver 60% more throughput for roughly the same amount of power as th
 - **Cluster**: many servers, each a shared-memory machine, connected by a network. Message passing between nodes, shared memory within nodes.
 ### Cache Organizations
 ![[Pasted image 20261117202515.png]]
+#### LLC: Private vs Shared
+There are two ways to organize the LLC: either give each core its own slice (private), or let all cores share one big pool.
+##### Private LLC
+- Low and uniform hit latency; cache is right by the core.
+- Capacity is fixed at slice size (C/N; total capacity / number of cores).
+- Copies of shared data is replicated in each cache, wasting space.
+- No competition for capacity, but memory BW is still shared.
+- Cache-to-cache transfers via coherence protocol.
+##### Shared LLC
+- Higher hit latency and depends on slice distance (a shared LLC is split into slices across the chip).
+- Each core has access to the entire cache's capacity.
+- There only exists one copy of a shared data.
+- Competition between cores; one thread can evict another's data.
+- 

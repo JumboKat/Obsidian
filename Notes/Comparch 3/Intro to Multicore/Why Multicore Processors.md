@@ -11,4 +11,11 @@ The industry moved to multicore as single core hit physical limits:
 Given the baseline of 1 core at power 1 and throughput 1. 
 - For a faster single core at 1.25f, you would need 1.25V, meaning $P=1.25^3=1.95$ for ≤ 1.25x the speed.
 - With two cores at (0.8V, 0.8f):$$P=2\times 0.8^3=1.02 \\ throughput =2\times 0.8 = 1.6$$
-So for the same
+Two cores deliver 60% more throughput for roughly the same amount of power as the baseline.
+
+**Pollack's Rule**: single-core performance scales with roughly the square root of area. So, spending 2x the area (transistors) on a bigger core only gives 1.41x the performance, whereas spending it on two cores gives 2x the performance.
+### Multicore Hierarchy
+- **Chip multiprocessor (CMP)**: several cores with a shared cache (usually) on one chip or package.
+- **Symmetric multiprocessor (SMP)**: several processors with equal access to one memory.
+- **cc-NUMA server**: several sockets, each with its own memory but one shared address space.
+- **Cluster**: many servers, each a shared-memory machine, connected by a network.

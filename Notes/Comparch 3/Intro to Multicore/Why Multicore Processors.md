@@ -66,3 +66,14 @@ NUMA is the modern standard for connecting cores to memory:
 - Large sockets are internally also NUMA.
 - **First-touch policy**: a common Linux default policy places a newly allocated page on the first node of the thread that first touches it.
 #### Chiplets
+A **die** is a single block of silicon cut from a wafer with a complete circuit on it. Chip factories print hundreds of identical copies of a design onto one big silicon wafer, then cut it into individual dies. A chip is a die (or several) mounted in a package with pins or pads. A **chiplet** is a small die meant to be combine with others in one package, rather than being the whole processor itself. So why build one processor out of several small dies rather than one big one?
+
+- **Yield**: manufacturing defects can land randomly on a wafer, usually runs the die it lands on. The bigger a die is, the more likely it is defective. Poisson's simplified model states:
+$$Y=e^{-DA}$$
+- Y = yield, the fraction of dies that come out without defects.
+- D = defect density (defects/$cm^2$)
+- A = die area ($cm^2$)
+Yield falls exponentially with area; doubling the area hurts more than doubling the defect count.
+
+- 
+ 

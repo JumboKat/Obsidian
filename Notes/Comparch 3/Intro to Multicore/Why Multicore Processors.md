@@ -35,4 +35,10 @@ There are two ways to organize the LLC: either give each core its own slice (pri
 - Each core has access to the entire cache's capacity.
 - There only exists one copy of a shared data.
 - Competition between cores; one thread can evict another's data.
-- 
+- Communication occurs through interconnects, coordinated by the LLC/home agent.
+##### Example
+Four cores, 8 MB of LLC. Thread A has a 6 MB working set, B-D need 0.5 MB each.
+- Private: each core gets exactly 2 MB. A needs 6 MB, so it misses constantly. B, C, and D only use 0.5 MB, with the rest being wasted.
+- Shared: The total capacity accommodates all four cores. Capacity is allocated to whoever needs it.
+
+### four 

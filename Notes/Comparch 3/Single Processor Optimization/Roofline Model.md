@@ -17,9 +17,23 @@ Memory sets the time. Making arithmetic faster does nothing, so we should decrea
 ![[Pasted image 20261117182636.png|379]]
 The graph is a roofline model showing the predicted performance ceiling. The flat roof represents the compute peak P. The slope, representing $AI\times BW$, depends on which level in memory the bytes are coming from. Q only counts bytes that have actually crossed the DRAM link, after caches have done what they can. If the entire dataset fits in the cache, BW is based on the cache's access speed. Otherwise, old lines get evicted before they can be used again, so every access ends up coming from DRAM.
 ### The Model
-![[Pasted image 20261117191032.png|350]]
+![[Pasted image 20261117191505.png|377]]
 The roofline model predicts the bound for performance using the following formula:
 $$Perf≤min(P,AI\times BW)$$
 - $AI\times BW$ is the slanted line. More work/line means more FLOPs as long as memory can keep up.
 - P is the flatline; the core's peak.
-The two meet at the ridge point, where AI
+The two meet at the ridge point, where AI = P/BW = 64/20 = 3.2 FLOP/B
+- Left of the ridge: memory is the bottleneck.
+- Right of the ridge: compute is the bottleneck.
+### Optimizations
+![[Pasted image 20261117191521.png|377]]
+- Blocking, locality, and smaller data types reduce, moving the point right.
+- Vectorization raises the ceiling.
+- Prefetching helps a memory-bound point reach the slope, but doesn't change AI.
+- Order matters; vectorizing the first does nothing since it is under the memory first. Block first, then vectorize.
+### Limitations
+The roofline model is still used today, but it has limits:
+- It is an upper bound. A point far below it points to a different issue entirely (latency, dependencies, branch mispredictions).
+-  Datasheet P and BW are rarely reached; measured ceilings are more accurate.
+- A single core usually can't use the chip's full bandwidth, so use a single-core BW for single-threaded code.
+- One kernel = one point; a whole program needs a profiler.

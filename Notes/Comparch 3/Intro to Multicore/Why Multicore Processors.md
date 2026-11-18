@@ -56,4 +56,13 @@ Despite it being sliced, all threads see memory as one address space. Communicat
 - **Synchronization**: atomic operations to build locks and barriers.
 
 Private cores complicate shared memory:
-- **Coherence**: two cores can hold different values for the same address
+- **Coherence**: two cores can hold different values for the same address; requires protocols such as MESI.
+- **Consistency**: in what order do different addresses become available?
+- **Scalability**: broadcasting every write to 200 cores does not scale; solved by [[networks]] and [[interconnects]].
+#### UMA vs. NUMA
+![[Pasted image 20261118180739.png]]
+NUMA is the modern standard for connecting cores to memory:
+- Every multi-socket system is NUMA, since each socket has its own memory controller. It is also still **cache-coherent (cc-NUMA)**. Caches are consistent across nodes, so software still sees one share address space. Only performance differs.
+- Large sockets are internally also NUMA.
+- **First-touch policy**: a common Linux default policy places a newly allocated page on the first node of the thread that first touches it.
+#### Chiplets

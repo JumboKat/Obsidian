@@ -49,6 +49,19 @@ This protocol can only work with write-through; with write-back, there is no way
 - When a holder writes to a line that is already S, its cache sends BusUpgr and invalidates all other copies, making its own copy M. If it was initially I, it would send a BusRdX instead of BusUpgr.
 #### MESI
 ![[Pasted image 20261118204043.png]]
-The **MESI** protocol adds an **exclusive** state E. A cache line that is the sole copy of its line. This means a write to it does not require a bus transaction, since there's nothing to invalidate. On a read miss, if the cache line isn't S in another cache, it becomes E in the reading cache.
+The **MESI** protocol adds an **exclusive** state E. A cache line that is the sole copy of its line. This means a write to it does not require a bus transaction, since there's nothing to invalidate; E transitions to M silently.  On a read miss, if the cache line isn't S in another cache, it becomes E in the reading cache.
 
-The E state costs an extra bus line (a read miss can either go from I to S or E) and requires a more complex controller. It also must wait for all snoopers to 
+The E state costs an extra bus line (a read miss can either go from I to S or E) and requires a more complex controller. It also must wait for all snoopers before choosing between S or E on a write miss (must check if others are sharing). This was not a problem in MSI, where a miss always went to S. Its inclusion does however save on bus transactions on every write by half, and the costs are relatively small.
+#### MOESI and MESIF
+**MOESI** adds the **O**wned state, meaning a line is dirty and shared. When another core reads an M line, the owner goes from M to O and sends the data cache-to-cache without updating the memory. The owner writes back later. Used by AMD, it is useful when memory is slow/far away. MOESI is the general implementation, while MSI and MESI are subsets of it.
+
+**MESIF** is used by Intel and adds the **F**orward state. An F line is marked the sole clean sharer and flushes whenever a read is requested, ensuring there are no duplicate responses.
+#### Invalidate vs. Update Protocols
+![[Pasted image 20261118205338.png|503]]
+With invalidate, a write removes other copies; later readers miss. With update, a write sends the new word to all other sharers, guaranteeing read hits. 
+
+A **write run** is the number of consecutive writes by one processor to a line before another processor access it. 
+- Ex: R1 W1 R1 W1 W2 R2 has a run of 2.
+
+The protocol that wins depends on the expected size of write runs.
+

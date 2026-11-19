@@ -63,5 +63,7 @@ With invalidate, a write removes other copies; later readers miss. With update, 
 A **write run** is the number of consecutive writes by one processor to a line before another processor access it. 
 - Ex: R1 W1 R1 W1 W2 R2 has a run of 2.
 
-The protocol that wins depends on the expected size of write runs.
+The protocol that wins depends on the expected size of write runs, as the graph shows. With update, a long write run means several unnecessary updates (they aren't being used) as opposed to invalidate, which incurs a miss, but only at the end of a string of writes. Since long writes are common (a core updates its own data repeatedly), all mainstream CPUs use invalidation.
+### Coherence Misses
+The fourth C in cache miss types. A **coherence miss** occurs when 
 

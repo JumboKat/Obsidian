@@ -26,6 +26,9 @@ The following are signals on the bus put on by cache controllers and seen by eve
 - **BusWr**: issued on a store with write-through protocol. All other copies are invalidated.
 ### Snooping Cache Controller
 ![[Pasted image 20261118202448.png|524]]
+The cache controller includes:
+- **Data buffer**: incoming data is buffered and sent to the cache when it is not busy.
+- 
 ### Coherence Protocols
 #### Valid-Invalid
 ![[Pasted image 20261118200904.png|381]]

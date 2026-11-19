@@ -19,4 +19,18 @@ The processor can send the following signals to its cache controller:
 - **PrWr**: the processor writes to the cache. On a hit, if the cache line is tagged M or E, no further requests. If the cache line is marked shared (S), send a BusUpgr signal. On a miss, signal BusRdX (BusWr if write-through)
 
 The following are signals on the bus put on by cache controllers and seen by every snooper:
-- **BusRd**: issued when a PrRd leads to a miss. If another processor has the same line tagged M, it flushes it to the bus, and updates the requester and all ot
+- **BusRd**: issued when a PrRd leads to a miss. If another processor has the same line tagged M, it flushes it to the bus, and updates the requester and all others holding the line. The line now becomes S.
+- **BusRdX**: occurs on a write miss. Get a copy of the value and sole ownership. All other copies are invalidated. An M holder supplies the value first.
+- **BusUpgr**: occurs when writing to a line that is shared (write hit). Still invalidate all others.
+- **Flush**: occurs when replying to a snoop or evicting a dirty line. Sends the data out to the bus, received by memory and the requester.
+- **BusWr**: issued on a store with write-through protocol. All other copies are invalidated.
+### Coherence Protocols
+#### Valid-Invalid
+![[Pasted image 20261118200904.png|381]]
+The simplest form of protocol. Implements write-through with invalidation. Every cache line has two possible states: **Valid** and **Invalid**. Every write goes on the bus and to memory (write-through). Other caches that see BusWr for a line they hold will invalidate it. Their next read misses and must read from memory. Memory is always made up-to-date, however every store uses bus bandwidth.
+- Ex: for 8 cores, each store per 10 instructions at 2 GIPS, 8 B per store: $8\times 0.2\ G\times 8\ B=12.8GB/s$ of write traffic alone.
+This protocol can only work with write-through; with write-back, there is no way to know when data becomes stale. This protocol would need a third state.
+#### MSI
+**MSI** protocol has three states:
+- **M**odified: the cache line has been modified and is the only valid copy; memory holds a stale copy.
+- **S**hared: 

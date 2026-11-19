@@ -108,4 +108,8 @@ Given $T_1=0.135s$, $T_P=0.070s$
 **Strong scaling**: fixed input, more cores. Ideally, $T_P∝1/P$. Work becomes faster.
 **Weak scaling**: problem grows with cores. Amount of work done in the same time grows. Ideally, $T_P$ stays constant.
 #### Karp-Flatt
-The **Karp-Flatt** metric flips Amdahl's on its head; instead of assuming a serial fraction and calculating speedup, it instead measures speedup and solves for the serial fraction. 
+The **Karp-Flatt** metric flips Amdahl's on its head; instead of assuming a serial fraction and calculating speedup, it instead measures speedup and solves for the serial fraction e:
+$$e=\frac{1/S(P)-1/P}{1-1/P}$$
+- If $e$ is constant as $P$ grows, then a true serial fraction is the limiter; parallelize more code.
+- If $e$ is increasing with $P$, overhead is growing with the core count P, which could be due to synchronization, load imbalance, saturated memory bandwidth, or coherence traffic.
+- 

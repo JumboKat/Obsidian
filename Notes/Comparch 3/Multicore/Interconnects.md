@@ -25,7 +25,7 @@ With interconnects, the LLC is split into **slices**; accesses to data on remote
 - **Merit**: $I/dD$
 #### X-Y Routing
 ![[Pasted image 20261119161854.png]]
-Each node has an (x,y) coordinate. Subtract the source coord. from the destination coord. to find out the direction and distance. When routing, we move in the X first, then Y. This is deterministic and avoids deadlock. **Livelock**, where packets keep moving but never arrive, is also avoided. **Virtual channels**: separate buffer queues for different directions. If one flit is deadlocked in one direction, packets going to other directions can still pass through by going to a separate queu. This also helps prevent deadlock (though alone cannot entirely avoid it). 
+Each node has an (x,y) coordinate. Subtract the source coord. from the destination coord. to find out the direction and distance. When routing, we move in the X first, then Y. This is deterministic and avoids deadlock. **Livelock**, where packets keep moving but never arrive, is also avoided. **Virtual channels**: separate buffer queues for different directions. If one flit is deadlocked in one direction, packets going to other directions can still pass through by going to a separate queue. This also helps prevent deadlock (though alone cannot entirely avoid it). 
 #### Flow Control
 ![[Pasted image 20261119162450.png|479]]
 There are three protocols for controlling the flow of packets:

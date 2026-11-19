@@ -31,4 +31,8 @@ Each node has an (x,y) coordinate. Subtract the source coord. from the destinati
 There are three protocols for controlling the flow of packets:
 - **Store-and-forward (SAF)**: a router receives the whole packet before forwarding. $T_{SAF}=H(t_r+F)$. 
 - **Virtual cut-through (VCT)**: forward a flit as soon as it arrives, buffers the whole packet when blocked.
-- **Wormhole**: like VCT, but only for a few flits at a time. This makes it so that on a block, flits are spread out over several routers. 
+- **Wormhole**: like VCT, but only for a few flits at a time. This makes it so that on a block, flits are spread out over several routers. $T_{CT}=H(t_r+1)+(F-1)=Ht_r+F$
+	- Time = # hops(router time + 1) + (# flits - 1) = $Ht_r+F$ 
+	- router time + 1 = head flit, # flits -1 = rest of flits
+- Wormhole is popular as it minimizes buffer size.
+- 

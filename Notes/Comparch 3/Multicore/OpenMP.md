@@ -97,4 +97,8 @@ $T1$: time of the best serial program; $T_P$: time on P cores.
 - Efficiency: $E(P)=S(P)/P$
 - Cost: $C(P)=PT_P$
 - Overhead: $T_o(P)=PT_P-T_1$, includes all non-useful work (serial parts, idling (imbalance), synchronization, extra memory stalls)
+##### Example
+Given $T_1=0.135s$, $T_P=0.070s$
+- $S=0.135s/0.070s=1.93$
+- $S
 

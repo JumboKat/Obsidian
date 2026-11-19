@@ -49,7 +49,7 @@ OpenMP allows multiple threads to divide up the work of a loop in parallel. The 
 ![[Pasted image 20261119123107.png|407]]
 For this to work, iterations must be independent from each other.
 
-For parallel non-looping code, tasks instead enter queues. Idle threads take them (called **work stealing**), which balances the load. It works well for recursion, irregular data, and pipelines.
+For parallel non-looping code, tasks instead enter queues. Idle threads take them (called **work stealing**, popping the oldest/largest tasks), which balances the load. It works well for recursion, irregular data, and pipelines.
 #### Reduction
 ![[Pasted image 20261119123305.png|346]]
 **Reduction** is a method for 'reducing' the output of multiple threads down to a single result. Each thread gets private copies of the data. They work in parallel without sharing or synchronization. Then, at the end, results are combined into the original variable.
@@ -90,4 +90,11 @@ With a parallel pragma, each thread initializes its own quarter of the data, mea
 - **dynamic, c**: idle threads grab a chunk f c from a shared counter.
 - **guided, c**: chunk size scales with the remaining process code.
 - **auto/runtime**: let runtime or `omp_schedule` decide.
-Runtime is set by the slowest thread. On heterogenous, 
+Runtime is set by the slowest thread. On heterogenous, static is a load-balancing problem. Use dynamic/guided or tasks.
+### Scalability
+$T1$: time of the best serial program; $T_P$: time on P cores.
+- Speedup: $S(P)=T_1/T_P$
+- Efficiency: $E(P)=S(P)/P$
+- Cost: $C(P)=PT_P$
+- Overhead: $T_o(P)=PT_P-T_1$, includes all non-useful work (serial parts, idling (imbalance), synchronization, extra memory stalls)
+

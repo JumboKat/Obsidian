@@ -4,7 +4,7 @@ A bus is a single medium that is sequential. Users send requests to a **Bus Arbi
 There are two independent fixes:
 - Replace the bus with a scalable network, which has no shared medium and allows multiple communications at a time.
 - Replace broadcast with a directory that contacts only caches that are on the line.
-### Networks
+### Network-on-Chip (NoC)
 ![[Pasted image 20261119154058.png]]
 - A **node** on the network represents a core/cache tile, memory controller, and I/O connected to a router via a network interface. 
 - A **link/channel** is the wires between two routers, with width $w$ bits. It facilitates one transfer per cycle.
@@ -25,7 +25,7 @@ With interconnects, the LLC is split into **slices**; accesses to data on remote
 - **Merit**: $I/dD$
 #### X-Y Routing
 ![[Pasted image 20261119161854.png]]
-Each node has an (x,y) coordinate. Subtract the source coord. from the destination coord. to find out the direction and distance. When routing, we move in the X first, then Y. This is deterministic and avoids deadlock. **Livelock**, where packets keep moving but never arrive, is also avoided. **Virtual channels**: separate buffer queues for different directions. If one flit is deadlocked in one direction, packets going to other directions can still pass through by going to a separate queue. This also helps prevent deadlock (though alone cannot entirely avoid it). 
+Each node has an (x,y) coordinate. Subtract the source coord. from the destination coord. to find out the direction and distance. When routing, we move in the X first, then Y. This is deterministic and avoids deadlock. **Livelock**, where packets keep moving but never arrive, is also avoided. **Virtual channels (VC)**: separate buffer queues for different directions. If one flit is deadlocked in one direction, packets going to other directions can still pass through by going to a separate queue. This also helps prevent deadlock (though alone cannot entirely avoid it). 
 #### Flow Control
 ![[Pasted image 20261119162450.png|479]]
 There are three protocols for controlling the flow of packets:
@@ -37,3 +37,11 @@ There are three protocols for controlling the flow of packets:
 - Wormhole is popular as it minimizes buffer size.
 #### Internal Router Structure
 ![[Pasted image 20261119174807.png|478]]
+The diagram above shows the internal structure of a router in a NoC. There exist five ports in a mesh: N, E, S, W, and L (Local, the tile attached to this router). Each port has 2 VC queues, with 10 in total. A $5\times 5$ crossbar connects any input to any output. There are six pipeline stages the head flit goes through:
+- **Buffer Write (BW):** the flit arrives and is written to a VC buffer.
+- **Route Compute (RC)**: read the destination and pick the output port.
+- **VC Allocation (VA)**: Reserve a free VC in the next router's input.
+- **Switch Allocation (SA)**: Each cycle, arbitrate which VC gets to use each output port, and set the crossbar.
+- **Switch Traversal (ST)**: The flit crosses the crossbar.
+- **Link Traversal (LT)**: The flit travels along the link to the next router.
+The rest of the body flits inherit the same route, skipping the RC and VA steps. Routing decisions are made once per packet, not per flit. With **credit-based flow control**, each router keeps a count of the free slots in the downstream router's VC. SA only lets a flit go if a credit is available. Real NoCs cut this down to 1-2 cycles per hop by using **lookahead routing** (compute the route for the next router in advance so that RC is off the critical path) and **speculation** (VA and SA are done in parallel, assuming VA will succeed).

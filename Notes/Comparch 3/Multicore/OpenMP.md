@@ -83,3 +83,11 @@ for (long i = 0; i < N; i++) a[i] += 2.0 * b[i];
 Without a parallel pragma, the master thread (node 0) does all the writes. Every page of a and b land in node 0's memory (due to **first touch policy**). This is the serial init. When `schedule(static)` assigns each quarter of the iterations to the threads as contiguous chunks, T0 and T1 have local access to their data, but T2 and T3 must access it remotely since all data resides on node 0, with node 1's memory controller sitting idle. This gives an average access time of $0.5\times 100+0.5\times 180=140ns$.
 
 With a parallel pragma, each thread initializes its own quarter of the data, meaning each of its pages are placed on its own node. This is the parallel init. The average access time is 100ns since all threads can access their data locally. A NUMA-aware layout doubles the bandwidth.
+#### Looping Schedules
+![[Pasted image 20261119143937.png]]
+- **Static**: equal, contiguous blocks decided at compile time. Zero run-time overhead.
+- **Static, c**: each thread's block is divided into chunks of c executed in round robin.
+- **dynamic, c**: idle threads grab a chunk f c from a shared counter.
+- **guided, c**: chunk size scales with the remaining process code.
+- **auto/runtime**: let runtime or `omp_schedule` decide.
+Runtime is set by the slowest thread. On heterogenous, 

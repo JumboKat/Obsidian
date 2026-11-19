@@ -100,5 +100,12 @@ $T1$: time of the best serial program; $T_P$: time on P cores.
 ##### Example
 Given $T_1=0.135s$, $T_P=0.070s$
 - $S=0.135s/0.070s=1.93$
-- $S
+- $E=1.93/2=0.96$
+- $T_o=2(0.070)-0.135=0.005s$
+**Superlinear speedup** is when speedup exceeds the number of cores. With P cores you get P private caches. If the data doesn't fit in one core's cache but each core's share does, every core runs faster than the serial core did because it hits in cache instead of having to go to DRAM. 
 
+![[Pasted image 20261119150859.png]]
+**Strong scaling**: fixed input, more cores. Ideally, $T_P∝1/P$. Work becomes faster.
+**Weak scaling**: problem grows with cores. Amount of work done in the same time grows. Ideally, $T_P$ stays constant.
+#### Karp-Flatt
+The **Karp-Flatt** metric flips Amdahl's on its head; instead of assuming a serial fraction and calculating speedup, it instead measures speedup and solves for the serial fraction. 

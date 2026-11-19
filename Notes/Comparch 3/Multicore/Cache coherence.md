@@ -24,6 +24,8 @@ The following are signals on the bus put on by cache controllers and seen by eve
 - **BusUpgr**: occurs when writing to a line that is shared (write hit). Still invalidate all others.
 - **Flush**: occurs when replying to a snoop or evicting a dirty line. Sends the data out to the bus, received by memory and the requester.
 - **BusWr**: issued on a store with write-through protocol. All other copies are invalidated.
+### Snooping Cache Controller
+![[Pasted image 20261118202448.png|524]]
 ### Coherence Protocols
 #### Valid-Invalid
 ![[Pasted image 20261118200904.png|381]]
@@ -31,6 +33,11 @@ The simplest form of protocol. Implements write-through with invalidation. Every
 - Ex: for 8 cores, each store per 10 instructions at 2 GIPS, 8 B per store: $8\times 0.2\ G\times 8\ B=12.8GB/s$ of write traffic alone.
 This protocol can only work with write-through; with write-back, there is no way to know when data becomes stale. This protocol would need a third state.
 #### MSI
+![[Pasted image 20261118201602.png|476]]
 **MSI** protocol has three states:
-- **M**odified: the cache line has been modified and is the only valid copy; memory holds a stale copy.
-- **S**hared: 
+- **M**odified: the cache line has been modified (dirty) and is the only valid copy; memory holds a stale copy.
+- **S**hared: the line is clean, and other caches may also hold it.
+- **I**nvalid: line is stale/invalid, the next read is a miss.
+
+- When a cache reads a line that is S, the sharer flushes it to the bus and to memory. If there is an M holder, it flushes it, and the line becomes S for every holder. 
+- When a holder writes to a line that is already S, its cache sends BusUpgr and invalidates all other copies, making its own copy M. If it was initially I, it would send a BusRdX instead of BusUpgr.

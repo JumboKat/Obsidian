@@ -69,8 +69,26 @@ The fourth C in cache miss types. A **coherence miss** occurs when a processor r
 - **True sharing miss**: the same word being accessed was written by another processor since it was last accessed; essential.
 - **False sharing miss**: the same *line* holding the word being accessed was invalidate because of a write to a different word; non-essential.
 Larger lines means fewer cold misses but more false sharing misses.
-#### Example
+#### Example: MSI Write-Back Invalidation
 Two processors A and B. Each has a direct-mapped cache with 64 blocks of 16 byte lines. All lines are initially invalid. Memory initially all zeros.
 ![[Pasted image 20261118211333.png]]
 16 byte blocks means 4 offset bits; 64 blocks means 6 index bits. This leaves two bits for the tag.
- The two addresses 1200 and 1208 have the same index, meaning they occur on the same line. The entire line spans addresses 1200, 1204, 1208, 1212. Given the 
+ The two addresses 1200 and 1208 have the same index, meaning they occur on the same line. The entire line spans addresses 1200, 1204, 1208, 1212. The following sequence of events occurs:
+ ![[Pasted image 20261118211613.png]]
+### Multilevel Caches and Inclusion
+Snooping occurs at the last private level (L2), which sits next to the bus and is less busy than L1. If L2 is inclusive of L1, a snoop that misses in L1 cannot hit in L1. This means L2 filters its snoops.
+- If L2 evicts a line, it must also evict it from L1 (back-invalidation).
+- Dirty lines in L1 are sent to L2.
+- Lines that are invalidated in L2 by the bus are invalidated in L1.
+
+Inclusiveness/exclusiveness requires tracking where copies of data are located.
+### Why Snooping does not Scale
+Snooping does not scale, because every coherence transaction must be looked up by every other cache. 
+- Ex: from each core, 2 GIPS, one bus transaction per 100 instructions means 20 M transactions/s.
+- 8 Cores: each snooper checks $7\times 20\ M=140\ M$ lookups/s
+- 64 cores: $63\times 20\ M=1.3\ G$ lookups/s
+- 256: 5.1 G lookups/s, more than the tag array can do at 3 GHz
+
+There are two fixes:
+- A scalable [[interconnects||network]] instead of a bus.
+- A [[directory]] that sends requests only to caches that have the line.

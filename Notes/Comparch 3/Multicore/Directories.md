@@ -17,3 +17,11 @@ A node can play several roles (e.g. the requester is also the home).
 #### MSI with a Directory
 ![[Pasted image 20261119184627.png]]
 MSI still uses the same states and events as before. Now, bus transactions are messages to the home, and snooped events are messages from the home. There is also no listening; a cache in S is not told about other readers; a cache in I hears nothing.
+#### Read Miss
+A read miss can lead to 1 of 3 scenarios:
+![[Pasted image 20261119184924.png]]
+- a) clean at home: local sends a request to home, who sends back the data since it holds it.
+- b) L sends a request to H. The directory says the line is dirty, so H sends a fetch request to the holder R. R sends the data back to H, who then sends the data back to L
+- b) Same as b), but R now forwards the data to L directly (while also sending a copy to H).
+#### Write Miss
+A write miss

@@ -65,5 +65,12 @@ A **write run** is the number of consecutive writes by one processor to a line b
 
 The protocol that wins depends on the expected size of write runs, as the graph shows. With update, a long write run means several unnecessary updates (they aren't being used) as opposed to invalidate, which incurs a miss, but only at the end of a string of writes. Since long writes are common (a core updates its own data repeatedly), all mainstream CPUs use invalidation.
 ### Coherence Misses
-The fourth C in cache miss types. A **coherence miss** occurs when 
-
+The fourth C in cache miss types. A **coherence miss** occurs when a processor reads a line made invalid by another processor. There are two types:
+- **True sharing miss**: the same word being accessed was written by another processor since it was last accessed; essential.
+- **False sharing miss**: the same *line* holding the word being accessed was invalidate because of a write to a different word; non-essential.
+Larger lines means fewer cold misses but more false sharing misses.
+#### Example
+Two processors A and B. Each has a direct-mapped cache with 64 blocks of 16 byte lines. All lines are initially invalid. Memory initially all zeros.
+![[Pasted image 20261118211333.png]]
+16 byte blocks means 4 offset bits; 64 blocks means 6 index bits. This leaves two bits for the tag.
+ The two addresses 1200 and 1208 have the same index, meaning they occur on the same line. The entire line spans addresses 1200, 1204, 1208, 1212. Given the 

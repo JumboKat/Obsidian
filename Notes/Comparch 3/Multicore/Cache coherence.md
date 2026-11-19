@@ -11,3 +11,4 @@ Coherence means that all processors agree on one order of writes to the same add
 - **Write serialization**: all processors sees the same order of writes to one location. No two writes happen in parallel.
 
 Consistency applies to all memory locations. It deals with the problem: in what order may accesses to different addresses appear to other processors?
+### Snoop

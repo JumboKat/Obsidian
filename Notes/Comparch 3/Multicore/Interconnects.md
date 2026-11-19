@@ -35,4 +35,5 @@ There are three protocols for controlling the flow of packets:
 	- Time = # hops(router time + 1) + (# flits - 1) = $Ht_r+F$ 
 	- router time + 1 = head flit, # flits -1 = rest of flits
 - Wormhole is popular as it minimizes buffer size.
-- 
+#### Internal Router Structure
+![[Pasted image 20261119174807.png|478]]

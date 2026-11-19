@@ -45,3 +45,5 @@ The diagram above shows the internal structure of a router in a NoC. There exist
 - **Switch Traversal (ST)**: The flit crosses the crossbar.
 - **Link Traversal (LT)**: The flit travels along the link to the next router.
 The rest of the body flits inherit the same route, skipping the RC and VA steps. Routing decisions are made once per packet, not per flit. With **credit-based flow control**, each router keeps a count of the free slots in the downstream router's VC. SA only lets a flit go if a credit is available. Real NoCs cut this down to 1-2 cycles per hop by using **lookahead routing** (compute the route for the next router in advance so that RC is off the critical path) and **speculation** (VA and SA are done in parallel, assuming VA will succeed).
+### Why No Ordered Broadcast?
+Snooping requires a broadcast and a total order. A mesh gives neither for free; a request costs N messages per miss, and requests reach different nodes in different orders. With the physical address space being partitioned over the nodes, an address tells you which memory holds the line (its home), not which node caches hold it. This is what the [[Directories||directory]]

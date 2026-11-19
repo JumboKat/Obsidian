@@ -91,4 +91,4 @@ Snooping does not scale, because every coherence transaction must be looked up b
 
 There are two fixes:
 - A scalable [[interconnects||network]] instead of a bus.
-- A [[directory]] that sends requests only to caches that have the line.
+- A [[Directories]] that sends requests only to caches that have the line.

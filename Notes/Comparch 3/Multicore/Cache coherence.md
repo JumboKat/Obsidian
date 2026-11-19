@@ -28,7 +28,10 @@ The following are signals on the bus put on by cache controllers and seen by eve
 ![[Pasted image 20261118202448.png|524]]
 The cache controller includes:
 - **Data buffer**: incoming data is buffered and sent to the cache when it is not busy.
-- 
+- **Write-back buffer**: outgoing data is buffered until the data bus is free.
+- **CPU-side controller**: receives addresses/commands.
+- **Bus-side controller (snooper)**: connected to the snoop bus, listens for bus transactions.
+- The cache contains two sets of control + state tags: one for processor and one for the snooper. This lets the processor communicate with the cache and the cache communicate with the bus/snooper simultaneously.
 ### Coherence Protocols
 #### Valid-Invalid
 ![[Pasted image 20261118200904.png|381]]
@@ -44,3 +47,8 @@ This protocol can only work with write-through; with write-back, there is no way
 
 - When a cache reads a line that is S, the sharer flushes it to the bus and to memory. If there is an M holder, it flushes it, and the line becomes S for every holder. 
 - When a holder writes to a line that is already S, its cache sends BusUpgr and invalidates all other copies, making its own copy M. If it was initially I, it would send a BusRdX instead of BusUpgr.
+#### MESI
+![[Pasted image 20261118204043.png]]
+The **MESI** protocol adds an **exclusive** state E. A cache line that is the sole copy of its line. This means a write to it does not require a bus transaction, since there's nothing to invalidate. On a read miss, if the cache line isn't S in another cache, it becomes E in the reading cache.
+
+The E state costs an extra bus line (a read miss can either go from I to S or E) and requires a more complex controller. It also must wait for all snoopers to 

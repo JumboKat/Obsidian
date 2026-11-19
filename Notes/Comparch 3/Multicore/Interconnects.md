@@ -11,4 +11,4 @@ There are two independent fixes:
 - A **packet**: a message split into **flits** (flow-control units), with a head at the front.
 #### Topologies
 ![[Pasted image 20261119154229.png]]
-**Direct** networks have every router attached to a node. **Indirect** networks
+**Direct** networks have every router attached to a node (ring, mesh, torus, hypercube). **Indirect** networks (crossbar, multistage, fat tree) contain switches without nodes. On-chip, ring and 2D mesh are the most common topologies. Between servers, torus and fat tree are the most common.

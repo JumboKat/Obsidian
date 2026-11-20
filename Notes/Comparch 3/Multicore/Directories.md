@@ -24,4 +24,10 @@ A read miss can lead to 1 of 3 scenarios:
 - b) L sends a request to H. The directory says the line is dirty, so H sends a fetch request to the holder R. R sends the data back to H, who then sends the data back to L
 - b) Same as b), but R now forwards the data to L directly (while also sending a copy to H).
 #### Write Miss
-![[Pasted image 20261119190914.png]]On a write miss, L sends read-exclusive to H. H sends invalidations to every sharer. 
+![[Pasted image 20261119190914.png]]On a write miss, L sends read-exclusive to H. H sends invalidations to every sharer (in parallel), it sends the data back to L along with the number of acks to expect. Sharers then invalidate the line and send an ack to L. L writes once it has the data and all the expected acks. The directory now says M for that line with L as the owner.
+
+On any eviction, the node goes silently to I, but sends a replacement hint to H so that its presence bit in the directory can be updated.
+### Directory Size
+There are two types of directories: 
+- **Classic full map**: N presence bits for every memory line. Overhead does not scale well (size grows with memory lines x nodes) as the number of cores N grows. If memory grows in proportion to N, directory size grows $O(N^2)$.
+- **Sparse directory**: 

@@ -31,5 +31,14 @@ On any eviction, the node goes silently to I, but sends a replacement hint to H 
 There are two types of directories: 
 - **Classic full map**: N presence bits for every memory line. Overhead does not scale well (size grows with memory lines x nodes) as the number of cores N grows. If memory grows in proportion to N, directory size grows $O(N^2)$.
 	- Ex: a full map of a 512 GiB DRAM has 8 Gi lines$\times$ 66 bits = 66 GiB, most of which is unused.
-- **Sparse directory**: a directory that only keeps entries for lines that are currently cached somewhere (privately; L1/L2) rather than every single line of DRAM. This is what is actually used in modern chips. Lines that aren't held in cache don't have an entry (costs nothing), while entries that do exist now also need a tag indicating the line (since not every line has an entry). Size = entries $\times$ bits per entry (tag, state, sharers). A cache can fill up, however. When a new line needs an entry and the set is full, and existing entry must be evicted, which requires invalidating all the copies that entry tracks. Thus, we over-provision entries (1.5x)
-	- Ex: 64 cores $\times$ 2 MiB L2 = 128 MiB private cache total. 128 MiB/64 B per line = 2 Mi lines of cache.  
+- **Sparse directory**: a directory that only keeps entries for lines that are currently cached somewhere (privately; L1/L2) rather than every single line of DRAM. This is what is actually used in modern chips. Lines that aren't held in cache don't have an entry (costs nothing), while entries that do exist now also need a tag indicating the line (since not every line has an entry). Size = entries $\times$ bits per entry (tag, state, sharers). A cache can fill up, however. When a new line needs an entry and the set is full, and existing entry must be evicted, which requires invalidating all the copies that entry tracks. Thus, we over-provision entries (1.5x).
+	- Ex: 64 cores $\times$ 2 MiB L2 = 128 MiB private cache total. 128 MiB/64 B per line = 2 Mi lines of cache. $2\ Mi\times 1.5=3\ Mi$ entries.
+### Limited-Pointer Directories
+A **limited-pointer directory** shrinks each directory by storing a few pointers to sharers, rather than one presence bit per core. Most lines only have a handful of sharers at a time anyway. A limited-pointer directory, written as Dir<sub>i</sub>, stores only i pointers each entry of $log_2N$ bits for N cores.
+- Ex: i=4, N=1024 cores, then:
+	- each pointer is $log_21024=10$ bits.
+	- 4 pointers = 40 bits per line vs 1024 bits for a full map.
+	- 40 / 512 bits per 64 B line = 7.8% overhead vs. 200% for full map.
+Pointers win on size when $ilog_2N << N$
+### Directory Slices
+The classic directory sits with DRAM with an entry for every line in memory. This is too big, and too far from the cores. Modern chips put a sparse directory 

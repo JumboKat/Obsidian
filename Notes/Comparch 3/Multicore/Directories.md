@@ -24,4 +24,4 @@ A read miss can lead to 1 of 3 scenarios:
 - b) L sends a request to H. The directory says the line is dirty, so H sends a fetch request to the holder R. R sends the data back to H, who then sends the data back to L
 - b) Same as b), but R now forwards the data to L directly (while also sending a copy to H).
 #### Write Miss
-A write miss
+![[Pasted image 20261119190914.png]]On a write miss, L sends read-exclusive to H. H sends invalidations to every sharer. 

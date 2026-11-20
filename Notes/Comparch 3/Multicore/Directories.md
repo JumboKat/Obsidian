@@ -44,7 +44,8 @@ Pointers win on size when $ilog_2N << N$
 ![[Pasted image 20261119200043.png]]
 The classic directory sits with DRAM with an entry for every line in memory. This is too big, and too far from the cores. Modern chips put a sparse directory slice next to each cache that holds only entries for lines that are cached, each with a tag. 
 ### Finding Home
- Example: 18 cores split among two die; tiles 0-8 on die 0 and 9-17 on die 1. 40-bit addresses. SNC is on, meaning each die is its own NUMA node. die 0's memory controllers hold 0-64 GiB, while die 1's hold 64-128 GiB, each memory is homed to that die's tiles (if SNC was off, homes would be hashed over all 18 tiles).
+ Example: 18 cores split among two die; tiles 0-8 on die 0 and 9-17 on die 1. 40-bit addresses. SNC is on, meaning each die is its own NUMA node. die 0's memory controllers hold 0-64 GiB, while die 1's hold 64-128 GiB, each memory is homed to that die's tiles (if SNC was off, homes would be hashed over all 18 tiles). Each L3 slice is 2 MiB, 16-way, 64 B lines means 2048 sets.
+ - sets = slice size / (ways x line size) = 2 MiB / (16 x 64 B) = $2^{11}=2048$.
 
 The address being looked up: X = 0x10_1234_57A4
 ![[Pasted image 20261119225537.png|572]]
@@ -55,4 +56,11 @@ Step 2: Which die?
 $2^{36}$ bytes = 64 GiB, so bit 36 says which half of memory the address is in. Bit 36 = 1, meaning it is in die 1's memory. This is where the home is (with SNC on).
 
 Step 3: Which tile on die 1?
-Die 1 has 9 tiles. 
+Die 1 has 9 tiles. This example uses line address mod 9. 0x4048D15E mod 9 = 4, so home is tile 9+ 4 = 13.
+
+Step 4: lookup inside CHA 13. The L3 slice in tile 13 is an ordinary cache, so the address is split again. 6 bits make up the offset, $2048=2^{11}$ sets means the index is 11 bits, and 40-11-6=23 bits for the tag (0x8091A). This is compared with the 16 ways to find the line.
+### Protocol Deadlock
+Two requests for the same line can be in flight at once. The home keeps the entry busy until the current transaction finishes; requests coming in later are NACKed (retry) or queued. The protocol must not assume FIFO order since messages can arrive at different speeds.
+
+**Protocol deadlock**: a request waits for a response stuck behind requests in the same buffers. The fix: separate virtual networks per message class.
+![[Pasted image 20261120000048.png]]

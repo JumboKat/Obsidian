@@ -41,4 +41,7 @@ A **limited-pointer directory** shrinks each directory by storing a few pointers
 	- 40 / 512 bits per 64 B line = 7.8% overhead vs. 200% for full map.
 Pointers win on size when $ilog_2N << N$
 ### Directory Slices
-The classic directory sits with DRAM with an entry for every line in memory. This is too big, and too far from the cores. Modern chips put a sparse directory 
+![[Pasted image 20261119200043.png]]
+The classic directory sits with DRAM with an entry for every line in memory. This is too big, and too far from the cores. Modern chips put a sparse directory slice next to each cache that holds only entries for lines that are cached, each with a tag. 
+### Finding Home
+

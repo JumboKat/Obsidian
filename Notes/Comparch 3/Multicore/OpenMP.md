@@ -112,4 +112,3 @@ The **Karp-Flatt** metric flips Amdahl's on its head; instead of assuming a seri
 $$e=\frac{1/S(P)-1/P}{1-1/P}$$
 - If $e$ is constant as $P$ grows, then a true serial fraction is the limiter; parallelize more code.
 - If $e$ is increasing with $P$, overhead is growing with the core count P, which could be due to synchronization, load imbalance, saturated memory bandwidth, or coherence traffic.
-- 

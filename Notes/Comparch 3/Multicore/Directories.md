@@ -44,4 +44,5 @@ Pointers win on size when $ilog_2N << N$
 ![[Pasted image 20261119200043.png]]
 The classic directory sits with DRAM with an entry for every line in memory. This is too big, and too far from the cores. Modern chips put a sparse directory slice next to each cache that holds only entries for lines that are cached, each with a tag. 
 ### Finding Home
-
+ 
+![[Pasted image 20261119225537.png]]

@@ -44,5 +44,15 @@ Pointers win on size when $ilog_2N << N$
 ![[Pasted image 20261119200043.png]]
 The classic directory sits with DRAM with an entry for every line in memory. This is too big, and too far from the cores. Modern chips put a sparse directory slice next to each cache that holds only entries for lines that are cached, each with a tag. 
 ### Finding Home
- 
-![[Pasted image 20261119225537.png]]
+ Example: 18 cores split among two die; tiles 0-8 on die 0 and 9-17 on die 1. 40-bit addresses. SNC is on, meaning each die is its own NUMA node. die 0's memory controllers hold 0-64 GiB, while die 1's hold 64-128 GiB, each memory is homed to that die's tiles (if SNC was off, homes would be hashed over all 18 tiles).
+
+The address being looked up: X = 0x10_1234_57A4
+![[Pasted image 20261119225537.png|572]]
+Step 1: Strip the offset, since we are need the line, not the specific word.
+A line is 64 B, which can be addressed by the lowest 6 bits; this is the offset, which is 0x24. This leaves 0x4048D15E.
+
+Step 2: Which die?
+$2^{36}$ bytes = 64 GiB, so bit 36 says which half of memory the address is in. Bit 36 = 1, meaning it is in die 1's memory. This is where the home is (with SNC on).
+
+Step 3: Which tile on die 1?
+Die 1 has 9 tiles. 

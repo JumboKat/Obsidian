@@ -22,4 +22,4 @@ class Point{
 }
 ```
 
-It is not possible to define only one ++ operator; bost prefix and postfix operators must be defined.
+It is not possible to define only one ++ operator; post prefix and postfix operators must be defined.

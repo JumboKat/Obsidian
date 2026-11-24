@@ -25,4 +25,11 @@ Implicit conversion is carried out by the compiler in the following scenarios:
 	- systematic conversions: char and short to int.
 	- type adjustment conversions: int to long for the addition of two long types.
 ### Conversion of Class Types
-A constructor that can be called with a single argument doubles as a conversion function.
+A constructor that can be called with a single argument doubles as a conversion function. Take the following example:
+```cpp
+void draw(Point p) {...}
+
+draw(3);
+Point b = 5;
+```
+If the compiler sees a type mismatch ()

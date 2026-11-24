@@ -78,10 +78,15 @@ int n1, n2;
 n1 = a + 3; // n1=6
 n2 = a + b; // n2=8
 
-double z1, z2;
+double z1, z2, z3;
 z1 = a + 3; // z1 = 6
 z2 = a + b; // z2 = 8
+z3 = a + 3.85; // z3 = 6.85
 ```
 For the expression `a+3`, the compiler first looks for an overdefined +operator corresponding to the two operand types. When it doesn't find one, it then tries to set up conversions of operands to lead to a valid operation. In this case, it converts a Point to an int to perform integer addition.
 
-In the case of the double, the conversions are chained: Point objects are converted to ints first, then from ints to doubles.
+With z1 and z2, a and b are converted to int type, then integer addition is performed, the result of which is converted to a double.
+
+In the case of z3, the conversions are chained: Point objects are converted to ints first, then from ints to doubles.
+##### Ambiguity in Chain Conversions
+Once a chain of conversions has been set up by the compiler, ambiguities may occur. If the Point class was defined with two member functio

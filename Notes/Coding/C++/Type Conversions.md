@@ -25,14 +25,33 @@ Implicit conversion is carried out by the compiler in the following scenarios:
 	- systematic conversions: char and short to int.
 	- type adjustment conversions: int to long for the addition of two long types.
 ### Conversion of Class Types
-A constructor that can be called with a single argument doubles as a conversion function. Take the following example:
-```cpp
-void draw(Point p) {...}
+#### Conversion Constructor
+A constructor that can be called with a single argument doubles as a conversion function. If the compiler sees a type mismatch, it calls the single-argument constructor to perform a "conversion" by creating a new object of the desired type initialized by the original type, as long as the constructor accepts that type. Without such a constructor, an error occurs. We can do this between two user-defined classes as well (e.g.`Complex(Point)` converts Point into a Complex). 
 
-draw(3);
-Point b = 5;
+Take the following example:
+```cpp
+class Point {
+	int x, y;
+	Public:
+		Point(int abs = 0, int ord = 0){
+			x = abs; y = ord;
+		}
+}
+
+void fct(Point p) {...}
+
+int main(){
+	void fct(Point); 
+	Point a(3, 4);
+	a = Point(12); // explicit call to constructor
+	a = 12; // implicit call
+	fct(4); // implicit call
+	return 0;
+}
 ```
-If the compiler sees a type mismatch, it calls the single-argument constructor to perform a "conversion" by creating a new object of the desired type initialized by the original type, as long as the constructor accepts that type. Without such a constructor, an error occurs. We can do this between two user-defined classes as well (e.g.`Complex(Point)` converts Point into a Complex). A constructor cannot convert an object of its class to a simple type (Point to an int). For cases that cannot be solved by the constructor, we define an appropriate **cast operator**.
+Assigning 
+
+A constructor cannot convert an object of its class to a simple type (Point to an int). For cases that cannot be solved by the constructor, we define an appropriate **cast operator**.
 #### Cast Operator
 We define an explicit cast operator (of form type(object)) for each type we want to convert an object into. These should always be defined as a public (to be usable outside of the class) member function, with no return value type declared. Consider the class Point:
 ```cpp
@@ -89,4 +108,7 @@ With z1 and z2, a and b are converted to int type, then integer addition is perf
 
 In the case of z3, the conversions are chained: Point objects are converted to ints first, then from ints to doubles.
 ##### Ambiguity in Chain Conversions
-Once a chain of conversions has been set up by the compiler, ambiguities may occur. If the Point class was defined with two member functio
+Once a chain of conversions has been set up by the compiler, ambiguities may occur. If the Point class was defined with the two member functions `operator int()` and `operator double()`, then the expression `a + 3.85` (a being a Point object), leads to two possible conversion schemes:
+![[Pasted image 20261124180923.png|447]]
+In this case, an error occurs, and the expression is rejected altogether due to the ambiguity of having two chains of conversions allowing the move from Point to double.
+

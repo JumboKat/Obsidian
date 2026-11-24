@@ -59,4 +59,29 @@ int main() {
 	cout << n1; << " " << n2 << endl; // prints 3 and 5
 }
 ```
-##### Implicit Cast During a Function Call
+##### Implicit Casts
+The appropriate cast operator is implicitly called when an object is passed to a function expecting a different type.
+
+Take the example:
+```cpp
+void fct(int n){...}
+
+Point a(3, 4);
+fct(a); //compiler calls int(a)
+```
+The conversion is done well before the function is called, and there is no copying creation of a Point object.
+
+An implicit call is also made during an evaluation of an expression:
+```cpp
+Point a(3, 4), b(5, 7);
+int n1, n2;
+n1 = a + 3; // n1=6
+n2 = a + b; // n2=8
+
+double z1, z2;
+z1 = a + 3; // z1 = 6
+z2 = a + b; // z2 = 8
+```
+For the expression `a+3`, the compiler first looks for an overdefined +operator corresponding to the two operand types. When it doesn't find one, it then tries to set up conversions of operands to lead to a valid operation. In this case, it converts a Point to an int to perform integer addition.
+
+In the case of the double, the conversions are chained: Point objects are converted to ints first, then from ints to doubles.

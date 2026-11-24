@@ -32,4 +32,5 @@ void draw(Point p) {...}
 draw(3);
 Point b = 5;
 ```
-If the compiler sees a type mismatch ()
+If the compiler sees a type mismatch, it calls the single-argument constructor to perform a "conversion" by creating a new object of the desired type initialized by the original type, as long as the constructor accepts that type. Without such a constructor, an error occurs. We can do this between two user-defined classes as well (e.g.`Complex(Point)` converts Point into a Complex). A constructor cannot convert an object of its class to a simple type (Point to an int). For cases that cannot be solved by the constructor, we define an appropriate **cast operator**.
+#### Cast Operator

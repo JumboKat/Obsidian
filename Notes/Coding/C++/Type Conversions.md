@@ -122,4 +122,4 @@ class Complex {
 		Complex(double r = 0, double i = 0);
 };
 ```
-If the call `Complex c = 3` is made, the 3 is first converted from int to double, then from double to Complex via the constuctor.
+If the call `Complex c = 3` is made, the 3 is first converted from int to double, then from double to Complex via the constructor.

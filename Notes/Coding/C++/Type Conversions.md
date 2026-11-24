@@ -34,7 +34,7 @@ Point b = 5;
 ```
 If the compiler sees a type mismatch, it calls the single-argument constructor to perform a "conversion" by creating a new object of the desired type initialized by the original type, as long as the constructor accepts that type. Without such a constructor, an error occurs. We can do this between two user-defined classes as well (e.g.`Complex(Point)` converts Point into a Complex). A constructor cannot convert an object of its class to a simple type (Point to an int). For cases that cannot be solved by the constructor, we define an appropriate **cast operator**.
 #### Cast Operator
-We define an explicit cast operator (of form type(object)) for each type we want to convert an object into. These should always be defined as a public member function, with no return value type declared. Consider the class Point:
+We define an explicit cast operator (of form type(object)) for each type we want to convert an object into. These should always be defined as a public (to be usable outside of the class) member function, with no return value type declared. Consider the class Point:
 ```cpp
 class Point {
 	int x, y;
@@ -59,3 +59,4 @@ int main() {
 	cout << n1; << " " << n2 << endl; // prints 3 and 5
 }
 ```
+##### Implicit Cast During a Function Call

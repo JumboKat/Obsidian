@@ -123,3 +123,91 @@ class Complex {
 };
 ```
 If the call `Complex c = 3` is made, the 3 is first converted from int to double, then from double to Complex via the constructor.
+#### Overload Resolution
+When there are multiple paths for conversion, the compiler chooses one based on a ranking:
+1. Exact match: 
+2. Promotion (e.g. short to int)
+3. Standard conversion (e.g. int to double)
+4. User-defined conversion (a converting constructor or conversion operator; i.e. a conversion that runs user-defined code to change types)
+User-defined conversions are only used as a last resort when necessary.
+```cpp
+class Point {
+	int x, y;
+	public:
+	...
+		Point& operator=(const Point& p){
+			x = p.x; y = p.y;
+			return *this;
+		}
+		Point& operator=(const int n){
+			x = n; y=0;
+			return *this;
+		}
+}
+
+int main(){
+	Point a(3, 4);
+	a = 12; //operator=(const int n) gets called
+	return 0;
+}
+```
+#### Expanding the Meaning of an Operator
+Implicit conversions via the constructor makes certain operator expressions possible:
+```cpp
+class Point{
+	int x, y;
+	public:
+		Point(int);
+		friend Point operator+(Point, Point);
+};
+```
+
+This makes the expression `a+3` (where a is a Point) possible through 1. a conversion of the int 3 to a Point through the constructor, and 2. the addition of two Points with the +operator. This is also equivalent to `operator+(a, Point(3))`.
+
+The fact that it is a friend function makes `5 + a` possible. If it were simply a member function, this would require the first operand being a Point type.
+
+If arguments are transmitted by reference, `const` must be used to authorize conversion of literals (`5`) to a temporary object.
+#### Keyword explicit
+The constructor's use of implicit conversions can be prevented using the `explicit` keyword.
+```cpp
+class Point {
+	public:
+		explicit Point(int);
+		frined operator+(Point, Point);
+		...
+};
+// a and b are Point types
+a = 12; // illegal; constructor has explicit qualifier
+a = b + 5 // illegal
+
+a = Point(3); // explicit conversion calls are allowed
+a = b + Point(5);
+```
+#### Class-to-Class Conversion
+Within a class, we can define a cast operator that converts another class type to the class' own type. The reverse is also true; a class can define a cast operator that converts its own class to another class:
+```cpp
+class Complex;
+class Point{
+	int x, y;
+	public:
+		Point(int abs=0, int ord=0) {x=abs; y=ord;}
+		operator Complex(); //converts Point to Complex
+};
+class Complex{
+	double real, imag;
+	public:
+		Complex(double r=0, double i=0) {real=r; imag=i;}
+		friend Point::operator Complex();
+};
+Point::operator Complex(){
+	Complex r; r.real = x; r.imag = y;
+	return r;
+}
+int main(){
+	Point a(2, 5); Complex c;
+	c = (Complex)a; // casts Point a into a temporary complex, then assign to c
+	Point b(9, 12); 
+	c = b; //casts Point b into a Complex
+	return 0;
+}
+```

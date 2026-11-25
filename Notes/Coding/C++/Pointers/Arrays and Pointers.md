@@ -45,7 +45,7 @@ void fct(int *t);
 void fct(int t[]);
 ```
 
-This is because when an array is passed as a function parameter, it decays to a pointer to its element type. Because of this, the specification of the size of the array (t\[10]) is purely cosmetic and only provides information to the programmer; the compiler does not check nor enforce the size of the array; specifying any size would have no effect on the compilation.
+When an array is passed as a function parameter, it decays to a pointer to its element type. Because of this, the specification of the size of the array (t\[10]) is purely cosmetic and only provides information to the programmer; the compiler does not check nor enforce the size of the array; specifying any size would have no effect on the compilation.
 
 In C/C++, arrays can't be passed by value; copying the elements of an entire array on every function call is expensive. Thus, arrays are always passed by their address. If the size of an array must be known by the function, it must be passed as a separate parameter:
 ```cpp

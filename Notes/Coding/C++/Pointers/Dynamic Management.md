@@ -1,5 +1,5 @@
 During the execution of a program, data is stored in different sections in memory with different lifespans depending on their scope. For any program, there are three separate regions in memory that data can be allocated to:
-- The **Stack**  is where local variables, functions, and return addresses are stored. Whenever the a function or variable is not used anymore, it is deleted. This segment grows and shrinks quickly and automatically as functions are called and returned.
+- The **Stack**  is where local variables, functions, and return addresses are stored. Whenever a function or variable is not used anymore, it is deleted. This segment grows and shrinks quickly and automatically as functions are called and returned.
 - **Global** variables and functions have their own place in memory. They are allocated memory at compile time; size and location are fixed before the program runs. These exist as long as the program runs. Anything that is declared as **static** also live here.
 - The **Heap** is where *dynamically allocated* data is stored. This memory is allocated at runtime using the keyword **new** and freed using **delete**. These calls must be made explicitly. Data here persists until they are explicitly freed using delete.
 ### new Operator

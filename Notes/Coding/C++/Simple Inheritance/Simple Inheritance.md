@@ -92,4 +92,7 @@ int main() {
 }
 ```
 
-Redefining a function in a derived class hides al
+Redefining a function in a derived class hides all member functions of the same name in the base class (and all ancestor classes). The search for a function is only ever done within a single class; this can be the derived, base, or ancestor class, but never several at once (unless we use `using`). This feature can be used to prevent calls to a function of a base class.
+
+We can impose that a search for an over-defined function is done in several classes using `using`. We place this in the base class whose functions we want to call. In this example, we would use `using A::f` within class A, allowing all functions with the name f to be called by any derived class: `b.f(c)` then calls `A::f(char)`.
+### C

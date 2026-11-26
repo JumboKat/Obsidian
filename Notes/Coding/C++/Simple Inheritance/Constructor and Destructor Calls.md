@@ -32,8 +32,10 @@ Pointcol (int abs = 0, int ord = 0, char c = 1) : Point(abs, ord)
 ```
 Thereby making the call `Pointcol b(5)` possible. The presence of default arguments in Point has no impact here.
 
+If the base class does not have a defined constructor, then no problems arise and arguments do not need to be transmitted. However, if the base class does have a defined constructor but the derived class does not, then a compilation error occurs; the derived constructor has no way of transmitting arguments to the base constructor.
 
-
-
-
+When information is passed to the base constructor, we can use any expression to do so. For example:
+```cpp
+Pointcol(int abs, int ord, char c):Point(abs + ord, abs - ord)
+```
 

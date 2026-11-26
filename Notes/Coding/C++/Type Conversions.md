@@ -205,9 +205,11 @@ Point::operator Complex(){
 }
 int main(){
 	Point a(2, 5); Complex c;
-	c = (Complex)a; // casts Point a into a temporary complex, then assign to c
+	c = (Complex)a; // explicitly casts Point a into a temporary complex, then assign to c
 	Point b(9, 12); 
-	c = b; //casts Point b into a Complex
+	c = b; //casts Point b into a Complex; implicit cast
 	return 0;
 }
 ```
+
+We can also use conversion by constructor between classes. For A->B conversions (where A and B are distinct classes), we can either use a B(A) constructor in B or a cast operator B() in A. However, only one other the other can be implemented; having both leads to ambiguity for the compiler.

@@ -24,4 +24,8 @@ Since friend functions have total access to members of the derived class, they w
 ### Public Derivation
 The derivation `class Pointcol : public Point{ ... }` mean:
 - Public members of the base class are accessible to member and friend functions of the derived class, as well as users of the derived class.
-- Protecte
+- Protected members of the base class are accessible to member and friend functions of the derived class, but not to users of the derived class.
+- Private members of the base class are completely inaccessible to the derived class. 
+- All members of the base class retain their status in the derived class.
+### Private Derivation
+

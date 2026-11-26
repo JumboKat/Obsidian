@@ -52,4 +52,44 @@ class A{
 	char c;
 };
 ```
-We can 
+And class B is defined as:
+```cpp
+class B : public A {
+	float a;
+};
+```
+Then if an object b is of type B, `b.a` refers to the float type of member b, but we can still access the int-type member belonging to class A using `b.A::a`. Redefining a member in B adds to the same member in A instead of replacing it.
+### Redefinition and Over-definition
+If a function is overloaded in the base class A and redefined in the derived class B, the redefined function in the derived class is always called instead of those in the base class, (if called by an object of B-type) even if the call better suits a signature in A:
+```cpp
+class A{
+	public:
+	void f(int n){...}
+	void f(char c){...}
+};
+class B : public A{
+	public:
+		void f(int n){...}
+};
+
+int main(){
+	int n; char c; A a; B b;
+	b.f(n); //calls B:f(float) even if A:f(int) is a better match
+	b.f(c); //calls B:f(float)
+}
+```
+
+Even if calling the redefined function in B would lead to a compilation error, A's functions are still ignored:
+```cpp
+class B : public A {
+	public:
+		void f(int, int){...}
+};
+int main() {
+	int n; char c; B b;
+	b.f(n); // compilation error
+	b.f(c); // compilation error
+}
+```
+
+Redefining a function in a derived class hides al

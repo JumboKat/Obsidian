@@ -19,4 +19,5 @@ class Pointcol : public Point {
 		void colour(short c) { col = c; }
 };
 ```
-The `public` keyword means that the public members in the base cla
+The `public` keyword means that the public members in the base class (`Point`) will also be public members of the derived class (`Pointcol`). Hence, each `Pointcol`-type object can call public methods of `Pointcol` and public methods of `Point` as if they were a member of `Point`.
+### Overdefinition of Base Class Methods

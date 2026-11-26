@@ -25,4 +25,9 @@ The reverse assignment is possible if we use the [[Type Conversions#Cast Operato
 adpc = (Pointcol*) adp; //legal
 ```
 
-While the derived can always be converted to a base in all cases, the reverse is not always true. A pointer on the base class can be converted to a pointer on the derived class. Since `Point*` is just an address, and a `Pointcol` object begins with a `Point` part, it can reinterpret the address. However, a base class object cannot be converted into a derived class object. S
+A pointer on the base class can be converted to a pointer on the derived class. Since `Point*` is just an address, and a `Pointcol` object begins with a `Point` part, it can reinterpret the address. However, a base class object cannot be converted into a derived class object. Since the derived object `Pointcol` has more members than `Point`, the compiler does not know what to assign to these extra members. This is only made possible by a user-defined conversion 
+(`Pointcol(const Point&)`). 
+
+A derived-to-base conversion is done implicitly, but only for public derivations. Since every `Pointcol` contains a `Point`, we simply just keep the `Point` part and remove the extra members. A public derivation means "a `Pointcol` is a `Point`," so we can substitute one for the other. A private derivation means "implemented using `Point`," and the outside world isn't supposed to know about the relationship. Allowing an implicit conversion to `Point` would allow outside code to reach its members and bypass the restriction.
+#### Limitations Involving Static Typing of Objects
+A pointer to the base class will only access the base class' members, while a pointer to the derived class 

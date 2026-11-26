@@ -28,7 +28,7 @@ The derivation `class Pointcol : public Point{ ... }` mean:
 - Private members of the base class are completely inaccessible to the derived class. 
 - All members of the base class retain their status in the derived class.
 ### Private Derivation
-Using `private` instead of `public` prohibits users of the derived class from accessing the base class' public members, but the derived class itself still has access. Essentially, public base class members behave like private members of the derived class:
+Using `private` instead of `public` prohibits users of the derived class from accessing the base class' public members, but the derived class itself still has access. Essentially, public (and protected) base class members behave like private members of the derived class:
 ```cpp
 class Point {
 	...
@@ -56,5 +56,31 @@ While `p.colour()` is still accepted.
 This has two specific use cases:
 1. All the useful functions in the base class are redefined in the derived class, so there is no reason to access the old ones.
 2. Adapt an interface: the derived class adds nothing new and behaves like the base class, but with presents the user with a different set of functions.
+
+Subsequent derivations will not be able to access public and protected base class members made private in the derived class.
 ### Protected Derivation
 Deriving using the `protected` keyword makes all public members of the base class behave like protected members in all derived classes.
+
+In essence, the status of a derivation enforces the lowest-level privacy allowed for inherited members:
+- Public derivation: member statuses are unchanged.
+- Protected derivation: public members become protected.
+- Private derivation: all members become private.
+
+In a private or protected derivation, we can exclude certain members from this enforcement by re-stating its status explicitly:
+```cpp
+class Pointcol : private Point {
+	...
+	public:
+	Point::display(); //display() remains public in Pointcol
+}
+```
+
+We can also use `using`for this purpose:
+```cpp
+class Pointcol : private Point {
+	using Point::display9);
+}
+```
+
+With [[Multiple Inheritance||multiple inheritance]], the status of the derivation from each base class must be made explicit.
+

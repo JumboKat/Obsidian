@@ -213,3 +213,5 @@ int main(){
 ```
 
 We can also use conversion by constructor between classes. For A->B conversions (where A and B are distinct classes), we can either use a B(A) constructor in B or a cast operator B() in A. However, only one other the other can be implemented; having both leads to ambiguity for the compiler.
+
+For over-defined operators, the same rules that apply to basic-to-class conversions also apply to class-to-class conversions. 

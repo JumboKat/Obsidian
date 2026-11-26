@@ -1,0 +1,3 @@
+Every object of a derived class B contains a base-class (A) object within it called the **base subobject**. Creating any instance of B first creates the A part first, then building the rest of B on top of it. This means an automatic call to A's constructor, followed by B's constructor that completes whatever is specific to B. 
+
+Similarly, when a B-type object is destroyed, an automatic call is made to B's destructor that handles what is unique to B, followed by A' destructor.

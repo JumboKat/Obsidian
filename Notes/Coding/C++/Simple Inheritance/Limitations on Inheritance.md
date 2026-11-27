@@ -28,10 +28,5 @@ Pointcol a, b, c;
 c = a + b; //error result is a Point, there is no Point->Poincol conversion
 ```
 
-The fix is to redefine `operator+` in `Pointcol`:
-```cpp
-Pointcol operator+(const Pointcol& q) {
-	Pointcol r = *this;
-	return r;
-}
-```
+The fix is to redefine `operator+` in `Pointcol`.
+

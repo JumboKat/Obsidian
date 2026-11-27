@@ -45,3 +45,39 @@ However, if we do `adp = adpc`, both pointers now point to the same object `pc`.
 ![[Pasted image 20261126190008.png]]
 
 The instruction `adp->display()` still calls `Point::display()` since adp is of `Point*` type. Any calls on functions unique to the `Pointcol` class (e.g. `adp->colour(8)`) will lead to a compilation error. The type of objects pointed to by `adp` and `adpc` are decided and frozen at compilation time. 
+#### Bypassing Base Class Protections
+A private derivation makes public members of A private in B. So, A-type objects can access members that B-types cannot:
+```cpp
+class A{
+	int x;
+	public:
+		float z;
+		void fa();
+};
+
+class B : private {
+	int u;
+	public:
+		double v;
+		void fb();
+		
+};
+
+A a; B b;
+
+a.z = 5.25; //accepted
+a.fa();
+b.z = 8.3; // rejected, unless members are redefined in B
+b.fa(); 
+```
+
+However, by converting a pointer on B to a pointer on type A, we are able to access members of A that are normally private for B:
+```cpp
+A *ada;
+B *adb;
+adb = &b;
+ada = (A*)adb; //or A* ada = (A*)&b;
+
+ada->z=8.3; //now accepted
+ada->fa();
+```

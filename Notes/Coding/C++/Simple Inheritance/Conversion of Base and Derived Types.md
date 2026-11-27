@@ -81,3 +81,4 @@ ada = (A*)adb; //or A* ada = (A*)&b;
 ada->z=8.3; //now accepted
 ada->fa();
 ```
+`ada` points to b but still has the `A*` type, and A's public members can now be accessed through the pointer. 

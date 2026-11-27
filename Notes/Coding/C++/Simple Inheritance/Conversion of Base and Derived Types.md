@@ -30,4 +30,18 @@ A pointer on the base class can be converted to a pointer on the derived class. 
 
 A derived-to-base conversion is done implicitly, but only for public derivations. Since every `Pointcol` contains a `Point`, we simply just keep the `Point` part and remove the extra members. A public derivation means "a `Pointcol` is a `Point`," so we can substitute one for the other. A private derivation means "implemented using `Point`," and the outside world isn't supposed to know about the relationship. Allowing an implicit conversion to `Point` would allow outside code to reach its members and bypass the restriction.
 #### Limitations Involving Static Typing of Objects
-A pointer to the base class will only access the base class' members, while a pointer to the derived class 
+A pointer to the base class will only access the base class' members. Take the following example:
+```cpp
+Point p(3, 5);
+Pointcol pc(8, 6, 2);
+adp = &p;
+adpc = &pc;
+```
+This can be visualized as:
+![[Pasted image 20261126185836.png]]
+The instruction `adp->display()` calls `Point::display()` and `adpc->display()` calls `Pointcol::display()`. These are equivalent to `p.display()` and `pc.display()`, respectively.
+
+However, if we do `adp = adpc`, both pointers now point to the same object `pc`.
+![[Pasted image 20261126190008.png]]
+
+The instruction `adp->display()` still calls `Point::display()` since adp is of `Point*` type. Any calls on functions unique to the `Pointcol` class (e.g. `adp->colour(8)`) will lead to a compilation error. The type of objects pointed to by `adp` and `adpc` are decided and frozen at compilation time. 

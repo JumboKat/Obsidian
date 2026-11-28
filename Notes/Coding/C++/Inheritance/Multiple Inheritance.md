@@ -39,7 +39,17 @@ void display(){ // in Pointcol
 If one of the base classes was derived from another class, it would also be possible to access one of the members (if it was a public derivation), using the range operator several times. This is also the case for data members with the same name.
 ### Virtual Classes
 ![[Pasted image 20261127192555.png]]
-Consider two derived classes B and C that inherit from the same base class A, and another derived class D that inherits from both B and C. In this scenario, D inherits from A twice; once through B and once through C.
-
-
+Consider two derived classes B and C that inherit from the same base class A, and another derived class D that inherits from both B and C. In this scenario, D inherits from A twice; once through B and once through C. The diagram above is equivalent to the one below:
 ![[Pasted image 20261127192608.png]]
+
+This means that every member of A is inherited twice, leaving D with duplicates of the exact same members (this only really applies to data members; duplicating a function has no effect). If we want D to have two datasets from A, we can distinguish them using the range resolution operator, distinguishing:
+- `A::B::x` from `A::C::x`
+- or `B::x` from `C::x` if B and C themselves do not have a member x.
+However, we generally do not want this duplication of data. To tell the compiler that we only want to incorporate A's members only once in all of its descendants, we use the `virtual` keyword in A's *direct* inheritors; in other words, in B and C's declarations, not D's:
+```cpp
+class B: public virtual A {...};
+class C: virtual public A {...};
+class D: public B, public C {...};
+```
+
+The keyword has no effect on the B and C classes themselves. It can be placed before or after the protection status word.

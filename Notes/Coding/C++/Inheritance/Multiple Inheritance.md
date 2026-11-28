@@ -53,3 +53,20 @@ class D: public B, public C {...};
 ```
 
 The keyword has no effect on the B and C classes themselves. It can be placed before or after the protection status word.
+#### Constructor and Destructor Calls
+If the `virtual` keyword is not used, and D had declared its inheritance from B and C in this order:
+![[Pasted image 20261127193941.png]]
+Then the constructors will be called in the following order:
+- A1, B, A2, C, D
+For information transfers, B and C may not have the same arguments with respect to A. For example:
+```cpp
+B (int n, int p, double z): A(n, p)
+C (int q, float x) : A(q)
+```
+In this case, it does not matter, since virtually two copies of A are created. 
+
+However, if `virtual` is used, then only one type A object will be created, which creates ambiguity in which constructor will pass its arguments to A. The compiler resolves this by forcing D's constructor to pass the arguments to A's constructor:
+```cpp
+D(int n, int p, double z) : B(n, p, z), A(n, p){}
+```
+D names A directly in its initializer list and supplies the arguments. Any `A(...)` initializers in B or C are ignored when creating a D object (they can still be written and are still used when creating B and C objects, but are ignored whe)

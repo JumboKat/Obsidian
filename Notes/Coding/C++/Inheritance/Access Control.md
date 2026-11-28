@@ -82,5 +82,5 @@ class Pointcol : private Point {
 }
 ```
 
-With [[Notes/Coding/C++/Multiple Inheritance||multiple inheritance]], the status of the derivation from each base class must be made explicit.
+With [[Multiple Inheritance||multiple inheritance]], the status of the derivation from each base class must be made explicit.
 

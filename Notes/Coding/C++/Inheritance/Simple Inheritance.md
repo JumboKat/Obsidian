@@ -1,4 +1,4 @@
-Simple inheritance is a core concept of O.O.P, allowing for the definition of a **derived** class inheriting all the members of a **base** class, while adding its own new ones. Unlike Java, C++ also allows [[Notes/Coding/C++/Multiple Inheritance||multiple inheritance]], where a class is derived from several base classes.
+Simple inheritance is a core concept of O.O.P, allowing for the definition of a **derived** class inheriting all the members of a **base** class, while adding its own new ones. Unlike Java, C++ also allows [[Multiple Inheritance||multiple inheritance]], where a class is derived from several base classes.
 
 Take the class Point:
 ```cpp

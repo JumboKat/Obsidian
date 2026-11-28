@@ -69,4 +69,45 @@ However, if `virtual` is used, then only one type A object will be created, whic
 ```cpp
 D(int n, int p, double z) : B(n, p, z), A(n, p){}
 ```
-D names A directly in its initializer list and supplies the arguments. Any `A(...)` initializers in B or C are ignored when creating a D object (they can still be written and are still used when creating B and C objects, but are ignored whe)
+D names A directly in its initializer list and supplies the arguments. Any `A(...)` initializers in B or C are ignored when creating a D object (they can still be written and are still used when creating B and C standalone objects). The virtual base A is constructed first, before B and C, then D.
+
+Since B and C can be created as standalone objects, if either one of them has a constructor with no arguments passed to A, then A must have a constructor with no arguments to allow the creation of a standalone B or C.
+
+In the example below, the constructor call order is F, E, G, H I (or F, E, H, G, I depending on whether G or H is declared first in I). This is because the virtual class' constructor is always called first.
+![[Pasted image 20261127194939.png]]
+
+Take the inheritance tree below as another example. `Pointcol` and `Pointmass` inherit `Point` virtually to avoid duplication in `Pointcolmass`.
+![[Pasted image 20261127195114.png]]
+The base classes:
+```cpp
+class Point {
+	int x, y;
+	public:
+		Point(int abs, int ord){x = abs; y = ord;}
+		Point(){x = 0; y = 0;} // default constr. necessary for virtual deriv.
+};
+
+class Col {
+	short colour;
+	public:
+		Col(short c){colour = c;}
+};
+
+class Mass {
+	int mass;
+	public:
+		Mass(int m){mass = m;}
+};
+
+// Derived classes
+
+class Pointcol : public virtual Point, public Col {
+	public:
+		Pointcol(int abs, int ord, short cl) : Col(cl){} // no info for Point because virtual derivation
+};
+
+class Pointmass : public virtual Point, public Mass {
+	public:
+		Pointmass(int abs, int ord, int m) : Mass(m){} //no info for Point
+}
+```
